@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-grid.min.css">
     {{ $sass := resources.Get "sass/custom.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $sass.Permalink }}">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/brands.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/avenirnext/css/avenirnext.css">
 </head>
 
   <body>
