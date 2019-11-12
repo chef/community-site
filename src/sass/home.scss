@@ -1,0 +1,155 @@
+#home {
+    .card {
+        height: 100%;
+        z-index: 2;
+
+        p {
+            font-size: 0.95em;;
+        }
+        a {
+            font-weight: 600;
+        }
+
+        h3 {
+            margin-bottom: 2rem;
+        }
+        
+        h5:not(:first-of-type) {
+            margin-top: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .events-list {
+            li {
+                font-size: 0.95em;
+            }
+        }
+
+        .social {
+            margin-top: 2rem;
+            a {
+                color: $dark-gray;
+                
+                .fab:hover {
+                    background-color: $white;
+                }
+
+                .fa {
+                    &-facebook:hover {
+                        color: #4267B2;
+                    }
+
+                    &-twitter:hover {
+                        color: #1DA1F2;
+                    }
+
+                    &-linkedin:hover {
+                    color: #0073b1;
+                    }
+
+                    &-github:hover {
+                        color: #24292e;
+                    }
+
+                    &-youtube:hover {
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-grid {
+        background-color: $dark-gray;
+        color: $light-gray;
+        padding-bottom: -20vh;
+
+        .product-grid-header{
+            position: relative;
+            top: -250px;
+            padding-top: 250px;
+            z-index: -1;
+            background-color: $dark-gray;
+        }
+
+        .product-grid-main {
+            background-color: $dark-gray;
+            max-height: 250px;
+    
+            #prodgrid-img {
+                max-height: 700px;
+                position: relative;
+                overflow:visible;
+                top: -450px;
+            }
+
+            .product-grid-copy {
+                position: relative;
+                top: -150px;
+                
+                ul {
+                    margin-bottom: 1rem;
+                    margin-left: -15px;
+                    
+                    .active {
+                        font-weight: 600;
+                        text-decoration: underline 1px dashed $chef-secondary;
+                    }
+                }
+
+                .btn {
+                    margin-top: 1rem;
+                }
+
+            }
+        }
+
+        
+    }
+
+    .community {
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        .img {
+            background-size: cover;
+        }
+
+        .community-copy {
+            background-color: $chef-tertiary;
+            color: $light-gray;
+            padding: 7rem 4rem;
+
+            .highlight {
+                color: $chef-primary;
+            }
+
+            .btn {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .resources {
+        padding: 7rem 0;
+
+        h2 {
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            padding-top: 0;
+
+            img {
+                margin-left: -15px;
+                margin-right: -15px;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-12">
+        <h2>Latest <span class="highlight">Discussions</span></h2>
+    </div>
+    <div class="col-sm-12 card-container">
+        <div class="card">
+                {{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
+                {{ $discussions := $discourse.topic_list.topics}}
+                {{ range first 5 $discussions }}
+                    <li>
+                        <a href="https://discourse.chef.io/t/{{ .slug }}" target="_blank">{{ .title }}</a>
+                        <p>Created on: {{ dateFormat "Jan 2, 2006" .created_at }}</p>
+                    </li>
+                {{ end }}
+        </div>
+    </div>
+</div>

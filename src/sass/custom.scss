@@ -1,0 +1,139 @@
+@import "settings";
+
+// General Layout Styles
+// ========================
+
+nav {
+    margin-bottom: 1rem;
+    background-color: $chef-primary;
+
+    a {
+        color: $light-gray;
+        font-weight: 600;
+    }
+}
+
+body {
+    background-color: $light-gray;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: $light-gray;
+    background-color: $dark-gray;
+}
+
+// General Typography Styles
+// ========================
+::selection {
+    background-color: lighten($chef-primary, 10%);
+
+}
+
+a {
+    color: $chef-primary;
+
+    &:hover {
+        text-decoration: underline;
+        color: $chef-primary;
+        background-color: lighten($chef-primary, 45%);
+    }
+
+    &::selection {
+        color: $light-gray;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-primary;
+    font-weight: 600;
+
+    .highlight {
+        color: $chef-secondary;
+    }
+}
+
+h1 {
+    letter-spacing: -1px;
+}
+
+// Flexbox styles
+// ========================
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .v-center {
+    display: flex;
+    align-items: center;
+  }
+
+
+  // Component Styles
+  // =======================
+  .hero {
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+  }
+
+  .card {
+    border: none;
+    background-color: $white;
+    padding: 3rem 1rem;
+  }
+
+  // Button Styles
+  // =======================
+
+  .btn {
+    border: none;
+    font-weight: 500;
+    padding: .4rem 1rem;
+  
+    &-primary {
+      background: $chef-primary;
+      border: 2px solid $chef-primary;
+      color: white;
+  
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: white;
+        border: 2px solid $chef-primary;
+        color: $chef-primary;
+      }
+    }
+  
+    &-secondary {
+      background-color: transparent;
+      border: 2px solid $chef-primary;
+      color: $chef-primary !important;
+  
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: white;
+        border: 2px solid $chef-primary;
+      }
+    }
+ 
+    //Full width buttons on xs devices
+    @include breakpoint (small) {
+        margin: 10px auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 95%;
+    }
+}
+
+// Image Styles
+// =============
+.img-round {
+  border-radius: 50%;
+}
+
+@import "home";

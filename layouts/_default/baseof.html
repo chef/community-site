@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+
+  <head>
+    {{ partial "head-meta.html" . }}
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-grid.min.css">
+    {{ $sass := resources.Get "sass/custom.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $sass.Permalink }}">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/solid.css">
+</head>
+
+  <body>
+    {{ partial "nav.html" . }}
+
+    {{ block "body" . }}
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+
+</html>

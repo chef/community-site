@@ -1,0 +1,27 @@
+{{ define "body" }}
+<main id="home">
+    <section class="hero container">
+        <div class="row">
+            <div class="col-md-7">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+
+    <section class="actions container">
+        {{ partial "home/home-actions.html" . }}
+    </section>
+    <section class="product-grid container-fluid">
+        {{ partial "home/home-products.html" . }}
+    </section>
+    <section class="container-fluid community">
+        {{ partial "home/home-community.html" . }}
+    </section>
+    <section class="container resources">
+        {{ partial "home/home-resources.html" . }}
+    </section>
+    <section class="container discuss">
+            {{ partial "home/home-discourse.html" . }}
+        </section>
+</main>
+{{ end }}
