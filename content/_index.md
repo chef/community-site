@@ -1,6 +1,7 @@
 ---
 title: "Index Page"
 date: 2019-11-10T18:53:06-08:00
+foobar: "hello foobar"
 cards:
     one:
         title: "Learn"
