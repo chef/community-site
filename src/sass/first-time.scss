@@ -1,0 +1,28 @@
+#first-time{
+    h1 {
+        color: $chef-primary;
+    }
+
+    .swag-program {
+        background-color: $dark-gray;
+        color: $light-gray;
+        padding-bottom: 5rem;
+        margin-top: -100px;
+
+        .swag-program-header {
+            background-color: $dark-gray;
+            position: relative;
+            top: -150px;
+            height: 150px;
+        }
+
+        h2 {
+            color: $chef-primary;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+}

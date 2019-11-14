@@ -1,28 +1,5 @@
 #home {
     .card {
-        height: 100%;
-        z-index: 2;
-
-        p {
-            font-size: 0.95em;;
-        }
-        a {
-            font-weight: 600;
-        }
-
-        h3 {
-            margin-bottom: 2rem;
-        }
-        
-        h5:not(:first-of-type) {
-            margin-top: 1rem;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
         .events-list {
             li {
                 font-size: 0.95em;
@@ -149,6 +126,16 @@
                 margin-left: -15px;
                 margin-right: -15px;
                 margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .discuss {
+        .meta {
+            font-size: 0.75em;
+
+            .user {
+                font-weight: 600;
             }
         }
     }

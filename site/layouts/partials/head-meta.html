@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+
+<!-- Bootstrap viewport  -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- OpenGraph and Twitter tags -->
+<meta property="og:title" content="{{ .Site.Params.title }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<!-- <meta property="og:image" content="/meta_FB.jpg">  -->
+<meta name="twitter:title" content="C{{ .Site.Params.title }}">
+<meta name="twitter:description" content="{{ .Site.Params.description }}">
+<!-- <meta name="twitter:image" content="/meta_TW.jpg"> -->
+
+<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+<link rel="canonical" href="{{ .Permalink }}">

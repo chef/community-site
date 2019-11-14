@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Cards",
+						name: "cards",
+						widget: object,
+						fields: [
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Products",
+						name: "products",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{	label: "Infra",
+								name: "infra",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Inspec",
+								name: "inspec",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]}]}
+      - file: "site/content/first-time.md"
+        label: "First time contributing"
+        name: "first-time"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Cards",
+						name: "cards",
+						widget: object,
+						fields: [
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Swag Program",
+						name: "swag_program",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Body", name: "body", widget: "markdown"}]}
