@@ -1,6 +1,7 @@
 ---
 title: "First Time"
 date: 2019-11-12T22:53:32-08:00
+draft: true
 type: "first-time"
 cards:
     one:
