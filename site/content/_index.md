@@ -53,13 +53,20 @@ products:
             
             Automate your system configuration, on the platforms you need, whether in the cloud, in the datacenter, or in the field. Don’t solve the same problems over and over again! Automate them and give your team the ability to build new innovations.
     inspec: 
-            header: Security & Compliance
-            url: https://www.inspec.io
-            copy: >-
-                Infrastructure automation for hardened, consistent configuration at any scale. With Chef Infra, your infrastructure is defined as code, ensuring that configuration policies are flexible, versionable, testable, and human readable. 
-
-                
-                Automate your system configuration, on the platforms you need, whether in the cloud, in the datacenter, or in the field. Don’t solve the same problems over and over again! Automate them and give your team the ability to build new innovations.
+        header: Security & Compliance
+        url: https://www.inspec.io
+        copy: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar consectetur consequat. Ut imperdiet accumsan orci ac feugiat. Donec ac mollis velit. Nam pulvinar ipsum ut magna auctor, vitae vulputate lacus ullamcorper. Suspendisse dapibus luctus elit. Aenean gravida egestas condimentum. Morbi at semper mauris, a ultrices ligula.
+    application: 
+        header: Application
+        url: https://www.inspec.io
+        copy: >-
+            Pellentesque lobortis orci sed sem lacinia, commodo scelerisque arcu placerat. Aliquam pulvinar consectetur consequat. Ut imperdiet accumsan orci ac feugiat. Donec ac mollis velit. Nam pulvinar ipsum ut magna auctor, vitae vulputate lacus ullamcorper. Suspendisse dapibus luctus elit. Aenean gravida egestas condimentum. Morbi at semper mauris, a ultrices ligula.
+    observability: 
+        header: Observability
+        url: https://www.inspec.io
+        copy: >-
+            Nam quam mauris, sodales a interdum at, viverra et dui. Aliquam pulvinar consectetur consequat. Ut imperdiet accumsan orci ac feugiat. Donec ac mollis velit. Nam pulvinar ipsum ut magna auctor, vitae vulputate lacus ullamcorper. Suspendisse dapibus luctus elit. Aenean gravida egestas condimentum. Morbi at semper mauris, a ultrices ligula.
 
 
 ---

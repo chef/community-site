@@ -1,29 +1,47 @@
-<div class="row product-grid-header">
-    <div class="col-lg-12">
-    </div>
-</div>
-<div class="row product-grid-main">
-   <div class="col-lg-4 offset-lg-1 col-sm-12 flex-center">
-       <img src="img/prodviz.png" alt="Product grid visualization" id="prodgrid-img">
-   </div>
-   <div class="col-lg-5 col-sm-12 product-grid-copy">
-       <h2>{{ .Params.products.header }} <span class="highlight">{{ .Params.products.header2 }}</span>:</h2>
-       <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">{{ .Params.products.infra.header }}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">{{ .Params.products.inspec.header }}</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Application</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Observability</a>
-            </li>
-          </ul>
-       {{ .Params.products.infra.copy | markdownify }}
-
-       <a href="{{.Params.products.infra.url}}"><div class="btn btn-primary">Learn More</div></a>
-   </div>
+<div class="container-fluid">
+	<div class="row product-grid-main">
+	   <div class="col-lg-4 offset-lg-1 col-sm-12 flex-center">
+		   <img src="img/prodviz_v2.png" alt="Product grid visualization" id="prodgrid-img">
+	   </div>
+	   <div class="col-lg-6 col-sm-12 product-grid-copy">
+			<div class="product-grid-copy-wrapper">
+				<h2>{{ .Params.products.header }} <span class="highlight">{{ .Params.products.header2 }}</span></h2>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					 <li class="nav-item">
+					   <a class="nav-link active" href="#infra" data-toggle="tab">{{ .Params.products.infra.header }}</a>
+					 </li>
+					 <li class="nav-item">
+					   <a class="nav-link" href="#inspec" data-toggle="tab">{{ .Params.products.inspec.header }}</a>
+					 </li>
+					 <li class="nav-item">
+					   <a class="nav-link" href="#application" data-toggle="tab">{{ .Params.products.application.header }}</a>
+					 </li>
+					 <li class="nav-item">
+						 <a class="nav-link" href="#observability" data-toggle="tab">{{ .Params.products.observability.header }}</a>
+					 </li>
+				 </ul>
+				<div class="tab-content">
+					 <div class="tab-pane fade show active" id="infra">
+						{{ partial "markdownify" .Params.products.infra.copy }} 
+						<a class="btn btn-primary" href="{{.Params.products.infra.url}}">Learn More</a>
+					 </div>
+					 <div class="tab-pane fade" id="inspec">
+						{{ partial "markdownify" .Params.products.inspec.copy }} 
+						<a class="btn btn-primary" href="{{.Params.products.inspec.url}}">Learn More</a>
+					 </div>
+					 <div class="tab-pane fade" id="application">
+						{{ partial "markdownify" .Params.products.application.copy }} 
+						<a class="btn btn-primary" href="{{.Params.products.application.url}}">Learn More</a>
+					 </div>
+					 <div class="tab-pane fade" id="observability">
+						{{ partial "markdownify" .Params.products.observability.copy }} 
+						<a class="btn btn-primary" href="{{.Params.products.observability.url}}">Learn More</a>
+					 </div>
+				 </div>
+				
+		 
+				
+		   </div>
+	   </div>
+	</div>
 </div>

@@ -1,5 +1,5 @@
 $chef-primary: #fe8e04;
-$chef-secondary: #ef3949;
+$chef-secondary: #EA2889;
 $chef-tertiary: #6B4A83;
 $dark-gray: #252525;
 $mid-gray: #666666;
@@ -8,26 +8,4 @@ $white: #fcfcfc;
 
 $font-primary: 'Avenir Next', 'Avenir', Helvetica Neue, Helvetica, sans-serif;
 
-@mixin breakpoint($point) {
-  @if $point == xsmall {
-  @media (max-width: 575px) { @content; }
-  }
-  @if $point == small {
-  @media (max-width: 768px) { @content; }
-  }
-  @else if $point == medium {
-  @media (max-width: 992px) { @content; }
-  }
-  @else if $point == large {
-  @media (max-width: 1199px)  { @content; }
-  }
-  @else if $point == xlarge {
-  @media (min-width: 1200px)  { @content; }
-  }
-}
-
-.container {
-    @media (min-width: 1400px) { 
-        max-width: 1320px;
-    }
-}
+$global-font-size: 20px;

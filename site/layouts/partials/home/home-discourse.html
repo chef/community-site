@@ -1,26 +1,28 @@
-<div class="row">
-    <div class="col-12">
-        <h2>Latest <span class="highlight">Discussions</span></h2>
-    </div>
-    <div class="col-sm-12 card-container">
-        <div class="card">
-            {{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
-            {{ $discussions := $discourse.topic_list.topics}}
-            {{ $users := $discourse.users }}
-            {{ range first 5 $discussions }}
-                {{ $poster_id := (index (.posters) 0).user_id }}
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="https://discourse.chef.io/t/{{ .slug }}" target="_blank">{{ .title }}</a>
-                            <p class="meta">Created {{ dateFormat "Jan 2, 2006" .created_at }} by 
-                            {{ range where $users "id" $poster_id }}
-                                <span class="user">{{ .username }}</span></p>
-                            {{ end }}
-                        </div>
-                    </div>
-                </div>
-            {{ end }}
-        </div>
-    </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<h2>Latest <span class="highlight">Discussions</span></h2>
+		</div>
+		<div class="col-sm-12 card-container">
+			<div class="card">
+				{{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
+				{{ $discussions := $discourse.topic_list.topics}}
+				{{ $users := $discourse.users }}
+				{{ range first 5 $discussions }}
+					{{ $poster_id := (index (.posters) 0).user_id }}
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<a href="https://discourse.chef.io/t/{{ .slug }}" target="_blank">{{ .title }}</a>
+								<p class="meta">Created {{ dateFormat "Jan 2, 2006" .created_at }} by 
+								{{ range where $users "id" $poster_id }}
+									<span class="user">{{ .username }}</span></p>
+								{{ end }}
+							</div>
+						</div>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+	</div>
 </div>

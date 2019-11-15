@@ -1,10 +1,38 @@
+@import "media-queries";
 @import "settings";
 
 // General Layout Styles
 // ========================
 
+.container{
+    @media (min-width: 1400px) { 
+        max-width: 1320px;
+    }
+}
+
+.container-fluid {
+	max-width: 1418px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	@include breakpoint(small){
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	
+	@include breakpoint(medium){
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+	
+	&.no-max {
+		max-width: none;
+		max-width: none;
+		padding: 0 15px;
+	}
+}
+
 nav {
-    margin-bottom: 1rem;
     background-color: $chef-primary;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -23,7 +51,16 @@ nav {
       background-color: $chef-primary;
       color: $white;
     }
-
+	
+	.logo-link {
+		display: block;
+		padding: 5px 0;
+	}
+	
+	.search {
+		height: 100%;
+	}
+	
     #search-box {
       padding-left: 1rem;
       padding-top: 2px;
@@ -34,6 +71,7 @@ nav {
       border-radius: 6px;
       background-color: lighten($chef-primary, 20%);
       transition: linear 1s;
+	  line-height: 1;
     }
 
     #search-box:focus {
@@ -60,7 +98,11 @@ nav {
 }
 
 body {
-    background-color: $light-gray;
+	font-family: $font-primary;
+	font-size: 18px;
+	font-weight: 400;
+    line-height: 1.625;
+	color: $dark-gray;
 }
 
 footer {
@@ -83,8 +125,7 @@ a {
 
     &:hover {
         text-decoration: underline;
-        color: $chef-primary;
-        background-color: lighten($chef-primary, 45%);
+        color: darken($chef-primary, 5%);
     }
 
     &::selection {
@@ -94,16 +135,27 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $font-primary;
-    font-weight: 600;
-
+	font-weight: 700;
+	
     .highlight {
         color: $chef-secondary;
+		font-weight: 700;
     }
 }
 
 h1 {
     letter-spacing: -1px;
+	margin-bottom: 1rem;
 }
+
+ul, ol {
+	&:not(.nav){
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
 
 // Flexbox styles
 // ========================
@@ -121,19 +173,62 @@ h1 {
 
   // Component Styles
   // =======================
+  .hero-actions {
+	position: relative;
+	
+	&:before {
+		content: "";
+		display: block;
+		height: calc(100% - 250px);
+		background-image: url(/img/lines.png);
+		background-size: cover;
+		background-position: center;
+		background-color: $light-gray;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	  
+	.hero, .actions {
+		background-image: none;
+		background-color: transparent;
+	}
+	
+	.actions {
+		position: relative;
+		
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			height: 250px;
+			width: 100%;
+			background-color: $dark-gray;
+			bottom: 0;
+		}
+	}
+	
+  }
+  
   .hero {
       padding-top: 15vh;
       padding-bottom: 15vh;
       background-size: cover;
-      background-position: left center;
+      background-position: center;
+	  background-color: $light-gray;
+	  background-image: url(/img/lines.png);
   }
 
   .card {
     border: none;
     background-color: $white;
-    padding: 3rem 1rem;
+    padding: 2rem;
     height: 100%;
     z-index: 2;
+	display: block;
+    border-radius: 0;
 
     p {
         font-size: 0.95em;;
@@ -147,7 +242,7 @@ h1 {
     }
     
     h5:not(:first-of-type) {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     ul {
@@ -163,6 +258,7 @@ h1 {
     border: none;
     font-weight: 500;
     padding: .4rem 1rem;
+	border-radius: 0;
   
     &-primary {
       background: $chef-primary;
@@ -172,27 +268,43 @@ h1 {
       &:hover,
       &:focus,
       &:active {
-        background-color: white;
+        background-color: transparent;
         border: 2px solid $chef-primary;
         color: $chef-primary;
       }
+	  
+	  &-white {
+		background: white;
+		border: 2px solid white;
+		color: $dark-gray;
+		font-weight: 600;
+	
+		&:hover,
+		&:focus,
+		&:active {
+		  background-color: transparent;
+		  border: 2px solid white;
+		  color: white;
+		}
+	  }
     }
   
     &-secondary {
       background-color: transparent;
       border: 2px solid $chef-primary;
-      color: $chef-primary !important;
+      color: $chef-primary;
   
       &:hover,
       &:focus,
       &:active {
-        background-color: white;
+        background-color: $chef-primary;
         border: 2px solid $chef-primary;
+		color: white;
       }
     }
  
     //Full width buttons on xs devices
-    @include breakpoint (small) {
+    @include breakpoint (xsmall down) {
         margin: 10px auto;
         padding-top: 12px;
         padding-bottom: 12px;
@@ -202,8 +314,35 @@ h1 {
 
 // Image Styles
 // =============
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .img-round {
   border-radius: 50%;
+}
+
+// Tab Styles
+// =============
+.nav-tabs {
+	border-bottom: none;
+	
+	.nav-item {
+		margin-bottom: 0;
+		
+		.nav-link {
+			color: #808080;
+			border: none;
+			font-weight: 600;
+			
+			&.active, &:hover {
+				color: $chef-primary;
+				background-color: transparent;
+				border: none;
+			}
+		}
+	}
 }
 
 @import "home";

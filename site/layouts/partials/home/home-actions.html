@@ -1,111 +1,105 @@
-<div class="row">
-    <div class="col-md-4 col-sm-12 card-container">
-        <div class="card">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3>{{ .Params.cards.one.title }}</h3>
-                    </div>
-                    <div class="col-sm-4">
-                        {{ .Params.cards.one.icon }}
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        {{ .Params.cards.one.body | markdownify }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12 card-container">
-        <div class="card">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3>{{ .Params.cards.two.title }}</h3>
-                    </div>
-                    <div class="col-sm-4">
-                        {{ .Params.cards.two.icon }}
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid events-list">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul>
-                            {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
-                            {{ range first 5 $events }}
-                                <li>
-                                    <a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
-                                    <p>{{ dateFormat "Jan 2, 2006" .start_date }}, {{ .location }}</p>
-                                </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-12 card-container">
-        <div class="card">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h3>{{ .Params.cards.three.title }}</h3>
-                    </div>
-                    <div class="col-sm-4">
-                        {{ .Params.cards.three.icon }}
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        {{ .Params.cards.three.body | markdownify }}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-sm-12 card-container">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-8">
+						<h3>{{ .Params.cards.one.title }}</h3>
+					</div>
+					<div class="col-sm-4">
+						{{ .Params.cards.one.icon }}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						{{ partial "markdownify" .Params.cards.one.body }}
+					</div>
+				</div>
 
-                        <h5>Awesome Contributors</h5>
-                        <img src="http://placehold.it/50x50" class="img-round">
-                        <img src="http://placehold.it/50x50" class="img-round">
-                        <img src="http://placehold.it/50x50" class="img-round">
-                        <img src="http://placehold.it/50x50" class="img-round">
-                        <img src="http://placehold.it/50x50" class="img-round">
-                        <img src="http://placehold.it/50x50" class="img-round">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 card-container">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-8">
+						<h3>{{ .Params.cards.two.title }}</h3>
+					</div>
+					<div class="col-sm-4">
+						{{ .Params.cards.two.icon }}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 events-list">
+						<ul>
+							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
+							{{ range first 5 $events }}
+								<li>
+									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
+									<p>{{ dateFormat "Jan 2, 2006" .start_date }}, {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
+								</li>
+							{{ end }}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 card-container">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-8">
+						<h3>{{ .Params.cards.three.title }}</h3>
+					</div>
+					<div class="col-sm-4">
+						{{ .Params.cards.three.icon }}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						{{ partial "markdownify" .Params.cards.three.body }}
 
-                        <div class="container-fluid social">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="{{ .Site.Params.facebook }}" target="_blank">
-                                        <i class="fab fa-facebook fa-lg"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{ .Site.Params.twitter }}" target="_blank">
-                                        <i class="fab fa-twitter fa-lg"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{ .Site.Params.linkedin }}" target="_blank">
-                                        <i class="fab fa-linkedin fa-lg"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{ .Site.Params.github }}" target="_blank">
-                                        <i class="fab fa-github fa-lg"></i>
-                                    </a>
-                                </div>
-                                <div class="col">
-                                    <a href="{{ .Site.Params.youtube }}" target="_blank">
-                                        <i class="fab fa-youtube fa-lg"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						<h5>Awesome Contributors</h5>
+						<div class="contributors-list">
+							<img src="http://placehold.it/50x50" class="img-round">
+							<img src="http://placehold.it/50x50" class="img-round">
+							<img src="http://placehold.it/50x50" class="img-round">
+							<img src="http://placehold.it/50x50" class="img-round">
+							<img src="http://placehold.it/50x50" class="img-round">
+							<img src="http://placehold.it/50x50" class="img-round">
+						</div>
+
+						<div class="social">
+							<div class="row">
+								<div class="col">
+									<a href="{{ .Site.Params.facebook }}" target="_blank">
+										<i class="fab fa-facebook fa-lg"></i>
+									</a>
+								</div>
+								<div class="col">
+									<a href="{{ .Site.Params.twitter }}" target="_blank">
+										<i class="fab fa-twitter fa-lg"></i>
+									</a>
+								</div>
+								<div class="col">
+									<a href="{{ .Site.Params.linkedin }}" target="_blank">
+										<i class="fab fa-linkedin fa-lg"></i>
+									</a>
+								</div>
+								<div class="col">
+									<a href="{{ .Site.Params.github }}" target="_blank">
+										<i class="fab fa-github fa-lg"></i>
+									</a>
+								</div>
+								<div class="col">
+									<a href="{{ .Site.Params.youtube }}" target="_blank">
+										<i class="fab fa-youtube fa-lg"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+<div class="bg-wave"><div><img src="img/bg-wave.png"></div></div>

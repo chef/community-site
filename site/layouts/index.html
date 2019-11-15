@@ -1,26 +1,28 @@
 {{ define "body" }}
 <main id="home">
-    <section class="hero container" style="background-image:url('/img/lines.png')">
-        <div class="row">
-            <div class="col-md-7">
-                {{ .Content }}
-            </div>
-        </div>
+    
+    <section class="hero-actions">
+        
+        <section class="hero">
+            {{ partial "hero.html" . }}
+        </section>
+        
+        <section class="actions">
+            {{ partial "home/home-actions.html" . }}
+        </section>
+        
     </section>
-
-    <section class="actions container">
-        {{ partial "home/home-actions.html" . }}
-    </section>
-    <section class="product-grid container-fluid">
+    
+    <section class="product-grid">
         {{ partial "home/home-products.html" . }}
     </section>
-    <section class="container-fluid community">
+    <section class="community">
         {{ partial "home/home-community.html" . }}
     </section>
-    <section class="container resources">
+    <section class="resources">
         {{ partial "home/home-resources.html" . }}
     </section>
-    <section class="container discuss">
+    <section class="discuss">
         {{ partial "home/home-discourse.html" . }}
     </section>
 </main>

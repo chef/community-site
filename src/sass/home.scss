@@ -1,10 +1,55 @@
 #home {
+	
+	.hero-actions {
+		&:before {
+			height: calc(100% - 150px);
+		}
+	}
+	.actions {
+		position: relative;
+		
+		&:after {
+			display: none;
+		}
+		
+		.bg-wave {
+			position: absolute;
+			bottom: 0;
+			height: 250px;
+			width: 100%;
+			
+			div {
+				&:after {
+					background-color: $dark-gray;
+					content: "";
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+				}
+				
+				img {
+					width: 100%;
+					height: 100px;
+				}
+			}
+		}
+	}
     .card {
         .events-list {
             li {
                 font-size: 0.95em;
+				
+				> a {
+					color: $dark-gray;
+					font-weight: 700;
+				}
             }
         }
+		
+		.contributors-list {
+			text-align: center;
+		}
 
         .social {
             margin-top: 2rem;
@@ -43,39 +88,41 @@
     .product-grid {
         background-color: $dark-gray;
         color: $light-gray;
-        padding-bottom: -20vh;
-
-        .product-grid-header{
-            position: relative;
-            top: -250px;
-            padding-top: 250px;
-            z-index: -1;
-            background-color: $dark-gray;
-        }
-
+		display: flex;
+		
+		h2 {
+			font-weight: 400;
+		}
+		
         .product-grid-main {
             background-color: $dark-gray;
-            max-height: 250px;
+			height: 100%;
     
             #prodgrid-img {
-                max-height: 700px;
-                position: relative;
-                overflow:visible;
-                top: -450px;
+                height: 100%;
+				overflow: visible;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				transform: translateY(-50%);
+				right: 2vw;
+				max-width: none;
             }
 
             .product-grid-copy {
-                position: relative;
-                top: -150px;
+				padding-top: 25vh;
+				padding-bottom: 25vh;
                 
                 ul {
                     margin-bottom: 1rem;
                     margin-left: -15px;
                     
-                    .active {
-                        font-weight: 600;
-                        text-decoration: underline 1px dashed $chef-secondary;
-                    }
+					.nav-link {
+						&.active, &:hover {
+							color: white;
+						}
+					}
+                    
                 }
 
                 .btn {
@@ -89,8 +136,10 @@
     }
 
     .community {
+
         h2 {
             margin-bottom: 2rem;
+			font-weight: 400;
         }
 
         .img {
@@ -114,18 +163,30 @@
 
     .resources {
         padding: 7rem 0;
+		background-image: url('/img/lines-corner.png');
+		background-repeat: no-repeat;
+		background-position-y: -11rem;
 
         h2 {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+			font-weight: 400;
         }
 
         .card {
             padding-top: 0;
-
+			border: 1px solid $mid-gray;
+			
+			h4 {
+				font-weight: 400;
+				margin-bottom: 1rem;
+			}
+			
             img {
-                margin-left: -15px;
-                margin-right: -15px;
-                margin-bottom: 1.5rem;
+                margin-left: -2rem;
+				margin-right: -2rem;
+				margin-bottom: 1.5rem;
+				max-width: none;
+				width: calc(100% + 4rem);
             }
         }
     }
