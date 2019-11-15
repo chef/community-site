@@ -1,47 +1,51 @@
-<nav>
-    <div class="container">
+<nav id="main-nav">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2">
-                <a class="logo-link" href="/"><img src="/img/logos/chef-logo-white.svg" alt="Chef Logo" width="105"></a>
-            </div>
-
-            <div class="col-sm-10 nav-items">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <form class="search form-inline">
-                            <input id="search-box" type="search" placeholder="Search Chef" aria-label="Search">
-                            <button class="btn" id="search-icon" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </li>
-                    <li>
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Products
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Chef Infra</a>
-                            <a class="dropdown-item" href="#">Chef InSpec</a>
-                            <a class="dropdown-item" href="#">Chef Habitat</a>
-                            <a class="dropdown-item" href="#">Chef Automate</a>
-                            <a class="dropdown-item" href="#">Chef Workstation</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Chef Effortless Infrastructure Suite</a>
-                            <a class="dropdown-item" href="#">Chef Enterprise Automation Stack</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Docs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Download</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contribute</a>
-                    </li>
-                </ul>
-            </div>
+			<div class="col-sm-12">
+				<div class="nav-contents">
+					<a class="logo-link" href="/"><img src="/img/logos/chef-logo-white.svg" alt="Chef Logo" width="105"></a>
+					
+					<div id="mobile-nav-toggle" class="d-md-none dropdown-toggle" data-toggle="dropdown" id="mobileMenu"><i class="fa fa-bars"></i></div>
+					
+					<div class="nav-items dropdown-menu" aria-labelledby="mobileMenu">
+						<ul class="nav">
+							<li class="nav-item v-center">
+								<form class="search form-inline">
+									<input id="search-box" type="search" placeholder="Search Chef" aria-label="Search">
+									<button class="btn" id="search-icon" type="submit"><i class="fas fa-search"></i></button>
+								</form>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Products
+								</a>
+								<div class="dropdown-menu" aria-labelledby="productsDropdown">
+									<a class="dropdown-item" href="#">Chef Infra</a>
+									<a class="dropdown-item" href="#">Chef InSpec</a>
+									<a class="dropdown-item" href="#">Chef Habitat</a>
+									<a class="dropdown-item" href="#">Chef Automate</a>
+									<a class="dropdown-item" href="#">Chef Workstation</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Chef Effortless Infrastructure Suite</a>
+									<a class="dropdown-item" href="#">Chef Enterprise Automation Stack</a>
+								</div>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Docs</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Download</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Contribute</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
       </div>
     </div>
 </nav>

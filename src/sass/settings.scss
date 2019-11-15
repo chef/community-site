@@ -9,3 +9,27 @@ $white: #fcfcfc;
 $font-primary: 'Avenir Next', 'Avenir', Helvetica Neue, Helvetica, sans-serif;
 
 $global-font-size: 20px;
+
+@mixin fas {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 900;
+}
+
+@mixin fal {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin far {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin fab {
+	font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+	font-weight: normal;
+}

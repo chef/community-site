@@ -1,21 +1,55 @@
 // Breakpoints
 // These are our named breakpoints. You can use them in our breakpoint function like this: @include breakpoint(medium) { // Medium and larger styles }
 $breakpoints: (
-  xsmall: 576px,
-  small: 768px,
-  medium: 992px,
-  large: 1200px
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 ) !default;
 
 // Functions
 // - - - - - - - - - - - - - - -
 
+/// Map Next
+/// Find the next key in a map.
+///
+/// @param {map} $map - Map to traverse.
+/// @param {mixed} $key - Key to use as a starting point.
+///
+/// @return The value for the key after `$key` if `$key` was found. If `$key` was not found, or `$key` was the last value in the map, returns null.
+@function map-next($map, $key) {
+  // Store the values of the map as a list, so we can access them with nth
+  $values: map-values($map);
+
+  // Ghetto for loop
+  $i: 1;
+  $found: false;
+  @each $val in map-keys($map) {
+    @if $found == false {
+      @if ($key == $val) {
+        $found: true;
+      }
+      $i: $i + 1;
+    }
+  }
+
+  // If the key doesn't exist, or it's the last key in the map, return null
+  @if $i > length($map) {
+    @return null;
+  }
+  // Otherwise return the value
+  @else {
+    @return nth($values, $i);
+  }
+}
+  
 /// Removes the unit (e.g. px, em, rem) from a value, returning the number only.
 ///
 /// @param {Number} $num - Number to strip unit from.
 ///
 /// @returns {Number} The same number, sans unit.
-@function strip-unit($num) {
+/*@function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
 
@@ -87,7 +121,7 @@ $breakpoints: (
   }
 
   @return $value;
-}
+}*/
 
 // Mixins
 // - - - - - - - - - - - - - - -
@@ -128,7 +162,7 @@ $breakpoints: (
             $bpMax: null;
           }
           @else {
-            $bpMax: $next-bp - (1/16);
+            $bpMax: $next-bp - 1;
           }
         }
         $bp: map-get($breakpoints, $bp);
@@ -140,11 +174,11 @@ $breakpoints: (
     }
 
     // Pixel and unitless values are converted to rems
-    @if unit($bp) == 'px' or unit($bp) == '' {
-      $bp: rem-calc($bp);
-    }
+    //@if unit($bp) == 'px' or unit($bp) == '' {
+      //$bp: rem-calc($bp);
+    //}
     // Finally, the rem value is turned into an em value
-    $bp: strip-unit($bp) * 1em;
+    //$bp: strip-unit($bp) * 1em;
 
     // Skip media query creation if the input is "0 up" or "0 down"
     @if $bp > 0 or $dir == 'only' {
@@ -161,7 +195,7 @@ $breakpoints: (
         }
       }
       @else if $dir == 'down' {
-        $max: $bp - (1/16);
+        $max: $bp - 1;
         $str: $str + ' and (max-width: #{$max})';
       }
       @else {
@@ -177,26 +211,6 @@ $breakpoints: (
   @else {
     @media #{$str} {
       @content;
-    }
-  }
-}
-
-/// Prefixes selector $class with breakpoint keywords, allowing you to create a batch of breakpoint classes with one chunk of code. If you want to skip a breakpoint (like small, because mobile first and all that), add values to the $omit parameter.
-///
-/// @param {string} $class - Class to prefix with the breakpoint name and a hyphen.
-/// @param {list} $omit - Named breakpoints to skip. No class will be added with breakpoints in this list.
-@mixin each-breakpoint($class, $omit: ()) {
-  // Iterate through breakpoint classes
-  @each $size in $breakpoint-classes {
-    // Only do something if the breakpoint is not in $omit
-    @if index($omit, $size) == null {
-      $val: map-get($breakpoints, $size);
-      // Prefix $class with $size and a hyphen
-      .#{$size + '-' + $class} {
-        @include breakpoint($size) {
-          @content;
-        }
-      }
     }
   }
 }

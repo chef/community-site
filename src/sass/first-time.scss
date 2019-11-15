@@ -4,8 +4,14 @@
         color: $chef-primary;
     }
 	
+	.actions{
+		&:after {
+			background-color: #414042;
+		}
+	}
+	
     .swag-program {
-        background-color: $dark-gray;
+        background-color: #414042;
         color: $light-gray;
         padding-bottom: 5rem;
 		padding-top: 5rem;
@@ -16,7 +22,7 @@
 
         img {
             width: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
     }
 }
