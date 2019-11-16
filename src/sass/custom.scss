@@ -35,6 +35,169 @@
 // Main Nav Styles
 // ========================
 #main-nav {
+	background-color: $chef-primary;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	height: 55px;
+	
+	.navbar {
+		padding: 0;
+	}
+	
+	.navbar-collapse {
+		@include breakpoint(md down){
+			background: white;
+			margin: 0px -15px -3px;
+			padding: 15px;
+			overflow-y: scroll;
+			position: fixed;
+			top: 55px;
+			width: 100%;
+			bottom: 0;
+		}
+		@include breakpoint(md){
+			justify-content: flex-end;
+		}
+	}
+	
+	.navbar-nav {
+		margin: 0;
+		
+		li {
+			margin-bottom: 0;
+			
+			a {
+				color: $light-gray;
+				font-size: 16px;
+				color: $dark-gray;
+				transition: color 0.15s ease-in-out;
+				
+				&:hover {
+					@include breakpoint(md down){
+						color: $chef-primary;
+					}
+					@include breakpoint(md){
+						color: white;
+					}
+				}
+			}
+			
+			.dropdown-menu {
+				border-radius: 0;
+				border: none;
+				margin: 0;
+				margin-top: 6px;
+				
+				@include breakpoint(md down){
+					margin: 0;
+					padding: 0 15px;
+				}
+				
+				a {
+					@include breakpoint(md down){
+						padding: 0.25rem;
+					}
+					
+					&:hover {
+						background-color: transparent;
+						
+						@include breakpoint(md){
+							background-color: $chef-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.search {
+		height: 26px;
+		position: relative;
+		display: block;
+		
+		@include breakpoint(md down){
+			margin-bottom: 1rem;
+			height: auto;
+		}
+		
+		@include breakpoint(md){
+			margin-right: 1rem;
+		}
+		
+		#search-box {
+			padding: 3px 5px 2px 34px;
+			border: none;
+			background-color: lighten($chef-primary, 20%);
+			transition: linear 1s;
+			line-height: 1;
+			font-size: 14px;
+			font-weight: normal;
+			color: $dark-gray;
+			height: 26px;
+			display: block;
+			width: 130px;
+			transition: all 0.15s ease-in-out;
+			
+			&:focus, &:hover {
+				background-color: $white;
+				outline: none;
+				
+				& + #search-icon {
+					color: $chef-primary;
+				}
+			}
+			
+			::placeholder {
+				font-size: 0.8em;
+			}
+			
+			@include breakpoint(md down){
+				background-color: white;
+				border: $mid-gray;
+				border: 1px solid #666;
+				width: 100%;
+				height: 35px;
+			}
+		}
+	
+		#search-icon {
+			position: absolute;
+			left: 0;
+			padding: 0 10px;
+			top: 3px;
+			font-size: 14px;
+			
+			&:hover {
+				color: $white;
+			}
+			
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+			
+			@include breakpoint(md down){
+				padding: 4px 10px;
+			}
+		}
+	}
+	
+	.navbar-toggler {
+		border: none;
+		padding: 0;
+		color: $dark-gray;
+		
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+
+#main-navvv {
     background-color: $chef-primary;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
