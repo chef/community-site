@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src", "js", "main.js"),
-    cms: path.join(__dirname, "src", "netlify", "cms.js"),
+    cms: path.join(__dirname, "src", "netlify-cms", "cms.js"),
   },
 
   output: {
@@ -50,7 +50,7 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       filename: 'netlify/index.html',
-      template: 'src/netlify/cms.html',
+      template: 'src/netlify-cms/cms.html',
       inject: false,
     }),
   ]

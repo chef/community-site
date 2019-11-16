@@ -1,8 +1,8 @@
 import React from "react";
 import CMS from "netlify-cms-app";
 
-import Homepage from "./cms-preview-templates/homepage";
-import FirstTime from "./cms-preview-templates/first-time";
+import Homepage from "./templates/homepage";
+import FirstTime from "./templates/first-time";
 
 CMS.registerPreviewTemplate("home", Homepage);
 CMS.registerPreviewTemplate("first-time", FirstTime);
