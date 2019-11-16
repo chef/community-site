@@ -8,13 +8,16 @@
 		&:after {
 			background-color: #414042;
 		}
+		
+		a {
+			color: $chef-secondary;
+		}
 	}
 	
     .swag-program {
         background-color: #414042;
         color: $light-gray;
-        padding-bottom: 5rem;
-		padding-top: 5rem;
+        @extend %section-padding;
 
         h2 {
             color: $chef-primary;

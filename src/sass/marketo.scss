@@ -170,7 +170,7 @@
           + label {
             &:before {
               content: "\f00c";
-              @include fas;
+              @extend %fas;
               font-weight: normal;
               font-size: 10px;
               text-align: center;

@@ -88,8 +88,12 @@
             }
 
             .product-grid-copy {
-				padding-top: 25vh;
-				padding-bottom: 25vh;
+				@extend %section-padding;
+				
+				@include breakpoint(md){
+					padding-top: 25vh;
+					padding-bottom: 25vh;
+				}
                 
                 ul {
                     margin-bottom: 1rem;
@@ -127,7 +131,12 @@
         .community-copy {
             background-color: $chef-tertiary;
             color: $light-gray;
-            padding: 7rem 4rem;
+			@extend %section-padding;
+			
+			@include breakpoint(md){
+				padding-left: 4rem;
+				padding-right: 4rem;
+			}
 
             .highlight {
                 color: $chef-primary;
@@ -140,7 +149,7 @@
     }
 
     .resources {
-        padding: 7rem 0;
+        @extend %section-padding;
 		background-image: url('/img/lines-corner.png');
 		background-repeat: no-repeat;
 		background-position-y: -11rem;
