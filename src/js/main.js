@@ -1,7 +1,7 @@
-// import 'js.js';
-
 (function($) {
 
+timeago().render(document.querySelectorAll('.relativetime'));
+timeago.cancel();
 // set fixed height on tabs
 function tabs_fixed_height() {
 	$('.tab-content').each(function(){

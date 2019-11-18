@@ -2,27 +2,82 @@
 	<div class="row">
 		<div class="col-12">
 			<h2>Latest <span class="highlight">Discussions</span></h2>
-		</div>
-		<div class="col-sm-12 card-container">
-			<div class="card">
-				{{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
-				{{ $discussions := $discourse.topic_list.topics}}
-				{{ $users := $discourse.users }}
-				{{ range first 5 $discussions }}
-					{{ $poster_id := (index (.posters) 0).user_id }}
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<a href="https://discourse.chef.io/t/{{ .slug }}" target="_blank">{{ .title }}</a>
-								<p class="meta">Created {{ dateFormat "Jan 2, 2006" .created_at }} by 
-								{{ range where $users "id" $poster_id }}
-									<span class="user">{{ .username }}</span></p>
-								{{ end }}
-							</div>
-						</div>
-					</div>
+			
+			{{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
+			{{ $discourse_categories := getJSON "https://discourse.chef.io/categories.json" }}
+			
+			{{ $discussions := $discourse.topic_list.topics}}
+			{{ $users := $discourse.users }}
+			
+			{{/* create new scratch for categories defined by category id */}}
+			{{ $categories := newScratch }}
+			{{ range $cat := $discourse_categories.category_list.categories }}
+				{{ $categories.Set (string $cat.id) $cat }}
+			{{ end }}
+			
+			{{/* get first 5 topics without pinned topic */}}
+			{{ $firsttopic := index $discussions 0}}
+			{{ $discussions_new := slice }}
+			{{ if $firsttopic.pinned }}
+				{{ range $topic := after 1 (first 6 $discussions) }}
+					{{ $discussions_new = $discussions_new | append $topic }}
 				{{ end }}
-			</div>
+			{{ else }}
+				{{ range $topic := first 5 $discussions }}
+					{{ $discussions_new = $discussions_new | append $topic }}
+				{{ end }}
+			{{ end }}
+			
+			<table class="discourse-feed">
+				<thead>
+					<tr>
+						<th>Topic</th>
+						<th></th>
+						<th>Replies</th>
+						<th>Views</th>
+						<th>Activity</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{/* loop through new discussions list */}}
+					{{ range first 5 $discussions_new }}
+						{{ $cat := $categories.Get (string .category_id) }}
+						{{ $catstyle := print "style=\"background-color: #" $cat.color ";\"" }}
+						<tr>
+							<td>
+								<h5>
+									<a href="https://discourse.chef.io/t/{{ .slug }}/{{ .id }}" target="_blank">{{ .title }}</a>
+								</h5>
+								<a href="https://discourse.chef.io/c/{{ $cat.slug }}" target="_blank" class="category"><span {{ $catstyle | safeHTMLAttr}}></span>{{ $cat.name }}</a>
+							</td>
+							<td>
+								{{ range $user := first 5 .posters }}
+									{{ range where $users "id" .user_id }}
+										{{ $avatar := "" }}
+										{{ if in .avatar_template "user_avatar" }}
+											{{ $avatar = printf "%s%s" "https://sjc3.discourse-cdn.com/business6" .avatar_template }}
+										{{ else }}
+											{{ $avatar = .avatar_template }}
+										{{ end }}
+										{{ $avatar_url := replace $avatar "{size}" "25" }}
+										<img src="{{ $avatar_url }}" class="img-round" />
+									{{ end }}
+								{{ end }}
+							</td>
+							<td>{{ .reply_count }}</td>
+							<td>{{ .views }}</td>
+							<td>
+								<span
+								class="relativetime"
+								datetime="{{ dateFormat "2006-01-02T15:04:05" .last_posted_at }}"
+								title="{{ dateFormat "January 2, 2006" .last_posted_at }}">
+									{{ dateFormat "January 2, 2006" .last_posted_at }}
+								</span>
+							</td>
+						</tr>
+					{{ end }}
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>

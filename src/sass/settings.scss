@@ -43,3 +43,19 @@ $global-font-size: 20px;
 		padding-bottom: 3rem;
 	}
 }
+
+%section-padding-top {
+	padding-top: 7rem;
+	
+	@include media-breakpoint-down(sm){
+		padding-top: 3rem;
+	}
+}
+
+%section-padding-bottom {
+	padding-bottom: 7rem;
+	
+	@include media-breakpoint-down(sm){
+		padding-bottom: 3rem;
+	}
+}
