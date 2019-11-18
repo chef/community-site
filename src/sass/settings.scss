@@ -38,7 +38,7 @@ $global-font-size: 20px;
 	padding-top: 7rem;
 	padding-bottom: 7rem;
 	
-	@include breakpoint(md down){
+	@include media-breakpoint-down(sm){
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}

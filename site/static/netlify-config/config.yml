@@ -74,21 +74,18 @@ collections: # A list of collections the CMS should be able to edit
 								widget: object,
 								fields: [
 									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "string"},
 									{label: "Body", name: "body", widget: "markdown"}]},
 							{	label: "Card 2",
 								name: "two",
 								widget: object,
 								fields: [
 									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "string"},
 									{label: "Body", name: "body", widget: "markdown"}]},
 							{	label: "Card 3",
 								name: "three",
 								widget: object,
 								fields: [
 									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "string"},
 									{label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Swag Program",
 						name: "swag_program",

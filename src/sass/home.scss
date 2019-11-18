@@ -90,7 +90,7 @@
             .product-grid-copy {
 				@extend %section-padding;
 				
-				@include breakpoint(md){
+				@include media-breakpoint-up(md){
 					padding-top: 25vh;
 					padding-bottom: 25vh;
 				}
@@ -126,6 +126,14 @@
 
         .img {
             background-size: cover;
+			
+			&.img-left {
+				background-image: url('/img/chefconf-img.jpg');
+			}
+			
+			&.img-right {
+				background-image: url('/img/chefconf-img2.jpg');
+			}
         }
 
         .community-copy {
@@ -133,7 +141,7 @@
             color: $light-gray;
 			@extend %section-padding;
 			
-			@include breakpoint(md){
+			@include media-breakpoint-up(md){
 				padding-left: 4rem;
 				padding-right: 4rem;
 			}
