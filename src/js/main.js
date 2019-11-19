@@ -17,6 +17,8 @@ function tabs_fixed_height() {
 	});
 }
 
+tabs_fixed_height();
+
 $(window).on('load', function(){
 	tabs_fixed_height();
 });
