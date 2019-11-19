@@ -9,7 +9,7 @@ export default class Homepage extends React.Component {
 	const hero = entry.getIn(["data", "body"]);
 	const cards = entry.getIn(["data", "cards"]).toJS();
 	const products = entry.getIn(["data", "products"]).toJS();
-	console.log(products);
+
 	return <main id="home">
 
 		<section className="hero-actions">
@@ -94,6 +94,12 @@ export default class Homepage extends React.Component {
 								 <li className="nav-item">
 								   <a className="nav-link" href="#inspec" data-toggle="tab">{products.inspec.header}</a>
 								 </li>
+								 <li className="nav-item">
+								   <a className="nav-link" href="#application" data-toggle="tab">{products.application.header}</a>
+								 </li>
+								 <li className="nav-item">
+								   <a className="nav-link" href="#observability" data-toggle="tab">{products.observability.header}</a>
+								 </li>
 							 </ul>
 							<div className="tab-content">
 								 <div className="tab-pane fade show active" id="infra">
@@ -103,6 +109,14 @@ export default class Homepage extends React.Component {
 								 <div className="tab-pane fade" id="inspec">
 									<Markdown source={products.inspec.copy} escapeHtml={false} />
 									<a className="btn btn-primary" href="{products.inspec.url}">Learn More</a>
+								 </div>
+								 <div className="tab-pane fade" id="application">
+									<Markdown source={products.application.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{products.application.url}">Learn More</a>
+								 </div>
+								 <div className="tab-pane fade" id="observability">
+									<Markdown source={products.observability.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{products.observability.url}">Learn More</a>
 								 </div>
 							 </div>
 					   </div>

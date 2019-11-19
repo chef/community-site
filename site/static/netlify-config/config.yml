@@ -58,6 +58,20 @@ collections: # A list of collections the CMS should be able to edit
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
 									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Application",
+								name: "application",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Observability",
+								name: "observability",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
 									{label: "Copy", name: "copy", widget: "markdown"}]}]}
       - file: "site/content/first-time.md"
         label: "First time contributing"
