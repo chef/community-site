@@ -48,6 +48,10 @@
 		padding: 0;
 	}
 	
+	.navbar-brand {
+		flex-shrink: 0;
+	}
+	
 	.navbar-collapse {
 		@include media-breakpoint-down(sm){
 			background: white;
@@ -76,6 +80,12 @@
 				color: $dark-gray;
 				transition: color 0.15s ease-in-out;
 				
+				@include media-breakpoint-only(md){
+					font-size: 15px;
+					padding-right: 0.4rem;
+					padding-left: 0.4rem;
+				}
+					
 				&:hover {
 					@include media-breakpoint-down(sm){
 						color: $chef-primary;
@@ -125,6 +135,10 @@
 		}
 		
 		@include media-breakpoint-up(md){
+			margin-right: 0.4rem;
+		}
+		
+		@include media-breakpoint-up(lg){
 			margin-right: 1rem;
 		}
 		
@@ -196,155 +210,6 @@
 			box-shadow: none;
 		}
 	}
-}
-
-#main-navvv {
-    background-color: $chef-primary;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-	
-	.nav-contents {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		
-		// for mobile menu
-		@include media-breakpoint-down(sm){
-			position: relative;
-		}
-	}
-	
-	.logo-link {
-		display: block;
-		padding: 5px 0;
-	}
-	
-	.nav {
-		margin-right: -1rem;
-	}
-	
-	.dropdown-menu {
-		border-radius: 0;
-		border: none;
-		margin-top: 7px;
-	}
-	
-    .dropdown-item:hover {
-		background-color: $chef-primary;
-		color: $white;
-    }
-	
-	.nav-items {
-		//desktop menu
-		@include media-breakpoint-up(md){
-			display: block;
-			position: static !important;
-			transform: none !important;
-			background: none;
-			float: none;
-			min-width: 0;
-			padding: 0;
-			margin: 0;
-			font-size: inherit;
-		}
-		// mobile menu
-		@include media-breakpoint-down(sm){
-			width: auto;
-			left: -15px !important;
-			right: -15px;
-			transform: none !important;
-			top: 53px !important;
-			margin: 0;
-			padding: 0;
-			
-			.nav {
-				margin: 0;
-				display: block;
-			}
-		}
-		
-	}
-	
-	.nav-item {
-	
-		&.show {
-			> a {
-				color: white;
-			}
-		}
-	}
-	
-	.nav-link {
-		@include media-breakpoint-only(md){
-			padding: .5rem 0.7rem;
-		}
-	}
-	
-    a {
-        color: $light-gray;
-		font-size: 16px;
-		color: $dark-gray;
-		transition: color 0.15s ease-in-out;
-		
-		&:hover {
-			color: white;
-		}
-    }
-	
-	.search {
-		height: 26px;
-		position: relative;
-		display: block;
-		margin: 0 1rem;
-	}
-	
-    #search-box {
-		padding: 3px 5px 2px 34px;
-		border: none;
-		background-color: lighten($chef-primary, 20%);
-		transition: linear 1s;
-		line-height: 1;
-		font-size: 14px;
-		font-weight: normal;
-		color: $dark-gray;
-		height: 26px;
-		display: block;
-		width: 130px;
-		transition: all 0.15s ease-in-out;
-		
-		&:focus, &:hover {
-			background-color: $white;
-			outline: none;
-			
-			& + #search-icon {
-				color: $chef-primary;
-			}
-		}
-		
-		::placeholder {
-			font-size: 0.8em;
-		}
-    }
-
-    #search-icon {
-		position: absolute;
-		left: 0;
-		padding: 0 10px;
-		top: 2px;
-		
-		&:hover {
-			color: $white;
-		}
-		
-		&:focus {
-			outline: none;
-			box-shadow: none;
-		}
-    }
-
 }
 
 // Main Footer Styles

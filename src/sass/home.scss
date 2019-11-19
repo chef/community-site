@@ -172,8 +172,17 @@
         }
 
         .card {
-            padding-top: 0;
+			padding: 0;
 			border: 1px solid $mid-gray;
+			background-color: white;
+			
+			@include media-breakpoint-only(md){
+				padding: 1rem;
+				display: flex;
+				flex-direction: row;
+				align-items: stretch;
+				justify-content: flex-start;
+			}
 			
 			h4 {
 				font-weight: 400;
@@ -181,12 +190,29 @@
 			}
 			
             img {
-                margin-left: -2rem;
-				margin-right: -2rem;
-				margin-bottom: 1.5rem;
 				max-width: none;
-				width: calc(100% + 4rem);
+				width: 100%;
             }
+			
+			.img {
+				@include media-breakpoint-only(md){
+					width: 33.33%;
+					flex-shrink: 0;
+				}
+			}
+			
+			.text {
+				padding: 1rem;
+				
+				@include media-breakpoint-only(md){
+					padding: 0;
+					padding-left: 1rem;
+				}
+				
+				@include media-breakpoint-up(lg){
+					padding: 2rem;
+				}
+			}
         }
     }
 
