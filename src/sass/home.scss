@@ -2,7 +2,7 @@
 	
 	.hero-actions {
 		&:before {
-			height: calc(100% - 150px);
+			height: calc(100% - calc(25vh - 100px));
 		}
 	}
 	.actions {
@@ -15,7 +15,7 @@
 		.bg-wave {
 			position: absolute;
 			bottom: 0;
-			height: 250px;
+			height: 25vh;
 			width: 100%;
 			
 			div {
@@ -37,7 +37,11 @@
 	}
     .card {
 		.card-icon {
-			width: 70px;
+			width: 50px;
+			
+			@include media-breakpoint-up(md){
+				width: 70px;
+			}
 		}
 		
         .events-list {
@@ -52,7 +56,12 @@
         }
 		
 		.contributors-list {
-			text-align: center;
+			//text-align: center;
+			margin: -2px;
+			
+			img {
+				margin: 2px;
+			}
 		}
 
         .social {
@@ -64,6 +73,22 @@
                     background-color: $white;
                 }
             }
+			
+			.col {
+				flex-grow: 0;
+			}
+			
+			@include media-breakpoint-up(lg){
+				
+				.row {
+					margin: 0;
+					justify-content: space-between;
+				}
+				
+				.col {
+					padding: 2px;
+				}
+			}
         }
     }
 
@@ -95,7 +120,7 @@
 				@extend %section-padding;
 				
 				@include media-breakpoint-up(md){
-					padding-top: 25vh;
+					padding-top: 0;
 					padding-bottom: 25vh;
 				}
                 
