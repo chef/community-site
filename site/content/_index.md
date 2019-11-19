@@ -39,7 +39,7 @@ cards:
 
             ##### Contribute
 
-            [First Time](#) | [Book of Open Source](#) | [Feature Requests](#)
+            [First Time](/first-time) | [Book of Open Source](#) | [Feature Requests](#)
 
 products:
     header: Chef Helps
@@ -86,4 +86,4 @@ Join us, whether online or in person, and let’s build the future of technology
 
 
 
-[Code of Conduct]: https://www.google.com
+[Code of Conduct]: https://github.com/chef/chef-oss-practices/blob/master/CODE_OF_CONDUCT.md
