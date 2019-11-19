@@ -1,0 +1,20 @@
+{{ define "body" }}
+<main id="search">
+    
+	<section class="search-container section-padding">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-lg-8 offset-lg-2">
+					<form action="/search/" method="get" class="search form-inline">
+						<input id="search-box" name="q" placeholder="Search Chef" type="text" class="st-default-search-input" autocomplete="off" autocorrect="off" autocapitalize="off">
+						<button class="btn" id="search-icon" type="submit"><i class="fas fa-search"></i></button>
+					</form>
+					
+					<div class="st-search-container"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+</main>
+{{ end }}
