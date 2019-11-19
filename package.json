@@ -70,6 +70,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "react-markdown": "^4.2.2"
+    "react-markdown": "^4.2.2",
+    "postcss-cli": "^6.1.3"
   }
 }
