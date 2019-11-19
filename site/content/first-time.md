@@ -1,6 +1,7 @@
 ---
 title: "First Time"
 date: 2019-11-12T22:53:32-08:00
+draft: true
 type: "first-time"
 cards:
     one:
@@ -9,13 +10,13 @@ cards:
             Learn about what makes our community tick, what we are working on right now and how we treat each other
 
 
-            [Code of Conduct »](#)
+            [Code of Conduct »](https://github.com/chef/chef-oss-practices/blob/master/CODE_OF_CONDUCT.md)
 
 
-            [Book of Open Source »](#)
+            [Read the Contributor Guide »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
 
 
-            [Read the Contributor Guide »](#)
+            [Book of Open Source »](https://github.com/chef/chef-oss-practices/blob/master/README.md)
 
 
             [Watch a triage »](#)
@@ -26,13 +27,13 @@ cards:
             Here are some places you can look to make your first contribution
 
 
-            [Good First Issues »](#)
+            [Good First Issues »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/help-wanted.md  https://chef.github.io/jump-in/)
 
 
             [Update the docs »](#)
 
 
-            [List of projects »](#)
+            [List of projects »](https://github.com/chef/chef-oss-practices/blob/master/projects-list.md)
 
 
             [Help needed »](#)
