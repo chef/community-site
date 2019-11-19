@@ -6,9 +6,9 @@ export default class Hero extends React.Component {
     const {content} = this.props;
 	
 	return <section className="hero">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-9 col-lg-7">
+		<div className="container-fluid">
+			<div className="row">
+				<div className="col-md-9 col-lg-7">
 					<Markdown source={content} escapeHtml={false} />
 				</div>
 			</div>
