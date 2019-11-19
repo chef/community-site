@@ -46,7 +46,7 @@ export default class Homepage extends React.Component {
 								<div className="card">
 									<div className="row">
 										<div className="col-8">
-											<h3>{cards.one.title}</h3>
+											<h3>{cards.two.title}</h3>
 										</div>
 										<div className="col-4 text-right">
 											<img src={cards.two.icon} className="card-icon" />
