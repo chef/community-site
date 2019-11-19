@@ -4,7 +4,7 @@ date: 2019-11-10T18:53:06-08:00
 cards:
     one:
         title: "Learn"
-        icon: "img/icons/learn.svg"
+        icon: "/img/icons/learn.svg"
         body: >-
             ##### Learn Chef Rally
 
@@ -26,11 +26,11 @@ cards:
 
     two:
         title: "Meet"
-        icon: "img/icons/meet.svg"
+        icon: "/img/icons/meet.svg"
 
     three:
         title: "Connect"
-        icon: "img/icons/connect.svg"
+        icon: "/img/icons/connect.svg"
         body: >-
             ##### Interact
 

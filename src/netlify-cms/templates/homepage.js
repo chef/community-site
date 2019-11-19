@@ -19,14 +19,14 @@ export default class Homepage extends React.Component {
 			<section className="actions">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-lg-4 col-sm-12 card-container">
+						<div className="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
 							<div className="card">
 								<div className="row">
-									<div className="col-sm-8">
+									<div className="col-8">
 										<h3>{cards.one.title}</h3>
 									</div>
-									<div className="col-sm-4">
-										{cards.one.icon}
+									<div className="col-4 text-right">
+										<img src={cards.one.icon} className="card-icon" />
 									</div>
 								</div>
 								<div className="row">
@@ -36,14 +36,14 @@ export default class Homepage extends React.Component {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4 col-sm-12 card-container">
+						<div className="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
 							<div className="card">
 								<div className="row">
-									<div className="col-sm-8">
-										<h3>{cards.two.title}</h3>
+									<div className="col-8">
+										<h3>{cards.one.title}</h3>
 									</div>
-									<div className="col-sm-4">
-										{cards.two.icon}
+									<div className="col-4 text-right">
+										<img src={cards.two.icon} className="card-icon" />
 									</div>
 								</div>
 								<div className="row">
@@ -53,14 +53,14 @@ export default class Homepage extends React.Component {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4 col-sm-12 card-container">
+						<div className="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
 							<div className="card">
 								<div className="row">
-									<div className="col-sm-8">
-										<h3>{cards.three.title}</h3>
+									<div className="col-8">
+										<h3>{cards.one.title}</h3>
 									</div>
-									<div className="col-sm-4">
-										{cards.three.icon}
+									<div className="col-4 text-right">
+										<img src={cards.three.icon} className="card-icon" />
 									</div>
 								</div>
 								<div className="row">
@@ -138,26 +138,38 @@ export default class Homepage extends React.Component {
 					</div>
 					<div className="col-lg-4 col-sm-12 card-container">
 						<div className="card">
-							<img src="/img/blog-fpo.jpg" alt="" />
-							<h4>Packaging COT Applications for Windows</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-							<a href="#">Read More &raquo;</a>
+							<div className="img">
+								<img src="/img/blog-fpo.jpg" alt="" />
+							</div>
+							<div className="text">
+								<h4>Packaging COT Applications for Windows</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
+								<a href="#">Read More &raquo;</a>
+							</div>
 						</div>
 					</div>
 					<div className="col-lg-4 col-sm-12 card-container">
 						<div className="card">
-							<img src="/img/blog-fpo.jpg" alt="" />
-							<h4>Packaging COT Applications for Windows</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-							<a href="#">Read More &raquo;</a>
+							<div className="img">
+								<img src="/img/blog-fpo.jpg" alt="" />
+							</div>
+							<div className="text">
+								<h4>Packaging COT Applications for Windows</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
+								<a href="#">Read More &raquo;</a>
+							</div>
 						</div>
 					</div>
 					<div className="col-lg-4 col-sm-12 card-container">
 						<div className="card">
-							<img src="/img/blog-fpo.jpg" alt="" />
-							<h4>Packaging COT Applications for Windows</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-							<a href="#">Read More &raquo;</a>
+							<div className="img">
+								<img src="/img/blog-fpo.jpg" alt="" />
+							</div>
+							<div className="text">
+								<h4>Packaging COT Applications for Windows</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
+								<a href="#">Read More &raquo;</a>
+							</div>
 						</div>
 					</div>
 				</div>
