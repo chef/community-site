@@ -2,6 +2,7 @@
 	
 	.hero-actions {
 		&:before {
+			height: 100%; // for ie11
 			height: calc(100% - calc(25vh - 100px));
 		}
 	}
@@ -119,7 +120,7 @@
             .product-grid-copy {
 				@extend %section-padding;
 				
-				@include media-breakpoint-up(md){
+				@include media-breakpoint-up(lg){
 					padding-top: 0;
 					padding-bottom: 25vh;
 				}
