@@ -71,7 +71,11 @@ products:
 
 ---
 
-<h1>Welcome to the <span class="highlight">Chef Community</span></h1>
+# Welcome to the <span class="highlight">Chef Community</span>
+
+
+<span id="chefio">If you want to find out the value Chef can provide your business, please head to [chef.io](https://www.chef.io).</span>
+
 
 Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is in alongside those who build it. 
      

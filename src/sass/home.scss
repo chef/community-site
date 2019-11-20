@@ -6,6 +6,19 @@
 			height: calc(100% - calc(25vh - 100px));
 		}
 	}
+
+	.hero {
+		h1 {
+			margin-bottom: 0rem;
+		}
+
+		#chefio {
+			font-size: 0.8em;
+			color: $mid-gray;
+		}
+	}
+
+
 	.actions {
 		position: relative;
 		
