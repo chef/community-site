@@ -27,7 +27,6 @@
 	
 	&.no-max {
 		max-width: none;
-		max-width: none;
 		padding: 0 15px;
 	}
 }
@@ -73,6 +72,8 @@
 		
 		li {
 			margin-bottom: 0;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
 			
 			a {
 				color: $light-gray;
