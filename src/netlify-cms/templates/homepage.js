@@ -15,7 +15,9 @@ export default class Homepage extends React.Component {
 		const hero = entry.getIn(["data", "body"]);
 		const cards = entry.getIn(["data", "cards"]).toJS();
 		const products = entry.getIn(["data", "products"]).toJS();
-	
+		const community = entry.getIn(["data", "community"]).toJS();
+		const resources = entry.getIn(["data", "resources"]).toJS();
+		
 		return <main id="home">
 	
 			<section className="hero-actions">
@@ -137,12 +139,8 @@ export default class Homepage extends React.Component {
 						<div className="col-lg-3 img img-left">
 						</div>
 						<div className="col-lg-4 community-copy">
-							<h2>We're all in this <span className="highlight">Together</span></h2>
-							<p>Community has always been a part of what we do at Chef. Everyone is invited.</p>
-					
-							<p>We learn from you and your innovative uses of our products, and the whole community benefits from contributions from teams at companies like Nordstrom and Alaska Airlines. We welcome your contributions, suggestions, and questions on all of our projects.</p>
-					
-							<a href="#" className="btn btn-primary-white">Learn More</a>
+							<h2>{community.header} <span className="highlight">{community.header2}</span></h2>
+							<Markdown source={community.body} escapeHtml={false} />
 						</div>
 						<div className="col-lg-5 img img-right">
 						</div>
@@ -154,41 +152,35 @@ export default class Homepage extends React.Component {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							<h2>Community <span className="highlight">Resources</span></h2>
+							<h2>{resources.header} <span className="highlight">{resources.header2}</span></h2>
 						</div>
 						<div className="col-lg-4 col-sm-12 card-container">
 							<div className="card">
 								<div className="img">
-									<img src="/img/blog-fpo.jpg" alt="" />
+									<img src={resources.one.img} />
 								</div>
 								<div className="text">
-									<h4>Packaging COT Applications for Windows</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-									<a href="#">Read More &raquo;</a>
+									<Markdown source={resources.one.body} escapeHtml={false} />
 								</div>
 							</div>
 						</div>
 						<div className="col-lg-4 col-sm-12 card-container">
 							<div className="card">
 								<div className="img">
-									<img src="/img/blog-fpo.jpg" alt="" />
+									<img src={resources.one.img} />
 								</div>
 								<div className="text">
-									<h4>Packaging COT Applications for Windows</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-									<a href="#">Read More &raquo;</a>
+									<Markdown source={resources.one.body} escapeHtml={false} />
 								</div>
 							</div>
 						</div>
 						<div className="col-lg-4 col-sm-12 card-container">
 							<div className="card">
 								<div className="img">
-									<img src="/img/blog-fpo.jpg" alt="" />
+									<img src={resources.one.img} />
 								</div>
 								<div className="text">
-									<h4>Packaging COT Applications for Windows</h4>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-									<a href="#">Read More &raquo;</a>
+									<Markdown source={resources.one.body} escapeHtml={false} />
 								</div>
 							</div>
 						</div>

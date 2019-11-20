@@ -73,6 +73,37 @@ collections: # A list of collections the CMS should be able to edit
 									{label: "Header", name: "header", widget: "string"},
 									{label: "Url", name: "url", widget: "string"},
 									{label: "Copy", name: "copy", widget: "markdown"}]}]}
+          - {label: "Community",
+						name: "community",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{label: "Body", name: "body", widget: "markdown"}]}
+          - {label: "Resources",
+						name: "resources",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"}]}]}
       - file: "site/content/first-time.md"
         label: "First time contributing"
         name: "first-time"
