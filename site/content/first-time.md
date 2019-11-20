@@ -1,6 +1,6 @@
 ---
 title: First Time
-type: "first-time"
+layout: "first-time"
 cards:
   one:
     title: Learn about the community
