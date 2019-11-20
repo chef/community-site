@@ -14,6 +14,10 @@ collections: # A list of collections the CMS should be able to edit
         name: "home"
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Title", name: "meta_title", widget: "string", required: false}
+          - {label: "Focus Keyword", name: "meta_keyword", widget: "string"}
+          - {label: "Meta Description", name: "meta_description", widget: "string"}
+          - {label: "Image", name: "meta_image", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Cards",
 						name: "cards",

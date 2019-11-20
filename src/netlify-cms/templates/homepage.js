@@ -2,6 +2,7 @@ import React from "react";
 import Markdown from 'react-markdown';
 
 import { inject } from "./../inject-frontend-js";
+import { yoast } from "./../yoast";
 import Hero from "./partials/hero";
 
 export default class Homepage extends React.Component {
@@ -17,6 +18,8 @@ export default class Homepage extends React.Component {
 		const products = entry.getIn(["data", "products"]).toJS();
 		const community = entry.getIn(["data", "community"]).toJS();
 		const resources = entry.getIn(["data", "resources"]).toJS();
+		
+		yoast(entry);
 		
 		return <main id="home">
 	
@@ -195,6 +198,7 @@ export default class Homepage extends React.Component {
 					</div>
 				</div>
 			</section>
+			{ YOAST.getScoresAsHTML(h) }
 		</main>;
 	}
 }

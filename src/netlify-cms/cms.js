@@ -4,6 +4,8 @@ import CMS from "netlify-cms-app";
 import Homepage from "./templates/homepage";
 import FirstTime from "./templates/first-time";
 
+CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
+
 CMS.registerPreviewTemplate("home", Homepage);
 CMS.registerPreviewTemplate("first-time", FirstTime);
 
