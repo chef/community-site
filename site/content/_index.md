@@ -68,7 +68,44 @@ products:
         copy: >-
             Nam quam mauris, sodales a interdum at, viverra et dui. Aliquam pulvinar consectetur consequat. Ut imperdiet accumsan orci ac feugiat. Donec ac mollis velit. Nam pulvinar ipsum ut magna auctor, vitae vulputate lacus ullamcorper. Suspendisse dapibus luctus elit. Aenean gravida egestas condimentum. Morbi at semper mauris, a ultrices ligula.
 
+community:
+    header: We're all in this
+    header2: Together
+    body: >-
+        Community has always been a part of what we do at Chef. Everyone is invited.
 
+
+        We learn from you and your innovative uses of our products, and the whole community benefits from contributions from teams at companies like Nordstrom and Alaska Airlines. We welcome your contributions, suggestions, and questions on all of our projects.
+
+
+        <a href="#" class="btn btn-primary-white">Learn More</a>
+resources:
+    header: Resources from the
+    header2: Community
+    one:
+        img: "/img/blog-fpo.jpg"
+        body: >-
+            #### Sous Chefs keep the kitchen in motion
+
+            Sous Chefs is a volunteer team of folks who keep some of the Chef Infra community’s most-used cookbooks up to date. Join them in the #sous-chefs channel on our Community Slack, or in their repos on GitHub to learn more about what goes into creating and maintaining cookbooks with thousands of downloads.
+
+
+            [Learn more &raquo;](https://sous-chefs.org)
+    two:
+        img: "/img/blog-fpo.jpg"
+        body: >-
+            #### Find What You Need in the Supermarket
+
+            Chef Supermarket is your one-stop shop for Chef Infra cookbooks, tools, and plugins to enhance your Chef Infra workflow. Need to install a new piece of software? Check the Supermarket for a cookbook to help you out! Have a cookbook that solves a task for you? Share it to the Supermarket for others to use.
+
+
+            [Learn more &raquo;](https://supermarket.chef.io)
+    three:
+        img: "/img/blog-fpo.jpg"
+        body: >-
+            #### Dev-Sec Sets a Security Baseline
+
+            Chef InSpec is a powerful tool for creating and sharing security profiles. The InSpec community at https://dev-sec.io has created a myriad of baseline profiles for you to download and use to secure your infrastructure and key application platforms
 ---
 
 <h1>Welcome to the <span class="highlight">Chef Community</span></h1>
@@ -80,8 +117,6 @@ Our greatest strength is our community. That is why as a community, we are commi
 
 
 Join us, whether online or in person, and let’s build the future of technology together.
-
-
 
 
 

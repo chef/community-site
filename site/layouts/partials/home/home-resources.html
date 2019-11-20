@@ -1,41 +1,35 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12">
-			<h2>Community <span class="highlight">Resources</span></h2>
+			<h2>{{ .Params.resources.header }} <span class="highlight">{{ .Params.resources.header2 }}</span></h2>
 		</div>
 		<div class="col-lg-4 col-sm-12 card-container">
 			<div class="card">
 				<div class="img">
-					<img src="img/blog-fpo.jpg" alt="">
+					<img src="{{ .Params.resources.one.img }}">
 				</div>
 				<div class="text">
-					<h4>Packaging COT Applications for Windows</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-					<a href="#">Read More &raquo;</a>
+					{{ partial "markdownify" .Params.resources.one.body }} 
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 card-container">
 			<div class="card">
 				<div class="img">
-					<img src="img/blog-fpo.jpg" alt="">
+					<img src="{{ .Params.resources.two.img }}">
 				</div>
 				<div class="text">
-					<h4>Packaging COT Applications for Windows</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-					<a href="#">Read More &raquo;</a>
+					{{ partial "markdownify" .Params.resources.two.body }} 
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 card-container">
 			<div class="card">
 				<div class="img">
-					<img src="img/blog-fpo.jpg" alt="">
+					<img src="{{ .Params.resources.three.img }}">
 				</div>
 				<div class="text">
-					<h4>Packaging COT Applications for Windows</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut distinctio omnis architecto pariatur totam rerum rem. Dicta, ducimus praesentium a similique molestiae, in dolorum soluta fuga vitae, tempore impedit.</p>
-					<a href="#">Read More &raquo;</a>
+					{{ partial "markdownify" .Params.resources.three.body }} 
 				</div>
 			</div>
 		</div>

@@ -3,14 +3,8 @@
 		<div class="col-lg-3 col-xl-3 img img-left">
 		</div>
 		<div class="col-lg-6 col-xl-4 community-copy">
-			<h2>We're all in this <span class="highlight">Together</span></h2>
-			<p>Community has always been a part of what we do at Chef. Everyone is invited.</p>
-	
-			<p>We learn from you and your innovative uses of our products, and the whole community benefits from contributions from teams at companies like Nordstrom and Alaska Airlines. We welcome your contributions, suggestions, and questions on all of our projects.</p>
-	
-			<a href="#" class="btn btn-primary-white">Learn More</a>
-	
-	
+			<h2>{{ .Params.community.header }} <span class="highlight">{{ .Params.community.header2 }}</span></h2>
+			{{ partial "markdownify" .Params.community.body }} 
 		</div>
 		<div class="col-lg-3 col-xl-5 img img-right">
 		</div>
