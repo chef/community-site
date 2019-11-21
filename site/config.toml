@@ -1,13 +1,13 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Chef Developers: Learn, Connect, Contribute."
+title = "Chef Developers: Learn, Meet, Connect."
 assetDir = "../src"
 disableKinds = "taxonomyTerm"
 
 [params]
-  author = "Chef Web Team: Shaun Yap, Jiajia Li"
-  title = "Chef Developer Community"
-  description = "once upon a time, there was a great meta description. Unfortunately this isn't it."
+  author = "Chef Web Team: Shaun Yap, Jiajia Li, Kevin Chan, Kim Alvarez"
+  title = "Chef Community"
+  description = "Community is the foundation of Chef."
   facebook = "https://www.facebook.com/getchefdotcom"
   twitter = "https://twitter.com/chef"
   linkedin = "https://www.linkedin.com/company/chef-software"

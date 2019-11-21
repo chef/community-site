@@ -1,5 +1,5 @@
 ---
-title: "Index Page"
+title: "Home"
 date: 2019-11-10T18:53:06-08:00
 cards:
     one:
