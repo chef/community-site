@@ -356,6 +356,7 @@ h4,
 h5,
 h6 {
   font-family: $font-primary;
+  font-weight: 600;
   margin-bottom: 1rem;
 
   .highlight {
@@ -530,7 +531,7 @@ input {
   border: none;
   font-weight: 500;
   padding: 0.4rem 1rem;
-  border-radius: 0;
+  border-radius: 2px;
   font-size: 18px;
 
   &-primary {
