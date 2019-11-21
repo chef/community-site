@@ -161,7 +161,7 @@
 			border: none;
 			background-color: $chef-primary;
 			transition: linear 1s;
-			line-height: 1;
+			line-height: 1.5;
 			font-size: 14px;
 			font-weight: normal;
 			color: $dark-gray;
@@ -406,6 +406,10 @@ select {
     background-position: 100%;
     background-origin: content-box;
     background-repeat: no-repeat;
+}
+
+input {
+	-webkit-appearance: none;
 }
 
 // Component Styles
