@@ -72,8 +72,11 @@
 		
 		li {
 			margin-bottom: 0;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
+			
+			@include media-breakpoint-up(lg){
+				padding-right: 0.4rem;
+				padding-left: 0.4rem;
+			}
 			
 			a {
 				color: $light-gray;
@@ -83,8 +86,8 @@
 				
 				@include media-breakpoint-only(md){
 					font-size: 15px;
-					padding-right: 0.4rem;
-					padding-left: 0.4rem;
+					padding-right: 0.35rem;
+					padding-left: 0.35rem;
 				}
 					
 				&:hover {
@@ -129,24 +132,34 @@
 		height: 26px;
 		position: relative;
 		display: block;
+		width: 39px;
+		transition: width 0.15s ease-in-out;
 		
 		@include media-breakpoint-down(sm){
 			margin-bottom: 1rem;
 			height: auto;
+			width: auto;
 		}
 		
 		@include media-breakpoint-up(md){
 			margin-right: 0.4rem;
+			
+			&:hover{
+				width: 130px;
+				
+				#search-box {
+					background-color: white;
+				}
+				
+			}
 		}
 		
-		@include media-breakpoint-up(lg){
-			margin-right: 1rem;
-		}
+		
 		
 		#search-box {
 			padding: 3px 5px 2px 34px;
 			border: none;
-			background-color: lighten($chef-primary, 20%);
+			background-color: $chef-primary;
 			transition: linear 1s;
 			line-height: 1;
 			font-size: 14px;
@@ -154,16 +167,11 @@
 			color: $dark-gray;
 			height: 26px;
 			display: block;
-			width: 130px;
-			transition: all 0.15s ease-in-out;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
 			
 			&:focus, &:hover {
-				background-color: $white;
 				outline: none;
-				
-				& + #search-icon {
-					color: $chef-primary;
-				}
 			}
 			
 			::placeholder {
@@ -188,10 +196,6 @@
 			width: auto;
 			margin: 0;
 			line-height: 23px;
-			
-			&:hover {
-				color: $chef-primary;
-			}
 			
 			&:focus {
 				outline: none;
