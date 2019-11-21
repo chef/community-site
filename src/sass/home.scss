@@ -107,10 +107,6 @@
     color: $light-gray;
     display: flex;
 
-    h2 {
-      font-weight: 400;
-    }
-
     .product-grid-main {
       background-color: $dark-gray;
       height: 100%;
@@ -154,10 +150,6 @@
   }
 
   .community {
-    h2 {
-      margin-bottom: 2rem;
-      font-weight: 400;
-    }
 
     .img {
       background-size: cover;
@@ -197,10 +189,6 @@
     background-repeat: no-repeat;
     background-position-y: -11rem;
 
-    h2 {
-      margin-bottom: 2rem;
-      font-weight: 400;
-    }
 
     .card {
       padding: 0;
