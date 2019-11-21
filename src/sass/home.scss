@@ -112,12 +112,11 @@
       height: 100%;
 
       #prodgrid-img {
-        height: 100%;
+        height: calc(100% + 25vh - 100px);
         overflow: visible;
         position: absolute;
-        top: 50%;
+        bottom: 0;
         width: auto;
-        transform: translateY(-50%);
         right: 2vw;
         max-width: none;
       }
