@@ -145,12 +145,18 @@
 			margin-right: 0.4rem;
 			
 			&:hover{
-				width: 130px;
+				width: 170px; // edit to fit the nav items
 				
 				#search-box {
 					background-color: white;
 				}
 				
+			}
+		}
+		
+		@include media-breakpoint-up(xl){
+			&:hover{
+				width: 250px; // edit to fit the nav items
 			}
 		}
 		
@@ -367,6 +373,10 @@ h1,h2,h3,h4,h5,h6 {
         color: $chef-secondary;
 		font-weight: 700;
     }
+}
+
+h2 {
+	font-weight: 400;
 }
 
 h1 {
