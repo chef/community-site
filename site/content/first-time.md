@@ -5,7 +5,7 @@ cards:
   one:
     title: Learn about the community
     body: >-
-      Learn about what makes our community tick, what we're working on and how
+      What makes our community tick, things we're working on and how
       we treat each other
 
 
@@ -26,7 +26,7 @@ cards:
     title: Connect with fellow contributors
     body: >-
       Connect and participate in discussions with fellow contributors. Get help
-      and give help.
+      and give help
 
 
       [Community Slack »](#)
