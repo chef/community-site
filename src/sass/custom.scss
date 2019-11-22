@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800');
+
 @import "media-queries";
 @import "settings";
 
@@ -335,7 +337,7 @@
 
 body {
   font-family: $font-primary;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.625;
   color: $dark-gray;
@@ -364,17 +366,31 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-primary;
+  @include muli();
   font-weight: 600;
   margin-bottom: 1rem;
 
   .highlight {
     color: $chef-secondary;
-	font-weight: 700;
+	font-weight: 800;
+  }
+  
+  &:not(:first-child){
+	margin-top: 2.5rem;
   }
 }
+
 h2 {
   margin-bottom: 2.5rem;
+}
+
+h5 {
+	font-weight: 700;
+}
+
+h6 {
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 
@@ -493,7 +509,7 @@ input {
     font-size: 0.95em;
   }
   a {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   h3 {

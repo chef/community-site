@@ -6,7 +6,7 @@ $mid-gray: #666666;
 $light-gray: #F1F2F2; // Do not change; set Chef brand color until Feb 2020
 $white: fcfcfc;
 
-$font-primary: 'Avenir Next', 'Avenir', Helvetica Neue, Helvetica, sans-serif;
+$font-primary: 'Muli', sans-serif;
 
 $global-font-size: 20px;
 
@@ -57,5 +57,13 @@ $global-font-size: 20px;
 	
 	@include media-breakpoint-down(sm){
 		padding-bottom: 3rem;
+	}
+}
+
+@mixin muli($weight:null){
+    font-family: 'Muli', sans-serif;
+	
+	@if($weight){
+		font-weight: $weight;
 	}
 }
