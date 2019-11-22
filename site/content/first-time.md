@@ -1,12 +1,12 @@
 ---
 title: First Time
-type: "first-time"
+type: first-time
 cards:
   one:
     title: Learn about the community
     body: >-
-      Learn about what makes our community tick, what we are working on right
-      now and how we treat each other
+      What makes our community tick, things we're working on and how
+      we treat each other
 
 
       [Code of Conduct
@@ -26,7 +26,7 @@ cards:
     title: Connect with fellow contributors
     body: >-
       Connect and participate in discussions with fellow contributors. Get help
-      and give help.
+      and give help
 
 
       [Community Slack »](#)
@@ -42,7 +42,7 @@ cards:
   two:
     title: Make your first contribution
     body: >-
-      Here are some places you can look to make your first contribution
+      We always need help. Here are great places to start.
 
 
       [Good First Issues »](https://chef.github.io/jump-in/)
