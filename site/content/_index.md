@@ -157,7 +157,8 @@ resources:
     img: /img/blog-fpo.jpg
 ---
 
-# Chef Community: we're <span class="highlight">Better together</span>
+# Chef Community
+## <span class="highlight">we're better together</span>
 
 
 <span id="chefio">If you want to find out the value Chef can provide your business, please head to [chef.io](https://www.chef.io).</span>
