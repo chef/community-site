@@ -157,17 +157,13 @@ resources:
     img: /img/blog-fpo.jpg
 ---
 
-# Chef Community
-## <span class="highlight">we're better together</span>
-
-
-<span id="chefio">If you want to find out the value Chef can provide your business, please head to [chef.io](https://www.chef.io).</span>
-
+## Chef Community
+# <span class="highlight">we're better together</span>
 
 Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is in alongside those who build it. 
      
 
-Our greatest strength is our community. That is why as a community, we are committed to holding ourselves to a higher standard - this is captured in our [Code of Conduct].
+Our greatest strength is our community. That is why as a community, we are committed to holding ourselves to a higher standard. This is captured in our [Code of Conduct].
 
 
 Join us, whether online or in person, and let’s build the future of technology together.
