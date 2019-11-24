@@ -5,10 +5,14 @@
       height: calc(100% - calc(25vh - 100px));
     }
   }
+  
+      h2 {
+        margin-bottom: 0.5rem
+      }
 
   .hero {
     h1 {
-      margin-bottom: 0rem;
+      margin-bottom: 1rem;
     }
 
     #chefio {
@@ -19,6 +23,10 @@
 
   .actions {
     position: relative;
+
+    #action-cards {
+      margin-bottom: 3rem;
+    }
 
     &:after {
       display: none;

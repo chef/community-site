@@ -55,7 +55,7 @@ products:
     header: Application
     url: 'https://www.inspec.io'
   header: Chef Helps
-  header2: Automate
+  header2: Automate:
   infra:
     copy: >
       #### Infrastructure automation for hardened, consistent configuration at
