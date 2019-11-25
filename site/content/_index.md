@@ -91,7 +91,7 @@ products:
     url: 'https://www.inspec.io'
   observability:
     copy: >
-      Incorporate Chef’s products into your Application Development
+      #### Incorporate Chef’s products into your Application Development
       Lifecycle and deliver new features with confidence.
 
 
