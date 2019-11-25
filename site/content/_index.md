@@ -91,7 +91,7 @@ products:
     url: 'https://www.inspec.io'
   observability:
     copy: >
-      #### Incorporate Chef’s products into your Application Development
+      Incorporate Chef’s products into your Application Development
       Lifecycle and deliver new features with confidence.
 
 
@@ -100,7 +100,7 @@ products:
       verifiable on their way to your production environment. The Chef
       Enterprise Automation Stack is a keystone component to your modern
       application delivery pipeline, supporting your projects throughout the
-      entire application lifecycle. 
+      entire application lifecycle.
     header: Observability
     url: 'https://www.inspec.io'
 community:

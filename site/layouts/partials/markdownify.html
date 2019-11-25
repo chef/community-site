@@ -62,7 +62,15 @@
     effect.
 */ -}}
 {{ if or $block (not $raw) }}
-	{{ $raw }}
+	{{- /*
+		There are some cases where the last p tag doesn't close (but still opens). An example is a 2-element content where the first element is a header and the second is a p.
+		If $raw ends with a >, it's most likely been wrapped properly. If not, the most likely culprit is the p tag so we just add </p> to close it
+	*/ -}}
+	{{ if eq (substr $raw -1 1) ">" }}
+		{{ $raw }}
+	{{ else}}
+		{{ $raw }}</p>
+	{{ end }}
 {{ else }}
 		<p>{{ $raw }}</p>
 {{ end -}}
