@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="action-cards">
 	<div class="row">
 		<div class="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
 			<div class="card">
@@ -59,12 +59,10 @@
 
 						<h5>Awesome Contributors</h5>
 						<div class="contributors-list">
-							<img src="http://placehold.it/50x50" class="img-round">
-							<img src="http://placehold.it/50x50" class="img-round">
-							<img src="http://placehold.it/50x50" class="img-round">
-							<img src="http://placehold.it/50x50" class="img-round">
-							<img src="http://placehold.it/50x50" class="img-round">
-							<img src="http://placehold.it/50x50" class="img-round">
+							{{ $contributors := getJSON "https://api.github.com/orgs/chef/members" }}
+							{{ range first 6 $contributors }}
+								<img src="{{ .avatar_url }}" class="img-round" width="50">
+							{{ end }}
 						</div>
 
 						{{ partial "social" . }}

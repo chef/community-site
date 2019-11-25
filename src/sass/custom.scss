@@ -372,16 +372,12 @@ h6 {
 
   .highlight {
     color: $chef-secondary;
-	font-weight: 800;
+		font-weight: 800;
   }
   
   &:not(:first-child){
-	margin-top: 2.5rem;
+		margin-top: 2.5rem;
   }
-}
-
-h2 {
-  margin-bottom: 2.5rem;
 }
 
 h5 {

@@ -8,8 +8,13 @@
 
   .hero {
     h1 {
-      margin-bottom: 0rem;
+      margin-bottom: 1rem;
+			margin-top: 0;
     }
+		
+		h2 {
+			margin-bottom: 0.5rem
+		}
 
     #chefio {
       font-size: 0.8em;
@@ -19,6 +24,10 @@
 
   .actions {
     position: relative;
+
+    #action-cards {
+      margin-bottom: 3rem;
+    }
 
     &:after {
       display: none;
@@ -130,7 +139,7 @@
         }
 
         ul {
-          margin-bottom: 1rem;
+          margin-bottom: 2.5rem;
           margin-left: -15px;
 
           .nav-link {
@@ -193,7 +202,9 @@
       padding: 0;
       border: 1px solid $mid-gray;
       background-color: white;
-
+			display: flex;
+			flex-flow: column;
+		
       @include media-breakpoint-only(md) {
         padding: 1rem;
         display: flex;
@@ -204,6 +215,16 @@
 
       h4 {
         margin-bottom: 1rem;
+				
+				a {
+					color: inherit;
+				}
+				
+				+ p {
+					a {
+						color: inherit;
+					}
+				}
       }
 
       img {
@@ -220,6 +241,9 @@
 
       .text {
         padding: 1rem;
+				flex: 1;
+				display: flex;
+				flex-flow: column nowrap;
 
         @include media-breakpoint-only(md) {
           padding: 0;
@@ -229,6 +253,10 @@
         @include media-breakpoint-up(lg) {
           padding: 2rem;
         }
+				
+				> *:last-child {
+					margin-top: auto;
+				}
       }
     }
   }
