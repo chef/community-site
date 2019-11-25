@@ -55,7 +55,7 @@ products:
     header: Application
     url: 'https://www.inspec.io'
   header: Chef Helps
-  header2: Automate:
+  header2: "Automate:"
   infra:
     copy: >
       #### Infrastructure automation for hardened, consistent configuration at
@@ -122,7 +122,7 @@ resources:
   header2: Community
   one:
     body: >-
-      #### Sous Chefs keep the kitchen in motion
+      #### [Sous Chefs keep the kitchen in motion](https://sous-chefs.org)
 
       Sous Chefs is a volunteer team of folks who keep some of the Chef Infra
       community’s most-used cookbooks up to date. Join them in the #sous-chefs
@@ -132,19 +132,22 @@ resources:
 
 
       [Learn more &raquo;](https://sous-chefs.org)
-    img: /img/blog-fpo.jpg
+    img: /img/thumb-sous-chef.png
   three:
     body: >-
-      #### Dev-Sec Sets a Security Baseline
+      #### [Dev-Sec Sets a Security Baseline](https://dev-sec.io)
 
       Chef InSpec is a powerful tool for creating and sharing security profiles.
       The InSpec community at https://dev-sec.io has created a myriad of
       baseline profiles for you to download and use to secure your
       infrastructure and key application platforms
-    img: /img/blog-fpo.jpg
+
+
+      [Learn more &raquo;](https://dev-sec.io)
+    img: /img/thumb-devops-sec.png
   two:
     body: >-
-      #### Find What You Need in the Supermarket
+      #### [Find What You Need in the Supermarket](https://supermarket.chef.io)
 
       Chef Supermarket is your one-stop shop for Chef Infra cookbooks, tools,
       and plugins to enhance your Chef Infra workflow. Need to install a new
@@ -154,7 +157,7 @@ resources:
 
 
       [Learn more &raquo;](https://supermarket.chef.io)
-    img: /img/blog-fpo.jpg
+    img: /img/thumb-chef-supermarket.png
 ---
 
 ## Chef Community
