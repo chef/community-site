@@ -61,7 +61,7 @@
 						<div class="contributors-list">
 							{{ $contributors := getJSON "https://api.github.com/orgs/chef/members" }}
 							{{ range first 6 $contributors }}
-								<img src="{{ .avatar_url }}" class="img-round" width="50">
+								<img src="{{ .avatar_url }}&size=50" class="img-round" width="50">
 							{{ end }}
 						</div>
 
