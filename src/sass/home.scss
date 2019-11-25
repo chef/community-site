@@ -26,7 +26,9 @@
     position: relative;
 
     #action-cards {
-      margin-bottom: 3rem;
+			@include media-breakpoint-up(lg){
+				padding-bottom: 7rem;
+			}
     }
 
     &:after {
@@ -168,6 +170,10 @@
 
       &.img-right {
         background-image: url("/img/chefconf-img2.jpg");
+      }
+			
+			@include media-breakpoint-down(md) {
+        display: none;
       }
     }
 
