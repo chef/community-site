@@ -42,6 +42,8 @@
       width: 100%;
 
       div {
+				border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
+				
         &:after {
           background-color: $dark-gray;
           content: "";
