@@ -1,6 +1,5 @@
 .markdown{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    @extend %section-padding;
 
     h1 {
         color: $chef-secondary;
