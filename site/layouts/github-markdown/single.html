@@ -1,0 +1,12 @@
+{{ define "body" }}
+<section class="markdown">
+    <div class="container">
+        <div class="col-lg-12">
+            {{ $code := getJSON "https://api.github.com/repos/chef/chef-oss-practices/contents/CODE_OF_CONDUCT.md" }}
+
+            {{ $code.content | base64Decode | markdownify }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

@@ -174,4 +174,4 @@ Join us, whether online or in person, and let’s build the future of technology
 
 
 
-[Code of Conduct]: https://github.com/chef/chef-oss-practices/blob/master/CODE_OF_CONDUCT.md
+[Code of Conduct]: /code-of-conduct

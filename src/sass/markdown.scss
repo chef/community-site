@@ -1,0 +1,18 @@
+.markdown{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    h1 {
+        color: $chef-secondary;
+        font-weight: 800;
+    }
+    
+    td, th {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    ul:not(.nav) li {
+        margin-bottom: 0.3rem;
+    }
+}

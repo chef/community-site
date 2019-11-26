@@ -1,8 +1,7 @@
 ---
-title: "About"
-date: 2019-11-10T18:45:15-08:00
-draft: false
+title: "Code of Conduct"
+type: github-markdown
 ---
 
-# About
+# Code of Conduct
 This is the about page. It uses the single layout template.
