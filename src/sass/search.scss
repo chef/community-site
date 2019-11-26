@@ -1,4 +1,10 @@
 #search {
+	
+	h1 {
+		color: $chef-secondary;
+		font-weight: 800;
+	}
+	
 	.search-container {
 		@extend %section-padding;
 	}
@@ -6,10 +12,10 @@
 	.search {
 		position: relative;
 		display: block;
-		height: 38px;
+		height: 50px;
 		
 		#search-box {
-			padding: 5px 5px 2px 34px;
+			padding: 5px 5px 5px 38px;
 			border: none;
 			background-color: white;
 			border: 1px solid $mid-gray;
@@ -18,6 +24,8 @@
 			color: $dark-gray;
 			display: block;
 			transition: all 0.15s ease-in-out;
+			height: 100%;
+			width: 100%;
 			
 			&:focus, &:hover {
 				outline: none;
@@ -35,9 +43,9 @@
 		#search-icon {
 			position: absolute;
 			left: 0;
-			padding: 0 10px;
-			top: 8px;
-			font-size: 14px;
+			padding: 13px 10px;
+			top: 1px;
+			font-size: 18px;
 			width: auto;
 			margin: 0;
 			line-height: 23px;
