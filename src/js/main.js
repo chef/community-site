@@ -2,6 +2,7 @@
 
 timeago().render(document.querySelectorAll('.relativetime'));
 timeago.cancel();
+
 // set fixed height on tabs
 function tabs_fixed_height() {
 	$('.tab-content').each(function(){
@@ -16,8 +17,15 @@ function tabs_fixed_height() {
 		tabs.height(h);
 	});
 }
-
 tabs_fixed_height();
+
+// make anchor links in .markdown sections lowercase
+function github_markdown_anchors(){
+	$('.markdown a[href^="#"]').each(function(){
+		$(this).attr('href', $(this).attr('href').toLowerCase());
+	});
+}
+github_markdown_anchors();
 
 $(window).on('load', function(){
 	tabs_fixed_height();
