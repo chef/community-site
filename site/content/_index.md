@@ -15,24 +15,24 @@ cards:
 
       [Get started &raquo;](https://learn.chef.io)
 
-      ##### Docs &amp; Quickstars
-      - Chef Infra: [Docs](#) | [Quickstart](#)
-      - Chef InSpec: [Docs](#) | [Quickstart](#)
-      - Chef Habitat: [Docs](#) | [Quickstart](#)
-      - Chef Automate: [Docs](#) | [Quickstart](#)
+      ##### Docs &amp; Quickstarts
+      - Chef Infra: [Docs](https://docs.chef.io/) | [Quickstart](https://learn.chef.io/modules/try-chef-infra)
+      - Chef InSpec: [Docs](https://www.inspec.io/docs/) | [Quickstart](https://learn.chef.io/modules/try-inspec)
+      - Chef Habitat: [Docs](https://www.habitat.sh/docs/) | [Quickstart](https://learn.chef.io/modules/try-habitat)
+      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/) | [Quickstart](https://learn.chef.io/modules/try-chef-automate)
   three:
     icon: /img/icons/connect.svg
     title: Connect
     body: >-
       ##### Interact
 
-      [Community Forum](discourse.chef.io) | [Community Slack](#)
+      [Community Forum](discourse.chef.io) | [Community Slack](http://community-slack.chef.io/)
 
 
       ##### Contribute
 
-      [First Time](/first-time) | [Book of Open Source](#) | [Feature
-      Requests](#)
+      [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
+      Requests](https://feedback.chef.io/)
   two:
     icon: /img/icons/meet.svg
     title: Meet
