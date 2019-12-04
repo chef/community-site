@@ -105,10 +105,8 @@ products:
     url: 'https://www.inspec.io'
 community:
   body: >-
-    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at community@chef.io
+    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io)
 
-
-    <a href="#" class="btn btn-primary-white">Learn More</a>
   header: We're all in this
   header2: Together
 resources:
