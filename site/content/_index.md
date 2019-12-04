@@ -26,7 +26,7 @@ cards:
     body: >-
       ##### Interact
 
-      [Community Forum](discourse.chef.io) | [Community Slack](http://community-slack.chef.io/)
+      [Community Forum](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/)
 
 
       ##### Contribute
@@ -53,7 +53,7 @@ products:
       Deploy your applications with confidence with Habitat’s built-in support
       for health checks, rolling updates, dependency management, and more. 
     header: Application
-    url: 'https://www.inspec.io'
+    url: 'https://www.habitat.sh'
   header: Chef Helps
   header2: "Automate:"
   infra:
@@ -102,7 +102,7 @@ products:
       application delivery pipeline, supporting your projects throughout the
       entire application lifecycle.
     header: Observability
-    url: 'https://www.inspec.io'
+    url: 'https://automate.chef.io'
 community:
   body: >-
     We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io)

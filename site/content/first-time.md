@@ -10,7 +10,7 @@ cards:
 
 
       [Code of Conduct
-      »](https://github.com/chef/chef-oss-practices/blob/master/CODE_OF_CONDUCT.md)
+      »](/code-of-conduct)
 
 
       [Read the Contributor Guide
@@ -18,10 +18,10 @@ cards:
 
 
       [Book of Open Source
-      »](https://github.com/chef/chef-oss-practices/blob/master/README.md)
+      »](/book-of-open-source)
 
 
-      [Watch a triage »](#)
+      [Watch a triage »](https://www.youtube.com/playlist?list=PL11cZfNdwNyMMffxAIvH3bfTVv6W65oIh)
   three:
     title: Connect with fellow contributors
     body: >-
@@ -29,16 +29,16 @@ cards:
       and give help
 
 
-      [Community Slack »](#)
+      [Community Slack »](http://community-slack.chef.io/)
 
 
-      [Discourse »](#)
+      [Discourse »](https://discourse.chef.io)
 
 
-      [Twitter »](#)
+      [Twitter »](https://twitter.com/chef)
 
 
-      [Attend a Meetup »](#)
+      [Attend a Meetup »](https://events.chef.io)
   two:
     title: Make your first contribution
     body: >-
