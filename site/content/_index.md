@@ -161,7 +161,7 @@ resources:
 ---
 
 ## Chef Community
-# <span class="highlight">we're better together</span>
+# <span class="highlight">We're better together</span>
 
 Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is in alongside those who build it. 
      
