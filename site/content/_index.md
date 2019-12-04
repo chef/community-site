@@ -105,13 +105,7 @@ products:
     url: 'https://www.inspec.io'
 community:
   body: >-
-    Community has always been a part of what we do at Chef. Everyone is invited.
-
-
-    We learn from you and your innovative uses of our products, and the whole
-    community benefits from contributions from teams at companies like Nordstrom
-    and Alaska Airlines. We welcome your contributions, suggestions, and
-    questions on all of our projects.
+    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at community@chef.io
 
 
     <a href="#" class="btn btn-primary-white">Learn More</a>
