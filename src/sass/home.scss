@@ -38,7 +38,7 @@
     .bg-wave {
       position: absolute;
       bottom: 0;
-      height: 25vh;
+      height: 35vh;
       width: 100%;
 
       div {
@@ -201,10 +201,6 @@
 
   .resources {
     @extend %section-padding;
-    background-image: url("/img/lines-corner.png");
-    background-repeat: no-repeat;
-    background-position-y: -11rem;
-
 
     .card {
       padding: 0;

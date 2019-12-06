@@ -1,0 +1,318 @@
+@import "./settings.scss";
+
+.reveal {
+  padding: 30px;
+  
+  @include breakpoint(small only){
+    top: 0 !important;
+    margin: 5% !important;
+    width: 90% !important;
+    left: auto !important;
+  }
+}
+
+// Marketo Overrides
+.marketo-inline-override {
+  width: 100% !important;
+  font-family: $font-primary !important;
+
+  .mktoFormCol {
+    float: none !important;
+  }
+
+  .mktoHasWidth {
+    width: 100% !important;
+  }
+
+  .mktoOffset {
+    width: 0 !important;
+  }
+
+  .mktoGutter {
+    height: 5px !important;
+  }
+
+  .mktoFieldWrap {
+    float: none;
+    width: 100%;
+  }
+
+  .mktoLabel {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: .04rem;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+
+    .mktoAsterix {
+      right: -15px;
+      color: $chef-primary;
+      font-weight: bold;
+    }
+  }
+
+  .mktoButtonRow {
+    display: block;
+    text-align: center;
+  }
+
+  .mktoButtonWrap {
+    margin-left: 0 !important;
+    text-align: left;
+    display: block;
+  }
+}
+
+.mktoForm {
+  width: 100% !important;
+  padding: 0 !important;
+  
+  .mktoFieldWrap {
+    float: none;
+    position: relative;
+  }
+
+  .mktoOffset {
+    display: none;
+  }
+
+  .mktoLabel {
+    bottom: 5px;
+    // text-transform: uppercase;
+    font-size: 12px;
+    color: $dark-grey;
+    
+    &.pos-rel {
+      position: static;
+      top: auto;
+      left: auto;
+      margin-bottom: 10px;
+      
+      .mktoAsterix {
+        position: static;
+      }
+    }
+  }
+
+  .mktoFormCol {
+    float: none;
+  }
+
+  .mktoGutter {
+    display: none;
+  }
+
+  .mktoFieldDescriptor {
+    margin-bottom: 10px !important;
+  }
+
+  .mktoField.mktoHasWidth {
+    width: 100% !important;
+    float: none;
+    position: relative;
+    z-index: 1;
+    // padding: 22px 6px 10px;
+    min-height: 44px;
+    box-shadow: none;
+  }
+
+  .mktoLabel.mktoHasWidth {
+    width: auto !important;
+  }
+
+  .mktoButtonRow {
+    text-align: left;
+  }
+
+  //Override the button with btn-primary style
+  .mktoButton {
+    background: $chef-primary;
+    border: 2px solid $chef-primary;
+    border-radius: .25rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: .4rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: white;
+      border: 2px solid $chef-primary;
+      color: $chef-primary;
+    }
+  }
+  
+  .mktoRadioList,
+  .mktoCheckboxList {
+    padding: 0 !important;
+  }
+    
+  .mktoFormRow {
+    select.mktoField {
+      min-height: 50px;
+    }
+    
+    .mktoCheckboxList {
+      input {
+        display: none;
+        
+        + label {
+          margin: 0;
+          padding: 0;
+          padding-left: 26px;
+          position: relative;
+          margin-bottom: 10px;
+          
+          &:before {
+            content: "";
+            border: 1px solid #cacaca;
+            height: 16px;
+            width: 16px;
+            background: white;
+            display: inline-block;
+            position: absolute;
+            top: -1px;
+            left: 0;
+          }
+        }
+        
+        &:checked {
+          
+          + label {
+            &:before {
+              content: "\f00c";
+              font-family: fontawesome;
+              font-weight: normal;
+              font-size: 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  
+  textarea {
+    clear: both;  }
+  
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix.mktoAsterix-checkbox {
+  display: inline;
+  float: none;
+  color: $chef-primary;
+}
+
+.mktoForm {
+  &.centered {
+    margin-left: auto;
+    margin-right: auto;
+    
+    .mktoButtonRow, .mktoButtonWrap {
+      text-align: center;
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+#mktoForm_3458 { //sponsor form
+
+}
+
+.mktoErrorArrow {
+  visibility: hidden;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+  background-color: $dark-grey !important;
+  background-image: none !important;
+  border: none !important;
+  border-radius: 0;
+  box-shadow: none !important;
+  color: white;
+  text-shadow: none !important;
+}
+
+// #mktoForm_3240{ // chefconf2019 reminder signup form
+    // max-width: 455px;
+    
+    // @media only screen and (min-width: 481px) {
+        
+    //     height: 235px;
+        
+    //     .mktoFormRow{
+    //         &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
+    //             width: 50%;
+    //             float: left;
+    //             clear: none;
+    //         }
+            
+    //         &:nth-of-type(1), &:nth-of-type(3){
+    //             padding-right: 10px;
+    //         }
+            
+    //         &:nth-of-type(2), &:nth-of-type(4){
+    //             padding-left: 10px;
+    //         }
+            
+    //     }
+    // }
+    
+    // .mktoFormRow{
+    //     margin-bottom: 20px;
+    // }
+    
+    // .mktoFormCol {
+    //   margin-bottom: 0 !important;
+    // }
+    
+    // .mktoButton {
+    //   border: 2px solid $chef-primary !important;
+    //   color: $chef-primary !important;
+    //   transition: background-color 0.15s ease-in-out;
+    //   padding: 9px !important;
+    //   @media only screen and (min-width: 481px) {
+    //     width: 50% !important;
+    //   }
+      
+    //   &:before, &:after {
+    //     display: none;
+    //   }
+      
+    //   &:hover {
+    //     background-color: $chef-primary !important;
+    //     color: white !important;
+        
+    //     span {
+    //       color: white !important;
+    //     }
+    //   }
+        
+    //   span {
+    //     color: $chef-primary !important;
+    //     background: none !important;
+    //     transition: none;
+    //     padding: 0;
+    //     margin: 0;
+    //     &:hover {
+    //     color: white !important;
+    //     background: none !important;
+    //     transition: none;
+    //   }
+    //     &:before, &:after {
+    //       display: none;
+    //     }
+    //   }
+    // }
+    
+// }
+
+
+
