@@ -95,19 +95,22 @@ collections: # A list of collections the CMS should be able to edit
 								widget: object,
 								fields: [
 									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"}]},
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}
 							{	label: "Card 2",
 								name: "two",
 								widget: object,
 								fields: [
 									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"}]},
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}
 							{	label: "Card 3",
 								name: "three",
 								widget: object,
 								fields: [
 									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}]}
       - file: "site/content/first-time.md"
         label: "First time contributing"
         name: "first-time"

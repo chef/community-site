@@ -125,6 +125,7 @@ resources:
 
       [Learn more &raquo;](https://sous-chefs.org)
     img: /img/thumb-sous-chef.png
+    link: "https://sous-chefs.org"
   three:
     body: >-
       #### [Dev-Sec Sets a Security Baseline](https://dev-sec.io)
@@ -137,6 +138,7 @@ resources:
 
       [Learn more &raquo;](https://dev-sec.io)
     img: /img/thumb-devops-sec.png
+    link: "https://dev-sec.io"
   two:
     body: >-
       #### [Find What You Need in the Supermarket](https://supermarket.chef.io)
@@ -150,6 +152,7 @@ resources:
 
       [Learn more &raquo;](https://supermarket.chef.io)
     img: /img/thumb-chef-supermarket.png
+    link: "https://supermarket.chef.io"
 ---
 
 ## Chef Community

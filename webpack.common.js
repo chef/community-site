@@ -41,13 +41,13 @@ module.exports = {
       path: path.join(process.cwd(), "site/data"),
       prettyPrint: true
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "./src/fonts/",
-        to: "fonts/",
-        flatten: true
-      }
-    ]),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: "./src/fonts/",
+    //     to: "fonts/",
+    //     flatten: true
+    //   }
+    // ]),
     new HtmlWebpackPlugin({
       filename: 'netlify/index.html',
       template: 'src/netlify-cms/cms.html',
