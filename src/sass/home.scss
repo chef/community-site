@@ -71,10 +71,11 @@
 
     .events-list {
       li {
-        font-size: 0.95em;
+        font-size: 1rem;
 
         > a {
           color: $dark-gray;
+          font-size: 1.25rem;
         }
       }
     }
