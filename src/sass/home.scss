@@ -126,12 +126,12 @@
       height: 100%;
 
       #prodgrid-img {
-        height: calc(100% + 25vh - 100px);
+        height: calc(100% + 36vh);
         overflow: visible;
         position: absolute;
         bottom: 0;
         width: auto;
-        right: 30%;
+        right: 50%;
         max-width: none;
 
         path, circle {
