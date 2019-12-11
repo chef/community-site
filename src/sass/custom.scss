@@ -257,7 +257,7 @@
 
   a {
     color: $light-gray;
-    font-size: 16px;
+    font-size: 15px;
 
     &:hover,
     &:active,
@@ -456,11 +456,11 @@ input {
     width: 100%;
   }
 
-  .hero,
-  .actions {
-    background-image: none;
-    background-color: transparent;
-  }
+  // .hero,
+  // .actions {
+  //   background-image: none;
+  //   background-color: transparent;
+  // }
 
   .actions {
     position: relative;
@@ -483,10 +483,10 @@ input {
     padding-top: 15vh;
     padding-bottom: 15vh;
   }
-  background-size: cover;
-  background-position: center;
-  background-color: $light-gray;
-  background-image: url(/img/lines.png);
+  // background-size: cover;
+  // background-position: center;
+  // background-color: $light-gray;
+  // background-image: url(/img/lines.png);
 }
 
 .card-container {
