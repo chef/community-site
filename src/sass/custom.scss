@@ -228,14 +228,13 @@
   }
 }
 
-// Main Footer Styles
+// Footer Styles
 // ========================
 
-#main-footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: $light-gray;
+#footer {
   background-color: $dark-gray;
+  color: $light-gray;
+  padding-top: 2rem;
 
   ul {
     list-style: none;
@@ -255,6 +254,11 @@
     text-transform: uppercase;
   }
 
+  p {
+    color: $light-gray;
+    font-size: 15px;
+  }
+
   a {
     color: $light-gray;
     font-size: 15px;
@@ -264,6 +268,19 @@
     &:focus {
       color: $chef-primary;
     }
+  }
+
+  #main-footer {
+    background-color: $dark-gray;
+    padding-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  #super-footer {
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    max-width: 100%;
   }
 
   .nav-items {

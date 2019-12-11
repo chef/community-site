@@ -1,5 +1,6 @@
-<footer id="main-footer">
-	<div class="container-fluid">
+<footer id="footer">
+	<div class="container-fluid" id="main-footer">
+		<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="row main-col-row">
@@ -61,14 +62,10 @@
 							</div>
 
 						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								{{ partial "social" . }}
-							</div>
-						</div>
-						
+	
 					</div>
-
+					
+					<!-- Contact Us Form -->
 					<div class="col-sm-12 col-md-4 col-lg-4">
 						<h5>Contact Us</h5>
 						<script>
@@ -95,7 +92,27 @@
 						
 					</div>
 				</div>
+
 			</div>
 		</div>
+	</div>
+		
+	</div>
+	<div class="container-fluid" id="super-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+						<p>© 2019 Chef Software Inc.</p>
+				</div>
+				<div class="col-sm-12 col-md-4 text-center">
+						<a href="https://chef.io/" target="_blank"><img src="/img/logos/chef-logo-white.svg" alt="Chef Software" width="105" /></a><br/>
+						<a href="https://chef.io/" target="_blank">Back to chef.io</p>
+				</div>
+				<div class="col-sm-12 col-md-4 text-right">
+						{{ partial "social" . }}
+					</div>
+			</div>
+		</div>
+		
 	</div>
 </footer> <!--.main-footer-->
