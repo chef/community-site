@@ -37,7 +37,7 @@ cards:
     icon: /img/icons/meet.svg
     title: Meet
 products:
-  application:
+  habitat:
     copy: >
       #### Free your applications from underlying infrastructure and make
       updates easy.
@@ -89,7 +89,7 @@ products:
       development.
     header: Security & Compliance
     url: 'https://www.inspec.io'
-  observability:
+  automate:
     copy: >
       #### Incorporate Chef’s products into your Application Development
       Lifecycle and deliver new features with confidence.
