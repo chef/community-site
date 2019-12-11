@@ -48,7 +48,7 @@ cards:
       [Good First Issues »](https://chef.github.io/jump-in/)
 
 
-      [Update the docs »](#)
+      [Update the docs »](https://github.com/chef/chef-web-docs)
 
 
       [List of projects
