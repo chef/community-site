@@ -131,8 +131,58 @@
         position: absolute;
         bottom: 0;
         width: auto;
-        right: 2vw;
+        right: 30%;
         max-width: none;
+
+        path, circle {
+          fill: none;
+        }
+  
+        .cls-1, .cls-2, .cls-3, .cls-4 {
+          stroke: #3c3c3c;
+        }
+  
+        .stack-background, .automate-stroke, .infra-stroke, .inspec-stroke, .habitat-stroke {
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+        }
+  
+        .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+          stroke-miterlimit: 10;
+        }
+  
+        .cls-2, .cls-5, .cls-6, .cls-7, .cls-8 {
+          stroke-width: 2px;
+        }
+  
+        .cls-3 {
+          stroke-miterlimit: 10;
+          stroke-width: 2px;
+        }
+  
+        .stack-background, .connector {
+          stroke: $chef-primary;
+        }
+
+        .automate-stroke {
+          stroke: $automate-color;
+        }
+  
+        .infra-stroke {
+          stroke: $infra-color;
+        }
+  
+        .inspec-stroke {
+          stroke: $inspec-color;
+        }
+  
+        .habitat-stroke {
+          stroke: $habitat-color;
+        }
+
+        #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
+          display: none;
+        }
       }
 
       .product-grid-copy {

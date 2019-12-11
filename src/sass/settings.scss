@@ -4,7 +4,13 @@ $chef-tertiary: #AC4FC6; // Do not change; set Chef brand color until Feb 2020
 $dark-gray: #292728; // Do not change; set Chef brand color until Feb 2020
 $mid-gray: #666666;
 $light-gray: #F1F2F2; // Do not change; set Chef brand color until Feb 2020
-$white: fcfcfc;
+$white: #fcfcfc;
+
+// Product Colors
+$infra-color: $chef-secondary;
+$automate-color: #00aeef;
+$inspec-color: #9957a3;
+$habitat-color: #1aaf94;
 
 $font-primary: 'Muli', sans-serif;
 
