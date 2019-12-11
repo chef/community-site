@@ -1,4 +1,4 @@
-#home {
+#home, #first-time {
   .hero-actions {
     &:before {
       height: 100%; // for ie11
@@ -40,7 +40,11 @@
       bottom: 0;
       height: 35vh;
       width: 100%;
+      // @include media-breakpoint-up(md) {
+      //   height: 20vh;
+      // }
 
+      //Filling in the empty space below the wave with dark gray
       div {
 				border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
 				

@@ -445,10 +445,10 @@ input {
   &:before {
     content: "";
     display: block;
-    height: calc(100% - 250px);
+    // height: calc(100% - 250px);
     background-image: url(/img/lines.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-color: $light-gray;
     position: absolute;
     top: 0;
@@ -483,10 +483,6 @@ input {
     padding-top: 15vh;
     padding-bottom: 15vh;
   }
-  // background-size: cover;
-  // background-position: center;
-  // background-color: $light-gray;
-  // background-image: url(/img/lines.png);
 }
 
 .card-container {

@@ -2,24 +2,19 @@
     h1 {
         color: $chef-primary;
     }
-	.actions{
-		&:after {
-			background-color: $dark-gray;
-		}
-	}
 	
-    .swag-program {
-        background-color: $dark-gray;
-        color: $light-gray;
-        @extend %section-padding;
+    // .swag-program {
+    //     background-color: $dark-gray;
+    //     color: $light-gray;
+    //     @extend %section-padding;
 
-        h2 {
-            color: $chef-primary;
-        }
+    //     h2 {
+    //         color: $chef-primary;
+    //     }
 
-        img {
-            width: 100%;
-            margin-bottom: 1.2rem;
-        }
-    }
+    //     img {
+    //         width: 100%;
+    //         margin-bottom: 1.2rem;
+    //     }
+    // }
 }
