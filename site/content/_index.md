@@ -52,10 +52,10 @@ products:
 
       Deploy your applications with confidence with Habitat’s built-in support
       for health checks, rolling updates, dependency management, and more. 
-    header: Application
+    header: Applications
     url: 'https://www.habitat.sh'
   header: Chef Helps
-  header2: "Automate:"
+  header2: "Automate Your:"
   infra:
     copy: >
       #### Infrastructure automation for hardened, consistent configuration at
@@ -156,7 +156,7 @@ resources:
 ---
 
 ## Chef Community
-# <span style="color: #ffa300;">We're better together</span>
+# <span class="highlight">We're better together</span>
 
 Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is in alongside those who build it. 
      
