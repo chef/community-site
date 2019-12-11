@@ -138,29 +138,13 @@
           fill: none;
         }
   
-        .cls-1, .cls-2, .cls-3, .cls-4 {
-          stroke: #3c3c3c;
-        }
-  
-        .stack-background, .automate-stroke, .infra-stroke, .inspec-stroke, .habitat-stroke {
+        .stack-background, .automate-stroke, .infra-stroke, .inspec-stroke, .habitat-stroke, .stack-link {
           stroke-miterlimit: 10;
           stroke-width: 2px;
+          transition: stroke 1s,
         }
   
-        .cls-2, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
-          stroke-miterlimit: 10;
-        }
-  
-        .cls-2, .cls-5, .cls-6, .cls-7, .cls-8 {
-          stroke-width: 2px;
-        }
-  
-        .cls-3 {
-          stroke-miterlimit: 10;
-          stroke-width: 2px;
-        }
-  
-        .stack-background, .connector {
+        .stack-background, .stack-link, .connector {
           stroke: $chef-primary;
         }
 
@@ -178,6 +162,12 @@
   
         .habitat-stroke {
           stroke: $habitat-color;
+        }
+
+        #automate-bubble, #infra-bubble, #inspec-bubble, #habitat-bubble {
+          path {
+            fill: $dark-gray;
+          }
         }
 
         #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
@@ -200,7 +190,7 @@
           .nav-link {
             &.active,
             &:hover {
-              color: white;
+              color: $chef-primary;
             }
           }
         }
