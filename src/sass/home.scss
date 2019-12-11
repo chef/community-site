@@ -130,12 +130,12 @@
       height: 100%;
 
       #prodgrid-img {
-        height: calc(100% + 25vh - 100px);
+        height: calc(100% + 35vh);
         overflow: visible;
         position: absolute;
         bottom: 0;
         width: auto;
-        right: 30%;
+        right: 40%;
         max-width: none;
 
         path, circle {
@@ -169,14 +169,39 @@
         }
 
         #automate-bubble, #infra-bubble, #inspec-bubble, #habitat-bubble {
+          transition: transform 1.5s;
+
           path {
             fill: $dark-gray;
           }
         }
 
         #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
-          display: none;
+          opacity: 0;
+          transition: opacity 3s ease,
         }
+      }
+
+      .product-grid-copy-wrapper {
+        @include media-breakpoint-up(lg) {
+            transform: translate(0px, 110px);
+            transition: transform 0.5s;
+
+          a {
+            font-size: 1.2em;
+          }
+
+          ul li .nav-link:hover {
+            color: $chef-secondary;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          h2 {
+            font-size: 1.6rem;
+          }
+        }
+
       }
 
       .product-grid-copy {
