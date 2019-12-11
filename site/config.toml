@@ -13,3 +13,9 @@ disableKinds = "taxonomyTerm"
   linkedin = "https://www.linkedin.com/company/chef-software"
   github = "http://chef.github.io/"
   youtube = "https://www.youtube.com/user/getchef"
+
+# Disables cache of JSON files
+[caches]
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = 0
