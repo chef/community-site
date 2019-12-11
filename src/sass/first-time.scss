@@ -1,21 +1,15 @@
 #first-time{
-	
     h1 {
         color: $chef-primary;
     }
-	
 	.actions{
 		&:after {
-			background-color: #414042;
-		}
-		
-		a {
-			color: $chef-secondary;
+			background-color: $dark-gray;
 		}
 	}
 	
     .swag-program {
-        background-color: #414042;
+        background-color: $dark-gray;
         color: $light-gray;
         @extend %section-padding;
 
