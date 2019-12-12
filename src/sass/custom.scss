@@ -471,7 +471,7 @@ input {
       content: "";
       display: block;
       position: absolute;
-      height: 250px;
+      height: 200px;
       width: 100%;
       background-color: $dark-gray;
       bottom: 0;
@@ -481,6 +481,7 @@ input {
 
 .hero {
   @extend %section-padding;
+  
   @include media-breakpoint-up(md) {
     padding-top: 15vh;
     padding-bottom: 15vh;
@@ -506,6 +507,36 @@ input {
   &:not(:last-child) {
     @include media-breakpoint-down(md) {
       margin-bottom: 1rem;
+    }
+  }
+
+  .card {
+    border: none;
+    background-color: $white;
+    padding: 2rem;
+    height: 100%;
+    z-index: 2;
+    display: block;
+    border-radius: 0;
+  
+    p {
+      font-size: 0.95em;
+    }
+    a {
+      font-weight: 700;
+    }
+  
+    h3 {
+      margin-bottom: 2rem;
+    }
+  
+    h5:not(:first-of-type) {
+      margin-top: 2rem;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
   }
 }
@@ -550,36 +581,6 @@ input {
         height: 100px;
       }
     }
-  }
-}
-
-.card {
-  border: none;
-  background-color: $white;
-  padding: 2rem;
-  height: 100%;
-  z-index: 2;
-  display: block;
-  border-radius: 0;
-
-  p {
-    font-size: 0.95em;
-  }
-  a {
-    font-weight: 700;
-  }
-
-  h3 {
-    margin-bottom: 2rem;
-  }
-
-  h5:not(:first-of-type) {
-    margin-top: 2rem;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
   }
 }
 
