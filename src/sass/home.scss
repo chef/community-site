@@ -25,8 +25,8 @@
   .actions {
     position: relative;
 
-    #action-cards {
-			@include media-breakpoint-up(lg){
+    .action-cards {
+			@include media-breakpoint-up(xl){
 				padding-bottom: 7rem;
 			}
     }
