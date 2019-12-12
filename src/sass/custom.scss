@@ -455,23 +455,8 @@ input {
 
 // Component Styles
 // =======================
-
 .hero-actions {
   position: relative;
-
-  &:before {
-    content: "";
-    display: block;
-    // height: calc(100% - 250px);
-    background-image: url(/img/lines.png);
-    background-size: cover;
-    background-position: top;
-    background-color: $light-gray;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
 
   // .hero,
   // .actions {
@@ -503,6 +488,17 @@ input {
 
   h1 {
     color: $chef-secondary;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem
+  }
+
+  #chefio {
+    font-size: 0.8em;
+    color: $mid-gray;
   }
 }
 
@@ -510,6 +506,49 @@ input {
   &:not(:last-child) {
     @include media-breakpoint-down(md) {
       margin-bottom: 1rem;
+    }
+  }
+}
+
+.actions {
+  position: relative;
+
+  .action-cards {
+    @include media-breakpoint-up(xl){
+      padding-bottom: 7rem;
+    }
+  }
+
+  &:after {
+    display: none;
+  }
+
+  .bg-wave {
+    position: absolute;
+    bottom: 0;
+    height: 35vh;
+    width: 100%;
+    // @include media-breakpoint-up(md) {
+    //   height: 20vh;
+    // }
+
+    //Filling in the empty space below the wave with dark gray
+    div {
+      border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
+      
+      &:after {
+        background-color: $dark-gray;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      img {
+        width: 100%;
+        height: 100px;
+      }
     }
   }
 }
