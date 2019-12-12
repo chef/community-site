@@ -35,10 +35,16 @@
 		tabs_fixed_height();
 	});
 
+	// set Applications tab to active on small screens
+	if (window.innerWidth <= 576) {
+		$("#habitat-nav").addClass("active");
+		$("#habitat").addClass("active");
+		$("#habitat").addClass("show");
+	}
+
 	// code that makes the product grid activate!
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-		$("#product-tabs").removeClass("flex-column");
-		$("#product-tabs").addClass("nav-tabs");		
+		$("#product-tabs").css("flex-direction", "row");
 		$(".product-grid-copy-wrapper").css("transform", "translate(0,0)");
 		$(".stack-background").css("stroke", "#3c3c3c");
 		$(".stack-link").css("stroke", "#3c3c3c");

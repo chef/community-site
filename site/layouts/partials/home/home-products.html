@@ -6,18 +6,18 @@
 	   <div class="col-lg-7 col-sm-12 product-grid-copy">
 			<div class="product-grid-copy-wrapper">
 				<h2>{{ .Params.products.header }} <span class="highlight">{{ .Params.products.header2 }}</span></h2>
-				<ul class="nav flex-column" id="product-tabs" role="tablist">
+				<ul class="nav nav-tabs" id="product-tabs" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link" href="#habitat" data-toggle="tab">{{ .Params.products.habitat.header }}</a>
+						<a id="habitat-nav" class="nav-link" href="#habitat" data-toggle="tab">{{ .Params.products.habitat.header }}</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#inspec" data-toggle="tab">{{ .Params.products.inspec.header }}</a>
+						<a id="inspec-nav" class="nav-link" href="#inspec" data-toggle="tab">{{ .Params.products.inspec.header }}</a>
 					</li>
 						<li class="nav-item">
-						<a class="nav-link" href="#infra" data-toggle="tab">{{ .Params.products.infra.header }}</a>
+						<a id="infra-nav" class="nav-link" href="#infra" data-toggle="tab">{{ .Params.products.infra.header }}</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#automate" data-toggle="tab">{{ .Params.products.automate.header }}</a>
+						<a id="automate-nav" class="nav-link" href="#automate" data-toggle="tab">{{ .Params.products.automate.header }}</a>
 					</li>
 				</ul>
 			</div>
