@@ -85,13 +85,13 @@
       height: 100%;
 
       #prodgrid-img {
-        height: calc(100% + 35vh);
         overflow: visible;
-        position: absolute;
-        bottom: 0;
+        position: relative;
+        bottom: 430px;
         width: auto;
         right: 35%;
         max-width: none;
+        margin-bottom: -400px;
 
         path, circle {
           fill: none;
@@ -139,7 +139,8 @@
 
       .product-grid-copy-wrapper {
         @include media-breakpoint-up(lg) {
-            transform: translate(0px, 100px);
+          padding-top: 3rem;
+            transform: translate(0px, 150px);
             transition: transform 0.5s;
 
           a {
@@ -180,7 +181,7 @@
 
         @include media-breakpoint-up(lg) {
           padding-top: 0;
-          padding-bottom: 25vh;
+          padding-bottom: 0;
         }
 
         ul {
