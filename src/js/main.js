@@ -35,16 +35,16 @@
 		tabs_fixed_height();
 	});
 
-	//WIP Relative Link fix
+	//Appends absolute path to relative URLs (./link) in Github markdown files 
 	function github_url() {
-		var siteURL = "http://" + top.location.host.toString();
-
-		if (location.href == siteURL+"/book-of-open-source/") {
+		var baseURL = window.location.origin;
+		if ((location.href == baseURL+"/book-of-open-source/") ||
+				(location.href == baseURL+"/code-of-conduct/")){
 		$('a[href^="./"]').each(function () {
 				var oldURL = $(this).attr("href");
 				var newURL = oldURL.replace(/(\.\/)*/, 'https://github.com/chef/chef-oss-practices/blob/master/');
 				$(this).attr("href", newURL);
-				console.log($(this).attr("href"));
+				// console.log($(this).attr("href"));
 			});
 		}
 	}
