@@ -90,7 +90,7 @@
         position: absolute;
         bottom: 0;
         width: auto;
-        right: 40%;
+        right: 35%;
         max-width: none;
 
         path, circle {
@@ -133,21 +133,37 @@
 
         #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
           opacity: 0;
-          transition: opacity 3s ease,
+          transition: opacity 2.5s ease,
         }
       }
 
       .product-grid-copy-wrapper {
         @include media-breakpoint-up(lg) {
-            transform: translate(0px, 110px);
+            transform: translate(0px, 100px);
             transition: transform 0.5s;
 
           a {
             font-size: 1.2em;
           }
 
-          ul li .nav-link:hover {
-            color: $chef-secondary;
+          #product-tabs {
+            flex-direction: column;
+          }
+
+          ul li #habitat-nav:hover, #habitat-nav.active {
+            color: $habitat-color;
+          }
+
+          ul li #inspec-nav:hover, #inspec-nav.active {
+            color: $inspec-color;
+          }
+
+          ul li #infra-nav:hover, #infra-nav.active {
+            color: $infra-color;
+          }
+
+          ul li #automate-nav:hover, #automate-nav.active {
+            color: $automate-color;
           }
         }
 
@@ -168,9 +184,12 @@
         }
 
         ul {
-          margin-bottom: 2.5rem;
           margin-left: -15px;
+          margin-bottom: 1rem;
 
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 2.5rem;
+          }
           .nav-link {
             &.active,
             &:hover {
@@ -187,7 +206,6 @@
   }
 
   .community {
-
     .img {
       background-size: cover;
 

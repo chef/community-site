@@ -35,7 +35,14 @@
 		tabs_fixed_height();
 	});
 
-	//Appends absolute path to relative URLs (./link) in Github markdown files 
+	// set Applications tab to active on small screens
+	if (window.innerWidth <= 576) {
+		$("#habitat-nav").addClass("active");
+		$("#habitat").addClass("active");
+		$("#habitat").addClass("show");
+	}
+
+  //Appends absolute path to relative URLs (./link) in Github markdown files 
 	function github_url() {
 		var baseURL = window.location.origin;
 		if ((location.href == baseURL+"/book-of-open-source/") ||
@@ -50,11 +57,9 @@
 	}
 	github_url();
 	
-
 	// code that makes the product grid activate!
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-		$("#product-tabs").removeClass("flex-column");
-		$("#product-tabs").addClass("nav-tabs");		
+		$("#product-tabs").css("flex-direction", "row");
 		$(".product-grid-copy-wrapper").css("transform", "translate(0,0)");
 		$(".stack-background").css("stroke", "#3c3c3c");
 		$(".stack-link").css("stroke", "#3c3c3c");
