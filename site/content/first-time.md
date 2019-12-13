@@ -32,10 +32,10 @@ cards:
       [Community Slack »](http://community-slack.chef.io/)
 
 
-      [Discourse »](https://discourse.chef.io)
+      [Community Forum »](https://discourse.chef.io)
 
 
-      [Twitter »](https://twitter.com/chef)
+      [Chef Twitter »](https://twitter.com/chef)
 
 
       [Attend a Meetup »](https://events.chef.io)
