@@ -35,29 +35,21 @@
 		tabs_fixed_height();
 	});
 
-
 	//WIP Relative Link fix
-	var siteURL = "http://" + top.location.host.toString();
-	var $internalLinks = $("a[href^='"+siteURL+"'], a[href^='./']");
+	function github_url() {
+		var siteURL = "http://" + top.location.host.toString();
 
-	for (var i=0; i < $internalLinks.length; i++) {
-		var relativeURL = $internalLinks[i].pathname;
-		var newURL = linkify(relativeURL);
-    link = $internalLinks[i];
-    if (link) {
-     link.setAttribute('href', newURL);
-    }
+		if (location.href == siteURL+"/book-of-open-source/") {
+		$('a[href^="./"]').each(function () {
+				var oldURL = $(this).attr("href");
+				var newURL = oldURL.replace(/(\.\/)*/, 'https://github.com/chef/chef-oss-practices/blob/master/');
+				$(this).attr("href", newURL);
+				console.log($(this).attr("href"));
+			});
+		}
 	}
-
-	function linkify(inputURL) {
-		var newURL = inputURL;
-		//Match all links starting with book-of-open-source
-			if (location.href == siteURL+"/book-of-open-source/") {
-				newURL = inputURL.replace(/(?:\/book-of-open-source\/)?/, 'https://github.com/chef/chef-oss-practices/blob/master/');
-			}
-			return newURL;
-	}
-
+	github_url();
+	
 
 	// code that makes the product grid activate!
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
