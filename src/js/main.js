@@ -42,6 +42,21 @@
 		$("#habitat").addClass("show");
 	}
 
+  //Appends absolute path to relative URLs (./link) in Github markdown files 
+	function github_url() {
+		var baseURL = window.location.origin;
+		if ((location.href == baseURL+"/book-of-open-source/") ||
+				(location.href == baseURL+"/code-of-conduct/")){
+		$('a[href^="./"]').each(function () {
+				var oldURL = $(this).attr("href");
+				var newURL = oldURL.replace(/(\.\/)*/, 'https://github.com/chef/chef-oss-practices/blob/master/');
+				$(this).attr("href", newURL);
+				// console.log($(this).attr("href"));
+			});
+		}
+	}
+	github_url();
+	
 	// code that makes the product grid activate!
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 		$("#product-tabs").css("flex-direction", "row");
@@ -91,3 +106,4 @@
 	  })
 
 } (jQuery));
+

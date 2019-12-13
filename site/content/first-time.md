@@ -14,7 +14,7 @@ cards:
 
 
       [Read the Contributor Guide
-      »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
+      »](https:///chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
 
 
       [Book of Open Source
@@ -32,10 +32,10 @@ cards:
       [Community Slack »](http://community-slack.chef.io/)
 
 
-      [Discourse »](https://discourse.chef.io)
+      [Community Forum »](https://discourse.chef.io)
 
 
-      [Twitter »](https://twitter.com/chef)
+      [Chef Twitter »](https://twitter.com/chef)
 
 
       [Attend a Meetup »](https://events.chef.io)
@@ -48,7 +48,7 @@ cards:
       [Good First Issues »](https://chef.github.io/jump-in/)
 
 
-      [Update the docs »](#)
+      [Update the docs »](https://github.com/chef/chef-web-docs)
 
 
       [List of projects
