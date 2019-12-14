@@ -1,22 +1,35 @@
 #first-time{
     .hero-actions {
 
+      &:before {
+        content: "";
+        display: block;
+        height: 100%; // for ie11
+        height: calc(100% - calc(25vh - 100px));
+        background-image: url(/img/puzzle.svg);
+        background-repeat: no-repeat;
+        background-color: $light-gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      @include media-breakpoint-up(xl) {
         &:before {
-          content: "";
-          display: block;
-          height: 100%; // for ie11
-          height: calc(100% - calc(25vh - 100px));
-          background-image: url(/img/puzzle.svg);
+          background-position: 110% -50px;
           background-size: contain;
-          background-repeat: no-repeat;
-          background-position: right;
-          background-color: $light-gray;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
         }
       }
+    
+      @include media-breakpoint-down(lg) {
+        &:before {
+          background-position: 180% -10px;
+          background-size: 70%;
+        }
+      }
+    }
+
     h1 {
         color: $chef-secondary;
     }
