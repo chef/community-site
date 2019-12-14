@@ -86,8 +86,7 @@
     }
 
   }
-
-  
+ 
 
   .product-grid {
     background-color: $dark-gray;
@@ -149,37 +148,53 @@
           opacity: 0;
           transition: opacity 2.5s ease,
         }
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+
       }
 
       .product-grid-copy-wrapper {
+        .fa {
+          transition: linear 0.1s;
+        }
+        ul li a.active {
+          .fa {
+            transform: rotate(90deg)
+          }
+        }
+
+        ul li #habitat-nav:hover, #habitat-nav.active {
+          color: $habitat-color;
+        }
+
+        ul li #inspec-nav:hover, #inspec-nav.active {
+          color: $inspec-color;
+        }
+
+        ul li #infra-nav:hover, #infra-nav.active {
+          color: $infra-color;
+        }
+
+        ul li #automate-nav:hover, #automate-nav.active {
+          color: $automate-color;
+        }
+
         @include media-breakpoint-up(lg) {
           padding-top: 3rem;
             transform: translate(0px, 150px);
             transition: transform 0.5s;
 
           a {
-            font-size: 1.2em;
+            font-size: 1.1em;
           }
 
           #product-tabs {
             flex-direction: column;
           }
 
-          ul li #habitat-nav:hover, #habitat-nav.active {
-            color: $habitat-color;
-          }
 
-          ul li #inspec-nav:hover, #inspec-nav.active {
-            color: $inspec-color;
-          }
-
-          ul li #infra-nav:hover, #infra-nav.active {
-            color: $infra-color;
-          }
-
-          ul li #automate-nav:hover, #automate-nav.active {
-            color: $automate-color;
-          }
         }
 
         @include media-breakpoint-down(sm) {
@@ -211,6 +226,14 @@
               color: $chef-primary;
             }
           }
+        }
+
+        .chef-wordmark {
+          max-height: 25px;
+        }
+
+        h4 {
+          margin-top: 1rem;
         }
 
         .btn {
