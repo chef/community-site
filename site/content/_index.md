@@ -123,7 +123,7 @@ resources:
       downloads.
 
 
-      [Learn more &raquo;](https://sous-chefs.org)
+      [Learn about Sous Chefs &raquo;](https://sous-chefs.org)
     img: /img/thumb-sous-chef.png
     link: "https://sous-chefs.org"
   three:
@@ -136,7 +136,7 @@ resources:
       infrastructure and key application platforms
 
 
-      [Learn more &raquo;](https://dev-sec.io)
+      [Visit Supermarket &raquo;](https://dev-sec.io)
     img: /img/thumb-devops-sec.png
     link: "https://dev-sec.io"
   two:
