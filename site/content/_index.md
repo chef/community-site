@@ -52,7 +52,7 @@ products:
 
       Deploy your applications with confidence with Habitat’s built-in support
       for health checks, rolling updates, dependency management, and more. 
-    header: Applications
+    header: Application Delivery
     url: 'https://www.habitat.sh'
   header: Chef helps
   header2: "automate your:"
