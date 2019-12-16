@@ -5,4 +5,4 @@ site/data/webpack.json
 yarn-error.log
 .DS_Store
 package-lock.json
-resources/_gen
+site/resources/_gen

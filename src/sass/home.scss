@@ -70,24 +70,22 @@
       width: 100%;
     }
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-between(lg, xl) {
       &:before {
         background-size: contain;
-        background-position: right;
-       
+        background-position: right -10px;
       }
     }
 
     @include media-breakpoint-down(lg) {
       &:before {
-        background-size: 70%;
+        background-size: 80%;
         background-position: 140% -40px;
       }
     }
 
   }
  
-
   .product-grid {
     background-color: $dark-gray;
     color: $light-gray;

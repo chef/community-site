@@ -15,7 +15,7 @@
         width: 100%;
       }
 
-      @include media-breakpoint-up(xl) {
+      @include media-breakpoint-between(lg, xl) {
         &:before {
           background-position: 110% -50px;
           background-size: contain;

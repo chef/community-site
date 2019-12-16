@@ -5,7 +5,7 @@ assetDir = "../src"
 disableKinds = "taxonomyTerm"
 
 [params]
-  author = "Chef Web Team: Shaun Yap, Jiajia Li, Kevin Chan, Kim Alvarez"
+  author = "Chef Software"
   title = "Chef Community"
   description = "Community is the foundation of Chef."
   facebook = "https://www.facebook.com/getchefdotcom"
