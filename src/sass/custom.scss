@@ -685,6 +685,11 @@ img {
   border-radius: 50%;
 }
 
+.img-left {
+  display: flex;
+  justify-content: start;
+}
+
 // Tab Styles
 // =============
 .nav-tabs {
