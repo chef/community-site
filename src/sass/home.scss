@@ -157,6 +157,7 @@
       }
 
       .product-grid-copy-wrapper {
+
         .fa {
           transition: linear 0.1s;
         }
@@ -212,6 +213,10 @@
         @include media-breakpoint-up(lg) {
           padding-top: 0;
           padding-bottom: 0;
+        }
+
+        .tab-content {
+          margin-bottom: 10rem;
         }
 
         ul {
