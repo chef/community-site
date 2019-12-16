@@ -105,7 +105,7 @@ products:
     url: 'https://automate.chef.io'
 community:
   body: >-
-    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io).
+    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io)
 
   header: We're all in this
   header2: Together
@@ -126,19 +126,6 @@ resources:
       [Learn about Sous Chefs &raquo;](https://sous-chefs.org)
     img: /img/thumb-sous-chef.png
     link: "https://sous-chefs.org"
-  three:
-    body: >-
-      #### [Dev-Sec Sets a Security Baseline](https://dev-sec.io)
-
-      Chef InSpec is a powerful tool for creating and sharing security profiles.
-      The InSpec community at https://dev-sec.io has created a myriad of
-      baseline profiles for you to download and use to secure your
-      infrastructure and key application platforms.
-
-
-      [Visit Supermarket &raquo;](https://dev-sec.io)
-    img: /img/thumb-devops-sec.png
-    link: "https://dev-sec.io"
   two:
     body: >-
       #### [Find What You Need in the Supermarket](https://supermarket.chef.io)
@@ -150,9 +137,22 @@ resources:
       for others to use.
 
 
-      [Learn more &raquo;](https://supermarket.chef.io)
+      [Visit Supermarket &raquo;](https://supermarket.chef.io)
     img: /img/thumb-chef-supermarket.png
     link: "https://supermarket.chef.io"
+  three:
+    body: >-
+      #### [Dev-Sec Sets a Security Baseline](https://dev-sec.io)
+
+      Chef InSpec is a powerful tool for creating and sharing security profiles.
+      The InSpec community at https://dev-sec.io has created a myriad of
+      baseline profiles for you to download and use to secure your
+      infrastructure and key application platforms
+
+
+      [Learn more &raquo;](https://dev-sec.io)
+    img: /img/thumb-devops-sec.png
+    link: "https://dev-sec.io"
 ---
 
 ## Chef Community
