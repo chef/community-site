@@ -54,8 +54,8 @@ products:
       for health checks, rolling updates, dependency management, and more. 
     header: Applications
     url: 'https://www.habitat.sh'
-  header: Chef Helps
-  header2: "Automate Your:"
+  header: Chef helps
+  header2: "automate your:"
   infra:
     copy: >
       #### Infrastructure automation for hardened, consistent configuration at
@@ -104,14 +104,13 @@ products:
     header: Observability
     url: 'https://automate.chef.io'
 community:
-  body: >-
-    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io)
-
   header: We're all in this
-  header2: Together
+  header2: together
+  body: >-
+    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io).
 resources:
   header: Resources from the
-  header2: Community
+  header2: community
   one:
     body: >-
       #### [Sous Chefs keep the kitchen in motion](https://sous-chefs.org)
@@ -147,10 +146,10 @@ resources:
       Chef InSpec is a powerful tool for creating and sharing security profiles.
       The InSpec community at https://dev-sec.io has created a myriad of
       baseline profiles for you to download and use to secure your
-      infrastructure and key application platforms
+      infrastructure and key application platforms.
 
 
-      [Go to Dev-Sec.io &raquo;](https://dev-sec.io)
+      [Go to dev-sec.io &raquo;](https://dev-sec.io)
     img: /img/thumb-devops-sec.png
     link: "https://dev-sec.io"
 ---
