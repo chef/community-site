@@ -14,7 +14,7 @@ cards:
 
 
       [Read the Contributor Guide
-      »](https:///chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
+      »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
 
 
       [Book of Open Source
