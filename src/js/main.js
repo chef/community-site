@@ -37,9 +37,9 @@
 
 	// set Applications tab to active on small screens
 	if (window.innerWidth <= 576) {
-		$("#habitat-nav").addClass("active");
-		$("#habitat").addClass("active");
-		$("#habitat").addClass("show");
+		$("#infra-nav").addClass("active");
+		$("#infra").addClass("active");
+		$("#infra").addClass("show");
 	}
 
   //Appends absolute path to relative URLs (./link) in Github markdown files 
