@@ -94,6 +94,11 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
+
+    @include media-breakpoint-up(md) {
+      min-height: 800px;
+    }
+
     @include media-breakpoint-up(xl) {
       margin-bottom: -50px;
     }
