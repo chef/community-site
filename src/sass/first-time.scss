@@ -17,15 +17,15 @@
 
       @include media-breakpoint-between(lg, xl) {
         &:before {
-          background-position: 110% -50px;
+          background-position: 140% -70px;
           background-size: contain;
         }
       }
     
       @include media-breakpoint-down(lg) {
         &:before {
-          background-position: 180% -10px;
-          background-size: 70%;
+          background-position: 165% -50px;
+          background-size: 60%;
         }
       }
       
