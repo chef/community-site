@@ -72,15 +72,20 @@
 
     @include media-breakpoint-between(lg, xl) {
       &:before {
-        background-size: contain;
-        background-position: right -10px;
+        background-size: 45%;
+        background-position: 110% -10px;
       }
     }
 
     @include media-breakpoint-down(lg) {
       &:before {
-        background-size: 80%;
-        background-position: 140% -40px;
+        background-size: 60%;
+        background-position: 130% -10px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      &:before {
+        background-image: none !important;
       }
     }
 
