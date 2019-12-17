@@ -94,8 +94,12 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       margin-top: -100px;
+      margin-bottom: -50px;
+    }
+
+    @include media-breakpoint-up(xl) {
       margin-bottom: -200px;
     }
 
