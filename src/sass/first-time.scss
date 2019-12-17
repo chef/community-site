@@ -8,6 +8,7 @@
         height: calc(100% - calc(25vh - 100px));
         background-image: url(/img/puzzle.svg);
         background-repeat: no-repeat;
+ 
         background-color: $light-gray;
         position: absolute;
         top: 0;
@@ -15,37 +16,43 @@
         width: 100%;
       }
 
-      @include media-breakpoint-between(lg, xl) {
-        &:before {
-          background-position: 140% -100px;
-          background-size: contain;
-        }
-      }
-    
-      @include media-breakpoint-down(lg) {
-        &:before {
-          background-position: 165% -50px;
-          background-size: 60%;
-        }
-      }
-      
       @include media-breakpoint-down(sm) {
         &:before {
           background-image: none !important;
         }
       }
-
-      @include media-breakpoint-up(xl) {
+     
+      @include media-breakpoint-down(lg) {
         &:before {
-          background-position: 145% -70px;
-          background-size: contain;
+          background-position: 180% -70px;
+          background-size: 70%;
         }
       }
 
-      @media (min-width: 2850px) {
+      @include media-breakpoint-between(lg, xl) {
         &:before {
-          background-position: 160% -10px;
-          background-size: 60%;
+          background-position: 180% -100px;
+          background-size: 70%;
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        &:before {
+          background-position: 180% -100px;
+          background-size: 70%;
+        }
+      }
+    
+      @media (min-width: 1400px) {
+        &:before {
+          background-position: 125% -50px;
+          background-size: contain;
+        }
+      }
+ 
+      @media (min-width: 2200px) {
+        &:before {
+          background-position: 80% -10px;
+          background-size: contain;
         }
       }
     }
