@@ -76,6 +76,6 @@ swag_program:
 
 # First time contributing?
 
-We’re glad you’re interested in contributing to a Chef project! We’re here to do everything we can to make your first contribution experience a great.
+We’re glad you’re interested in contributing to a Chef project! We’re here to do everything we can to make your first contribution experience a great one.
 
-Help is always welcome! For example, documentation — like the text you are reading now — can always use improvement. Here are some places you can start:
+Help is always welcome! For example, documentation can always use improvement. Listed below are some places you can start.

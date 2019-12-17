@@ -28,6 +28,12 @@
           background-size: 70%;
         }
       }
+      
+      @include media-breakpoint-down(sm) {
+        &:before {
+          background-image: none !important;
+        }
+      }
     }
 
     h1 {
