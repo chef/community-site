@@ -34,6 +34,12 @@
           background-image: none !important;
         }
       }
+      @include media-breakpoint-up(xl) {
+        &:before {
+          background-position: 160% -10px;
+          background-size: 70%;
+        }
+      }
     }
 
     h1 {
