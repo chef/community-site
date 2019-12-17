@@ -17,7 +17,7 @@
 
       @include media-breakpoint-between(lg, xl) {
         &:before {
-          background-position: 140% -70px;
+          background-position: 140% -100px;
           background-size: contain;
         }
       }
@@ -34,10 +34,18 @@
           background-image: none !important;
         }
       }
+
       @include media-breakpoint-up(xl) {
         &:before {
+          background-position: 145% -70px;
+          background-size: contain;
+        }
+      }
+
+      @media (min-width: 2850px) {
+        &:before {
           background-position: 160% -10px;
-          background-size: 70%;
+          background-size: 60%;
         }
       }
     }
