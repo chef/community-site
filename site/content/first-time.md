@@ -5,8 +5,8 @@ cards:
   one:
     title: Learn about the community
     body: >-
-      What makes our community tick, things we're working on and how
-      we treat each other
+      What makes our community tick, things we're working on, and how
+      we treat each other.
 
 
       [Code of Conduct
@@ -26,7 +26,7 @@ cards:
     title: Connect with fellow contributors
     body: >-
       Connect and participate in discussions with fellow contributors. Get help
-      and give help
+      and give help.
 
 
       [Community Slack »](http://community-slack.chef.io/)

@@ -4,7 +4,7 @@ meta_keyword: Chef Community
 meta_description: >-
   Community is the foundation of Chef. We believe that the best way to build
   software is in close collaboration with the people who use it, and the best
-  way to use software is in alongside those who build it. 
+  way to use software is alongside those who build it. 
 cards:
   one:
     icon: /img/icons/learn.svg
@@ -45,7 +45,7 @@ products:
 
       Chef Habitat gives you and your team the capability to build, deploy, and
       run any application in any environment. Whether you’re focused on
-      traditional datacenters, cloud platforms, or containerized microservices,
+      traditional data centers, cloud platforms, or containerized microservices,
       Habitat can help you define and codify your application and its
       dependencies, freeing you from confounding infrastructure constraints.
 
@@ -62,14 +62,13 @@ products:
       any scale.
 
       With Chef Infra, your infrastructure is defined as code, ensuring that
-      configuration policies are flexible, versionable, testable, and human
-      readable. 
+      configuration policies are flexible, versionable, testable, and human-readable. 
 
 
-      Automate your system configuration, on the platforms you need, whether in
-      the cloud, in the datacenter, or in the field. Don’t solve the same
+      Automate your system configuration on the platforms you need, whether in
+      the cloud, in the data center, or in the field. Don’t solve the same
       problems over and over again! Automate them and give your team the ability
-      to build new innovations.
+      to build innovations.
     header: Infrastructure
     url: 'https://www.chef.sh'
   inspec:
@@ -107,7 +106,7 @@ community:
   header: We're all in this
   header2: together
   body: >-
-    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef Community story, get in touch at [community@chef.io](mailto:community@chef.io).
+    We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef community story, get in touch at [community@chef.io](mailto:community@chef.io).
 resources:
   header: Resources from the
   header2: community
@@ -159,7 +158,7 @@ resources:
 # We're better together
 
 
-Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is in alongside those who build it. 
+Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it. 
      
 
 Our greatest strength is our community. That is why as a community, we are committed to holding ourselves to a higher standard. This is captured in our [Code of Conduct].
