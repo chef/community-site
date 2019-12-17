@@ -1,5 +1,5 @@
 ---
-title: 'Chef Developer Community '
+title: 'Chef Developer Community'
 meta_keyword: Chef Community
 meta_description: >-
   Community is the foundation of Chef. We believe that the best way to build

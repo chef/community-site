@@ -6,6 +6,8 @@
 <!-- OpenGraph and Twitter tags -->
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en-US">
+<meta property="og:url" content="https://dev.chef.io">
+
 <meta property="og:site_name" content="{{ .Site.Params.title }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@chef">
@@ -38,7 +40,7 @@
 <meta name="twitter:image" content="{{ .Params.meta_image }}">
 {{else}}
 <meta property="og:image" content="/img/Chef-Meta.png">
-<meta name="twitter:image" content="/img/Chef-Meta-Square.png">
+<meta name="twitter:image" content="https://www.chef.io/wp-content/uploads/2019/12/Chef-Meta-Square.png">
 {{end}}
 
 <link rel="canonical" href="{{ .Permalink }}">
