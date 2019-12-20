@@ -9,7 +9,7 @@ CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main
 CMS.registerPreviewTemplate("home", Homepage);
 CMS.registerPreviewTemplate("first-time", FirstTime);
 
-// Register any CSS file on the home page as a preview style
+ // Register any CSS file on the home page as a preview style
 fetch("/")
   .then(response => response.text())
   .then(html => {
