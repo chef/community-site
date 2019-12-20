@@ -56,7 +56,7 @@ cards:
 
 
       [Help needed
-      »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/help-wanted.md)
+      »](/help-wanted)
 swag_program:
   body: >-
     We’re glad you’re interested in contributing to a Chef project! We’re here

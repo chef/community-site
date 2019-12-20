@@ -1,5 +1,5 @@
 ---
-title: "Book of Open Source"
+title: "Projects List"
 type: github-markdown
 aliases: [/projects-list.md]
 link: "https://api.github.com/repos/chef/chef-oss-practices/contents/projects-list.md"
