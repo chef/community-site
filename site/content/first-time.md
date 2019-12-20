@@ -52,7 +52,7 @@ cards:
 
 
       [List of projects
-      »](https://github.com/chef/chef-oss-practices/blob/master/projects-list.md)
+      »](/projects-list)
 
 
       [Help needed
