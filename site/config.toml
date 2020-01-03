@@ -14,8 +14,8 @@ disableKinds = "taxonomyTerm"
   github = "http://chef.github.io/"
   youtube = "https://www.youtube.com/user/getchef"
 
-# Disables cache of JSON files
+# Sets cache of JSON files to 1h
 [caches]
 [caches.getjson]
 dir = ":cacheDir/:project"
-maxAge = "12h"
+maxAge = "1h"

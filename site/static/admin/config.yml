@@ -1,0 +1,149 @@
+backend:
+  name: git-gateway
+	repo: chef/chef-devsite
+	identity_url: "https://dev.chef.io/.netlify/identity"
+publish_mode: editorial_workflow
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/_index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Title", name: "meta_title", widget: "string", required: false}
+          - {label: "Focus Keyword", name: "meta_keyword", widget: "string"}
+          - {label: "Meta Description", name: "meta_description", widget: "string"}
+          - {label: "Image", name: "meta_image", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Cards",
+						name: "cards",
+						widget: object,
+						fields: [
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "image"}]},
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Icon", name: "icon", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Products",
+						name: "products",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{	label: "Infra",
+								name: "infra",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Inspec",
+								name: "inspec",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Application",
+								name: "application",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]},
+							{	label: "Observability",
+								name: "observability",
+								widget: object,
+								fields: [
+									{label: "Header", name: "header", widget: "string"},
+									{label: "Url", name: "url", widget: "string"},
+									{label: "Copy", name: "copy", widget: "markdown"}]}]}
+          - {label: "Community",
+						name: "community",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{label: "Body", name: "body", widget: "markdown"}]}
+          - {label: "Resources",
+						name: "resources",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Header 2", name: "header2", widget: "string"},
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Image", name: "img", widget: "image"},
+									{label: "Body", name: "body", widget: "markdown"},
+									{label: "Link", name: "link", widget: "string"}]}]}
+      - file: "site/content/first-time.md"
+        label: "First time contributing"
+        name: "first-time"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Type", name: "type", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Cards",
+						name: "cards",
+						widget: object,
+						fields: [
+							{	label: "Card 1",
+								name: "one",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 2",
+								name: "two",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]},
+							{	label: "Card 3",
+								name: "three",
+								widget: object,
+								fields: [
+									{label: "Title", name: "title", widget: "string"},
+									{label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Swag Program",
+						name: "swag_program",
+						widget: object,
+						fields: [
+							{label: "Header", name: "header", widget: "string"},
+							{label: "Body", name: "body", widget: "markdown"}]}
