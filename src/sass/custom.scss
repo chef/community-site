@@ -668,10 +668,10 @@ input {
 
   //Full width buttons on xs devices
   @include media-breakpoint-only(xs) {
-    margin: 10px auto;
+    margin: 1rem;
     padding-top: 12px;
     padding-bottom: 12px;
-    width: 95%;
+    max-width: 100%;
   }
 }
 

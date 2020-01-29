@@ -1,0 +1,63 @@
+<div class="container-fluid action-cards">
+	<div class="row">
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="4">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>{{ .Params.cards.one.title }}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.one.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="4">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>{{ .Params.cards.two.title }}</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 events-list">
+						{{ .Params.cards.two.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="4">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>{{ .Params.cards.three.title }}</h3>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.three.body | markdownify }}
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="4">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>{{ .Params.cards.four.title }}</h3>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.four.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-wave"><div><img src="/img/bg-wave.png"></div></div>
