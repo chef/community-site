@@ -19,7 +19,12 @@ cards:
       - Chef Infra: [Docs](https://docs.chef.io/) | [Quickstart](https://learn.chef.io/modules/try-chef-infra)
       - Chef InSpec: [Docs](https://www.inspec.io/docs/) | [Quickstart](https://learn.chef.io/modules/try-inspec)
       - Chef Habitat: [Docs](https://www.habitat.sh/docs/) | [Quickstart](https://learn.chef.io/modules/try-habitat)
-      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/) | [Quickstart](https://learn.chef.io/modules/try-chef-automate)
+      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/) | [Quickstart](https://learn.chef.io/modules/try-chef-automate)  
+
+      ##### Upcoming Webinars
+  two:
+    icon: /img/icons/meet.svg
+    title: Meet
   three:
     icon: /img/icons/connect.svg
     title: Connect
@@ -33,9 +38,6 @@ cards:
 
       [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
       Requests](https://feedback.chef.io/)
-  two:
-    icon: /img/icons/meet.svg
-    title: Meet
 products:
   habitat:
     copy: >

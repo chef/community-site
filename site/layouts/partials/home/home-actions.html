@@ -14,6 +14,17 @@
 				<div class="row">
 					<div class="col-sm-12">
 						{{ partial "markdownify" .Params.cards.one.body }}
+
+            <ul>
+              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
+              <!-- Loop through and find webinars (category 6) -->
+              {{ range first 5 $events }}
+                {{ if index .categories.terms "6" }} 
+                <li><p>{{ dateFormat "Jan 2, 2006" .start_date }}<br />
+                  <a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a></p>
+                </li>
+               {{ end }}
+            {{ end }}
 					</div>
 				</div>
 			</div>
@@ -31,14 +42,18 @@
 				<div class="row">
 					<div class="col-sm-12 events-list">
 						<ul>
-							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
-							{{ range first 5 $events }}
-								<li>
-									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
-									<p>{{ dateFormat "Jan 2, 2006" .start_date }}, {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
-								</li>
-							{{ end }}
-						</ul>
+              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
+              {{ range first 5 $events }}
+                {{ if index .categories.terms "6" }} 
+                <!-- If webinar do nothing -->
+                {{ else }}
+                  <li>
+                    <a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
+                    <p>{{ dateFormat "Jan 2, 2006" .start_date }}, {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
 					</div>
 				</div>
 			</div>
