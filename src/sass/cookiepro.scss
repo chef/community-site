@@ -1,28 +1,28 @@
 @import "settings";
 
-.optanon-alert-box-wrapper {
-  background: rgba(255,255,255,0.95) !important;
-}
+// .optanon-alert-box-wrapper {
+//   background: rgba(255,255,255,0.95) !important;
+// }
 
-.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button:before {
-  top: 0 !important;
-}
+// .optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button:before {
+//   top: 0 !important;
+// }
 
-#optanon #optanon-popup-body p, #optanon #optanon-popup-body div.optanon-main-info-text {
-  line-height: 1.5 !important;
-}
+// #optanon #optanon-popup-body p, #optanon #optanon-popup-body div.optanon-main-info-text {
+//   line-height: 1.5 !important;
+// }
+
+// // Do not remove
+// .optanon-show-settings-popup-wrapper .optanon-show-settings-middle a.optanon-show-settings,
+// .optanon-show-settings {
+//   color: $light-gray !important;
+//   font-family: $font-primary !important;
+//   font-size: 15px !important;
+//   height: 0 !important;
+// }
 
 // Do not remove
-.optanon-show-settings-popup-wrapper .optanon-show-settings-middle a.optanon-show-settings,
-.optanon-show-settings {
-  color: $light-gray !important;
-  font-family: $font-primary !important;
-  font-size: 15px !important;
-  height: 0 !important;
-}
-
-// Do not remove
-#optanon {
+#ot-sdk-btn {
   background: $dark-gray !important;
   color: $light-gray !important;
   padding: 5px 0 !important;
@@ -36,27 +36,27 @@
 }
 
 // Do not remove
-.optanon-show-settings-left, .optanon-show-settings-right {
-  display: none !important;
-}
+// .optanon-show-settings-left, .optanon-show-settings-right {
+//   display: none !important;
+// }
 
-#optanon #optanon-popup-wrapper .optanon-bottom-spacer {
-  height: 0px !important;
-}
+// #optanon #optanon-popup-wrapper .optanon-bottom-spacer {
+//   height: 0px !important;
+// }
 
-// Do not remove
-#optanon.modern #optanon-branding-top-logo {
-  display: none !important;
-}
+// // Do not remove
+// #optanon.modern #optanon-branding-top-logo {
+//   display: none !important;
+// }
 
 // Do not remove
 footer {
-  .optanon-show-settings-popup-wrapper div, .optanon-show-settings-popup-wrapper, .optanon-show-settings-popup-wrapper span {
-      background: transparent !important;
+  #ot-sdk-btn.ot-sdk-show-settings, #ot-sdk-btn.optanon-show-settings {
+     background: transparent !important;
       border: none !important;
       width: auto !important;
       height: auto !important;
-      font-size: inherit !important;
+      font-size: 15px !important;
       font-family: inherit !important;
       line-height: inherit !important;
       font-weight: inherit !important;
