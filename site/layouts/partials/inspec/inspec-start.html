@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2>{{ .Params.getStarted.header }}</h2>
+    </div>
+    <div class="col-12 col-md-6">
+      <h4>{{ .Params.getStarted.one.header }}</h4>
+      <p>{{ .Params.getStarted.one.copy }}</p>
+      <h4>{{ .Params.getStarted.two.header }}</h4>
+      <p>{{ .Params.getStarted.two.copy  }}</p>
+      <h4>{{ .Params.getStarted.three.header }}</h4>
+      <p>{{ .Params.getStarted.three.copy  }}</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="code-snippet-wrapper">
+        <pre class="prettyprint"><code class="lang-bsh">
+            $ inspec exec linux-baseline
+        </code></pre>    
+  
+        <pre><code>
+            $ Profile: Chef InSpec Profile (example_profile)
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</div>

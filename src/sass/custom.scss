@@ -560,10 +560,12 @@ input {
     bottom: 0;
     height: 38vh;
     width: 100%;
-    // @include media-breakpoint-up(md) {
-    //   height: 20vh;
-    // }
-
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
     //Filling in the empty space below the wave with dark gray
     div {
       border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
@@ -583,6 +585,8 @@ input {
       }
     }
   }
+
+
 }
 
 .social {
@@ -691,6 +695,10 @@ img {
   justify-content: start;
 }
 
+.chef-wordmark {
+  max-height: 25px;
+}
+
 // Tab Styles
 // =============
 .nav-tabs {
@@ -720,6 +728,16 @@ table {
 	width: 100%;
 }
 
+// Code Styles
+// =============
+.code-snippet-wrapper {
+  background-color: $dark-gray;
+  width: 100%;
+  margin: 45px;
+
+}
+
+
 // Misc Styles
 // =============
 [data-scroll-speed] {
@@ -732,6 +750,7 @@ table {
 
 @import "marketo";
 @import "home";
+@import "inspec";
 @import "first-time";
 @import "search";
 @import "markdown";

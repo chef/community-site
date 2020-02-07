@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <div class="row product-grid-main">
+    <div class="col-lg-7 col-sm-12 product-grid-copy">
+      <div class="product-grid-copy-wrapper">
+        <h2>
+          {{ .Params.benefits.header }}
+          <span class="highlight">{{ .Params.benefits.header2 }}</span>
+        </h2>
+        <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+          <li class="nav-item">
+            <a
+              id="habitat-nav"
+              class="nav-link"
+              href="#habitat"
+              data-toggle="tab"
+              >{{ .Params.benefits.one.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="inspec-nav" class="nav-link" href="#inspec" data-toggle="tab"
+              >{{ .Params.benefits.two.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="infra-nav" class="nav-link" href="#infra" data-toggle="tab"
+              >{{ .Params.benefits.three.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane fade" id="habitat">
+          <div class="img-left">
+            <img
+              src="./img/logos/Habitat.svg"
+              alt="Chef Habitat Wordmark"
+              class="chef-wordmark"
+            />
+          </div>
+          {{ partial "markdownify" .Params.benefits.one.copy }}
+        </div>
+        <div class="tab-pane fade" id="inspec">
+          <div class="img-left">
+            <img
+              src="./img/logos/Inspec.svg"
+              alt="Chef Inspec Wordmark"
+              class="chef-wordmark"
+            />
+          </div>
+          {{ partial "markdownify" .Params.benefits.two.copy }}
+        </div>
+        <div class="tab-pane fade" id="infra">
+          <div class="img-left">
+            <img
+              src="./img/logos/Infra.svg"
+              alt="Chef Infra Wordmark"
+              class="chef-wordmark"
+            />
+          </div>
+          {{ partial "markdownify" .Params.benefits.three.copy }}
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 col-sm-12 flex-center">
+      Code goes here
+    </div>
+  </div>
+</div>

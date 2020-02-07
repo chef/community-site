@@ -4,13 +4,29 @@
 	<section class="hero-actions">
         
 		<section class="hero">
-				{{ partial "hero.html" . }}
-		
+				<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-9 col-lg-7">
+									<img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark" />
+									<h1>{{ .Params.title }}</h1>
+								{{ .Content }}
+							</div>
+						</div>
+					</div>
 		</section>
+
+		<section class="get-started">
+			{{ partial "inspec/inspec-start.html" . }}
+		</section>
+
 		<section class="actions">
-				{{ partial "four-cards.html" . }}
+			{{ partial "four-cards.html" . }}
 		</section>
 		
+	</section>
+	
+	<section>
+			{{ partial "inspec/inspec-benefits.html" . }}
 	</section>
 	
 
