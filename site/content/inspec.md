@@ -21,21 +21,25 @@ cards:
   header: Compliance
   headerTwo: by design
   one:
+    icon: /img/icons/inspec_icon1.svg
     title: Platform Agnostic
     image: 
     body: >-
       Chef InSpec supports all major operating systems and is platform agnostic, allowing you the freedom to run compliance and security tests anywhere. 
   two:
+    icon: /img/icons/inspec_icon2.svg
     title: Test Locally or Remotely
     image: 
     body: >-
       Chef InSpec provides a local agent for host-based assessments, as well as full remote testing support via SSH and WinRM. 
   three:
+    icon: /img/icons/inspec_icon3.svg
     title: Free To Run Anywhere
     image: 
     body: >-
       Chef InSpec is an open-source language that can easily express compliance as code, with the freedom to run anywhere.
   four:
+    icon: /img/icons/inspec_icon4.svg
     title: Extensible Language
     image: 
     body: >-

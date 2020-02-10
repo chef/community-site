@@ -18,6 +18,9 @@ Use Hugo’s `dict` functionality to feed content into partials and avoid repeat
 
 The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
 
+This project uses a modified of code-prettify:
+https://github.com/google/code-prettify/blob/master/docs/getting_started.md
+
 ## SVG
 
 All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
