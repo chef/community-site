@@ -49,7 +49,7 @@ module.exports = {
     //   }
     // ]),
     new HtmlWebpackPlugin({
-      filename: 'netlify/index.html',
+      filename: 'site/static/admin/index.html',
       template: 'src/netlify-cms/cms.html',
       inject: false,
     }),
