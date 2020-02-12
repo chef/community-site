@@ -97,14 +97,14 @@ collections: # A list of collections the CMS should be able to edit
 								fields: [
 									{label: "Image", name: "img", widget: "image"},
 									{label: "Body", name: "body", widget: "markdown"},
-									{label: "Link", name: "link", widget: "string"}]}
+									{label: "Link", name: "link", widget: "string"}]},
 							{	label: "Card 2",
 								name: "two",
 								widget: object,
 								fields: [
 									{label: "Image", name: "img", widget: "image"},
 									{label: "Body", name: "body", widget: "markdown"},
-									{label: "Link", name: "link", widget: "string"}]}
+									{label: "Link", name: "link", widget: "string"}]},
 							{	label: "Card 3",
 								name: "three",
 								widget: object,
