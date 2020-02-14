@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row benefits-main">
-    <div class="col-lg-7 col-sm-12 product-grid-copy">
+    <div class="col-sm-12 product-grid-copy">
       <div class="benefits-copy-wrapper">
         <h2>
           {{ .Params.benefits.header }}
@@ -32,22 +32,23 @@
         </ul>
       </div>
       <div class="tab-content">
-        <div class="tab-pane fade" id="one">
-          
-          {{ .Params.benefits.one.copy | markdownify }}
-        </div>
-        <div class="tab-pane fade" id="two">
-          
-          {{ .Params.benefits.two.copy | markdownify }}
-        </div>
-        <div class="tab-pane fade" id="three">
-          
-          {{ .Params.benefits.three.copy | markdownify }}
-        </div>
+          <div class="tab-pane fade row" id="one">
+            <div class="col-6">
+                {{ .Params.benefits.one.copy | markdownify }}
+            </div>
+            <div class="col-6">
+                Testing test 123
+            </div>
+          </div>
+          <div class="tab-pane fade" id="two">
+            {{ .Params.benefits.two.copy | markdownify }}
+          </div>
+          <div class="tab-pane fade" id="three">
+            {{ .Params.benefits.three.copy | markdownify }}
+          </div>
+
       </div>
     </div>
-    <div class="col-lg-4 offset-lg-1 col-sm-12 flex-center">
-      Code goes here
-    </div>
+    
   </div>
 </div>

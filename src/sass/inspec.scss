@@ -185,10 +185,6 @@
           padding-bottom: 0;
         }
 
-        .tab-content {
-          margin-bottom: 10rem;
-        }
-
         ul {
           margin-left: -15px;
           // margin-bottom: 1rem;
@@ -238,23 +234,12 @@
       box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
     }
 
-    h4, p {
+    h5, p {
       color: $dark-gray;
     }
 
     .note {
       font-size: .95rem;
-
-      //Purple line above the note
-      &:before {
-        content: "";
-        position: absolute;
-        top: 20%;
-        display: inline-block;
-        width: 1px;
-        background: $inspec-color;
-        transform: translateY(-1rem);
-      }
     }
 
   }

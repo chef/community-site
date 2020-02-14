@@ -123,7 +123,7 @@ benefits:
       end
 tutorials:
   columnOne: 
-    header: Self Learning Tutorials
+    header: Self-learning tutorials
     one: 
       title: Try Chef InSpec
       link: "https://learn.chef.io/modules/try-inspec/#/"
@@ -149,7 +149,7 @@ tutorials:
       copy: >-
         Learn how Hewlett Packard Enterprise (HPE) uses Chef InSpec to ensure compliance and security.
   columnTwo:
-    header: Community Tutorials
+    header: Community tutorials
     one: 
       title: Getting started with Chef InSpec -- The Chef InSpec basics series
       link: "http://www.anniehedgie.com/inspec-basics-1"
@@ -171,8 +171,8 @@ tutorials:
       author: blindscientist
       image:
 resources:
-  header: From the
-  headerTwo: Chef InSpec Blog
+  header: From the Chef InSpec Blog
+  headerTwo: 
 ---
 Turn your compliance, security, and other policy requirements into automated tests.
 
