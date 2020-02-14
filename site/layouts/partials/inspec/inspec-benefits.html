@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row benefits-main">
+    <div class="col-sm-12 product-grid-copy">
+      <div class="benefits-copy-wrapper">
+        <h2>
+          {{ .Params.benefits.header }}
+          <span class="highlight">{{ .Params.benefits.headerTwo }}</span>
+        </h2>
+        <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+          <li class="nav-item">
+            <a
+              id="habitat-nav"
+              class="nav-link"
+              href="#one"
+              data-toggle="tab"
+              >{{ .Params.benefits.one.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="inspec-nav" class="nav-link" href="#two" data-toggle="tab"
+              >{{ .Params.benefits.two.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="infra-nav" class="nav-link" href="#three" data-toggle="tab"
+              >{{ .Params.benefits.three.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+          <div class="tab-pane fade row" id="one">
+            <div class="col-6">
+                {{ .Params.benefits.one.copy | markdownify }}
+            </div>
+            <div class="col-6">
+                Testing test 123
+            </div>
+          </div>
+          <div class="tab-pane fade" id="two">
+            {{ .Params.benefits.two.copy | markdownify }}
+          </div>
+          <div class="tab-pane fade" id="three">
+            {{ .Params.benefits.three.copy | markdownify }}
+          </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>

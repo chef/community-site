@@ -1,0 +1,72 @@
+<div class="container-fluid action-cards">
+	<div class="row">
+		{{ if .Params.cards.header }}
+			<div class="col-12" data-scroll-speed="5">
+				<h2>{{ .Params.cards.header }} <span class="highlight">{{ .Params.cards.headerTwo }}</span></h2>
+			</div>
+		{{ end }}
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="5">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+							<img src="{{ .Params.cards.one.icon }}" class="card-icon">
+						<h4>{{ .Params.cards.one.title }}</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.one.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="5">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<img src="{{ .Params.cards.two.icon }}" class="card-icon">
+						<h4>{{ .Params.cards.two.title }}</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 events-list">
+						{{ .Params.cards.two.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="5">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<img src="{{ .Params.cards.three.icon }}" class="card-icon">
+						<h4>{{ .Params.cards.three.title }}</h4>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.three.body | markdownify }}
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="col-lg-3 col-12 col-md-6 card-container" data-scroll-speed="5">
+			<div class="card">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<img src="{{ .Params.cards.four.icon }}" class="card-icon">
+						<h4>{{ .Params.cards.four.title }}</h4>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="col-sm-12">
+						{{ .Params.cards.four.body | markdownify }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-wave"><div><img draggable="false" src="/img/bg-wave.png"></div></div>

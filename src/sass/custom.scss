@@ -361,7 +361,7 @@
 
 body {
   font-family: $font-primary;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.625;
   color: $dark-gray;
@@ -383,6 +383,7 @@ a {
     color: $light-gray;
   }
 }
+
 
 h1,
 h2,
@@ -411,12 +412,27 @@ h1 {
   }
 }
 
+<<<<<<< HEAD
 h2 {
   font-size: 2.3rem;
   @include media-breakpoint-down(md) {
     font-size: 1.8rem;
   }
 }
+=======
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
+}
+
+>>>>>>> 445b4d58983e2eb590188a3b022ec681854fb7f4
 h5 {
 	font-weight: 700;
 }
@@ -508,7 +524,11 @@ input {
   }
   
   h2 {
+<<<<<<< HEAD
     margin-bottom: .5rem;
+=======
+    margin-bottom: 0.5rem;
+>>>>>>> 445b4d58983e2eb590188a3b022ec681854fb7f4
   }
 
   #chefio {
@@ -522,6 +542,11 @@ input {
     @include media-breakpoint-down(md) {
       margin-bottom: 1rem;
     }
+  }
+  
+  &:hover {
+    box-shadow: var(--elevation3);
+    transform: translateY(-4px);
   }
 
   .card {
@@ -552,6 +577,7 @@ input {
       list-style-type: none;
       padding-left: 0;
     }
+    
   }
 }
 
@@ -573,10 +599,12 @@ input {
     bottom: 0;
     height: 38vh;
     width: 100%;
-    // @include media-breakpoint-up(md) {
-    //   height: 20vh;
-    // }
-
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
     //Filling in the empty space below the wave with dark gray
     div {
       border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
@@ -596,6 +624,8 @@ input {
       }
     }
   }
+
+
 }
 
 .social {
@@ -681,10 +711,10 @@ input {
 
   //Full width buttons on xs devices
   @include media-breakpoint-only(xs) {
-    margin: 10px auto;
+    margin: 1rem;
     padding-top: 12px;
     padding-bottom: 12px;
-    width: 95%;
+    max-width: 100%;
   }
 }
 
@@ -702,6 +732,10 @@ img {
 .img-left {
   display: flex;
   justify-content: start;
+}
+
+.chef-wordmark {
+  max-height: 25px;
 }
 
 // Tab Styles
@@ -745,6 +779,7 @@ table {
 
 @import "marketo";
 @import "home";
+@import "inspec";
 @import "first-time";
 @import "search";
 @import "markdown";
