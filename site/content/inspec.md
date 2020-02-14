@@ -61,10 +61,19 @@ benefits:
       ##### Apply to all systems  
 
       Analyze everything using the same codified profiles and controls.
+    code: >-
+      control 'sshd-21' do
+        title 'Set SSH Protocol to 2'
+        desc 'A detailed description'
+        impact 1.0 # This is critical ref 'compliance guide, section 2.1'
+        describe sshd_config do
+        its('Protocol') { should cmp 2 }
+        end
+      end
   two:
     header: Infrastructure
     copy: >-
-      #####Test the desired state  
+      ##### Test the desired state  
 
       Verify the current desired state of your apps and infrastructure according to the code you write.  
 
@@ -75,6 +84,19 @@ benefits:
       ##### Extensible  
 
       Create custom resources with ease and share them easily with others.
+    code: >-
+      describe file('/etc/myapp.conf') do
+        it { should exist }
+        its('mode') { should cmp 0644 }
+      end
+
+      describe apache_conf do
+        its('Listen') { should cmp 8080 }
+      end
+
+      describe port(8080) do
+        it { should be_listening }
+      end
   three:
     header: Provisioning
     copy: >-
@@ -89,9 +111,69 @@ benefits:
       ##### Verify security configuration  
 
       Ensure that your cloud deployments are not open to malicious attacks due to misconfiguration.
+    code: >-
+      describe aws_s3_bucket(bucket_name: 'my_secret_files') do
+        it { should exist }
+        it { should_not be_public }
+      end
+
+      describe aws_iam_user(username: 'test_user') do
+        it { should have_mfa_enabled }
+        it { should_not have_console_password }
+      end
+tutorials:
+  columnOne: 
+    header: Self Learning Tutorials
+    one: 
+      title: Try Chef InSpec
+      link: "https://learn.chef.io/modules/try-inspec/#/"
+      copy: >-
+        In this tutorial, see how Chef InSpec can help you quickly identify potential compliance and security issues on your infrastructure.
+    two: 
+      title: Explore Chef InSpec Resources
+      link: "https://learn.chef.io/modules/explore-inspec-resources/#/"
+      copy: >-
+        In this tutorial, build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
+      subtext: >-
+        Please be sure to complete Try Chef InSpec before starting this module. 
+    three: 
+      title: Create an InSpec profile from compliance documentation 
+      link: "https://learn.chef.io/modules/create-profile-from-doc#/"
+      copy: >-
+        In this tutorial, see how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
+      subtext: >-
+        Please be sure to complete [Try Chef InSpec][1] before starting this module. 
+    four:
+      title: Automating compliance for finance 
+      link: "https://learn.chef.io/modules/hp-compliance/#/" 
+      copy: >-
+        Learn how Hewlett Packard Enterprise (HPE) uses Chef InSpec to ensure compliance and security.
+  columnTwo:
+    header: Community Tutorials
+    one: 
+      title: Getting started with Chef InSpec -- The Chef InSpec basics series
+      link: "http://www.anniehedgie.com/inspec-basics-1"
+      author: Annie Hedgepeth
+      image: "/img/annie_hedgepeth.jpg"
+    two: 
+      title: Windows infrastructure testing using Chef InSpec - Two part series
+      link: "http://datatomix.com/?p=236"
+      author: Christian Johannsen
+      image: /img/christian_johannsen.jpg
+    three:
+      title: Operating Chef InSpec in an air-gapped environment
+      link: "https://github.com/jeremymv2/chef-intranet-scaffolding/blob/master/README.md"
+      author: Jeremy Miller
+      image: "/img/jeremy_miller.jpg"
+    four: 
+      title: Testing Ansible with Chef InSpec
+      link: "http://scienceofficersblog.blogspot.com/2016/02/testing-ansible-with-inspec.html"
+      author: blindscientist
+      image:
+resources:
+  header: From the
+  headerTwo: Chef InSpec Blog
 ---
-
-
 Turn your compliance, security, and other policy requirements into automated tests.
 
 <a class="btn btn-primary" href="{{ .Params.hero.primaryURL }}">Download InSpec</a>

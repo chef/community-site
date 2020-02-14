@@ -4,7 +4,7 @@
   }
 
   .highlight {
-    color: $chef-primary;
+    color: $inspec-color;
   }
 
   .card {
@@ -18,13 +18,13 @@
 
   .number {
     color: $inspec-color;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
     border: 2px solid $inspec-color;
     border-radius: 50%;
     text-align: center;
-    width: 50px;
-
+    width: 60px;
+    height: 60px;
   }
 
   .prettyprint {
@@ -75,7 +75,7 @@
       height: 100%; // for ie11
       height: calc(100% - calc(25vh - 100px));
       background-image: url(/img/lines_v2.svg);
-      background-color: $light-gray;
+      background-color: white;
       background-repeat: no-repeat;
       position: absolute;
       top: 0;
@@ -106,89 +106,26 @@
     margin-bottom: 8rem;
   }
  
-  .product-grid {
+  .benefits {
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
 
     @include media-breakpoint-up(md) {
-      min-height: 800px;
+      min-height: 400px;
     }
 
-    @include media-breakpoint-up(xl) {
-      margin-bottom: -50px;
-    }
+    // @include media-breakpoint-up(xl) {
+    //   margin-bottom: -50px;
+    // }
 
-    @include media-breakpoint-up(xl) {
-      margin-bottom: -200px;
-    }
+    // @include media-breakpoint-up(xl) {
+    //   margin-bottom: -200px;
+    // }
 
-    .product-grid-main {
+    .benefits-main {
       background-color: $dark-gray;
-      height: 100%;
-
-      #prodgrid-img {
-        overflow: visible;
-        position: relative;
-        bottom: 430px;
-        width: 450px;
-        height: auto;
-        right: 35%;
-        max-width: none;
-        margin-bottom: -400px;
-        @include media-breakpoint-between(md, lg) {
-          right: 48%;
-        }
-
-        path, circle {
-          fill: none;
-        }
-  
-        .stack-background, .automate-stroke, .infra-stroke, .inspec-stroke, .habitat-stroke, .stack-link {
-          stroke-miterlimit: 10;
-          stroke-width: 2px;
-          transition: stroke 1s,
-        }
-  
-        .stack-background, .stack-link, .connector {
-          stroke: $chef-primary;
-        }
-
-        .automate-stroke {
-          stroke: $automate-color;
-        }
-  
-        .infra-stroke {
-          stroke: $infra-color;
-        }
-  
-        .inspec-stroke {
-          stroke: $inspec-color;
-        }
-  
-        .habitat-stroke {
-          stroke: $habitat-color;
-        }
-
-        #automate-bubble, #infra-bubble, #inspec-bubble, #habitat-bubble {
-          transition: transform 1.5s;
-
-          path {
-            fill: $dark-gray;
-          }
-        }
-
-        #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
-          opacity: 0;
-          transition: opacity 2.5s ease,
-        }
-
-        @include media-breakpoint-down(md) {
-          display: none;
-        }
-
-      }
-
+      
       .product-grid-copy-wrapper {
 
         .fa {
@@ -254,7 +191,7 @@
 
         ul {
           margin-left: -15px;
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
 
           @include media-breakpoint-up(lg) {
             margin-bottom: 1.5rem;
@@ -277,13 +214,60 @@
       }
     }
   }
+
+  .tutorials {
+    @extend %section-padding;
+
+    $grid-gutter-width: 50px !default;
+
+    .tutorial {
+      margin: 0 0 20px;
+      }
+    
+  
+  }
+
+  .card-hover {
+    background-color: $light-gray;
+    padding-top: 1rem;
+    border: 1px solid $light-gray;
+    transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
+    
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    }
+
+    h4, p {
+      color: $dark-gray;
+    }
+
+    .note {
+      font-size: .95rem;
+
+      //Purple line above the note
+      &:before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        display: inline-block;
+        width: 1px;
+        background: $inspec-color;
+        transform: translateY(-1rem);
+      }
+    }
+
+  }
+  
+
   .resources {
     @extend %section-padding;
 
     .card {
       padding: 0;
       border: 1px solid $mid-gray;
-      background-color: white;
+      color: $dark-gray !important;
+      background-color: white !important;
 			display: flex;
 			flex-flow: column;
 		
