@@ -20,8 +20,6 @@ cards:
       - Chef InSpec: [Docs](https://www.inspec.io/docs/) | [Quickstart](https://learn.chef.io/modules/try-inspec)
       - Chef Habitat: [Docs](https://www.habitat.sh/docs/) | [Quickstart](https://learn.chef.io/modules/try-habitat)
       - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/) | [Quickstart](https://learn.chef.io/modules/try-chef-automate)  
-
-      ##### Upcoming Webinars
   two:
     icon: /img/icons/meet.svg
     title: Meet
