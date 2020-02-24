@@ -133,14 +133,14 @@ tutorials:
       title: Explore Chef InSpec Resources
       link: "https://learn.chef.io/modules/explore-inspec-resources/#/"
       copy: >-
-        In this tutorial, build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
+        Build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
       subtext: >-
         Please be sure to complete Try Chef InSpec before starting this module. 
     three: 
       title: Create an InSpec profile from compliance documentation 
       link: "https://learn.chef.io/modules/create-profile-from-doc#/"
       copy: >-
-        In this tutorial, see how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
+        See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
       subtext: >-
         Please be sure to complete [Try Chef InSpec][1] before starting this module. 
     four:
