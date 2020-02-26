@@ -174,7 +174,7 @@ resources:
   header: From the Chef InSpec Blog
   headerTwo: 
 ---
-##### Turn your compliance, security, and other policy requirements into automated tests.
+Turn your compliance, security, and other policy requirements into automated tests.
 
 <a class="btn btn-primary" href="{{ .Params.hero.primaryURL }}">Download InSpec</a>
 <a class="btn btn-secondary" href="{{ .Params.hero.secondaryURL }}">4.0 Patch Notes</a>
