@@ -4,15 +4,15 @@
 	<section class="hero-actions">
         
 		<section class="hero">
-				<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-9 col-lg-7">
-									<img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark" />
-									<h1>{{ .Params.title }}</h1>
-								{{ .Content }}
-							</div>
-						</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9 col-lg-7">
+						<h1><img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark" /></h1>
+						<h1>{{ .Params.title }}</h1>
+						{{ .Content }}
 					</div>
+				</div>
+			</div>
 		</section>
 
 		<section class="get-started">

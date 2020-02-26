@@ -104,11 +104,34 @@
         background-image: none !important;
       }
     }
+ 
+    .actions {
+      position: relative;
+
+      .bg-wave {
+        position: absolute;
+        bottom: 0;
+        height: 22vh;
+      }
+    
+        
+      .bg-wave div::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background-color: $white !important;
+        bottom: 0;
+      }
+    }
+
+
   }
   .get-started {
-    margin-bottom: 8rem;
+    @extend %section-padding-bottom;
   }
- 
+
   .benefits {
     background-color: $dark-gray;
     color: $light-gray;
@@ -181,7 +204,7 @@
       }
 
       .product-grid-copy {
-        @extend %section-padding;
+        // @extend %section-padding;
 
         @include media-breakpoint-up(lg) {
           padding-top: 0;
@@ -215,7 +238,7 @@
   }
 
   .tutorials {
-    @extend %section-padding;
+    @extend %section-padding-top;
 
     $grid-gutter-width: 50px !default;
 
@@ -230,7 +253,7 @@
     background-color: $light-gray;
     padding-top: 1rem;
     border: 1px solid $light-gray;
-    min-height: 150px;
+    min-height: 180px;
     transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
     box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
     
