@@ -1,11 +1,11 @@
 #inspec {
 
   .highlight {
-    color: $inspec-color;
+    color: $chef-secondary;
   }
 
   .card {
-    background-color: $inspec-color !important;
+    background-color: $chef-secondary !important;
     color: white !important;
 
     .card-icon {
@@ -24,22 +24,22 @@
     height: 60px;
   }
 
-  .prettyprint {
+  pre.prettyprint {
+    border: none !important;
     height: 120px;
     word-wrap: break-word;
     overflow-x: auto;
-    padding: 0;
-    margin: 0;
   }
+
   pre {
-    padding: 0;
-    margin: 0;
-  }
+    padding: 0 1rem;
+    white-space: pre-line;
+  }   
 
   /* desert scheme ported from vim to google prettify */
   pre.prettyprint { display: block; background-color: $dark-gray; }
   pre .nocode { background-color: none; color: #000 }
-  pre .str { color: #ffa0a0 } /* string  - pink */
+  pre .str { color: $chef-secondary; } /* string  - pink */
   pre .kwd { color: #f0e68c; font-weight: bold }
   pre .com { color: #87ceeb } /* comment - skyblue */
   pre .typ { color: $inspec-color; } /* type */
@@ -48,7 +48,7 @@
   pre .pln { color: #fff }    /* plaintext */
   pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
   pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
-  pre .atv { color: #ffa0a0 } /* attribute value - pink */
+  pre .atv { color: $chef-secondary; } /* attribute value - pink */
   pre .dec { color: $inspec-color;} /* decimal*/
 
   /* Specify class=linenums on a pre to get line numbering */
