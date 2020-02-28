@@ -16,15 +16,15 @@
         </div>
         <div class="col-12 col-md-6">
             <pre class="prettyprint"><code>
-                control 'example-1.0' do
-                impact 0.9
-                title 'Ensure login disabled'
-                desc 'An optional description...'
-                describe sshd_config do
-                  its('PermitRootLogin') {
-                    should_not cmp 'yes'
-                  }
-                end
+              control 'example-1.0' do
+                &nbsp;&nbsp;impact 0.9
+                &nbsp;&nbsp;title 'Ensure login disabled'
+                &nbsp;&nbsp;desc 'An optional description...'
+                &nbsp;&nbsp;describe sshd_config do
+                  &nbsp;&nbsp;&nbsp;&nbsp;its('PermitRootLogin') {
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should_not cmp 'yes'
+                  &nbsp;&nbsp;&nbsp;&nbsp;}
+              &nbsp;&nbsp;end
               end
             </code></pre>    
         </div>
@@ -57,8 +57,8 @@
                 Version: 0.1.0
                 Target:  local://
 
-                  ✔  example-1.0: Ensure root login is disabled via SSH
-                  ✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
+                  &nbsp;&nbsp;✔  example-1.0: Ensure root login is disabled via SSH
+                  &nbsp;&nbsp;✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
 
                 Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
                 Test Summary: 1 successful, 0 failures, 0 skipped

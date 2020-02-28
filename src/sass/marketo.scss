@@ -121,11 +121,15 @@
   }
 
   .mktoButton {
-	
-	@extend .btn;
-	@extend .btn-primary;
-	font-size: 16px;
-    
+    @extend .btn;
+    @extend .btn-primary;
+    font-size: 16px;
+    @include media-breakpoint-only(xs) {
+      margin: 1rem;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      max-width: 100%;
+    }
   }
 
   .mktoButtonWrap {
