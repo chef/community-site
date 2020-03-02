@@ -46,8 +46,10 @@
 	function github_url() {
 		var baseURL = window.location.origin;
 		if ((location.href == baseURL+"/book-of-open-source/") ||
-				(location.href == baseURL+"/code-of-conduct/")){
-		$('a[href^="./"]').each(function () {
+			(location.href == baseURL+"/code-of-conduct/") ||
+			(window.location.hash)
+			){
+				$('a[href^="./"]').each(function () {
 				var oldURL = $(this).attr("href");
 				var newURL = oldURL.replace(/(\.\/)*/, 'https://github.com/chef/chef-oss-practices/blob/master/');
 				$(this).attr("href", newURL);
