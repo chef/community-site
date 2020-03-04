@@ -78,7 +78,7 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
-
+    
     @include media-breakpoint-up(md) {
       min-height: 400px;
     }
@@ -90,6 +90,9 @@
     // @include media-breakpoint-up(xl) {
     //   margin-bottom: -200px;
     // }
+    pre.prettyprint {
+      border: 1px solid $chef-secondary;
+    }
 
     .benefits-main {
       background-color: $dark-gray;
@@ -115,26 +118,6 @@
         ul li #infra-nav:hover, #infra-nav.active {
           color: $infra-color;
         }
-
-        // @include media-breakpoint-up(lg) {
-        //   padding-top: 3rem;
-        //     transform: translate(0px, 150px);
-        //     transition: transform 0.5s;
-
-        //   a {
-        //     font-size: 1rem;
-        //   }
-
-        //   #product-tabs {
-        //     flex-direction: column;
-        //   }
-        // }
-
-        // @include media-breakpoint-down(sm) {
-        //   h2 {
-        //     font-size: 1.6rem;
-        //   }
-        // }
       }
       
         @include media-breakpoint-up(lg) {
@@ -143,9 +126,6 @@
         }
 
         ul {
-          margin-left: -15px;
-          // margin-bottom: 1rem;
-
           @include media-breakpoint-up(lg) {
             margin-bottom: 1.5rem;
           }
