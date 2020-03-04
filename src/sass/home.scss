@@ -308,7 +308,7 @@
 
     .card {
       padding: 0;
-      border: 1px solid $mid-gray;
+      border: 1px solid lighten($mid-gray, 40%);
       background-color: white;
 			display: flex;
 			flex-flow: column;
