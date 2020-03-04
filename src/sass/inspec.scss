@@ -12,67 +12,19 @@
       width: 90px;
     }
   }
-
-
   .number {
-  border: 1px solid $inspec-color;
-  background-color: white;
-	font-size: 2.2rem;
-	font-weight: 600;
-	border-radius: 50%;
-	text-align: center;
-	width: 60px;
-	height: 60px;
+    border: 1px solid $inspec-color;
+    background-color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
   }
 
-  pre.prettyprint {
-    border: none !important;
-    height: 120px;
-    word-wrap: break-word;
-    overflow-x: auto;
-  }
-
-  pre {
-    font-size: 1rem;
-    padding: 0 2rem 2rem;
-    white-space: pre-line;
-  }   
-
-  /* desert scheme ported from vim to google prettify */
-  pre.prettyprint { display: block; background-color: $dark-gray; }
-  pre .nocode { background-color: none; color: #000 }
-  pre .str { color: $chef-secondary; } /* string  - pink */
-  pre .kwd { color: #f0e68c; font-weight: bold }
-  pre .com { color: #87ceeb } /* comment - skyblue */
-  pre .typ { color: $chef-primary; } /* type */
-  pre .lit { color: $habitat-color; } /* literal */
-  pre .pun { color: #fff }    /* punctuation */
-  pre .pln { color: #fff }    /* plaintext */
-  pre .tag { color: #f0e68c; font-weight: bold } /* html/xml tag    - lightyellow */
-  pre .atn { color: #bdb76b; font-weight: bold } /* attribute name  - khaki */
-  pre .atv { color: $chef-secondary; } /* attribute value - pink */
-  pre .dec { color: $chef-primary;} /* decimal*/
-
-  /* Specify class=linenums on a pre to get line numbering */
-  ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
-  li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
-  /* Alternate shading for lines */
-  li.L1,li.L3,li.L5,li.L7,li.L9 { }
-
-  @media print {
-    pre.prettyprint { background-color: none }
-    pre .str, code .str { color: #060 }
-    pre .kwd, code .kwd { color: #006; font-weight: bold }
-    pre .com, code .com { color: #600; font-style: italic }
-    pre .typ, code .typ { color: #404; font-weight: bold }
-    pre .lit, code .lit { color: #044 }
-    pre .pun, code .pun { color: #440 }
-    pre .pln, code .pln { color: #000 }
-    pre .tag, code .tag { color: #006; font-weight: bold }
-    pre .atn, code .atn { color: #404 }
-    pre .atv, code .atv { color: #060 }
-  }
-
+  // HERO / FOUR CARDS
+  // =======================
   .hero-actions {
     &:before {
       content: "";
@@ -87,14 +39,12 @@
       left: 0;
       width: 100%;
     }
-
     @include media-breakpoint-between(lg, xl) {
       &:before {
         background-size: 45%;
         background-position: 110% -10px;
       }
     }
-
     @include media-breakpoint-down(lg) {
       &:before {
         background-size: 60%;
@@ -106,33 +56,24 @@
         background-image: none !important;
       }
     }
- 
-    .actions {
-      position: relative;
-
-      .bg-wave {
-        position: absolute;
-        bottom: 0;
-        height: 22vh;
-      }
-      .bg-wave div::after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 50%;
-        width: 100%;
-        background-color: $white !important;
-        bottom: 0;
-      }
-    }
-
-
   }
+  
+  // GET STARTED
+  // =======================
   .get-started {
     @extend %section-padding-bottom;
+
+    pre.prettyprint {
+      border: none !important;
+      height: 120px;
+    }
   }
 
+  // INSPEC BENEFITS
+  // =======================
   .benefits {
+    @extend %section-padding-bottom;
+
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
@@ -152,8 +93,7 @@
     .benefits-main {
       background-color: $dark-gray;
       
-      .product-grid-copy-wrapper {
-
+      .benefits-headers {
         .fa {
           transition: linear 0.1s;
         }
@@ -175,38 +115,27 @@
           color: $infra-color;
         }
 
-        ul li #automate-nav:hover, #automate-nav.active {
-          color: $automate-color;
-        }
+        // @include media-breakpoint-up(lg) {
+        //   padding-top: 3rem;
+        //     transform: translate(0px, 150px);
+        //     transition: transform 0.5s;
 
-        @include media-breakpoint-up(lg) {
-          padding-top: 3rem;
-            transform: translate(0px, 150px);
-            transition: transform 0.5s;
+        //   a {
+        //     font-size: 1rem;
+        //   }
 
-          a {
-            font-size: 1rem;
-          }
+        //   #product-tabs {
+        //     flex-direction: column;
+        //   }
+        // }
 
-          #product-tabs {
-            flex-direction: column;
-          }
-
-
-        }
-
-        @include media-breakpoint-down(sm) {
-          h2 {
-            font-size: 1.6rem;
-          }
-        }
-
+        // @include media-breakpoint-down(sm) {
+        //   h2 {
+        //     font-size: 1.6rem;
+        //   }
+        // }
       }
-
-      .product-grid-copy {
-        // @extend %section-padding;
-        
-
+      
         @include media-breakpoint-up(lg) {
           padding-top: 0;
           padding-bottom: 0;
@@ -230,14 +159,11 @@
         h4 {
           margin-top: 1rem;
         }
-
-        .btn {
-          margin-top: 1rem;
-        }
-      }
     }
   }
 
+  // TUTORIALS
+  // =======================
   .tutorials {
     @extend %section-padding-top;
 
@@ -248,6 +174,8 @@
     }
   }
 
+  // RESOURCES
+  // =======================
   .resources {
     @extend %section-padding;
 
@@ -307,6 +235,4 @@
       }
     }
   }
-
-  
 }
