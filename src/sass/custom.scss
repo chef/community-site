@@ -786,8 +786,11 @@ pre.prettyprint {
 pre.prettyprint.dark { 
   display: block; background-color: $dark-gray; 
 
-  .pun { color: #fff !important; }    /* punctuation */
-  .pln { color: #fff !important; }    /* plaintext */
+  .pun { color: #fff; }    /* punctuation */
+  .pln { color: #fff; }    /* plaintext */
+  .kwd { color: $chef-primary; font-weight: bold; }
+  .tag { color: $chef-primary; font-weight: bold; } /* html/xml tag    - lightyellow */
+  .atn { color: $chef-primary; font-weight: bold; } /* attribute name  - khaki */
 }
 
 pre .nocode { background-color: none; color: #000; }

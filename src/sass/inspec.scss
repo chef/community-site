@@ -4,17 +4,6 @@
     color: $chef-secondary;
   }
 
-  .number {
-    border: 1px solid $inspec-color;
-    background-color: white;
-    font-size: 2.2rem;
-    font-weight: 600;
-    border-radius: 50%;
-    text-align: center;
-    width: 60px;
-    height: 60px;
-  }
-
   // HERO / FOUR CARDS
   // =======================
   .hero-actions {
@@ -97,6 +86,7 @@
     .benefits-main {
       background-color: $dark-gray;
       
+      
       .benefits-headers {
         .fa {
           transition: linear 0.1s;
@@ -107,39 +97,28 @@
           }
         }
 
-        ul li #habitat-nav:hover, #habitat-nav.active {
-          color: $habitat-color;
+        .nav-tabs .nav-item .nav-link {
+          font-size: 1.1rem;
+          font-weight: 500;
+          margin: 1rem auto;
         }
 
-        ul li #inspec-nav:hover, #inspec-nav.active {
-          color: $inspec-color;
+        .nav-link:first-of-type {
+          padding-left: 0; //overwrites Bootstrap's
         }
 
-        ul li #infra-nav:hover, #infra-nav.active {
-          color: $infra-color;
-        }
+        // ul li #first-nav:hover, #first-nav.active {
+        //   color: $habitat-color;
+        // }
+
+        // ul li #second-nav:hover, #second-nav.active {
+        //   color: $inspec-color;
+        // }
+
+        // ul li #third-nav:hover, #third-nav.active {
+        //   color: $infra-color;
+        // }
       }
-      
-        @include media-breakpoint-up(lg) {
-          padding-top: 0;
-          padding-bottom: 0;
-        }
-
-        ul {
-          @include media-breakpoint-up(lg) {
-            margin-bottom: 1.5rem;
-          }
-          .nav-link {
-            &.active,
-            &:hover {
-              color: $chef-primary;
-            }
-          }
-        }
-
-        h4 {
-          margin-top: 1rem;
-        }
     }
   }
 
@@ -152,6 +131,10 @@
 
     .tutorial {
       margin: 0 0 20px;
+    }
+
+    .number {
+      border: none;
     }
   }
 }

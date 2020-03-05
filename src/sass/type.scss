@@ -75,6 +75,17 @@ a {
   }
 }
 
-.lead {
-  font-size: 1.4rem;
+p.lead {
+  font-size: 1.15rem;
+}
+
+p.number {
+  border: 1px solid $chef-secondary;
+  background-color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
 }

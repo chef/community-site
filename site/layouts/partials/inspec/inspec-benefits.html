@@ -10,21 +10,21 @@
           />
         </h2>
         <h2>{{ .Params.benefits.headerTwo }}</h2>
-        <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+        <ul class="nav nav-tabs" id="benefits-tabs" role="tablist">
           <li class="nav-item">
-            <a id="habitat-nav" class="nav-link" href="#one" data-toggle="tab"
-              >{{ .Params.benefits.one.header }}
+            <a id="first-nav" class="nav-link active" href="#one" data-toggle="tab">
+              {{ .Params.benefits.one.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
           <li class="nav-item">
-            <a id="inspec-nav" class="nav-link" href="#two" data-toggle="tab"
+            <a id="second-nav" class="nav-link" href="#two" data-toggle="tab"
               >{{ .Params.benefits.two.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
           <li class="nav-item">
-            <a id="infra-nav" class="nav-link" href="#three" data-toggle="tab"
+            <a id="third-nav" class="nav-link" href="#three" data-toggle="tab"
               >{{ .Params.benefits.three.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div class="tab-content">
-        <div class="tab-pane fade" id="one">
+        <div class="tab-pane fade active show" id="one">
           <div class="row">
             <div class="col-12 col-md-6">
               {{ .Params.benefits.one.copy | markdownify }}
