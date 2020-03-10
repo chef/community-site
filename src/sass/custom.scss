@@ -542,6 +542,9 @@ input {
   position: relative;
 
   .action-cards {
+    h5 {
+      margin: 1.5rem 0;
+    }
     @include media-breakpoint-up(xl){
       padding-bottom: 7rem;
     }
@@ -770,7 +773,7 @@ pre {
   white-space: pre-line;
   word-wrap: break-word;
   overflow-x: auto;
-  border-radius: 5px;
+  border-radius: 2px;
 }   
 pre.prettyprint {
   padding-left: 1rem !important;
@@ -795,14 +798,14 @@ pre.prettyprint.dark {
 
 pre .nocode { background-color: none; color: #000; }
 pre .str { color: $chef-secondary; } /* string  - pink */
-pre .kwd { color: #f0e68c; font-weight: bold; }
-pre .com { color: #87ceeb; } /* comment - skyblue */
+pre .kwd { color: $chef-primary; font-weight: bold; }
+pre .com { color: $inspec-color; } /* comment - skyblue */
 pre .typ { color: $chef-primary; } /* type */
-pre .lit { color: $habitat-color; } /* literal */
+pre .lit { color: $inspec-color; } /* literal */
 pre .pun { color: $dark-gray; }    /* punctuation */
 pre .pln { color: $dark-gray; }    /* plaintext */
-pre .tag { color: #f0e68c; font-weight: bold; } /* html/xml tag    - lightyellow */
-pre .atn { color: #bdb76b; font-weight: bold; } /* attribute name  - khaki */
+pre .tag { color: $chef-primary; font-weight: bold; } /* html/xml tag    - lightyellow */
+pre .atn { color: $chef-primary; font-weight: bold; } /* attribute name  - khaki */
 pre .atv { color: $chef-secondary; } /* attribute value - pink */
 pre .dec { color: $chef-primary;} /* decimal*/
 

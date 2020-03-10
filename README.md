@@ -18,8 +18,6 @@ Use Hugo’s `dict` functionality to feed content into partials and avoid repeat
 
 The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
 
-This project uses a modified of code-prettify:
-https://github.com/google/code-prettify/blob/master/docs/getting_started.md
 
 ## SVG
 

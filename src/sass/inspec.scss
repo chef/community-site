@@ -1,9 +1,4 @@
 #inspec {
-
-  .highlight {
-    color: $chef-secondary;
-  }
-
   // HERO / FOUR CARDS
   // =======================
   .hero-actions {
@@ -38,13 +33,9 @@
       }
     }
 
-    .card {
-      background-color: $chef-secondary !important;
-      color: white !important;
-  
-      .card-icon {
-        width: 90px;
-      }
+    .card .card-icon {
+        max-height: 100px;
+      
     }
   }
   
@@ -79,10 +70,6 @@
     // @include media-breakpoint-up(xl) {
     //   margin-bottom: -200px;
     // }
-    pre.prettyprint {
-      border: 1px solid $chef-secondary;
-    }
-
     .benefits-main {
       background-color: $dark-gray;
       
@@ -133,8 +120,5 @@
       margin: 0 0 20px;
     }
 
-    .number {
-      border: none;
-    }
   }
 }

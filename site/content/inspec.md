@@ -18,8 +18,7 @@ getStarted:
     copy: >-
       See which tests failed, passed and skipped and the expected state against the current state of your target system, in one simple output.
 cards:
-  header: Compliance
-  headerTwo: by design
+  header: Compliance by design
   one:
     icon: /img/icons/inspec_icon1.svg
     title: Platform Agnostic
