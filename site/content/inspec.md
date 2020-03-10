@@ -141,7 +141,7 @@ tutorials:
       copy: >-
         See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
       subtext: >-
-        Please be sure to complete [Try Chef InSpec][1] before starting this module. 
+        Please be sure to complete [Try Chef InSpec before starting this module. 
     four:
       title: Automating compliance for finance 
       link: "https://learn.chef.io/modules/hp-compliance/#/" 

@@ -20,10 +20,10 @@
           </div>
           <div class="col-10">
             <h5>{{ .Params.tutorials.columnOne.two.title }}</h5>
-            <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
           </div>
-          <div class="col-12 note">
-              <p>{{ .Params.tutorials.columnOne.two.subtext | markdownify }}</p>
+          <div class="col-12">
+            <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
+              <p  class="note">{{ .Params.tutorials.columnOne.two.subtext | markdownify }}</p>
           </div>
         </a>
         <a href="{{ .Params.tutorials.columnOne.three.link }}" class="card-hover tutorial row align-items-center">
@@ -32,9 +32,9 @@
           </div>
           <div class="col-10">
             <h5>{{ .Params.tutorials.columnOne.three.title }}</h5>
-            <p>{{ .Params.tutorials.columnOne.three.copy | markdownify }}</p>
           </div>
-          <div class="col-12 note">
+          <div class="col-12">
+            <p>{{ .Params.tutorials.columnOne.three.copy | markdownify }}</p>
             <p>{{ .Params.tutorials.columnOne.three.subtext | markdownify }}</p>
           </div>
         </a>
@@ -44,9 +44,9 @@
           </div>
           <div class="col-10">
             <h5>{{ .Params.tutorials.columnOne.four.title }}</h5>
-            <p>{{ .Params.tutorials.columnOne.four.copy }}</p>
           </div>
-          <div class="col-12 note">
+          <div class="col-12">
+            <p>{{ .Params.tutorials.columnOne.four.copy }}</p>
               <p>{{ .Params.tutorials.columnOne.four.subtext | markdownify }}</p>
           </div>
         </a>
