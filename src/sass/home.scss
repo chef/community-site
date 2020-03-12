@@ -272,6 +272,7 @@
 
       &.img-right {
         background-image: url("/img/chefconf-img2.jpg");
+        background-position: right;
       }
 			
 			@include media-breakpoint-down(md) {
