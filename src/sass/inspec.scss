@@ -1,4 +1,5 @@
 #inspec {
+
   // HERO / FOUR CARDS
   // =======================
   .hero-actions {
@@ -33,7 +34,7 @@
       }
     }
 
-    .card .card-icon {
+    .card-icon {
         max-height: 100px;
       
     }
@@ -43,6 +44,10 @@
   // =======================
   .get-started {
     @extend %section-padding-bottom;
+
+    h4 {
+      margin-bottom: .5rem;
+    }
 
     pre.prettyprint {
       border: none !important;
@@ -87,7 +92,7 @@
         .nav-tabs .nav-item .nav-link {
           font-size: 1.1rem;
           font-weight: 500;
-          margin: 1rem auto;
+          margin: 1rem 1.5rem 1rem auto;
         }
 
         .nav-link:first-of-type {

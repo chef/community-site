@@ -70,7 +70,7 @@ img {
 
 .chef-wordmark {
   max-height: 35px;
-  margin-bottom: 1rem;
+  margin: 0.8rem auto;
   width: auto;
   @include media-breakpoint-only(sm) {
     max-height: 25px;
@@ -745,15 +745,18 @@ input {
     margin-bottom: 0;
 
     .nav-link {
-      color: white;
+      color: $chef-primary;
+      background-color: transparent;
       border: none;
       font-weight: 600;
 
-      &.active,
-      &:hover {
-        color: $chef-primary;
+      &.active {
+        color: white;
         background-color: transparent;
         border: none;
+      }
+      &:hover {
+        color: $chef-secondary;
       }
     }
   }
