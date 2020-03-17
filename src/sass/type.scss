@@ -8,10 +8,6 @@ h6 {
   @include muli();
   font-weight: 600;
   margin-bottom: 1.5rem;
-
-  .highlight {
-    color: $chef-secondary;
-  }
 }
 
 h1 {
@@ -32,6 +28,7 @@ h1 {
 h2 {
   font-size: 2.4rem;
   font-weight: 700;
+  margin-bottom: 3rem;
   @include media-breakpoint-down(md) {
     font-size: 2rem;
   }
@@ -77,6 +74,7 @@ a {
 
 p.lead {
   font-size: 1.15rem;
+  padding: 1.2rem 0;
 }
 
 p.number {
@@ -89,3 +87,4 @@ p.number {
   width: 60px;
   height: 60px;
 }
+

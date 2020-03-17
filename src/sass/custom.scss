@@ -470,9 +470,9 @@ input {
 }
 
 .card-hover {
-  background-color: $light-gray;
+  background-color: white;
   padding-top: 1rem;
-  border: 1px solid $light-gray;
+  border: 1px solid white;
   min-height: 180px;
   transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
   box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);

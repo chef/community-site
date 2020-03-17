@@ -20,25 +20,25 @@ getStarted:
 cards:
   header: Compliance by design
   one:
-    icon: /img/icons/inspec_icon1.svg
+    icon: /img/icons/inspec-1.png
     title: Platform Agnostic
     image: 
     body: >-
       Chef InSpec supports all major operating systems and is platform agnostic, allowing you the freedom to run compliance and security tests anywhere. 
   two:
-    icon: /img/icons/inspec_icon2.svg
+    icon: /img/icons/inspec-2.png
     title: Test Locally or Remotely
     image: 
     body: >-
       Chef InSpec provides a local agent for host-based assessments, as well as full remote testing support via SSH and WinRM. 
   three:
-    icon: /img/icons/inspec_icon3.svg
+    icon: /img/icons/inspec-3.png
     title: Free To Run Anywhere
     image: 
     body: >-
       Chef InSpec is an open-source language that can easily express compliance as code, with the freedom to run anywhere.
   four:
-    icon: /img/icons/inspec_icon4.svg
+    icon: /img/icons/inspec-4.png
     title: Extensible Language
     image: 
     body: >-
@@ -141,7 +141,7 @@ tutorials:
       copy: >-
         See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
       subtext: >-
-        Please be sure to complete [Try Chef InSpec before starting this module. 
+        Please be sure to complete Try Chef InSpec before starting this module. 
     four:
       title: Automating compliance for finance 
       link: "https://learn.chef.io/modules/hp-compliance/#/" 
@@ -173,7 +173,7 @@ resources:
   header: From the Chef InSpec Blog
   headerTwo: 
 ---
-<p>Turn your compliance, security, and other policy requirements into automated tests.</p>
+<p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
 
 <a class="btn btn-primary" href="{{ .Params.hero.primaryURL }}">Download InSpec</a>
 <a class="btn btn-secondary" href="{{ .Params.hero.secondaryURL }}">4.0 Patch Notes</a>

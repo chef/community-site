@@ -2,7 +2,10 @@
   <div class="row">
     <div class="col-12 col-md-6">
       <h2>{{ .Params.tutorials.columnOne.header }}</h2>
-      <a href="{{ .Params.tutorials.columnOne.one.link }}" class="card-hover tutorial row align-items-center">
+      <a
+        href="{{ .Params.tutorials.columnOne.one.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
         <div class="col-2 text-center">
           <p class="number">1</p>
         </div>
@@ -11,87 +14,133 @@
         </div>
         <div class="col-12">
           <p>{{ .Params.tutorials.columnOne.one.copy | markdownify }}</p>
-          <p class="note">{{ .Params.tutorials.columnOne.one.subtext | markdownify }}</p>
+          <p class="note">
+            {{ .Params.tutorials.columnOne.one.subtext | markdownify }}
+          </p>
         </div>
       </a>
-      <a href="{{ .Params.tutorials.columnOne.two.link }}" class="card-hover tutorial row align-items-center">
-          <div class="col-2 text-center">
-            <p class="number">2</p>
-          </div>
-          <div class="col-10">
-            <h5>{{ .Params.tutorials.columnOne.two.title }}</h5>
-          </div>
-          <div class="col-12">
-            <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
-              <p  class="note">{{ .Params.tutorials.columnOne.two.subtext | markdownify }}</p>
-          </div>
-        </a>
-        <a href="{{ .Params.tutorials.columnOne.three.link }}" class="card-hover tutorial row align-items-center">
-          <div class="col-2 text-center">
-            <p class="number">3</p>
-          </div>
-          <div class="col-10">
-            <h5>{{ .Params.tutorials.columnOne.three.title }}</h5>
-          </div>
-          <div class="col-12">
-            <p>{{ .Params.tutorials.columnOne.three.copy | markdownify }}</p>
-            <p>{{ .Params.tutorials.columnOne.three.subtext | markdownify }}</p>
-          </div>
-        </a>
-        <a href="{{ .Params.tutorials.columnOne.four.link }}" class="card-hover tutorial row align-items-center">
-          <div class="col-2 text-center">
-            <p class="number">4</p>
-          </div>
-          <div class="col-10">
-            <h5>{{ .Params.tutorials.columnOne.four.title }}</h5>
-          </div>
-          <div class="col-12">
-            <p>{{ .Params.tutorials.columnOne.four.copy }}</p>
-              <p>{{ .Params.tutorials.columnOne.four.subtext | markdownify }}</p>
-          </div>
-        </a>
+      <a
+        href="{{ .Params.tutorials.columnOne.two.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
+        <div class="col-2 text-center">
+          <p class="number">2</p>
+        </div>
+        <div class="col-10">
+          <h5>{{ .Params.tutorials.columnOne.two.title }}</h5>
+        </div>
+        <div class="col-12">
+          <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
+          <p class="note">
+            {{ .Params.tutorials.columnOne.two.subtext | markdownify }}
+          </p>
+        </div>
+      </a>
+      <a
+        href="{{ .Params.tutorials.columnOne.three.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
+        <div class="col-2 text-center">
+          <p class="number">3</p>
+        </div>
+        <div class="col-10">
+          <h5>{{ .Params.tutorials.columnOne.three.title }}</h5>
+        </div>
+        <div class="col-12">
+          <p>{{ .Params.tutorials.columnOne.three.copy | markdownify }}</p>
+          <p class="note">
+            {{ .Params.tutorials.columnOne.three.subtext | markdownify }}
+          </p>
+        </div>
+      </a>
+      <a
+        href="{{ .Params.tutorials.columnOne.four.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
+        <div class="col-2 text-center">
+          <p class="number">4</p>
+        </div>
+        <div class="col-10">
+          <h5>{{ .Params.tutorials.columnOne.four.title }}</h5>
+        </div>
+        <div class="col-12">
+          <p>{{ .Params.tutorials.columnOne.four.copy }}</p>
+          <p class="note">
+            {{ .Params.tutorials.columnOne.four.subtext | markdownify }}
+          </p>
+        </div>
+      </a>
     </div>
     <div class="col-12 col-md-6">
       <h2>{{ .Params.tutorials.columnTwo.header}}</h2>
-      <a href="{{ .Params.tutorials.columnTwo.one.link }}" class="card-hover tutorial row align-items-center">
+      <a
+        href="{{ .Params.tutorials.columnTwo.one.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
         <div class="col-2 text-center">
-          <img src="{{ .Params.tutorials.columnTwo.one.image }}" class="img-round" width="60" alt="{{ .Params.tutorials.columnTwo.one.author }}" />
+          <img
+            src="{{ .Params.tutorials.columnTwo.one.image }}"
+            class="img-round"
+            width="60"
+            alt="{{ .Params.tutorials.columnTwo.one.author }}"
+          />
         </div>
         <div class="col-10">
           <h5>{{ .Params.tutorials.columnTwo.one.title }}</h5>
           <p>By {{ .Params.tutorials.columnTwo.one.author }}</p>
         </div>
- 
       </a>
-      <a href="{{ .Params.tutorials.columnTwo.two.link }}" class="card-hover tutorial row align-items-center">
+      <a
+        href="{{ .Params.tutorials.columnTwo.two.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
         <div class="col-2 text-center">
-          <img src="{{ .Params.tutorials.columnTwo.two.image }}" class="img-round" width="60" alt="{{ .Params.tutorials.columnTwo.two.author }}" />
+          <img
+            src="{{ .Params.tutorials.columnTwo.two.image }}"
+            class="img-round"
+            width="60"
+            alt="{{ .Params.tutorials.columnTwo.two.author }}"
+          />
         </div>
         <div class="col-10">
           <h5>{{ .Params.tutorials.columnTwo.two.title }}</h5>
           <p>By {{ .Params.tutorials.columnTwo.two.author }}</p>
         </div>
       </a>
-      <a href="{{ .Params.tutorials.columnTwo.three.link }}" class="card-hover tutorial row align-items-center">
+      <a
+        href="{{ .Params.tutorials.columnTwo.three.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
         <div class="col-2 text-center">
-          <img src="{{ .Params.tutorials.columnTwo.three.image }}" class="img-round" width="60" alt="{{ .Params.tutorials.columnTwo.three.author }}" />
+          <img
+            src="{{ .Params.tutorials.columnTwo.three.image }}"
+            class="img-round"
+            width="60"
+            alt="{{ .Params.tutorials.columnTwo.three.author }}"
+          />
         </div>
         <div class="col-10">
           <h5>{{ .Params.tutorials.columnTwo.three.title }}</h5>
           <p>By {{ .Params.tutorials.columnTwo.three.author }}</p>
         </div>
       </a>
-      <a href="{{ .Params.tutorials.columnTwo.four.link }}" class="card-hover tutorial row align-items-center">
+      <a
+        href="{{ .Params.tutorials.columnTwo.four.link }}"
+        class="card-hover tutorial row align-items-center"
+      >
         <div class="col-2 text-center">
-          <img src="{{ .Params.tutorials.columnTwo.four.image }}" class="img-round" width="60" alt="{{ .Params.tutorials.columnTwo.four.author }}" />
+          <img
+            src="{{ .Params.tutorials.columnTwo.four.image }}"
+            class="img-round"
+            width="60"
+            alt="{{ .Params.tutorials.columnTwo.four.author }}"
+          />
         </div>
         <div class="col-10">
           <h5>{{ .Params.tutorials.columnTwo.four.title }}</h5>
           <p>By {{ .Params.tutorials.columnTwo.four.author }}</p>
         </div>
       </a>
-
     </div>
   </div>
 </div>
-
