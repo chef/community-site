@@ -37,7 +37,8 @@
 // Main Nav Styles
 // ========================
 #main-nav {
-  background-color: $chef-primary;
+  background-color: $white;
+  border-bottom: 1px solid $docs-gray;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   position: sticky;
@@ -93,12 +94,7 @@
         }
 
         &:hover {
-          @include media-breakpoint-down(sm) {
-            color: $chef-primary;
-          }
-          @include media-breakpoint-up(md) {
-            color: white;
-          }
+            color: $chef-secondary;    
         }
       }
 
@@ -122,7 +118,7 @@
             background-color: transparent;
 
             @include media-breakpoint-up(md) {
-              background-color: $chef-primary;
+              background-color: $light-gray;
             }
           }
         }
