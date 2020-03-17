@@ -18,14 +18,14 @@
     }
     @include media-breakpoint-between(lg, xl) {
       &:before {
-        background-size: 45%;
-        background-position: 110% -10px;
+        background-size: 60%;
+        background-position: 100% -200px;
       }
     }
     @include media-breakpoint-down(lg) {
       &:before {
         background-size: 60%;
-        background-position: 130% -10px;
+        background-position: 130% -100px;
       }
     }
     @include media-breakpoint-down(sm) {

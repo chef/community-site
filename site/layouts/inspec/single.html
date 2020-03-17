@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-9 col-lg-7">
-						<h1><img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark" /></h1>
+						<h1><img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark large" /></h1>
 						<h2>{{ .Params.title }}</h2>
 						{{ .Content }}
 					</div>
@@ -40,6 +40,10 @@
 	<section class="resources">
 			{{ partial "inspec/inspec-resources.html" . }}
 	</section>
+
+	<section class="contact">
+		{{ partial "contact.html" . }}
+</section>
 
 </main>
 
