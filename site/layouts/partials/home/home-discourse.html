@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12">
-			<h2>Latest <span class="highlight">discussions</span></h2>
+			<h2>Latest discussions</h2>
 			
 			{{ $discourse := getJSON "https://discourse.chef.io/latest.json" }}
 			{{ $discourse_categories := getJSON "https://discourse.chef.io/categories.json" }}

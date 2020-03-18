@@ -97,7 +97,7 @@ export default class Homepage extends React.Component {
 					   </div>
 					   <div className="col-lg-6 col-sm-12 product-grid-copy">
 							<div className="product-grid-copy-wrapper">
-								<h2>{products.header} <span className="highlight">{products.header2}</span></h2>
+								<h2>{products.header} {products.header2}</h2>
 								<ul className="nav nav-tabs" id="myTab" role="tablist">
 									 <li className="nav-item">
 									   <a className="nav-link active" href="#infra" data-toggle="tab">{products.infra.header}</a>
@@ -142,7 +142,7 @@ export default class Homepage extends React.Component {
 						<div className="col-lg-3 img img-left">
 						</div>
 						<div className="col-lg-4 community-copy">
-							<h2>{community.header} <span className="highlight">{community.header2}</span></h2>
+							<h2>{community.header} {community.header2}</h2>
 							<Markdown source={community.body} escapeHtml={false} />
 						</div>
 						<div className="col-lg-5 img img-right">
@@ -155,7 +155,7 @@ export default class Homepage extends React.Component {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							<h2>{resources.header} <span className="highlight">{resources.header2}</span></h2>
+							<h2>{resources.header} {resources.header2}</h2>
 						</div>
 						<div className="col-lg-4 col-sm-12 card-container">
 							<div className="card">
