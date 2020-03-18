@@ -3,7 +3,7 @@
 		<div class="col-lg-3 col-xl-3 img img-left">
 		</div>
 		<div class="col-lg-6 col-xl-4 community-copy">
-			<h2>{{ .Params.community.header }} <span class="highlight">{{ .Params.community.header2 }}</span></h2>
+			<h2>{{ .Params.community.header }} {{ .Params.community.header2 }}</h2>
 			{{ partial "markdownify" .Params.community.body }} 
 		</div>
 		<div class="col-lg-3 col-xl-5 img img-right">
