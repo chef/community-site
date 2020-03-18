@@ -7,7 +7,12 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-9 col-lg-7">
-						<h1><img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark large" /></h1>
+
+						<h1>
+							<div class="img-left">
+							<img src="{{ .Params.hero.logo }}" alt="Chef Inspec" class="chef-wordmark size-large" />
+							</div>
+						</h1>
 						<h2>{{ .Params.title }}</h2>
 						{{ .Content }}
 					</div>

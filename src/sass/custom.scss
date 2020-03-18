@@ -69,14 +69,9 @@ img {
 }
 
 .chef-wordmark {
-  &.small {
-    max-height: 25px;
-  }
-  &.large {
-    max-height: 35px;
-  }
-  margin: 0.8rem auto;
+  padding-bottom: 0.8rem;
   width: auto;
+  max-height: 35px;
   @include media-breakpoint-only(sm) {
     max-height: 25px;
   }
@@ -474,20 +469,14 @@ input {
   background-color: white;
   padding-top: 1rem;
   min-height: 180px;
+  color: $dark-gray;
+
   // transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
   // box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
 
   h5 {
-    color: $dark-gray;
     margin-bottom: 0.5rem;
   } 
-  p {
-    color: $dark-gray;
-  }
-
-  .note {
-    font-size: .8rem;
-  }
 
   &:hover {
     // box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
@@ -496,8 +485,11 @@ input {
     h5, p {
       color: $white;
     }
+    
+    p.number {
+      border: 1px solid $white;
+    }
   }
-
 }
 
 .card-container {
@@ -794,6 +786,9 @@ pre {
   word-wrap: break-word;
   overflow-x: auto;
   border-radius: 2px;
+
+  @include scrollbars(15px, $chef-primary, $white);
+
 }   
 pre.prettyprint {
   padding-left: 1rem !important;

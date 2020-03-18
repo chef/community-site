@@ -38,23 +38,8 @@
       max-height: 80px;
     }
   }
-  
-  // GET STARTED
-  // =======================
-  .get-started {
-    @extend %section-padding;
 
-    h4 {
-      margin-bottom: .5rem;
-    }
-
-    pre.prettyprint {
-      border: none !important;
-      height: 120px;
-    }
-  }
-
-  // INSPEC BENEFITS
+  // INSPEC BENEFITS TABS
   // =======================
   .benefits {
     @extend %section-padding-bottom;
@@ -91,6 +76,10 @@
           font-size: 1.1rem;
           font-weight: 500;
           margin: 1rem 1.5rem 1rem auto;
+
+          @include media-breakpoint-down(sm) {
+            margin: auto;
+          }        
         }
 
         .nav-link:first-of-type {
@@ -109,6 +98,21 @@
         //   color: $infra-color;
         // }
       }
+    }
+  }
+
+   // GET STARTED
+  // =======================
+  .get-started {
+    @extend %section-padding;
+
+    h4 {
+      margin-bottom: .5rem;
+    }
+
+    pre.prettyprint {
+      border: none !important;
+      height: 120px;
     }
   }
 

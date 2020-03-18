@@ -31,9 +31,11 @@ h2 {
   margin-bottom: 3rem;
   @include media-breakpoint-down(md) {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
   @include media-breakpoint-down(sm) {
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -75,6 +77,10 @@ a {
 p.lead {
   font-size: 1.15rem;
   padding: 1.2rem 0;
+}
+
+p.note {
+  font-size: .8rem;
 }
 
 p.number {
