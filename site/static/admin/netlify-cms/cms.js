@@ -1,6 +1,5 @@
 import React from "react";
 import CMS from "netlify-cms-app";
-import netlifyIdentity from "netlify-identity-widget";
 import Homepage from "./templates/homepage";
 import FirstTime from "./templates/first-time";
 
