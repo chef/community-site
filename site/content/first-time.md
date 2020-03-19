@@ -5,23 +5,22 @@ cards:
   one:
     title: Learn about the community
     body: >-
-      What makes our community tick, things we're working on, and how
-      we treat each other.
+      What makes our community tick, things we're working on, and how we treat
+      each other.
 
 
-      [Code of Conduct
-      »](/code-of-conduct)
+      [Code of Conduct »](/code-of-conduct)
 
 
       [Read the Contributor Guide
       »](https://github.com/chef/chef-oss-practices/blob/master/contributors/guide/README.md#your-first-contribution)
 
 
-      [Book of Open Source
-      »](/book-of-open-source)
+      [Book of Open Source »](/book-of-open-source)
 
 
-      [Watch a triage »](https://www.youtube.com/playlist?list=PL11cZfNdwNyMMffxAIvH3bfTVv6W65oIh)
+      [Watch a triage
+      »](https://www.youtube.com/playlist?list=PL11cZfNdwNyMMffxAIvH3bfTVv6W65oIh)
   three:
     title: Connect with fellow contributors
     body: >-
@@ -41,22 +40,16 @@ cards:
       [Attend a Meetup »](https://events.chef.io)
   two:
     title: Make your first contribution
-    body: >-
+    body: |-
       We always need help. Here are great places to start.
-
 
       [Good First Issues »](https://chef.github.io/jump-in/)
 
-
       [Update the docs »](https://github.com/chef/chef-web-docs)
 
+      [List of projects »](/projects-list)
 
-      [List of projects
-      »](/projects-list)
-
-
-      [Help needed
-      »](/help-wanted)
+      [Help needed »](/help-wanted)
 swag_program:
   body: >-
     We’re glad you’re interested in contributing to a Chef project! We’re here
@@ -73,7 +66,6 @@ swag_program:
     repository.
   header: Earn Chef swag for contributing
 ---
-
 # First time contributing?
 
 We’re glad you’re interested in contributing to a Chef project! We’re here to do everything we can to make your first contribution experience a great one.
