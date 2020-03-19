@@ -49,9 +49,9 @@ module.exports = {
     //   }
     // ]),
     new HtmlWebpackPlugin({
-      filename: 'site/static/admin/index.html',
-      template: 'src/netlify-cms/cms.html',
-      inject: false,
+       title: `Content Manager`,
+           filename: `admin/index.html`,
+           chunks: [`cms`],
     }),
   ]
 };

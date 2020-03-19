@@ -27,3 +27,4 @@ moveItItem.prototype.update = function(scrollTop){
 $(function(){
   $('[data-scroll-speed]').moveIt();
 });
+
