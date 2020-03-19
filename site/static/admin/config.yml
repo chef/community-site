@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 	repo: chef/chef-devsite
-	identity_url: "https://dev.chef.io/.netlify/identity"
+	identity_url: "https://community.chef.io/.netlify/identity"
 publish_mode: editorial_workflow
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
