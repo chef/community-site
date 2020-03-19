@@ -88,7 +88,7 @@ export default class Homepage extends React.Component {
 				</section>
 				
 			</section>
-			<section class="product-grid">			
+			<section className="product-grid">			
 			<div className="container-fluid">
 				<div className="row product-grid-main">
 				   <div className="col-lg-4 offset-lg-1 col-sm-12 flex-center">
@@ -146,7 +146,7 @@ export default class Homepage extends React.Component {
 				   </div>
 				   <div className="col-lg-7 col-sm-12 product-grid-copy">
 						<div className="product-grid-copy-wrapper">
-							<h2>{products.header} {products.header}</h2>
+							<h2>{products.header} {products.header2}</h2>
 							<ul className="nav nav-tabs" id="product-tabs" role="tablist">
 								<li className="nav-item">
 									<a id="habitat-nav" className="nav-link" href="#habitat"> {products.habitat.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>

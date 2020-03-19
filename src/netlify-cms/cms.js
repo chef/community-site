@@ -1,13 +1,13 @@
 import React from "react";
 import CMS from "netlify-cms-app";
-
+import netlifyIdentity from "netlify-identity-widget";
 import Homepage from "./templates/homepage";
-//import FirstTime from "./templates/first-time";
+import FirstTime from "./templates/first-time";
 
 CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
 
 CMS.registerPreviewTemplate("home", Homepage);
-//CMS.registerPreviewTemplate("first-time", FirstTime);
+CMS.registerPreviewTemplate("first-time", FirstTime);
 
  // Register any CSS file on the home page as a preview style
 fetch("/")
@@ -22,4 +22,9 @@ fetch("/")
     });
   });
   
+localStorage.setItem("netlifySiteURL", "https://community.chef.io");
+
+  
 CMS.init();
+
+
