@@ -1,5 +1,8 @@
 #inspec {
 
+  h1 {
+    padding-top: 1.5rem;
+  }
   // HERO / FOUR CARDS
   // =======================
   .hero-actions {
@@ -16,17 +19,22 @@
       left: 0;
       width: 100%;
     }
-    
-    @include media-breakpoint-between(lg, xl) {
+    @include media-breakpoint-up(xxl) {
       &:before {
-        background-size: 60%;
-        background-position: 100% -200px;
+        background-size: 50%;
+        background-position: 100% -15rem;
+      }
+    }
+    @include media-breakpoint-down(xl) {
+      &:before {
+        background-size: 65%;
+        background-position: 120% -200px;
       }
     }
     @include media-breakpoint-down(lg) {
       &:before {
-        background-size: 60%;
-        background-position: 130% -100px;
+        background-size: 80%;
+        background-position: 180% -130px;
       }
     }
     @include media-breakpoint-down(sm) {
@@ -39,8 +47,8 @@
     }
 
     .bg-wave {
-      @include media-breakpoint-up(md) {
-        height: 28vh;
+      @include media-breakpoint-up(xxl) {
+        height: 32vh;
       }
     }
   }
@@ -54,56 +62,16 @@
     color: $light-gray;
     display: flex;
     
-    @include media-breakpoint-up(md) {
-      min-height: 400px;
+    // @include media-breakpoint-up(md) {
+    //   min-height: 400px;
+    // }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 2rem;
     }
 
-    // @include media-breakpoint-up(xl) {
-    //   margin-bottom: -50px;
-    // }
-
-    // @include media-breakpoint-up(xl) {
-    //   margin-bottom: -200px;
-    // }
     .benefits-main {
-      background-color: $dark-gray;
-      
-      .benefits-headers {
-        .fa {
-          transition: linear 0.1s;
-        }
-        ul li a.active {
-          .fa {
-            transform: rotate(90deg)
-          }
-        }
-
-        .nav-tabs .nav-item .nav-link {
-          font-size: 1.1rem;
-          font-weight: 500;
-          margin: 1rem 1.5rem 1rem auto;
-
-          @include media-breakpoint-down(sm) {
-            margin: auto;
-          }        
-        }
-
-        .nav-link:first-of-type {
-          padding-left: 0; //overwrites Bootstrap's
-        }
-
-        // ul li #first-nav:hover, #first-nav.active {
-        //   color: $habitat-color;
-        // }
-
-        // ul li #second-nav:hover, #second-nav.active {
-        //   color: $inspec-color;
-        // }
-
-        // ul li #third-nav:hover, #third-nav.active {
-        //   color: $infra-color;
-        // }
-      }
+      @extend %section-tabs;
     }
   }
 

@@ -70,7 +70,7 @@
       width: 100%;
     }
 
-    @include media-breakpoint-between(lg, xl) {
+    @include media-breakpoint-up(lg) {
       &:before {
         background-size: 45%;
         background-position: 110% -10px;

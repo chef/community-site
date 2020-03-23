@@ -84,14 +84,12 @@ $global-font-size: 20px;
 
   &::-webkit-scrollbar-thumb {
 		background: $foreground-color;
-		border-radius: 50px;
 		display: block;
   }
 
   &::-webkit-scrollbar-track {
 		background: $background-color;
 		border: 2px solid $foreground-color;
-		border-radius: 50px;
 	}	
 
   // For Internet Explorer
@@ -100,4 +98,10 @@ $global-font-size: 20px;
     scrollbar-track-color: $background-color;
 	}
 
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }

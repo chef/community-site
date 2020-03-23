@@ -4,8 +4,9 @@
 @import "settings";
 @import "cookiepro";
 
-// General Layout Styles
-// ========================
+// ===================
+// General Layout Styling
+// ===================
 body {
   font-family: $font-primary;
   font-size: 16px;
@@ -51,9 +52,9 @@ body {
   align-items: center;
 }
 
-
-// Image Styles
-// =============
+// ===================
+// Image Styling
+// ===================
 img {
   max-width: 100%;
   height: auto;
@@ -69,16 +70,16 @@ img {
 }
 
 .chef-wordmark {
-  padding-bottom: 0.8rem;
   width: auto;
-  max-height: 35px;
+  max-height: 38px;
   @include media-breakpoint-only(sm) {
-    max-height: 25px;
+    max-height: 30px;
   }
 }
 
-// Main Nav Styles
-// ========================
+// ===================
+// Navigation Styling
+// ===================
 #main-nav {
   background-color: $white;
   border-bottom: 1px solid $docs-gray;
@@ -268,9 +269,9 @@ img {
   }
 }
 
-// Footer Styles
-// ========================
-
+// ===================
+// Footer Styling
+// ===================
 #footer {
   background-color: $dark-gray;
   color: $light-gray;
@@ -395,108 +396,9 @@ img {
   }
 }
 
-<<<<<<< HEAD
-=======
-// General Typography Styles
-// ========================
-
-body {
-  font-family: $font-primary;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.625;
-  color: $dark-gray;
-}
-
-::selection {
-  background-color: lighten($chef-primary, 10%);
-}
-
-a {
-  color: $chef-secondary;
-
-  &:hover {
-    text-decoration: none;
-    color: $chef-primary;
-  }
-
-  &::selection {
-    color: $light-gray;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include muli();
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-
-  // &:not(:first-child){
-	// 	margin-top: 2.5rem;
-  // }
-}
-
-h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: .8rem;
-  margin-top: 0;
-  @include media-breakpoint-down(md) {
-    font-size: 2.5rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 2.2rem;
-  }
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  @include media-breakpoint-down(md) {
-    font-size: 2rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 1.8rem;
-  }
-}
-h5 {
-	font-weight: 700;
-}
-
-h6 {
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-ul,
-ol {
-  &:not(.nav) {
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-// Flexbox styles
-// ========================
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
->>>>>>> master
-// Form styles
-// ========================
+// ===================
+// Form Styling
+// ===================
 select {
   background-color: #fff;
   border-radius: 0;
@@ -514,18 +416,107 @@ input {
 	border-radius: 0;
 }
 
-// COMPONENT STYLES
-// Common across multiple pages
-// =======================
+// ===================
+// Button Styling
+// ===================
+.btn {
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  font-size: 17px;
+
+  &-primary {
+    background: $chef-primary;
+    border: 2px solid $chef-primary;
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      border: 2px solid $chef-primary;
+      color: $chef-primary;
+    }
+
+    &-white {
+      background: white;
+      border: 2px solid white;
+      color: $dark-gray;
+      font-weight: 600;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: 2px solid $chef-primary;
+    color: $chef-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $chef-primary;
+      border: 2px solid $chef-primary;
+      color: white;
+    }
+  }
+
+  //Full width buttons on xs devices
+  @include media-breakpoint-only(xs) {
+    margin: 1rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 100%;
+  }
+}
+
+// Tab Styles
+// =============
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-item {
+    margin-bottom: 0;
+
+    .nav-link {
+      color: $chef-primary;
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+
+      &.active {
+        color: white;
+        background-color: transparent;
+        border: none;
+      }
+      &:hover {
+        color: $chef-secondary;
+      }
+    }
+  }
+}
+
+// ===================
+// Table Styling
+// ===================
+table {
+	width: 100%;
+}
+
+// ===================
+// Component Styling
+// ===================
 .hero-actions {
   position: relative;
-
-  // .hero,
-  // .actions {
-  //   background-image: none;
-  //   background-color: transparent;
-  // }
-
+  
   .actions {
     position: relative;
 
@@ -545,16 +536,13 @@ input {
   @extend %section-padding;
   
   @include media-breakpoint-up(lg) {
-    padding: 13vh 0;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
   }
 
   h2 {
-<<<<<<< HEAD
-    margin-bottom: 0.5rem;
-=======
     color: $chef-primary;
     margin-bottom: .5rem;
->>>>>>> master
   }
 
   #chefio {
@@ -680,12 +668,8 @@ input {
   }
 }
 
-.contact {
-  @extend %section-padding;
-  background-color: $chef-tertiary;
-  color: white;
-}
 
+// Three-card resources
 .resources {
   @extend %section-padding;
 
@@ -750,8 +734,44 @@ input {
   }
 }
 
-// Social Media Share Styles
-// =======================
+// The contact section at the foot of every page
+.contact {
+  @extend %section-padding;
+  background-color: $chef-tertiary;
+  color: white;
+}
+
+// Dark grey section with tabs
+%section-tabs {
+	background-color: $dark-gray;
+		
+	.headers {
+		.fa {
+			transition: linear 0.1s;
+		}
+		ul li a.active {
+			.fa {
+				transform: rotate(90deg)
+			}
+		}
+
+		.nav-tabs .nav-item .nav-link {
+			font-size: 1.1rem;
+			font-weight: 500;
+			margin: 1rem 1.5rem 1rem auto;
+
+			@include media-breakpoint-down(sm) {
+				margin: auto;
+			}        
+		}
+
+		.nav-link:first-of-type {
+			padding-left: 0; //overwrites Bootstrap's
+		}
+	}
+}
+
+// Social media sharing icons
 .social {
   a:hover {
     text-decoration: none;
@@ -779,103 +799,6 @@ input {
     }
   }
 }
-
-// Button Styles
-// =======================
-
-.btn {
-  border: none;
-  font-weight: 500;
-  padding: 0.4rem 1rem;
-  border-radius: 2px;
-  font-size: 17px;
-
-  &-primary {
-    background: $chef-primary;
-    border: 2px solid $chef-primary;
-    color: white;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-      border: 2px solid $chef-primary;
-      color: $chef-primary;
-    }
-
-    &-white {
-      background: white;
-      border: 2px solid white;
-      color: $dark-gray;
-      font-weight: 600;
-
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-      }
-    }
-  }
-
-  &-secondary {
-    background-color: transparent;
-    border: 2px solid $chef-primary;
-    color: $chef-primary;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $chef-primary;
-      border: 2px solid $chef-primary;
-      color: white;
-    }
-  }
-
-  //Full width buttons on xs devices
-  @include media-breakpoint-only(xs) {
-    margin: 1rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    max-width: 100%;
-  }
-}
-
-// Tab Styles
-// =============
-.nav-tabs {
-  border-bottom: none;
-
-  .nav-item {
-    margin-bottom: 0;
-
-    .nav-link {
-      color: $chef-primary;
-      background-color: transparent;
-      border: none;
-      font-weight: 600;
-
-      &.active {
-        color: white;
-        background-color: transparent;
-        border: none;
-      }
-      &:hover {
-        color: $chef-secondary;
-      }
-    }
-  }
-}
-
-// Table Styles
-// =============
-table {
-	width: 100%;
-}
-
-// Code Styles
-// =============
 pre {
   font-size: .9rem;
   white-space: pre-line;
@@ -883,7 +806,7 @@ pre {
   overflow-x: auto;
   border-radius: 2px;
 
-  @include scrollbars(15px, $chef-primary, $white);
+  @include scrollbars(10px, $chef-primary, $white);
 
 }   
 pre.prettyprint {

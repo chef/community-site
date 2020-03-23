@@ -134,14 +134,14 @@ tutorials:
       copy: >-
         Build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
       subtext: >-
-        Please be sure to complete Try Chef InSpec before starting this module. 
+        Please be sure to complete **Try Chef InSpec** before starting this module. 
     three: 
       title: Create an InSpec profile from compliance documentation 
       link: "https://learn.chef.io/modules/create-profile-from-doc#/"
       copy: >-
         See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
       subtext: >-
-        Please be sure to complete Try Chef InSpec before starting this module. 
+        Please be sure to complete **Try Chef InSpec** before starting this module. 
     four:
       title: Automating compliance for finance 
       link: "https://learn.chef.io/modules/hp-compliance/#/" 
@@ -185,4 +185,4 @@ contact:
 <p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
 
 <a class="btn btn-primary" href="{{ .Params.hero.primaryURL }}">Download InSpec</a>
-<a class="btn btn-secondary" href="{{ .Params.hero.secondaryURL }}">4.0 Patch Notes</a>
+<a class="btn btn-secondary" href="{{ .Params.hero.secondaryURL }}">View Docs</a>
