@@ -29,7 +29,10 @@ cards:
     body: >-
       ##### Interact
 
-      [Community Forum](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/)
+      [Community Forum](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
+
+      
+      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT  
 
 
       ##### Contribute
@@ -54,8 +57,7 @@ products:
       for health checks, rolling updates, dependency management, and more. 
     header: Application Delivery
     url: 'https://www.habitat.sh'
-  header: Chef helps
-  header2: "automate your:"
+  header: "Chef helps automate your:"
   infra:
     copy: >
       #### Infrastructure automation for hardened, consistent configuration at
@@ -103,13 +105,11 @@ products:
     header: Observability
     url: 'https://automate.chef.io'
 community:
-  header: We're all in this
-  header2: together
+  header: We're all in this together
   body: >-
     We'll be featuring some of our amazing community members in the coming months, so keep an eye out for updates. If you'd like to share your Chef community story, get in touch at [community@chef.io](mailto:community@chef.io).
 resources:
-  header: Resources from the
-  header2: community
+  header: Resources from the community
   one:
     body: >-
       #### [Sous Chefs keep the kitchen in motion](https://sous-chefs.org)

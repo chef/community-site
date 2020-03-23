@@ -1,6 +1,5 @@
 #first-time{
     .hero-actions {
-
       &:before {
         content: "";
         display: block;
@@ -8,7 +7,6 @@
         height: calc(100% - calc(25vh - 100px));
         background-image: url(/img/puzzle.svg);
         background-repeat: no-repeat;
- 
         background-color: $light-gray;
         position: absolute;
         top: 0;
@@ -56,23 +54,4 @@
         }
       }
     }
-
-    h1 {
-        color: $chef-secondary;
-    }
-	
-    // .swag-program {
-    //     background-color: $dark-gray;
-    //     color: $light-gray;
-    //     @extend %section-padding;
-
-    //     h2 {
-    //         color: $chef-primary;
-    //     }
-
-    //     img {
-    //         width: 100%;
-    //         margin-bottom: 1.2rem;
-    //     }
-    // }
 }
