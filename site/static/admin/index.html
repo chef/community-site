@@ -10,9 +10,9 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script>
   netlifyIdentity.init({
-    APIUrl: "https://dev.chef.io/.netlify/identity"
+    APIUrl: "https://community.chef.io/.netlify/identity"
   });
   </script>
- <script type="text/javascript" src="/src/netlify-cms/cms.js"></script>
-</body>
+   <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
+  </body>
 </html>
