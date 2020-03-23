@@ -297,6 +297,15 @@
       .btn {
         margin-top: 2rem;
       }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+        &:active,
+        &:hover {
+          color: $chef-primary;
+        }
+      }
     }
   }
 
