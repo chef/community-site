@@ -1,6 +1,5 @@
 import React from "react";
 import CMS from "netlify-cms-app";
-
 import Homepage from "./templates/homepage";
 import FirstTime from "./templates/first-time";
 
@@ -22,4 +21,9 @@ fetch("/")
     });
   });
   
+localStorage.setItem("netlifySiteURL", "https://community.chef.io");
+
+  
 CMS.init();
+
+

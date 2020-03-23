@@ -28,7 +28,7 @@ export default class FirstTime extends React.Component {
 			</section>
 			
 			<section className="swag-program">
-				<div className="container-fluid">
+				<div className="container-fluid" style={{display:'none'}}>
 					<div className="row">
 						<div className="col-sm-12 col-lg-8 offset-lg-2">
 							<h2>{swag_program.header}</h2>

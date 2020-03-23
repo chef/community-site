@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src", "js", "main.js"),
-    cms: path.join(__dirname, "src", "netlify-cms", "cms.js"),
+    cms: path.join(__dirname, "dist/admin", "netlify-cms", "cms.js"),
   },
 
   output: {
@@ -49,9 +49,9 @@ module.exports = {
     //   }
     // ]),
     new HtmlWebpackPlugin({
-      filename: 'site/static/admin/index.html',
-      template: 'src/netlify-cms/cms.html',
-      inject: false,
+       title: `Content Manager`,
+           filename: `admin/index.html`,
+           chunks: [`cms`],
     }),
   ]
 };

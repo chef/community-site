@@ -49,7 +49,6 @@ collections: # A list of collections the CMS should be able to edit
 						widget: object,
 						fields: [
 							{label: "Header", name: "header", widget: "string"},
-							{label: "Header 2", name: "header2", widget: "string"},
 							{	label: "Infra",
 								name: "infra",
 								widget: object,
@@ -83,14 +82,12 @@ collections: # A list of collections the CMS should be able to edit
 						widget: object,
 						fields: [
 							{label: "Header", name: "header", widget: "string"},
-							{label: "Header 2", name: "header2", widget: "string"},
 							{label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Resources",
 						name: "resources",
 						widget: object,
 						fields: [
 							{label: "Header", name: "header", widget: "string"},
-							{label: "Header 2", name: "header2", widget: "string"},
 							{	label: "Card 1",
 								name: "one",
 								widget: object,
