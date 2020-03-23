@@ -318,7 +318,7 @@ img {
   }
 
   #super-footer {
-    background-color: black;
+    background-color: $chef-primary;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     max-width: 100%;
@@ -425,6 +425,7 @@ input {
   padding: 0.4rem 1rem;
   border-radius: 2px;
   font-size: 17px;
+  min-width: 150px;
 
   &-primary {
     background: $chef-primary;
@@ -468,14 +469,6 @@ input {
       color: white;
     }
   }
-
-  //Full width buttons on xs devices
-  @include media-breakpoint-only(xs) {
-    margin: 1rem;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    max-width: 100%;
-  }
 }
 
 // Tab Styles
@@ -502,13 +495,6 @@ input {
       }
     }
   }
-}
-
-// ===================
-// Table Styling
-// ===================
-table {
-	width: 100%;
 }
 
 // ===================
@@ -871,6 +857,10 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   @include media-breakpoint-down(md) {
     transform: none !important;
   }
+}
+
+table {
+	width: 100%;
 }
 
 
