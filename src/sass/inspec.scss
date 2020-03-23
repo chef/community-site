@@ -16,6 +16,7 @@
       left: 0;
       width: 100%;
     }
+    
     @include media-breakpoint-between(lg, xl) {
       &:before {
         background-size: 60%;
@@ -33,9 +34,14 @@
         background-image: none !important;
       }
     }
-
     .card-icon {
       max-height: 80px;
+    }
+
+    .bg-wave {
+      @include media-breakpoint-up(md) {
+        height: 28vh;
+      }
     }
   }
 

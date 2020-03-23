@@ -493,10 +493,8 @@ input {
 }
 
 .card-container {
-  &:not(:last-child) {
-    @include media-breakpoint-down(md) {
-      margin-bottom: 1rem;
-    }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
   }
   
   &:hover {
