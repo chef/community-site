@@ -1,0 +1,48 @@
+{{ define "body" }}
+<main id="habitat">
+	
+	<section class="hero-actions">
+        
+		<section class="hero">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9 col-lg-7">
+
+						<h2>
+							<div class="img-left">
+							<img src="{{ .Params.hero.logo }}" alt="Chef Habitat" class="chef-wordmark size-large" />
+							</div>
+						</h2>
+						<h1>{{ .Params.title }}</h1>
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="actions">
+			{{ partial "four-cards.html" . }}
+		</section>
+
+	</section>
+			
+		<section class="benefits">
+			{{ partial "habitat/habitat-usage.html" . }}
+	</section>
+
+	
+	<section class="tutorials">
+			{{ partial "habitat/habitat-tutorials.html" . }}
+	</section>
+
+	<section class="resources">
+			{{ partial "habitat/habitat-resources.html" . }}
+	</section>
+
+	<section class="contact">
+		{{ partial "contact.html" . }}
+</section>
+
+</main>
+
+{{ end }}
