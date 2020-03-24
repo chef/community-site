@@ -1,0 +1,96 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include muli();
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2.2rem;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h5 {
+	font-weight: 700;
+}
+
+h6 {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+ul,
+ol {
+  &:not(.nav) {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+::selection {
+  background-color: lighten($chef-primary, 10%);
+}
+
+a {
+  color: $chef-primary;
+
+  &:hover {
+    text-decoration: none;
+    color: $chef-secondary;
+  }
+
+  &::selection {
+    color: $light-gray;
+  }
+}
+
+p.lead {
+  font-size: 1.15rem;
+  padding: 1.2rem 0;
+}
+
+p.note {
+  font-size: .8rem;
+}
+
+p.number {
+  border: 1px solid $chef-primary;
+  color: $chef-primary;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+

@@ -4,8 +4,16 @@
 @import "settings";
 @import "cookiepro";
 
-// General Layout Styles
-// ========================
+// ===================
+// General Layout Styling
+// ===================
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: $dark-gray;
+}
 
 .container {
   @media (min-width: 1400px) {
@@ -34,8 +42,44 @@
   }
 }
 
-// Main Nav Styles
-// ========================
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+// ===================
+// Image Styling
+// ===================
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+.img-left {
+  display: flex;
+  justify-content: start;
+}
+
+.chef-wordmark {
+  width: auto;
+  max-height: 38px;
+  @include media-breakpoint-only(sm) {
+    max-height: 30px;
+  }
+}
+
+// ===================
+// Navigation Styling
+// ===================
 #main-nav {
   background-color: $white;
   border-bottom: 1px solid $docs-gray;
@@ -225,9 +269,9 @@
   }
 }
 
-// Footer Styles
-// ========================
-
+// ===================
+// Footer Styling
+// ===================
 #footer {
   background-color: $dark-gray;
   color: $light-gray;
@@ -274,10 +318,14 @@
   }
 
   #super-footer {
-    background-color: black;
+    background-color: $chef-primary;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     max-width: 100%;
+
+    p, a {
+      color: $dark-gray;
+    }
   }
 
   .nav-items {
@@ -352,105 +400,9 @@
   }
 }
 
-// General Typography Styles
-// ========================
-
-body {
-  font-family: $font-primary;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.625;
-  color: $dark-gray;
-}
-
-::selection {
-  background-color: lighten($chef-primary, 10%);
-}
-
-a {
-  color: $chef-secondary;
-
-  &:hover {
-    text-decoration: none;
-    color: $chef-primary;
-  }
-
-  &::selection {
-    color: $light-gray;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include muli();
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-
-  // &:not(:first-child){
-	// 	margin-top: 2.5rem;
-  // }
-}
-
-h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: .8rem;
-  margin-top: 0;
-  @include media-breakpoint-down(md) {
-    font-size: 2.5rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 2.2rem;
-  }
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  @include media-breakpoint-down(md) {
-    font-size: 2rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 1.8rem;
-  }
-}
-h5 {
-	font-weight: 700;
-}
-
-h6 {
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-ul,
-ol {
-  &:not(.nav) {
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-// Flexbox styles
-// ========================
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
-// Form styles
-// ========================
+// ===================
+// Form Styling
+// ===================
 select {
   background-color: #fff;
   border-radius: 0;
@@ -468,17 +420,107 @@ input {
 	border-radius: 0;
 }
 
-// Component Styles
-// =======================
+// ===================
+// Button Styling
+// ===================
+.btn {
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  font-size: 17px;
+  min-width: 150px;
+  margin-right: 0.4rem; 
+
+  &-primary {
+    background: $chef-secondary;
+    border: 2px solid $chef-secondary;
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      border: 2px solid $chef-secondary;
+      color: $chef-secondary;
+    }
+
+    &-white {
+      background: $white;
+      border: 2px solid $white;
+      color: $chef-secondary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: 2px solid $chef-secondary;
+    color: $chef-secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $chef-secondary;
+      border: 2px solid $chef-secondary;
+      color: white;
+    }
+
+    &-white {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        border: 2px solid $white;
+        color: $chef-secondary;
+      }
+    }
+  }
+}
+
+// Tab Styles
+// =============
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-item {
+    margin-bottom: 0;
+
+    .nav-link {
+      color: $chef-primary;
+      background-color: transparent;
+      border: none;
+      font-weight: 700;
+
+      &.active {
+        color: white;
+        background-color: transparent;
+        border: none;
+      }
+      &:hover {
+        color: $chef-secondary;
+      }
+    }
+  }
+}
+
+// ===================
+// Component Styling
+// ===================
 .hero-actions {
   position: relative;
-
-  // .hero,
-  // .actions {
-  //   background-image: none;
-  //   background-color: transparent;
-  // }
-
+  
   .actions {
     position: relative;
 
@@ -498,7 +540,8 @@ input {
   @extend %section-padding;
   
   @include media-breakpoint-up(lg) {
-    padding: 13vh 0;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
   }
 
   h2 {
@@ -512,11 +555,42 @@ input {
   }
 }
 
-.card-container {
-  &:not(:last-child) {
-    @include media-breakpoint-down(md) {
-      margin-bottom: 1rem;
+.card-long {
+  background-color: white;
+  padding-top: 1rem;
+  min-height: 180px;
+  color: $dark-gray;
+
+  // transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  // box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
+
+  h5 {
+    margin-bottom: 0.5rem;
+  } 
+
+  &:hover {
+    // box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    background-color: $dark-gray;
+    
+    h5, p {
+      color: $white;
     }
+    
+    p.number {
+      border: 1px solid $chef-secondary;
+      color: $chef-secondary;
+    }
+  }
+}
+
+.card-container {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
+  
+  &:hover {
+    box-shadow: var(--elevation3);
+    transform: translateY(-4px);
   }
 
   .card {
@@ -547,6 +621,7 @@ input {
       list-style-type: none;
       padding-left: 0;
     }
+    
   }
 }
 
@@ -554,6 +629,9 @@ input {
   position: relative;
 
   .action-cards {
+    h5 {
+      margin: 1.5rem 0;
+    }
     @include media-breakpoint-up(xl){
       padding-bottom: 7rem;
     }
@@ -568,10 +646,12 @@ input {
     bottom: 0;
     height: 38vh;
     width: 100%;
-    // @include media-breakpoint-up(md) {
-    //   height: 20vh;
-    // }
-
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
     //Filling in the empty space below the wave with dark gray
     div {
       border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
@@ -593,6 +673,110 @@ input {
   }
 }
 
+
+// Three-card resources
+.resources {
+  @extend %section-padding;
+
+  .card {
+    padding: 0;
+    background-color: $dark-gray;
+    display: flex;
+    flex-flow: column;
+    transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
+    
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    }
+
+    
+    @include media-breakpoint-only(md) {
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    h4 {
+      color: white;
+      margin-bottom: 1rem;
+      a {
+        color: $light-gray;
+      }
+    }
+
+    img {
+      max-width: none;
+      width: 100%;
+      @include media-breakpoint-only(md) {
+        width: 33.33%;
+        flex-shrink: 0;
+      }
+    }
+
+    .text {
+      color: white;
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+
+      @include media-breakpoint-only(md) {
+        padding: 0;
+        padding-left: 1rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 2rem;
+      }
+      
+      > *:last-child {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+// The contact section at the foot of every page
+.contact {
+  @extend %section-padding;
+  background-color: $chef-tertiary;
+  color: white;
+}
+
+// Dark grey section with tabs
+%section-tabs {
+	background-color: $dark-gray;
+		
+	.headers {
+		.fa {
+			transition: linear 0.1s;
+		}
+		ul li a.active {
+			.fa {
+				transform: rotate(90deg)
+			}
+		}
+
+		.nav-tabs .nav-item .nav-link {
+			font-size: 1.1rem;
+			font-weight: 500;
+			margin: 1rem 1.5rem 1rem auto;
+
+			@include media-breakpoint-down(sm) {
+				margin: auto;
+			}        
+		}
+
+		.nav-link:first-of-type {
+			padding-left: 0; //overwrites Bootstrap's
+		}
+	}
+}
+
+// Social media sharing icons
 .social {
   a:hover {
     text-decoration: none;
@@ -620,112 +804,68 @@ input {
     }
   }
 }
-
-// Button Styles
-// =======================
-
-.btn {
-  border: none;
-  font-weight: 500;
-  padding: 0.4rem 1rem;
+pre {
+  font-size: .9rem;
+  white-space: pre-line;
+  word-wrap: break-word;
+  overflow-x: auto;
   border-radius: 2px;
-  font-size: 17px;
 
-  &-primary {
-    background: $chef-primary;
-    border: 2px solid $chef-primary;
-    color: white;
+  @include scrollbars(10px, $chef-primary, $white);
 
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-      border: 2px solid $chef-primary;
-      color: $chef-primary;
-    }
-
-    &-white {
-      background: white;
-      border: 2px solid white;
-      color: $dark-gray;
-      font-weight: 600;
-
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-      }
-    }
-  }
-
-  &-secondary {
-    background-color: transparent;
-    border: 2px solid $chef-primary;
-    color: $chef-primary;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $chef-primary;
-      border: 2px solid $chef-primary;
-      color: white;
-    }
-  }
-
-  //Full width buttons on xs devices
-  @include media-breakpoint-only(xs) {
-    margin: 10px auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 95%;
-  }
+}   
+pre.prettyprint {
+  padding-left: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
-// Image Styles
-// =============
-img {
-  max-width: 100%;
-  height: auto;
+/* desert scheme ported from vim to google prettify */
+//Regular prettyprint class is dark text on light background
+pre.prettyprint { 
+  display: block; background-color: white; 
+}
+//Dark prettyprint class is light text on dark background
+pre.prettyprint.dark { 
+  display: block; background-color: $dark-gray; 
+
+  .pun { color: #fff; }    /* punctuation */
+  .pln { color: #fff; }    /* plaintext */
+  .kwd { color: $chef-primary; font-weight: bold; }
+  .tag { color: $chef-primary; font-weight: bold; } /* html/xml tag    - lightyellow */
+  .atn { color: $chef-primary; font-weight: bold; } /* attribute name  - khaki */
 }
 
-.img-round {
-  border-radius: 50%;
-}
+pre .nocode { background-color: none; color: #000; }
+pre .str { color: $chef-secondary; } /* string  - pink */
+pre .kwd { color: $chef-primary; font-weight: bold; }
+pre .com { color: $inspec-color; } /* comment - skyblue */
+pre .typ { color: $chef-primary; } /* type */
+pre .lit { color: $inspec-color; } /* literal */
+pre .pun { color: $dark-gray; }    /* punctuation */
+pre .pln { color: $dark-gray; }    /* plaintext */
+pre .tag { color: $chef-primary; font-weight: bold; } /* html/xml tag    - lightyellow */
+pre .atn { color: $chef-primary; font-weight: bold; } /* attribute name  - khaki */
+pre .atv { color: $chef-secondary; } /* attribute value - pink */
+pre .dec { color: $chef-primary;} /* decimal*/
 
-.img-left {
-  display: flex;
-  justify-content: start;
-}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
-// Tab Styles
-// =============
-.nav-tabs {
-  border-bottom: none;
-
-  .nav-item {
-    margin-bottom: 0;
-
-    .nav-link {
-      color: white;
-      border: none;
-      font-weight: 600;
-
-      &.active,
-      &:hover {
-        color: $chef-primary;
-        background-color: transparent;
-        border: none;
-      }
-    }
-  }
-}
-
-// Table Styles
-// =============
-table {
-	width: 100%;
+@media print {
+  pre.prettyprint { background-color: none }
+  pre .str, code .str { color: #060 }
+  pre .kwd, code .kwd { color: #006; font-weight: bold }
+  pre .com, code .com { color: #600; font-style: italic }
+  pre .typ, code .typ { color: #404; font-weight: bold }
+  pre .lit, code .lit { color: #044 }
+  pre .pun, code .pun { color: #440 }
+  pre .pln, code .pln { color: #000 }
+  pre .tag, code .tag { color: #006; font-weight: bold }
+  pre .atn, code .atn { color: #404 }
+  pre .atv, code .atv { color: #060 }
 }
 
 // Misc Styles
@@ -738,8 +878,15 @@ table {
   }
 }
 
+table {
+	width: 100%;
+}
+
+
+@import "type";
 @import "marketo";
 @import "home";
+@import "inspec";
 @import "first-time";
 @import "search";
 @import "markdown";

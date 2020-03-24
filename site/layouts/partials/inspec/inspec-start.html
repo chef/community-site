@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2>{{ .Params.getStarted.header }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1">
+            <p class="number">1</p>
+        </div>
+        <div class="col-10 col-md-5">
+            <h4>{{ .Params.getStarted.one.header }}</h4>
+            <p>{{ .Params.getStarted.one.copy }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre class="prettyprint dark"><code>
+              control 'example-1.0' do
+                &nbsp;&nbsp;impact 0.9
+                &nbsp;&nbsp;title 'Ensure login disabled'
+                &nbsp;&nbsp;desc 'An optional description...'
+                &nbsp;&nbsp;describe sshd_config do
+                  &nbsp;&nbsp;&nbsp;&nbsp;its('PermitRootLogin') {
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should_not cmp 'yes'
+                  &nbsp;&nbsp;&nbsp;&nbsp;}
+              &nbsp;&nbsp;end
+              end
+            </code></pre>    
+        </div>
+      </div>
+      <div class="row align-items-center">
+          <div class="col-2 col-md-1">
+            <p class="number">2</p>
+        </div>
+        <div class="col-10 col-md-5">
+            <h4>{{ .Params.getStarted.two.header }}</h4>
+            <p>{{ .Params.getStarted.two.copy  }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre class="prettyprint dark"><code>
+                $ inspec exec linux-baseline
+              </code></pre>    
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1">
+            <p class="number">3</p>
+        </div>
+        <div class="col-10 col-md-5">
+            <h4>{{ .Params.getStarted.three.header }}</h4>
+            <p>{{ .Params.getStarted.three.copy  }}</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <pre class="prettyprint dark"><code>
+                Profile: Chef InSpec Profile (example_profile)
+                Version: 0.1.0
+                Target:  local://
+
+                  &nbsp;&nbsp;✔  example-1.0: Ensure root login is disabled via SSH
+                  &nbsp;&nbsp;✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
+
+                Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+                Test Summary: 1 successful, 0 failures, 0 skipped
+              </code></pre>    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
