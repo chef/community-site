@@ -527,7 +527,11 @@ input {
     z-index: 2;
     display: block;
     border-radius: 0;
-  
+
+    .card-title {
+      margin-bottom: 1rem;
+    }
+
     p {
       font-size: 0.95em;
     }
