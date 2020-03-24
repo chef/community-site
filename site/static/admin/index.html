@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-   <link href="admin/config.yml" type="text/yaml" rel="cms-config-url">
+   <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
 
 </head>
 <body>
@@ -15,6 +15,6 @@
     APIUrl: "https://community.chef.io/.netlify/identity"
   });
   </script>
-  <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
+  <script src="../cms.js"></script>
 </body>
 </html>
