@@ -24,6 +24,10 @@ fetch("/")
 localStorage.setItem("netlifySiteURL", "https://community.chef.io");
 
   
-CMS.init();
+CMS.init({
+  config: {
 
+    load_config_file: true
+	},
+})
 

@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src", "js", "main.js"),
-    cms: path.join(__dirname, "dist/admin", "netlify-cms", "cms.js"),
+    cms: path.join(__dirname, "src", "admin/netlify-cms", "cms.js"),
   },
 
   output: {
