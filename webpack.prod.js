@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: "production",
 
   output: {
-    filename: "[name].[hash:5].js",
+    filename: "[name].js",
     chunkFilename: "[id].[hash:5].css"
   },
 
@@ -27,5 +27,6 @@ module.exports = merge(common, {
       }),
       new OptimizeCSSAssetsPlugin({}),
     ]
-  }
+  },
+
 });
