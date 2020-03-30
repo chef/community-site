@@ -50,6 +50,7 @@ module.exports = {
     // ]),
     new HtmlWebpackPlugin({
        title: `Content Manager`,
+       		template: path.join(__dirname, "src",  'admin', 'index.html'),
            filename: `admin/index.html`,
            chunks: [`cms`],
     }),
