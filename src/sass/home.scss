@@ -70,9 +70,6 @@
       width: 100%;
     }
 
-<<<<<<< HEAD
-    @include media-breakpoint-up(lg) {
-=======
     @include media-breakpoint-up(xl) {
       &:before {
         background-size: 50% !important;
@@ -80,7 +77,6 @@
       }
     }
     @include media-breakpoint-between(lg, xl) {
->>>>>>> master
       &:before {
         background-size: 60%;
         background-position: 120% -30px;
@@ -290,7 +286,7 @@
     }
 
     .community-copy {
-      background-color: $inspec-color;
+      background-color: $chef-tertiary;
       color: $light-gray;
       @extend %section-padding;
 
