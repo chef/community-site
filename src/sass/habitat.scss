@@ -21,14 +21,14 @@
     }
     @include media-breakpoint-up(xxl) {
       &:before {
-        background-size: 50%;
-        background-position: 100% -15rem;
+        background-size: 45%;
+        background-position: 100% -17rem;
       }
     }
     @include media-breakpoint-down(xl) {
       &:before {
-        background-size: 65%;
-        background-position: 120% -200px;
+        background-size: 58%;
+        background-position: 120% -250px;
       }
     }
     @include media-breakpoint-down(lg) {
@@ -53,9 +53,9 @@
     }
   }
 
-  // INSPEC BENEFITS TABS
+  // HABITAT USAGE TABS
   // =======================
-  .benefits {
+  .usage {
     @extend %section-padding-bottom;
 
     background-color: $dark-gray;
@@ -70,8 +70,29 @@
       margin-top: 2rem;
     }
 
-    .benefits-main {
+    .usage-main {
       @extend %section-tabs;
+
+      #habitat-img {
+        overflow: visible;
+        position: relative;
+        bottom: 50%;
+        right: 30%;
+        // max-width: none;
+        margin-bottom: -400px;
+        @include media-breakpoint-between(md, lg) {
+          right: 30%;
+        }
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+
+        #studio, #artifact, #supervisor {
+          stroke: $chef-primary;
+          stroke-width: 2px;
+          transition: stroke 1s;
+        }
+      }
     }
   }
 

@@ -81,7 +81,6 @@
 			$(".infra-stroke").css("stroke", "#DA1884");
 			$("#infra-connector").css("opacity", 1);
 			$("#infra-bubble").css("transform", "translate(275px)");		
-	
 		} else if (e.currentTarget.hash === "#automate") {
 			$(".automate-stroke").css("stroke", "#00aeef");
 			$(".inspec-stroke").css("stroke", "#3c3c3c");
@@ -90,13 +89,13 @@
 			$("#automate-connector").css("opacity", 1);						
 			$("#automate-bubble").css("transform", "translate(275px)");
 		} else if (e.currentTarget.hash === "#inspec") {
+			console.log("INSPEC");
 			$(".automate-stroke").css("stroke", "#3c3c3c");
 			$(".inspec-stroke").css("stroke", "#9957a3");
 			$(".habitat-stroke").css("stroke", "#3c3c3c");			
 			$(".infra-stroke").css("stroke", "#3c3c3c");	
 			$("#inspec-connector").css("opacity", 1);	
 			$("#inspec-bubble").css("transform", "translate(275px)");
-					
 		} else if (e.currentTarget.hash === "#habitat") {
 			$(".automate-stroke").css("stroke", "#3c3c3c");
 			$(".inspec-stroke").css("stroke", "#3c3c3c");
@@ -105,7 +104,8 @@
 			$("#habitat-connector").css("opacity", 1);
 			$("#habitat-bubble").css("transform", "translate(275px)");			
 		};
-	  })
+	
+	})
 
 } (jQuery));
 

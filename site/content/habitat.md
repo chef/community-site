@@ -43,9 +43,9 @@ cards:
     image: 
     body: >-
       Built-in automation for dynamic service bindings, clustering topologies, service discovery, and update strategies. 
-benefits:
+usage:
   headerImage: /img/logos/chef-habitat-white.svg
-  headerTwo: can be used for
+  header: can be used for
   one: 
     header: Studio
     copy: >-

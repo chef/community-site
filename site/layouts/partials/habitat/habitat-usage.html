@@ -1,31 +1,35 @@
 <div class="container-fluid">
-  <div class="row benefits-main">
-    <div class="col-sm-12">
+  <div class="row usage-main">
+    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1 flex-center">
+      {{ partial "habitat/habitat-diagram.html" . }}
+    </div>
+    
+    <div class="col-sm-12 col-md-6">
       <div class="headers">
-        
-        <h2><div class="img-left">
+       <div class="img-left">
           <img
-            src="{{ .Params.benefits.headerImage }}"
-            alt="Chef Inspec"
+            src="{{ .Params.usage.headerImage }}"
+            alt="Chef Habitat"
             class="chef-wordmark"
-          /> {{ .Params.benefits.headerTwo }}
-        </div></h2>
-        <ul class="nav nav-tabs" id="benefits-tabs" role="tablist">
+          />
+        </div> 
+        <h2>{{ .Params.usage.header }}</h2>
+        <ul class="nav nav-tabs" id="habitat-usage-tabs" role="tablist">
           <li class="nav-item">
             <a id="first-nav" class="nav-link active" href="#one" data-toggle="tab">
-              {{ .Params.benefits.one.header }}
+              {{ .Params.usage.one.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
           <li class="nav-item">
             <a id="second-nav" class="nav-link" href="#two" data-toggle="tab"
-              >{{ .Params.benefits.two.header }}
+              >{{ .Params.usage.two.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
           <li class="nav-item">
             <a id="third-nav" class="nav-link" href="#three" data-toggle="tab"
-              >{{ .Params.benefits.three.header }}
+              >{{ .Params.usage.three.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
@@ -34,31 +38,22 @@
       <div class="tab-content">
         <div class="tab-pane fade active show" id="one">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.one.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
-             
+            <div class="col-12">
+              {{ .Params.usage.one.copy | markdownify }}
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="two">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.two.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
-              
+            <div class="col-12">
+              {{ .Params.usage.two.copy | markdownify }}
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="three">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.three.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
-              
+            <div class="col-12">
+              {{ .Params.usage.three.copy | markdownify }}
             </div>
           </div>
         </div>

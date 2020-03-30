@@ -125,8 +125,12 @@
         right: 35%;
         max-width: none;
         margin-bottom: -400px;
+
         @include media-breakpoint-between(md, lg) {
           right: 48%;
+        }
+        @include media-breakpoint-down(md) {
+          display: none;
         }
 
         path, circle {
@@ -170,10 +174,6 @@
         #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
           opacity: 0;
           transition: opacity 2.5s ease,
-        }
-
-        @include media-breakpoint-down(md) {
-          display: none;
         }
 
       }
