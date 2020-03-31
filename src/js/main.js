@@ -102,9 +102,32 @@
 			$(".habitat-stroke").css("stroke", "#1aaf94");			
 			$(".infra-stroke").css("stroke", "#3c3c3c");					
 			$("#habitat-connector").css("opacity", 1);
-			$("#habitat-bubble").css("transform", "translate(275px)");			
+			$("#habitat-bubble").css("transform", "translate(275px)") 
+		} else if (e.currentTarget.hash === "#one") {
+			$(".studio").css("stroke", "#ffa300");
+			$(".artifact").css("stroke", "#1aaf94");
+			$(".supervisor").css("stroke", "#1aaf94");
+			$("#define").css("opacity", "1");
+			$("#define").css("stroke", "#ffa300");
+			$("#deliver").css("opacity", "0");
+			$("#package").css("opacity", "0");
+		} else if (e.currentTarget.hash === "#two") {
+			$(".studio").css("stroke", "#1aaf94");
+			$(".artifact").css("stroke", "#ffa300");
+			$(".supervisor").css("stroke", "#1aaf94");
+			$("#define").css("opacity", "0");
+			$("#deliver").css("stroke", "#ffa300");
+			$("#deliver").css("opacity", "1");
+			$("#package").css("opacity", "0");
+		} else if (e.currentTarget.hash === "#three") {
+			$(".studio").css("stroke", "#1aaf94");
+			$(".artifact").css("stroke", "#1aaf94");
+			$(".supervisor").css("stroke", "#ffa300");
+			$("#define").css("opacity", "0");
+			$("#deliver").css("opacity", "0");
+			$("#package").css("opacity", "1");
+			$("#package").css("stroke", "#ffa300");
 		};
-	
 	})
 
 } (jQuery));

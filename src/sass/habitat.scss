@@ -77,21 +77,31 @@
         overflow: visible;
         position: relative;
         bottom: 50%;
-        right: 30%;
-        // max-width: none;
+        max-width: 580px;
         margin-bottom: -400px;
-        @include media-breakpoint-between(md, lg) {
-          right: 30%;
-        }
+     
         @include media-breakpoint-down(md) {
+          bottom: 15%;
+          right: -20px;
+          margin-bottom: -70px;
+        }
+
+        @include media-breakpoint-down(sm) {
           display: none;
         }
 
-        #studio, #artifact, #supervisor {
-          stroke: $chef-primary;
+        .studio, .artifact, .supervisor {
+          fill: none;
+          stroke: #1aaf94;
+          stroke-miterlimit: 10;
           stroke-width: 2px;
-          transition: stroke 1s;
         }
+
+        #define, #deliver, #package {
+          opacity: 0;
+          fill: #1aaf94;
+        }
+        
       }
     }
   }

@@ -708,27 +708,12 @@ input {
       }
     }
 
-    img {
-      max-width: none;
-      width: 100%;
-      @include media-breakpoint-only(md) {
-        width: 33.33%;
-        flex-shrink: 0;
-      }
-    }
-
     .text {
       color: white;
       padding: 1rem;
       flex: 1;
       display: flex;
       flex-flow: column nowrap;
-
-      @include media-breakpoint-only(md) {
-        padding: 0;
-        padding-left: 1rem;
-      }
-
       @include media-breakpoint-up(lg) {
         padding: 2rem;
       }

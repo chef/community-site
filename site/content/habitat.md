@@ -45,7 +45,7 @@ cards:
       Built-in automation for dynamic service bindings, clustering topologies, service discovery, and update strategies. 
 usage:
   headerImage: /img/logos/chef-habitat-white.svg
-  header: can be used for
+  header: 
   one: 
     header: Studio
     copy: >-
@@ -85,7 +85,7 @@ usage:
 
       * Templatize your configuration settings and update them as needed during runtime.
 tutorials:
-  header: Get Started with Chef Habitat Studio
+  header: Get Started with Chef Habitat
   columnOne: 
     one: 
       title: Package a sample application
