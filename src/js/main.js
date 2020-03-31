@@ -108,7 +108,7 @@
 			$(".artifact").css("stroke", "#1aaf94");
 			$(".supervisor").css("stroke", "#1aaf94");
 			$("#define").css("opacity", "1");
-			$("#define").css("stroke", "#ffa300");
+			$("#studio-line").css("stroke", "#ffa300");
 			$("#deliver").css("opacity", "0");
 			$("#package").css("opacity", "0");
 		} else if (e.currentTarget.hash === "#two") {
@@ -116,7 +116,7 @@
 			$(".artifact").css("stroke", "#ffa300");
 			$(".supervisor").css("stroke", "#1aaf94");
 			$("#define").css("opacity", "0");
-			$("#deliver").css("stroke", "#ffa300");
+			$("#artifact-line").css("stroke", "#ffa300");
 			$("#deliver").css("opacity", "1");
 			$("#package").css("opacity", "0");
 		} else if (e.currentTarget.hash === "#three") {
@@ -126,7 +126,7 @@
 			$("#define").css("opacity", "0");
 			$("#deliver").css("opacity", "0");
 			$("#package").css("opacity", "1");
-			$("#package").css("stroke", "#ffa300");
+			$("#supervisor-line").css("stroke", "#ffa300");
 		};
 	})
 

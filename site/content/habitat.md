@@ -45,7 +45,7 @@ cards:
       Built-in automation for dynamic service bindings, clustering topologies, service discovery, and update strategies. 
 usage:
   headerImage: /img/logos/chef-habitat-white.svg
-  header: 
+  header: Lorem ipsum
   one: 
     header: Studio
     copy: >-

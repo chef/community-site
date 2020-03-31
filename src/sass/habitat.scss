@@ -76,9 +76,9 @@
       #habitat-img {
         overflow: visible;
         position: relative;
-        bottom: 50%;
-        max-width: 580px;
-        margin-bottom: -400px;
+        bottom: 40%;
+        max-width: 550px;
+        margin-bottom: -200px;
      
         @include media-breakpoint-down(md) {
           bottom: 15%;
@@ -99,9 +99,19 @@
 
         #define, #deliver, #package {
           opacity: 0;
-          fill: #1aaf94;
+          fill: #ffa300;
         }
-        
+
+        //Set up for first load while "Studio" tab is active
+        .studio {
+          stroke: #ffa300;
+        }
+        #studio-line {
+          stroke: #ffa300;
+        }
+        #define {
+          opacity:1;
+        }
       }
     }
   }
