@@ -90,14 +90,15 @@
       #habitat-img {
         overflow: visible;
         position: relative;
-        bottom: 40%;
-        max-width: 550px;
-        margin-bottom: -200px;
+        bottom: 35%;
+        // max-width: 550px;
+        margin-bottom: -250px;
      
         @include media-breakpoint-down(md) {
-          bottom: 15%;
-          right: -20px;
-          margin-bottom: -70px;
+          bottom: 20%;
+          right: -20%;
+          margin-bottom: -150px;
+          max-width: 500px;
         }
 
         @include media-breakpoint-down(sm) {
