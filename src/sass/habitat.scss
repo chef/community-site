@@ -53,6 +53,20 @@
     }
   }
 
+  .builder {
+    @extend %section-padding;
+
+    background-color: $light-gray;
+  }
+
+  .tutorials {
+    background-color: $white;
+
+    .tutorial {
+      background-color: $light-gray;
+    }
+  }
+
   // HABITAT USAGE TABS
   // =======================
   .usage {
@@ -115,34 +129,6 @@
       }
     }
   }
-
-   // GET STARTED
-  // =======================
-  .get-started {
-    @extend %section-padding;
-
-    h4 {
-      margin-bottom: .5rem;
-    }
-
-    pre.prettyprint {
-      border: none !important;
-      height: 120px;
-    }
-  }
-
-  // TUTORIALS
-  // =======================
-  .tutorials {
-    @extend %section-padding;
-
-    background-color: $light-gray;
-
-    $grid-gutter-width: 50px !default;
-
-    .tutorial {
-      margin: 0 0 20px;
-    }
-
-  }
+  
+ 
 }

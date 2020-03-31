@@ -555,6 +555,19 @@ input {
   }
 }
 
+.tutorials {
+  @extend %section-padding;
+
+  background-color: $light-gray;
+
+  $grid-gutter-width: 50px !default;
+
+  .tutorial {
+    margin: 0 0 20px;
+  }
+
+}
+
 .card-long {
   background-color: white;
   padding-top: 1rem;

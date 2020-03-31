@@ -109,6 +109,12 @@ tutorials:
       link: "#"
       copy: >-
         Package an ASP.NET application and bind to a SQL Server database.
+builder:
+  header: Chef Habitat Builder for Enterprise Wide Adoption
+  copy: >-
+    The Chef Habitat Builder provides a set of enterprise-class functionality that includes package storage, search, and automated API enabled services. Application binaries versioned and stored along with the corresponding Habitat Artifact. Clients have the option of leveraging the SaaS or on-premises version of Builder. 
+  cta: Learn More About Chef Habitat Builder
+  ctaLink: "https://bldr.habitat.sh/#/pkgs/core"
 resources:
   header: From the Chef Habitat Blog
   headerTwo: 
@@ -124,5 +130,5 @@ contact:
 ---
 <p class="lead">Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
-<a class="btn btn-primary" href="{{ .Params.hero.primaryURL }}">Download Habitat</a>
-<a class="btn btn-secondary" href="{{ .Params.hero.secondaryURL }}">View Docs</a>
+<a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
