@@ -31,10 +31,10 @@
 					<div class="col-sm-12 events-list">
 						<ul>
               {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
-              {{ range first 5 $events }}
+              {{ range first 4 $events }}
 								<li>
 									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
-									<p>{{ dateFormat "Jan 2, 2006" .start_date }}, {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
+									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
 								</li>
 							{{ end }}
 							<li>
