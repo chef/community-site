@@ -29,16 +29,18 @@ cards:
     body: >-
       ##### Interact
 
-      [Community Forum](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
+      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
 
       
       [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT  
 
+      
+      Community Meeting! [#community-meetings in Slack](https://community-slack.chef.io/) Thursdays at 9:00AM PT 
 
       ##### Contribute
 
       [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
-      Requests](https://feedback.chef.io/)
+      Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
 products:
   habitat:
     copy: >
