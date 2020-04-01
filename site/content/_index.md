@@ -35,7 +35,7 @@ cards:
       [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT  
 
       
-      Community Meeting! [#community-meetings in Slack](https://community-slack.chef.io/) Thursdays at 9:00AM PT 
+      [Community Meeting!](https://community-slack.chef.io/) Thursdays at 9:00AM PT  | #community-meetings in Slack
 
       ##### Contribute
 
