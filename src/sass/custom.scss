@@ -435,14 +435,13 @@ input {
   &-primary {
     background: $chef-secondary;
     border: 2px solid $chef-secondary;
-    color: white;
+    color: $white;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: transparent;
-      border: 2px solid $chef-secondary;
-      color: $chef-secondary;
+      background-color: darken($chef-secondary, 12%);
+      border: 2px solid darken($chef-secondary, 12%);
     }
 
     &-white {
@@ -453,9 +452,9 @@ input {
       &:hover,
       &:focus,
       &:active {
-        background-color: transparent;
-        border: 2px solid $white;
-        color: $white;
+        background-color: darken($white, 12%);
+        border: 2px solid darken($white, 12%);
+        color: $chef-secondary;
       }
     }
   }
@@ -468,9 +467,9 @@ input {
     &:hover,
     &:focus,
     &:active {
-      background-color: $chef-secondary;
+      background: $chef-secondary;
       border: 2px solid $chef-secondary;
-      color: white;
+      color: $white;
     }
 
     &-white {
@@ -580,7 +579,7 @@ input {
   } 
 
   &:hover {
-    background-color: $dark-gray;
+    background-color: $dark-gray !important;
     
     h5, p {
       color: $white;
@@ -718,6 +717,16 @@ input {
       margin-bottom: 1rem;
       a {
         color: $light-gray;
+      }
+    }
+
+    a {
+      color: $chef-primary;
+      
+      &:hover,
+      &:active,
+      &:focus {
+        color: $chef-secondary;
       }
     }
 
