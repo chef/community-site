@@ -7,12 +7,19 @@
 // ===================
 // General Layout Styling
 // ===================
-body {
+html, body {
   font-family: $font-primary;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.625;
   color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .container {
@@ -276,6 +283,7 @@ img {
   background-color: $dark-gray;
   color: $light-gray;
   padding-top: 2rem;
+  flex-shrink: 0;
 
   ul {
     list-style: none;
@@ -307,7 +315,7 @@ img {
     &:hover,
     &:active,
     &:focus {
-      color: $chef-primary;
+      color: $chef-primary !important;
     }
   }
 
@@ -440,8 +448,8 @@ input {
     &:hover,
     &:focus,
     &:active {
-      background-color: darken($chef-secondary, 12%);
-      border: 2px solid darken($chef-secondary, 12%);
+      background-color: darken($chef-secondary, 12%) !important;
+      border: 2px solid darken($chef-secondary, 12%) !important;
     }
 
     &-white {
@@ -452,9 +460,9 @@ input {
       &:hover,
       &:focus,
       &:active {
-        background-color: darken($white, 12%);
-        border: 2px solid darken($white, 12%);
-        color: $chef-secondary;
+        background-color: darken($white, 12%) !important;
+        border: 2px solid darken($white, 12%) !important;
+        color: $chef-secondary !important;
       }
     }
   }
@@ -467,9 +475,9 @@ input {
     &:hover,
     &:focus,
     &:active {
-      background: $chef-secondary;
-      border: 2px solid $chef-secondary;
-      color: $white;
+      background: $chef-secondary !important;
+      border: 2px solid $chef-secondary !important;
+      color: $white !important;
     }
 
     &-white {
@@ -480,9 +488,9 @@ input {
       &:hover,
       &:focus,
       &:active {
-        background: $white;
-        border: 2px solid $white;
-        color: $chef-secondary;
+        background: $white !important;
+        border: 2px solid $white !important;
+        color: $chef-secondary !important;
       }
     }
   }
