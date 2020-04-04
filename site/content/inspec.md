@@ -49,14 +49,14 @@ benefits:
   one: 
     header: Compliance
     copy: >-
-      ##### Codify agreements  
+      ##### Codify agreements   
 
       Combine profiles and customize them with overlays. Pick controls and define exceptions as code.  
 
       ##### Add context to your tests  
 
       Utilize many fields like descriptions, tags, and impact.   
-
+      
       ##### Apply to all systems  
 
       Analyze everything using the same codified profiles and controls.

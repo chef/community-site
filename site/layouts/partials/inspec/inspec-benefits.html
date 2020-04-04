@@ -2,7 +2,6 @@
   <div class="row benefits-main">
     <div class="col-sm-12">
       <div class="headers">
-        
         <h2><div class="img-left">
           <img
             src="{{ .Params.benefits.headerImage }}"
@@ -40,12 +39,12 @@
             <div class="col-12 col-md-6">
               <pre class="prettyprint"><code>
                 control 'sshd-21' do
-                  title 'Set SSH Protocol to 2'
-                  desc 'A detailed description'
-                  impact 1.0 # This is critical ref 'compliance guide, section 2.1'
-                  describe sshd_config do
-                  its('Protocol') { should cmp 2 }
-                  end
+                &nbsp;&nbsp;title 'Set SSH Protocol to 2'
+                &nbsp;&nbsp;desc 'A detailed description'
+                &nbsp;&nbsp;impact 1.0 # This is critical ref 'compliance guide, section 2.1'
+                &nbsp;&nbsp;describe sshd_config do
+                &nbsp;&nbsp;&nbsp;&nbsp;its('Protocol') { should cmp 2 }
+                &nbsp;&nbsp;end
                 end
                 </code></pre>
             </div>
@@ -81,14 +80,14 @@
             </div>
             <div class="col-12 col-md-6">
               <pre class="prettyprint"><code>
-                describe aws_s3_bucket(bucket_name: 'my_secret_files') do
-                it { should exist }
-                it { should_not be_public }
+              describe aws_s3_bucket(bucket_name: 'my_secret_files') do
+                &nbsp;&nbsp;it { should exist }
+                &nbsp;&nbsp;it { should_not be_public }
               end
               
               describe aws_iam_user(username: 'test_user') do
-                it { should have_mfa_enabled }
-                it { should_not have_console_password }
+                &nbsp;&nbsp;it { should have_mfa_enabled }
+                &nbsp;&nbsp;it { should_not have_console_password }
               end
                 </code></pre>
             </div>

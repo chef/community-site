@@ -69,6 +69,11 @@ img {
 
 .img-round {
   border-radius: 50%;
+
+  @include media-breakpoint-down(md) {
+    max-width: 50px; //Match the p.number class
+    height: auto;
+  }
 }
 
 .img-left {
@@ -571,6 +576,14 @@ input {
 
   .tutorial {
     margin: 0 0 20px;
+
+    .img-round.chef-logo {  
+      &:hover {
+        border: 1px solid black;
+        display: none;
+        background: url("images/favicons/favicon-white.png");
+      }
+    }
   }
 
 }
@@ -767,6 +780,7 @@ input {
 	background-color: $dark-gray;
 		
 	.headers {
+
 		.fa {
 			transition: linear 0.1s;
 		}
@@ -779,7 +793,7 @@ input {
 		.nav-tabs .nav-item .nav-link {
 			font-size: 1.1rem;
 			font-weight: 500;
-			margin: 1rem 1.5rem 1rem auto;
+			margin: 0 1.5rem 1rem auto;
 
 			@include media-breakpoint-down(sm) {
 				margin: auto;
