@@ -7,8 +7,10 @@
             src="{{ .Params.benefits.headerImage }}"
             alt="Chef Inspec"
             class="chef-wordmark"
-          /> {{ .Params.benefits.headerTwo }}
-        </div></h2>
+          />
+          <span>{{ .Params.benefits.headerTwo }}</span>
+        </div>
+        </h2>
         <ul class="nav nav-tabs" id="benefits-tabs" role="tablist">
           <li class="nav-item">
             <a id="first-nav" class="nav-link active" href="#one" data-toggle="tab">
@@ -33,10 +35,7 @@
       <div class="tab-content">
         <div class="tab-pane fade active show" id="one">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.one.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 order-md-2">
               <pre class="prettyprint"><code>
                 control 'sshd-21' do
                 &nbsp;&nbsp;title 'Set SSH Protocol to 2'
@@ -48,14 +47,14 @@
                 end
                 </code></pre>
             </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.one.copy | markdownify }}
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="two">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.two.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 order-md-2">
               <pre class="prettyprint"><code>
                 describe file('/etc/myapp.conf') do
                 &nbsp;&nbsp;it { should exist }
@@ -71,14 +70,14 @@
                 end
                 </code></pre>
             </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.two.copy | markdownify }}
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="three">
           <div class="row">
-            <div class="col-12 col-md-6">
-              {{ .Params.benefits.three.copy | markdownify }}
-            </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 order-md-2">
               <pre class="prettyprint"><code>
               describe aws_s3_bucket(bucket_name: 'my_secret_files') do
                 &nbsp;&nbsp;it { should exist }
@@ -90,6 +89,9 @@
                 &nbsp;&nbsp;it { should_not have_console_password }
               end
                 </code></pre>
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.three.copy | markdownify }}
             </div>
           </div>
         </div>

@@ -49,14 +49,15 @@ main {
   }
 }
 
+.center-mobile {
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
-}
-
-.v-center {
-  display: flex;
-  align-items: center;
 }
 
 // ===================
@@ -65,6 +66,14 @@ main {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.card-icon { 
+  width: 50px;
+
+  @include media-breakpoint-up(md) {
+    width: 70px;
+  }
 }
 
 .img-round {
@@ -79,11 +88,15 @@ img {
 .img-left {
   display: flex;
   justify-content: start;
+  @include media-breakpoint-only(xs) {
+    display: inline-block;
+  }
 }
 
 .chef-wordmark {
   width: auto;
   max-height: 38px;
+
   @include media-breakpoint-only(sm) {
     max-height: 30px;
   }
@@ -576,14 +589,6 @@ input {
 
   .tutorial {
     margin: 0 0 20px;
-
-    .img-round.chef-logo {  
-      &:hover {
-        border: 1px solid black;
-        display: none;
-        background: url("images/favicons/favicon-white.png");
-      }
-    }
   }
 
 }
@@ -780,7 +785,8 @@ input {
 	background-color: $dark-gray;
 		
 	.headers {
-
+    padding-bottom: 1rem;
+    
 		.fa {
 			transition: linear 0.1s;
 		}
@@ -788,10 +794,11 @@ input {
 			.fa {
 				transform: rotate(90deg)
 			}
-		}
+    }
+    
 
 		.nav-tabs .nav-item .nav-link {
-			font-size: 1.1rem;
+			font-size: 1rem;
 			font-weight: 500;
 			margin: 0 1.5rem 1rem auto;
 
@@ -802,8 +809,18 @@ input {
 
 		.nav-link:first-of-type {
 			padding-left: 0; //overwrites Bootstrap's
-		}
-	}
+    }
+    
+    .nav-link {
+      padding: 0 1.5rem 0 0;
+    }
+  }
+  
+  .tab-content {
+    h5 {
+      margin-bottom: .5rem;
+    }
+  }
 }
 
 // Social media sharing icons

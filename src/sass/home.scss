@@ -1,13 +1,5 @@
 #home {
   .card {
-    .card-icon {
-      width: 50px;
-
-      @include media-breakpoint-up(md) {
-        width: 70px;
-      }
-    }
-
     .events-list {
       li {
         font-size: 1rem;
@@ -20,7 +12,6 @@
     }
 
     .contributors-list {
-      //text-align: center;
       margin: -2px;
 
       img {
@@ -217,16 +208,7 @@
           #product-tabs {
             flex-direction: column;
           }
-
-
         }
-
-        @include media-breakpoint-down(sm) {
-          h2 {
-            font-size: 1.6rem;
-          }
-        }
-
       }
 
       .product-grid-copy {

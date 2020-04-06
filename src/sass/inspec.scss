@@ -1,5 +1,4 @@
 #inspec {
-
   h1 {
     padding-top: 1.5rem;
   }
@@ -42,9 +41,6 @@
         background-image: none !important;
       }
     }
-    .card-icon {
-      max-height: 80px;
-    }
 
     .bg-wave {
       @include media-breakpoint-up(xxl) {
@@ -61,11 +57,7 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
-    
-    // @include media-breakpoint-up(md) {
-    //   min-height: 400px;
-    // }
-
+  
     @include media-breakpoint-down(lg) {
       margin-top: 2rem;
     }
@@ -89,5 +81,4 @@
       height: 120px;
     }
   }
-
 }
