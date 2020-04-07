@@ -6,7 +6,10 @@
 
         > a {
           color: $dark-gray;
-          font-size: 1.25rem;
+          
+          h5 {
+            margin-bottom: .5rem;
+          }
         }
       }
     }
