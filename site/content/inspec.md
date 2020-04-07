@@ -182,5 +182,7 @@ contact:
 ---
 <p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
 
+<div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download InSpec</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
+</div>

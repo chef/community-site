@@ -89,7 +89,7 @@ img {
   display: flex;
   justify-content: start;
   @include media-breakpoint-only(xs) {
-    display: inline-block;
+    display: inline;
   }
 }
 
@@ -729,14 +729,17 @@ input {
       box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
     }
 
-    
+  
     @include media-breakpoint-only(md) {
       padding: 1rem;
       display: flex;
       flex-direction: row;
       align-items: stretch;
       justify-content: flex-start;
-    }
+      .img {
+        max-width: 33.33%;
+      }
+    }  
 
     h4 {
       color: white;
@@ -786,7 +789,7 @@ input {
 		
 	.headers {
     padding-bottom: 1rem;
-    
+
 		.fa {
 			transition: linear 0.1s;
 		}
@@ -928,7 +931,6 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 table {
 	width: 100%;
 }
-
 
 @import "type";
 @import "marketo";
