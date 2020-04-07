@@ -12,5 +12,9 @@
 
 [[redirects]]
   from = "/brand"
+<<<<<<< HEAD
   to = "http://marketing-web-communitycomponentlibrary.s3-website-us-west-2.amazonaws.com/"
+=======
+  to = "/http://marketing-web-communitycomponentlibrary.s3-website-us-west-2.amazonaws.com/"
+>>>>>>> 7499d5d5a640831ebcdeb910f112ab4995bfd6e3
   status = 301
