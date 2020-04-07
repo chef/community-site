@@ -87,27 +87,27 @@ tutorials:
   header: Get Started with Chef Habitat
   columnOne: 
     one: 
-      title: Package a sample application
-      link: "https://www.habitat.sh/demo/packaging-system/steps/1/"
+      title: Try Habitat
+      link: "https://learn.chef.io/modules/try-habitat#/"
       copy: >-
-        Package a Node.js application as a Chef Habitat artifact that can run on any platform, then export and run it locally in a Docker container.
+        Explore the ease of packaging, deploying, and running your applications with Habitat. 
     two: 
-      title: Set up automated deployments
-      link: "https://learn.chef.io/modules/explore-inspec-resources/#/"
+      title:  Build a web application with Habitat 
+      link: "https://learn.chef.io/modules/hab-build-web-app#/"
       copy: >-
-        Use Chef Habitat Builder to set up automated builds for a Node.js application, then publish the build artifacts as container images on Docker Hub.
+        Use scaffolding to quickly build a Ruby web application. 
       subtext: 
   columnTwo:
     one: 
-      title: Auto-update a running application
-      link: "https://www.habitat.sh/demo/build-system/steps/1/"
+      title:  Build a legacy application with Habitat
+      link: "https://learn.chef.io/modules/hab-build-a-legacy-app#/"
       copy: >-
-        See how the Supervsior can auto-update a running Node.js application to a new version by simply building and promoting a new package.    
+        Learn the core build phases, plan settings, and lifecycle hooks necessary to package a legacy application.     
     two: 
-      title: Habitize a Windows application
-      link: "#"
+      title:  Reconfigure Habitat services through repackaging and live updates 
+      link: "https://learn.chef.io/modules/hab-custom-config#/"
       copy: >-
-        Package an ASP.NET application and bind to a SQL Server database.
+        Extract and customize the scaffolding's default configuration; then repackage the application. Or perform in-place service upgrades through the Habitat CLI. 
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
