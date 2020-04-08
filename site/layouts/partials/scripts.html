@@ -4,6 +4,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
 
 {{ $moveit := resources.Get "js/moveit.js" }}
+{{ $prism := resources.Get "js/prism.js" }}
 {{ $main := resources.Get "js/main.js" }}
-{{ $js := slice $moveit $main | resources.Concat "js/all.js" }}
+{{ $js := slice $moveit $main $prism | resources.Concat "js/all.js" }}
 <script type="text/javascript" src="{{ $js.Permalink }}"></script>

@@ -15,17 +15,17 @@
             <p>{{ .Params.getStarted.one.copy }}</p>
         </div>
         <div class="col-12 col-md-6">
-            <pre class="prettyprint dark"><code>
-              control 'example-1.0' do
-                &nbsp;&nbsp;impact 0.9
-                &nbsp;&nbsp;title 'Ensure login disabled'
-                &nbsp;&nbsp;desc 'An optional description...'
-                &nbsp;&nbsp;describe sshd_config do
-                  &nbsp;&nbsp;&nbsp;&nbsp;its('PermitRootLogin') {
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should_not cmp 'yes'
-                  &nbsp;&nbsp;&nbsp;&nbsp;}
-              &nbsp;&nbsp;end
-              end
+          <pre><code class="language-bash">
+control 'example-1.0' do
+  impact 0.9
+  title 'Ensure login disabled'
+  desc 'An optional description...'
+  describe sshd_config do
+    its('PermitRootLogin') {
+      should_not cmp 'yes'
+    }
+  end
+end
             </code></pre>    
         </div>
       </div>
@@ -38,9 +38,9 @@
             <p>{{ .Params.getStarted.two.copy  }}</p>
         </div>
         <div class="col-12 col-md-6">
-            <pre class="prettyprint dark"><code>
-                $ inspec exec linux-baseline
-              </code></pre>    
+          <pre><code class="language-bash">
+$ inspec exec linux-baseline
+          </code></pre>    
         </div>
       </div>
       <div class="row align-items-center">
@@ -52,17 +52,17 @@
             <p>{{ .Params.getStarted.three.copy  }}</p>
         </div>
         <div class="col-12 col-md-6">
-            <pre class="prettyprint dark"><code>
-                Profile: Chef InSpec Profile (example_profile)
-                Version: 0.1.0
-                Target:  local://
+          <pre><code class="language-bash">
+Profile: Chef InSpec Profile (example_profile)
+Version: 0.1.0
+Target:  local://
 
-                  &nbsp;&nbsp;✔  example-1.0: Ensure root login is disabled via SSH
-                  &nbsp;&nbsp;✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
+  ✔  example-1.0: Ensure root login is disabled via SSH
+  ✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
 
-                Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
-                Test Summary: 1 successful, 0 failures, 0 skipped
-              </code></pre>    
+Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+Test Summary: 1 successful, 0 failures, 0 skipped
+            </code></pre>    
         </div>
       </div>
     </div>
