@@ -2,9 +2,9 @@
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+nginx+plsql+ruby+shell-session+sql&plugins=highlight-keywords */
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Colors modified for Chef's community site
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
+* File/colors modified for Chef's community site
  */
 
 code[class*="language-"],
@@ -41,8 +41,6 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #2d2d2d;
-
-	
 }
 
 pre.light {
@@ -57,6 +55,41 @@ pre.light {
 	.token.punctuation {
 		color: $mid-gray !important;
 	}
+
+	.token.string,
+	.token.char,
+	.token.attr-value,
+	.token.regex,
+	.token.variable,
+	.token.operator,
+	.token.entity,
+	.token.url, 
+	.token.inserted {
+		color: $chef-tertiary !important;
+	}
+
+	.token.selector,
+	.token.important,
+	.token.atrule,
+	.token.keyword,
+	.token.builtin,
+	.token.function-name  {
+		color: $inspec-color !important;
+	}
+
+	.token.boolean,
+	.token.number,
+	.token.function {
+		color: $chef-secondary !important;
+	}
+
+	.token.property,
+	.token.class-name,
+	.token.constant,
+	.token.symbol {
+		color: $chef-primary !important;
+	}
+
 }
 
 /* Inline code */
@@ -78,22 +111,14 @@ pre.light {
 	color: #ccc;
 }
 
-
 .token.tag,
 .token.attr-name,
 .token.namespace,
-.token.deleted {
-	color: #e2777a;
-}
-
-.token.function-name {
-	color: #6196cc;
-}
-
+.token.deleted,
 .token.boolean,
 .token.number,
 .token.function {
-	color: #f08d49;
+	color: #e2777a;
 }
 
 .token.property,
@@ -107,7 +132,8 @@ pre.light {
 .token.important,
 .token.atrule,
 .token.keyword,
-.token.builtin {
+.token.builtin,
+.token.function-name	{
 	color: #cc99cd;
 }
 
@@ -115,15 +141,13 @@ pre.light {
 .token.char,
 .token.attr-value,
 .token.regex,
-.token.variable {
-	color: #7ec699;
-}
-
+.token.variable,
 .token.operator,
 .token.entity,
-.token.url {
-	color: #67cdcc;
-}
+.token.url,
+.token.inserted { 
+	color: #7ec699;
+ }
 
 .token.important,
 .token.bold {
@@ -136,8 +160,3 @@ pre.light {
 .token.entity {
 	cursor: help;
 }
-
-.token.inserted {
-	color: green;
-}
-
