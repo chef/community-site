@@ -119,7 +119,7 @@ resources:
   headerTwo: 
 contact:
   header: Wondering how Chef Habitat might work for your team?
-  copy: Lorem ipsum dolor sit amet. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.aliquip ex ea commodo consequat.
+  copy: Chef Software provides enterprise-grade management and support so you can accelerate your business’s move to the cloud and adoption of container technology.
   ctaOne: 
     link: https://www.chef.io/products/chef-habitat/
     copy: Learn more
@@ -129,5 +129,7 @@ contact:
 ---
 <p class="lead">Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
+<div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
+</div>
