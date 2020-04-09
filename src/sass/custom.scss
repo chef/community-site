@@ -620,11 +620,6 @@ input {
   @include media-breakpoint-down(md) {
     margin-bottom: 1rem;
   }
-  
-  &:hover {
-    box-shadow: var(--elevation3);
-    transform: translateY(-4px);
-  }
 
   .card {
     border: none;
@@ -758,6 +753,7 @@ input {
 
     &:hover {
       box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+      transform: translateY(-4px);
     }
 
     @include media-breakpoint-only(md) {
