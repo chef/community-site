@@ -1,5 +1,5 @@
 ---
-title: Compliance as code
+title: Compliance as Code
 type: inspec
 hero: 
   logo: /img/logos/chef-inspec-dark.svg

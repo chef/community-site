@@ -59,7 +59,7 @@
   .tutorials {
     background-color: $white;
 
-    .tutorial {
+    .card-tutorial {
       background-color: $light-gray;
     }
   }
@@ -111,6 +111,7 @@
 
         #define, #deliver, #package {
           opacity: 0;
+          transition: opacity .5s ease-in-out;
           fill: #ffa300;
         }
 

@@ -92,7 +92,6 @@
   .product-grid {
     background-color: $dark-gray;
     color: $light-gray;
-    display: flex;
 
     @include media-breakpoint-up(md) {
       min-height: 800px;
@@ -167,7 +166,7 @@
 
         #automate-connector, #infra-connector, #inspec-connector, #habitat-connector {
           opacity: 0;
-          transition: opacity 2.5s ease,
+          transition: opacity 2.5s ease;
         }
 
       }
@@ -234,6 +233,8 @@
             margin-bottom: 1.5rem;
           }
           .nav-link {
+            font-size: 0.9rem;
+
             &.active,
             &:hover {
               color: $chef-primary;
@@ -247,6 +248,10 @@
 
         .btn {
           margin-top: 1rem;
+        }
+
+        .chef-wordmark {
+          max-height: 25px;
         }
       }
     }

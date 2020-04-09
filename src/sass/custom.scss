@@ -585,30 +585,27 @@ input {
 
   background-color: $light-gray;
 
-  $grid-gutter-width: 50px !default;
-
-  .tutorial {
+  .card-tutorial {
     margin: 0 0 20px;
   }
 
 }
 
-.card-resource {
+.card-tutorial {
   background-color: white;
   padding-top: 1rem;
   min-height: 180px;
   color: $dark-gray;
-  transition: 200ms;
+  transition: 0.25s ease-in-out;
 
-  h4 {
+  h5 {
     margin-bottom: 0.5rem;
   } 
 
   &:hover {
     background-color: $dark-gray !important;
-    box-shadow: none !important;
 
-    h4, p {
+    h5, p {
       color: white;
     }
     
@@ -726,22 +723,6 @@ input {
     transition: box-shadow .3s ease-in-out,transform .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-webkit-transform .3s ease-in-out;
     box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.00),0 4px 8px 3px rgba(60, 64, 67, 0.0);
     
-    &:hover {
-      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
-    }
-
-  
-    @include media-breakpoint-only(md) {
-      padding: 1rem;
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      justify-content: flex-start;
-      .img {
-        max-width: 33.33%;
-      }
-    }  
-
     h4 {
       color: white;
       margin-bottom: 1rem;
@@ -774,6 +755,28 @@ input {
         margin-top: auto;
       }
     }
+
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    }
+
+    @include media-breakpoint-only(md) {
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      .img {
+        max-width: 33.33%;
+      }
+    }  
+
+    @include media-breakpoint-down(sm) {
+      img {
+        width: 100%;
+      }
+    }  
+
   }
 }
 

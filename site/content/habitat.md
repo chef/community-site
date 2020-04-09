@@ -95,7 +95,7 @@ tutorials:
       title:  Build a web application with Habitat 
       link: "https://learn.chef.io/modules/hab-build-web-app#/"
       copy: >-
-        Use scaffolding to quickly build a Ruby web application. 
+        Use scaffolding to quickly build a Ruby web application that creates animated GIFs. 
       subtext: 
   columnTwo:
     one: 
@@ -107,7 +107,7 @@ tutorials:
       title:  Reconfigure Habitat services through repackaging and live updates 
       link: "https://learn.chef.io/modules/hab-custom-config#/"
       copy: >-
-        Extract and customize the scaffolding's default configuration; then repackage the application. Or perform in-place service upgrades through the Habitat CLI. 
+        Extract and customize the scaffolding's default configuration; then repackage the application. 
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
