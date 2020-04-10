@@ -63,21 +63,21 @@ collections: # A list of collections the CMS should be able to edit
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "markdown"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Copy", name: "copy", widget: "markdown"}]},
 							{	label: "Section 2",
 								name: "two",
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "markdown"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Copy", name: "copy", widget: "markdown"}]},
 							{	label: "Section 3",
 								name: "three",
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "markdown"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Get Started", name: "getStarted", widget: object,
 						fields: [
@@ -87,18 +87,21 @@ collections: # A list of collections the CMS should be able to edit
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Body", name: "body", widget: "markdown"}]},
 							{	label: "Section 2",
 								name: "two",
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Body", name: "body", widget: "markdown"}]},
 							{	label: "Section 3",
 								name: "three",
 								widget: object,
 								fields: [
 									{label: "Header", name: "header", widget: "string"},
+									{label: "Code", name: "code", widget: "text"},
 									{label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Tutorials",
 						name: "tutorials",

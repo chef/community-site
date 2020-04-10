@@ -9,14 +9,37 @@ getStarted:
     header: Write the test
     copy: >-
       Create simple Ruby-based tests to verify your expected state against the current state of your systems.
+    code: >-
+      control 'example-1.0' do
+        impact 0.9
+        title 'Ensure login disabled'
+        desc 'An optional description...'
+        describe sshd_config do
+          its('PermitRootLogin') {
+            should_not cmp 'yes'
+          }
+        end
+      end
   two:
     header: Run the test
     copy: >-
       Execute your test against your target system locally or remotely with one simple command.
+    code: >-
+      $ inspec exec linux-baseline
   three:
     header: See the results
     copy: >-
       See which tests failed, passed and skipped and the expected state against the current state of your target system, in one simple output.
+    code: >-
+      Profile: Chef InSpec Profile (example_profile)
+      Version: 0.1.0
+      Target:  local://
+
+        ✔  example-1.0: Ensure root login is disabled via SSH
+        ✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
+
+      Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+      Test Summary: 1 successful, 0 failures, 0 skipped
 cards:
   header: Compliance by design
   one:

@@ -15,18 +15,9 @@
             <p>{{ .Params.getStarted.one.copy }}</p>
         </div>
         <div class="col-12 col-md-6">
-          <pre><code class="language-bash">
-control 'example-1.0' do
-  impact 0.9
-  title 'Ensure login disabled'
-  desc 'An optional description...'
-  describe sshd_config do
-    its('PermitRootLogin') {
-      should_not cmp 'yes'
-    }
-  end
-end
-            </code></pre>    
+          <pre>
+            <code class="language-bash">{{ .Params.getStarted.one.code }}</code>
+          </pre>    
         </div>
       </div>
       <div class="row align-items-center">
@@ -38,9 +29,9 @@ end
             <p>{{ .Params.getStarted.two.copy  }}</p>
         </div>
         <div class="col-12 col-md-6">
-          <pre><code class="language-bash">
-$ inspec exec linux-baseline
-          </code></pre>    
+          <pre>
+            <code class="language-bash">{{ .Params.getStarted.two.code }}</code>
+          </pre>     
         </div>
       </div>
       <div class="row align-items-center">
@@ -52,17 +43,9 @@ $ inspec exec linux-baseline
             <p>{{ .Params.getStarted.three.copy  }}</p>
         </div>
         <div class="col-12 col-md-6">
-          <pre><code class="language-bash">
-Profile: Chef InSpec Profile (example_profile)
-Version: 0.1.0
-Target:  local://
-
-  ✔  example-1.0: Ensure root login is disabled via SSH
-  ✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
-
-Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
-Test Summary: 1 successful, 0 failures, 0 skipped
-            </code></pre>    
+          <pre>
+            <code class="language-bash">{{ .Params.getStarted.three.code }}</code>
+          </pre>      
         </div>
       </div>
     </div>

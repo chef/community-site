@@ -37,15 +37,8 @@
           <div class="row">
             <div class="col-12 col-md-6 order-md-2">
               <pre class="light"><code class="language-bash">
-control 'sshd-21' do
-  title 'Set SSH Protocol to 2'
-  desc 'A detailed description'
-  impact 1.0 # This is critical ref 'compliance guide, section 2.1'
-  describe sshd_config do
-    its('Protocol') { should cmp 2 }
-  end
-end
-                </code></pre>
+                {{ .Params.benefits.one.code }}
+              </code></pre>
             </div>
             <div class="col-12 col-md-6 order-md-1">
               {{ .Params.benefits.one.copy | markdownify }}
@@ -56,19 +49,8 @@ end
           <div class="row">
             <div class="col-12 col-md-6 order-md-2">
               <pre class="light"><code class="language-bash">
-describe file('/etc/myapp.conf') do
-  it { should exist }
-    its('mode') { should cmp 0644 }
-end
-                
-describe apache_conf do
-  its('Listen') { should cmp 8080 }
-end
-
-describe port(8080) do
-  it { should be_listening }
-end
-                </code></pre>
+                {{ .Params.benefits.two.code }}
+              </code></pre>
             </div>
             <div class="col-12 col-md-6 order-md-1">
               {{ .Params.benefits.two.copy | markdownify }}
@@ -79,16 +61,8 @@ end
           <div class="row">
             <div class="col-12 col-md-6 order-md-2">
               <pre class="light"><code class="language-bash">
-describe aws_s3_bucket(bucket_name: 'my_secret_files') do
-  it { should exist }
-  it { should_not be_public }
-end
-
-describe aws_iam_user(username: 'test_user') do
-  it { should have_mfa_enabled }
-  it { should_not have_console_password }
-end
-                </code></pre>
+                {{ .Params.benefits.three.code }}
+              </code></pre>
             </div>
             <div class="col-12 col-md-6 order-md-1">
               {{ .Params.benefits.three.copy | markdownify }}
