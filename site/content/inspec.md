@@ -9,7 +9,7 @@ getStarted:
     header: Write the test
     copy: >-
       Create simple Ruby-based tests to verify your expected state against the current state of your systems.
-    code: >-
+    code: |-
       control 'example-1.0' do
         impact 0.9
         title 'Ensure login disabled'
@@ -24,22 +24,13 @@ getStarted:
     header: Run the test
     copy: >-
       Execute your test against your target system locally or remotely with one simple command.
-    code: >-
-      $ inspec exec linux-baseline
+    code: |
+      "$ inspec exec linux-baseline"
   three:
     header: See the results
     copy: >-
       See which tests failed, passed and skipped and the expected state against the current state of your target system, in one simple output.
-    code: >-
-      Profile: Chef InSpec Profile (example_profile)
-      Version: 0.1.0
-      Target:  local://
-
-        ✔  example-1.0: Ensure root login is disabled via SSH
-        ✔  SSHD Configuration PermitRootLogin should not cmp == "yes"
-
-      Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
-      Test Summary: 1 successful, 0 failures, 0 skipped
+    code: 
 cards:
   header: Compliance by design
   one:
@@ -79,7 +70,7 @@ benefits:
       ##### Apply to all systems  
 
       Analyze everything using the same codified profiles and controls.
-    code: >-
+    code: |-
       control 'sshd-21' do
         title 'Set SSH Protocol to 2'
         desc 'A detailed description'
@@ -102,7 +93,7 @@ benefits:
       ##### Extensible  
 
       Create custom resources with ease and share them easily with others.
-    code: >-
+    code: |-
       describe file('/etc/myapp.conf') do
         it { should exist }
         its('mode') { should cmp 0644 }
@@ -129,7 +120,7 @@ benefits:
       ##### Verify security configuration  
 
       Ensure that your cloud deployments are not open to malicious attacks due to misconfiguration.
-    code: >-
+    code: |-
       describe aws_s3_bucket(bucket_name: 'my_secret_files') do
         it { should exist }
         it { should_not be_public }
