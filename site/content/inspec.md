@@ -22,25 +22,21 @@ cards:
   one:
     icon: /img/icons/inspec-1.png
     title: Platform Agnostic
-    image: 
     body: >-
       Chef InSpec supports all major operating systems and is platform agnostic, allowing you the freedom to run compliance and security tests anywhere. 
   two:
     icon: /img/icons/inspec-2.png
     title: Test Locally or Remotely
-    image: 
     body: >-
       Chef InSpec provides a local agent for host-based assessments, as well as full remote testing support via SSH and WinRM. 
   three:
     icon: /img/icons/inspec-3.png
     title: Free To Run Anywhere
-    image: 
     body: >-
       Chef InSpec is an open-source language that can easily express compliance as code, with the freedom to run anywhere.
   four:
     icon: /img/icons/inspec-4.png
     title: Extensible Language
-    image: 
     body: >-
        Easily extend the Chef InSpec language to cover new operating systems, devices, or applications.
 benefits:
@@ -133,13 +129,11 @@ tutorials:
       link: "https://learn.chef.io/modules/explore-inspec-resources/#/"
       copy: >-
         Build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
-      subtext: >-
     three: 
       title: Create an InSpec profile from compliance documentation 
       link: "https://learn.chef.io/modules/create-profile-from-doc#/"
       copy: >-
         See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
-      subtext: >-
     four:
       title: Automating compliance for finance 
       link: "https://learn.chef.io/modules/hp-compliance/#/" 
@@ -169,7 +163,6 @@ tutorials:
       image: "/img/favicons/android-chrome-256x256.png"
 resources:
   header: From the Chef InSpec Blog
-  headerTwo: 
 contact:
   header: Wondering how Chef InSpec might work for your team?
   copy: Chef InSpec provides a language for describing security and compliance rules that can be shared between software engineers, operations, and security engineers.

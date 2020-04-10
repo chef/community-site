@@ -22,25 +22,21 @@ cards:
   one:
     icon: /img/icons/habitat-1.png
     title: Reusable Content
-    image: 
     body: >-
       Hundreds of pre-defined application templates and a robust open source user community.
   two:
     icon: /img/icons/habitat-2.png
     title: Codified Instructions
-    image: 
     body: >-
       Automation is stored as coded artifacts that are easy to search and share. 
   three:
     icon: /img/icons/habitat-3.png
     title: Consistent Deployments
-    image: 
     body: >-
        What is built and run in development will be exactly the same in production.
   four:
     icon: /img/icons/habitat-4.png
     title: Advanced Features
-    image: 
     body: >-
       Built-in automation for dynamic service bindings, clustering topologies, service discovery, and update strategies. 
 usage:
@@ -116,7 +112,6 @@ builder:
   ctaLink: "https://bldr.habitat.sh/#/pkgs/core"
 resources:
   header: From the Chef Habitat Blog
-  headerTwo: 
 contact:
   header: Wondering how Chef Habitat might work for your team?
   copy: Chef Software provides enterprise-grade management and support so you can accelerate your business’s move to the cloud and adoption of container technology.
