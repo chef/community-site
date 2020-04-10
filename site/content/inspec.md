@@ -10,6 +10,7 @@ getStarted:
     copy: >-
       Create simple Ruby-based tests to verify your expected state against the current state of your systems.
     code: |-
+    
       control 'example-1.0' do
         impact 0.9
         title 'Ensure login disabled'
@@ -24,8 +25,9 @@ getStarted:
     header: Run the test
     copy: >-
       Execute your test against your target system locally or remotely with one simple command.
-    code: |
-      "$ inspec exec linux-baseline"
+    code: |-
+
+      $ inspec exec linux-baseline
   three:
     header: See the results
     copy: >-
@@ -71,6 +73,7 @@ benefits:
 
       Analyze everything using the same codified profiles and controls.
     code: |-
+
       control 'sshd-21' do
         title 'Set SSH Protocol to 2'
         desc 'A detailed description'
@@ -94,6 +97,7 @@ benefits:
 
       Create custom resources with ease and share them easily with others.
     code: |-
+
       describe file('/etc/myapp.conf') do
         it { should exist }
         its('mode') { should cmp 0644 }
@@ -121,6 +125,7 @@ benefits:
 
       Ensure that your cloud deployments are not open to malicious attacks due to misconfiguration.
     code: |-
+
       describe aws_s3_bucket(bucket_name: 'my_secret_files') do
         it { should exist }
         it { should_not be_public }
