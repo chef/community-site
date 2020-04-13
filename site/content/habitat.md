@@ -3,20 +3,6 @@ title: Application Delivery as Code
 type: habitat
 hero: 
   logo: /img/logos/chef-habitat-dark.svg
-getStarted: 
-  header: Get started in 3 simple steps
-  one: 
-    header: Write the test
-    copy: >-
-      Create simple Ruby-based tests to verify your expected state against the current state of your systems.
-  two:
-    header: Run the test
-    copy: >-
-      Execute your test against your target system locally or remotely with one simple command.
-  three:
-    header: See the results
-    copy: >-
-      See which tests failed, passed and skipped and the expected state against the current state of your target system, in one simple output.
 cards:
   header: Application Definition, Packaging and Delivery Automation
   one:
