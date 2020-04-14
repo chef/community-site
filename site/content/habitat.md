@@ -98,8 +98,8 @@ builder:
     link: https://www.habitat.sh/docs/using-builder/
     copy: Learn more 
   ctaTwo:
-    copy: Go to Chef Habitat Builder
-    link: "https://bldr.habitat.sh/#/pkgs/core"
+    copy: Habitat Builder
+    link: https://bldr.habitat.sh/#/pkgs/core
 resources:
   header: From the Chef Habitat Blog
 contact:

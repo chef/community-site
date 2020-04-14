@@ -104,7 +104,7 @@
 
         .studio, .artifact, .supervisor {
           fill: none;
-          stroke: #1aaf94;
+          stroke: $mid-gray;
           stroke-miterlimit: 10;
           stroke-width: 2px;
         }
@@ -121,9 +121,10 @@
         }
         #studio-line {
           stroke: #ffa300;
+          stroke-width: 2;
         }
         #define {
-          opacity:1;
+          opacity: 1;
         }
       }
     }

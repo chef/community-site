@@ -206,11 +206,21 @@ img {
     }
   }
 
+  .st-ui-type-heading, .st-ui-type-detail {
+    font-size: 17px !important;
+    font-family: $font-primary !important;
+  }
+  
   .search {
     height: 26px;
     position: relative;
     display: block;
     transition: width 0.75s ease-in-out;
+    @include media-breakpoint-down(sm) {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+    }
+  
 
     input {
       background-color: $white;
@@ -218,6 +228,7 @@ img {
       color: $dark-gray;
       display: block;
       font-family: $font-primary;
+      font-size: .9rem;
       float: right;
       margin-top: -3px;
       width: 50%;
@@ -228,6 +239,7 @@ img {
       @include media-breakpoint-down(sm) {
         background-color: white;
         border: 1px solid $light-gray;
+        margin-bottom: 5rem;
         width: 100%;
         height: 26px;
       }
@@ -236,7 +248,9 @@ img {
     input:focus {
       background: $light-gray;
       border: 1px solid darken($light-gray, 10%);
-      width: 300px;
+      @include media-breakpoint-up(md) {
+        width: 300px;
+      }
     }
 
     @include media-breakpoint-down(sm) {
