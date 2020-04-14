@@ -182,7 +182,9 @@ export default class Habitat extends React.Component {
 							<p>{builder.copy}</p>
 						</div>
 						<div className="col-12 col-lg-5 text-center">
-							<a className="btn btn-primary" href="{builder.ctaLink}" target="_blank">{builder.cta}</a>
+							<a className="btn btn-primary" href="{builder.ctaOne.link}" target="_blank">{builder.ctaOne.copy}</a>
+							<a className="btn btn-secondary" href="{builder.ctaTwo.link}" target="_blank">{builder.ctaTwo.copy}</a>
+
 						</div>
 					</div>
 				</div>

@@ -94,8 +94,12 @@ builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
     The Chef Habitat Builder provides a set of enterprise-class functionality that includes package storage, search, and automated API enabled services. Application binaries versioned and stored along with the corresponding Habitat Artifact. Clients have the option of leveraging the SaaS or on-premises version of Builder. 
-  cta: Learn More About Chef Habitat Builder
-  ctaLink: "https://bldr.habitat.sh/#/pkgs/core"
+  ctaOne:
+    link: https://www.habitat.sh/docs/using-builder/
+    copy: Learn more 
+  ctaTwo:
+    copy: Go to Chef Habitat Builder
+    link: "https://bldr.habitat.sh/#/pkgs/core"
 resources:
   header: From the Chef Habitat Blog
 contact:

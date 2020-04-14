@@ -216,11 +216,12 @@ img {
       background-color: $white;
       border: none;
       color: $dark-gray;
-      margin-top: -3px;
       display: block;
+      font-family: $font-primary;
+      float: right;
+      margin-top: -3px;
       width: 50%;
       overflow: hidden;
-      float: right;
       -webkit-transition: width .5s ease-in-out;
       transition: width .5s ease-in-out;
 

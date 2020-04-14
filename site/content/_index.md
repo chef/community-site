@@ -10,12 +10,12 @@ cards:
     icon: /img/icons/learn.svg
     title: Learn
     body: |-
-      #### Learn Chef Rally
+      ##### Learn Chef Rally
       Get from zero to DevOps hero with our self-learning platform.
 
       [Get started &raquo;](https://learn.chef.io)
 
-      #### Docs &amp; Quickstarts
+      ##### Docs &amp; Quickstarts
       - Chef Infra: [Docs](https://docs.chef.io/) | [Quickstart](https://learn.chef.io/modules/try-chef-infra)
       - Chef InSpec: [Docs](https://www.inspec.io/docs/) | [Quickstart](https://learn.chef.io/modules/try-inspec)
       - Chef Habitat: [Docs](https://www.habitat.sh/docs/) | [Quickstart](https://learn.chef.io/modules/try-habitat)
@@ -27,7 +27,7 @@ cards:
     icon: /img/icons/connect.svg
     title: Connect
     body: >-
-      #### Interact
+      ##### Interact
 
       [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
 
@@ -37,7 +37,7 @@ cards:
       
       [Community Meeting!](https://community-slack.chef.io/) Thursdays at 9:00AM PT  | #community-meetings in Slack
 
-      #### Contribute
+      ##### Contribute
 
       [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
       Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
