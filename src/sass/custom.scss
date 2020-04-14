@@ -195,93 +195,6 @@ img {
     }
   }
 
-  .search {
-    height: 26px;
-    position: relative;
-    display: block;
-    width: 39px;
-    transition: width 0.75s ease-in-out;
-
-    @include media-breakpoint-down(sm) {
-      margin-bottom: 1rem;
-      height: auto;
-      width: auto;
-    }
-
-    @include media-breakpoint-up(md) {
-      margin-right: 0.4rem;
-
-      &:hover {
-        width: 170px; // update to fit the nav links
-
-        #search-box {
-          background-color: white;
-        }
-		
-		#search-icon {
-			color: $chef-primary;
-		}
-      }
-    }
-	
-	@include media-breakpoint-up(xl) {
-      &:hover {
-        width: 250px; // update to fit the nav links
-      }
-    }
-
-    #search-box {
-      padding: 3px 5px 2px 34px;
-      border: none;
-      background-color: $chef-primary;
-      transition: linear 1s;
-      line-height: 1.5;
-      font-size: 14px;
-      font-weight: normal;
-      color: $dark-gray;
-      height: 26px;
-      display: block;
-      width: 100%;
-
-      &:focus,
-      &:hover {
-        outline: none;
-      }
-
-      ::placeholder {
-        font-size: 0.8em;
-      }
-
-      @include media-breakpoint-down(sm) {
-        background-color: white;
-        border: $mid-gray;
-        border: 1px solid #666;
-        width: 100%;
-        height: 35px;
-      }
-    }
-
-    #search-icon {
-      position: absolute;
-      left: 0;
-      padding: 0 10px;
-      top: 3px;
-      font-size: 14px;
-      width: auto;
-      margin: 0;
-      line-height: 23px;
-
-      &:focus {
-        outline: none;
-        box-shadow: none;
-      }
-
-      @include media-breakpoint-down(sm) {
-        padding: 4px 10px;
-      }
-    }
-  }
-
   .navbar-toggler {
     border: none;
     padding: 0;
@@ -292,6 +205,46 @@ img {
       box-shadow: none;
     }
   }
+
+  .search {
+    height: 26px;
+    position: relative;
+    display: block;
+    transition: width 0.75s ease-in-out;
+
+    input {
+      background-color: $white;
+      border: none;
+      color: $dark-gray;
+      margin-top: -3px;
+      display: block;
+      width: 50%;
+      overflow: hidden;
+      float: right;
+      -webkit-transition: width .5s ease-in-out;
+      transition: width .5s ease-in-out;
+
+      @include media-breakpoint-down(sm) {
+        background-color: white;
+        border: 1px solid $light-gray;
+        width: 100%;
+        height: 26px;
+      }
+    }
+
+    input:focus {
+      background: $light-gray;
+      border: 1px solid darken($light-gray, 10%);
+      width: 300px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1rem;
+      height: auto;
+      width: auto;
+    }
+  }
+
 }
 
 // ===================
@@ -887,6 +840,5 @@ table {
 @import "inspec";
 @import "habitat";
 @import "first-time";
-@import "search";
 @import "markdown";
 @import "prism"; 
