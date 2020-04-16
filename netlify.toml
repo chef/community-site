@@ -9,3 +9,8 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[[redirects]]
+  from = "/brand"
+  to = "http://marketing-web-communitycomponentlibrary.s3-website-us-west-2.amazonaws.com/"
+  status = 301

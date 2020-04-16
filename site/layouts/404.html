@@ -1,11 +1,16 @@
 {{ define "body" }}
    <main id="main">
     <section class="container hero">
+      <div class="row mb-5">
+        <div class="col-12 col-md-6 offset-md-3">
+          <img src="img/404.svg" alt="404 Error"/>
+        </div>
+      </div>
       <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">Page not found.</h1>
-            <p class="text-center"><a href="{{ "/" | relURL }}">Go home</a></p>
-          </div>
+        <div class="col-12">
+          <h1 class="text-center">Page not found</h1>
+          <p class="text-center"><a href="{{ "/" | relURL }}">Go home</a></p>
+        </div>
       </div>
     </section>
     </main>
