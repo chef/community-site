@@ -805,17 +805,12 @@ input {
       color: #4267b2;
     }
 
-<<<<<<< HEAD
-    &-twitter:hover {
-      color: #1da1f2;
-    }
-=======
-
+  }
+}
 // Tab Styles
 // =============
 .nav-tabs {
   border-bottom: none;
->>>>>>> master
 
     &-linkedin:hover {
       color: #0073b1;
@@ -829,7 +824,7 @@ input {
       color: #ff0000;
     }
   }
-}
+
 pre {
   font-size: .9rem;
   white-space: pre-line;
@@ -864,4 +859,4 @@ table {
 @import "habitat";
 @import "first-time";
 @import "markdown";
-@import "prism"; 
+@import "prism";
