@@ -305,7 +305,7 @@
 
   .social {
     @include media-breakpoint-down(sm) {
-      margin-bottom: 2rem;
+      margin: 1rem auto;
     }
 
     .row {
@@ -440,6 +440,12 @@ ol {
 // Flexbox styles
 // ========================
 
+.center-mobile {
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+    align-self: center;
+  }
+}
 .flex-center {
   display: flex;
   justify-content: center;
