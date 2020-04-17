@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-	repo: chef/chef-devsite
-	identity_url: "https://community.chef.io/.netlify/identity"
+  repo: chef/chef-devsite
+  identity_url: "https://community.chef.io/.netlify/identity"
 publish_mode: editorial_workflow
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -15,283 +15,262 @@ collections: # A list of collections the CMS should be able to edit
         name: "inspec"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Hero",
-						name: "hero",
-						widget: object,
-						fields: [
-							{label: "Logo", name: "logo", widget: "string"}]}
-          - {label: "Cards",
-						name: "cards",
-						widget: object,
-						fields: [
-							{	label: "Card 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 4",
-								name: "four",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
-          - {label: "Benefits",
-						name: "benefits",
-						widget: object,
-						fields: [
-							{label: "Header Image", name: "headerImage", widget: "string"},
-							{label: "Header Text", name: "headerTwo", widget: "string"},
-							{	label: "Section 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Section 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Section 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Hero", name: "hero", widget: object, fields: [
+              {label: "Logo", name: "logo", widget: "string"}]}
+          - {label: "Cards", name: "cards", widget: object, fields: [
+              {label: "Card 1", name: "one", widget: object, fields: [
+                {label: "Icon", name: "icon", widget: "string"},
+                {label: "Title", name: "title", widget: "string"},
+                {label: "Body", name: "body", widget: "markdown"}]},
+              {label: "Card 2", name: "two", widget: object, fields: [
+                {label: "Icon", name: "icon", widget: "string"},
+                {label: "Title", name: "title", widget: "string"},
+                {label: "Body", name: "body", widget: "markdown"}]},
+              {label: "Card 3", name: "three", widget: object, fields: [
+                {label: "Icon", name: "icon", widget: "string"},
+                {label: "Title", name: "title", widget: "string"},
+                {label: "Body", name: "body", widget: "markdown"}]},
+              {label: "Card 4", name: "four", widget: object, fields: [
+                {label: "Icon", name: "icon", widget: "string"},
+                {label: "Title", name: "title", widget: "string"},
+                {label: "Body", name: "body", widget: "markdown"}]}]}
+          - {label: "Benefits", name: "benefits", widget: object, fields: [
+              {label: "Header Image", name: "headerImage", widget: "string"},
+              {label: "Header Text", name: "headerTwo", widget: "string"},
+              {  label: "Section 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Get Started", name: "getStarted", widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{	label: "Section 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Section 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Section 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Code", name: "code", widget: "text"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Section 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Section 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Section 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Tutorials",
-						name: "tutorials",
-						widget: object,
-						fields: [
-							{	label: "Column 1",
-								name: "columnOne",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "One", name: "one", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Two", name: "two", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Three", name: "three", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},					
-									{label: "Four", name: "four", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]}]},
-							{	label: "Column 2", name: "columnTwo", widget: object, fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "One", name: "one", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Two", name: "two", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Three", name: "three", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},						
-									{label: "Four", name: "four", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]}]}]}		
+            name: "tutorials",
+            widget: object,
+            fields: [
+              {  label: "Column 1",
+                name: "columnOne",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "One", name: "one", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Two", name: "two", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Three", name: "three", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},          
+                  {label: "Four", name: "four", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]}]},
+              {  label: "Column 2", name: "columnTwo", widget: object, fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "One", name: "one", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Two", name: "two", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Three", name: "three", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},            
+                  {label: "Four", name: "four", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]}]}]}    
           - {label: "Resources",
-						name: "resources",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"}]}
+            name: "resources",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"}]}
           - {label: "Contact",
-						name: "contact",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{label: "Copy", name: "copy", widget: "markdown"},
-							{label: "CTA 1", name: "ctaOne", widget: "object", fields: [
-								{label: "Link", name: "link", widget: "string"},
-								{label: "Copy", name: "copy", widget: "string"}]},
-							{label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
-								{label: "Link", name: "link", widget: "string"},
-								{label: "Copy", name: "copy", widget: "string"}]}]} 
+            name: "contact",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Copy", name: "copy", widget: "markdown"},
+              {label: "CTA 1", name: "ctaOne", widget: "object", fields: [
+                {label: "Link", name: "link", widget: "string"},
+                {label: "Copy", name: "copy", widget: "string"}]},
+              {label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
+                {label: "Link", name: "link", widget: "string"},
+                {label: "Copy", name: "copy", widget: "string"}]}]} 
       - file: "site/content/habitat.md"
         label: "Habitat"
         name: "habitat"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero",
-						name: "hero",
-						widget: object,
-						fields: [
-							{label: "Logo", name: "logo", widget: "string"}]}
+            name: "hero",
+            widget: object,
+            fields: [
+              {label: "Logo", name: "logo", widget: "string"}]}
           - {label: "Get Started", name: "getStarted", widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{	label: "Section 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Section 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Section 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Section 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Section 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Section 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Cards",
-						name: "cards",
-						widget: object,
-						fields: [
-							{	label: "Card 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 4",
-								name: "four",
-								widget: object,
-								fields: [
-									{label: "Icon", name: "icon", widget: "string"},
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+            name: "cards",
+            widget: object,
+            fields: [
+              {  label: "Card 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Icon", name: "icon", widget: "string"},
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Icon", name: "icon", widget: "string"},
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Icon", name: "icon", widget: "string"},
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 4",
+                name: "four",
+                widget: object,
+                fields: [
+                  {label: "Icon", name: "icon", widget: "string"},
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Usage",
-						name: "usage",
-						widget: object,
-						fields: [
-							{label: "Header Image", name: "headerImage", widget: "string"},
-							{	label: "Section 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Section 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Section 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]}]} 
+            name: "usage",
+            widget: object,
+            fields: [
+              {label: "Header Image", name: "headerImage", widget: "string"},
+              {  label: "Section 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]} 
           - {label: "Tutorials",
-						name: "tutorials",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{	label: "Column 1",
-								name: "columnOne",
-								widget: object,
-								fields: [
-									{label: "One", name: "one", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Two", name: "two", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]}]},
-							{	label: "Column 2", name: "columnTwo", widget: object, fields: [
-									{label: "One", name: "one", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]},
-									{label: "Two", name: "two", widget: "object", fields: [
-										{ label: "Title", name: "title", widget: "string"},
-										{ label: "Link", name: "link", widget: "string"},
-										{ label: "Copy", name: "copy", widget: "markdown"}]}]}]}		
+            name: "tutorials",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Column 1",
+                name: "columnOne",
+                widget: object,
+                fields: [
+                  {label: "One", name: "one", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Two", name: "two", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]}]},
+              {  label: "Column 2", name: "columnTwo", widget: object, fields: [
+                  {label: "One", name: "one", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]},
+                  {label: "Two", name: "two", widget: "object", fields: [
+                    { label: "Title", name: "title", widget: "string"},
+                    { label: "Link", name: "link", widget: "string"},
+                    { label: "Copy", name: "copy", widget: "markdown"}]}]}]}    
           - {label: "Resources",
-						name: "resources",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"}]}
+            name: "resources",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"}]}
           - {label: "Contact",
-						name: "contact",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{label: "Copy", name: "copy", widget: "markdown"},
-							{label: "CTA 1", name: "ctaOne", widget: "object", fields: [
-								{label: "Link", name: "link", widget: "string"},
-								{label: "Copy", name: "copy", widget: "string"}]},
-							{label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
-								{label: "Link", name: "link", widget: "string"},
-								{label: "Copy", name: "copy", widget: "string"}]}]} 
+            name: "contact",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Copy", name: "copy", widget: "markdown"},
+              {label: "CTA 1", name: "ctaOne", widget: "object", fields: [
+                {label: "Link", name: "link", widget: "string"},
+                {label: "Copy", name: "copy", widget: "string"}]},
+              {label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
+                {label: "Link", name: "link", widget: "string"},
+                {label: "Copy", name: "copy", widget: "string"}]}]} 
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
@@ -303,94 +282,94 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "meta_image", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Cards",
-						name: "cards",
-						widget: object,
-						fields: [
-							{	label: "Card 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "image"}]},
-							{	label: "Card 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Icon", name: "icon", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+            name: "cards",
+            widget: object,
+            fields: [
+              {  label: "Card 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Icon", name: "icon", widget: "image"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Icon", name: "icon", widget: "image"}]},
+              {  label: "Card 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Icon", name: "icon", widget: "image"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Products",
-						name: "products",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{	label: "Habitat",
-								name: "habitat",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Url", name: "url", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Infra",
-								name: "infra",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Url", name: "url", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "InSpec",
-								name: "inspec",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Url", name: "url", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]},
-							{	label: "Automate",
-								name: "automate",
-								widget: object,
-								fields: [
-									{label: "Header", name: "header", widget: "string"},
-									{label: "Url", name: "url", widget: "string"},
-									{label: "Copy", name: "copy", widget: "markdown"}]}]}
+            name: "products",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Habitat",
+                name: "habitat",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Infra",
+                name: "infra",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "InSpec",
+                name: "inspec",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Automate",
+                name: "automate",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Url", name: "url", widget: "string"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]}]}
           - {label: "Community",
-						name: "community",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{label: "Body", name: "body", widget: "markdown"}]}
+            name: "community",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}]}
           - {label: "Resources",
-						name: "resources",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{	label: "Card 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"},
-									{label: "Link", name: "link", widget: "string"}]},
-							{	label: "Card 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"},
-									{label: "Link", name: "link", widget: "string"}]},
-							{	label: "Card 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Image", name: "img", widget: "image"},
-									{label: "Body", name: "body", widget: "markdown"},
-									{label: "Link", name: "link", widget: "string"}]}]}
+            name: "resources",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Card 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Image", name: "img", widget: "image"},
+                  {label: "Body", name: "body", widget: "markdown"},
+                  {label: "Link", name: "link", widget: "string"}]},
+              {  label: "Card 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Image", name: "img", widget: "image"},
+                  {label: "Body", name: "body", widget: "markdown"},
+                  {label: "Link", name: "link", widget: "string"}]},
+              {  label: "Card 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Image", name: "img", widget: "image"},
+                  {label: "Body", name: "body", widget: "markdown"},
+                  {label: "Link", name: "link", widget: "string"}]}]}
       - file: "site/content/first-time.md"
         label: "First time contributing"
         name: "first-time"
@@ -399,30 +378,30 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Type", name: "type", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Cards",
-						name: "cards",
-						widget: object,
-						fields: [
-							{	label: "Card 1",
-								name: "one",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 2",
-								name: "two",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]},
-							{	label: "Card 3",
-								name: "three",
-								widget: object,
-								fields: [
-									{label: "Title", name: "title", widget: "string"},
-									{label: "Body", name: "body", widget: "markdown"}]}]}
+            name: "cards",
+            widget: object,
+            fields: [
+              {  label: "Card 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]},
+              {  label: "Card 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Title", name: "title", widget: "string"},
+                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Swag Program",
-						name: "swag_program",
-						widget: object,
-						fields: [
-							{label: "Header", name: "header", widget: "string"},
-							{label: "Body", name: "body", widget: "markdown"}]}
+            name: "swag_program",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Body", name: "body", widget: "markdown"}]}
