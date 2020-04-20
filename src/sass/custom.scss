@@ -346,7 +346,7 @@ img {
 
   .social {
     @include media-breakpoint-down(sm) {
-      margin-bottom: 2rem;
+      margin: 1rem auto;
     }
 
     .row {
