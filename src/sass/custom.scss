@@ -151,8 +151,8 @@ img {
       margin-bottom: 0;
 
       @include media-breakpoint-up(lg) {
-        padding-right: 0.4rem;
-        padding-left: 0.4rem;
+        padding-right: .6rem;
+        padding-left: .6rem;
       }
 
       a {
