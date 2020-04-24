@@ -47,8 +47,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
-			<div class="card">
+		<div class="col-lg-4 col-sm-12 card-container" data-scroll-speed="4"> 
+			<div class="card" id="card-connect">
 				<div class="row card-title">
 					<div class="col-8">
 						<h3>{{ .Params.cards.three.title }}</h3>
@@ -67,11 +67,16 @@
 							{{ range $.Site.Data.contributors }}
                 <a href="{{ .url }}"><img src="{{ .avatar_url }}&size=50" class="img-round" width="50" alt="{{ .name }}"></a>
               {{ end }}
-
 						</div>
-
+		
 						{{ partial "social" . }}
+
 					</div>
+				</div>
+				<div id="chefconf-banner">
+					<a href="https://chefconf.io/" target="_blank">
+						<img src="/img/chefconf-online.png" alt="ChefConf Online" width="100%" />
+					</a>
 				</div>
 			</div>
 		</div>
