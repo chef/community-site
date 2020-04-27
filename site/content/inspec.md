@@ -198,3 +198,4 @@ contact:
 <a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download InSpec</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
 </div>
+<iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=inspec&repo=inspec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
