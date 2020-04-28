@@ -115,6 +115,6 @@ contact:
 <p class="lead">Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
 <div class="center-mobile">
-<a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
-<a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
+<a class="btn btn-primary" href="#habitat-tutorials">Get started</a>
+<a class="btn btn-secondary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
 </div>
