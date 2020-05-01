@@ -15,6 +15,20 @@
 						{{ partial "markdownify" .Params.cards.one.body }}
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-sm-12 events-list">
+						<ul>
+              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
+              {{ range first 5 $events }}
+								<li>
+									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
+									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
+								</li>
+							{{ end }}
+							
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 card-container" data-scroll-speed="4">
@@ -30,18 +44,14 @@
 				<div class="row">
 					<div class="col-sm-12 events-list">
 						<ul>
-              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latest" }}
-              {{ range first 4 $events }}
+              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
+              {{ range first 5 $events }}
 								<li>
 									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
 									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
 								</li>
 							{{ end }}
-							<li>
-								<a href="https://www.meetup.com/Seattle-CoffeeOps/events/" target="_blank">CoffeeOps</a>
-								<p>Every other Friday, Chef HQ or Digitally<br/>
-								<a href="https://www.meetup.com/Seattle-CoffeeOps/events/" target="_blank">See more on meetup.com &raquo;</a></p>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
