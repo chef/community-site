@@ -119,15 +119,15 @@
 			$("#define").css("opacity", "0");
 			$("#artifact-line").css("stroke", "#ffa300");
 			$("#artifact-line").css("stroke-width", "2");
-			$("#deliver").css("opacity", "1");
-			$("#package").css("opacity", "0");
+			$("#deliver").css("opacity", "0");
+			$("#package").css("opacity", "1");
 		} else if (e.currentTarget.hash === "#three") {
 			$(".studio").css("stroke", "#666666");
 			$(".artifact").css("stroke", "#666666");
 			$(".supervisor").css("stroke", "#ffa300");
 			$("#define").css("opacity", "0");
-			$("#deliver").css("opacity", "0");
-			$("#package").css("opacity", "1");
+			$("#package").css("opacity", "0");
+			$("#deliver").css("opacity", "1");
 			$("#supervisor-line").css("stroke", "#ffa300");
 			$("#supervisor-line").css("stroke-width", "2");
 		};
