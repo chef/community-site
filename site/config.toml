@@ -13,6 +13,8 @@ disableKinds = "taxonomyTerm"
   linkedin = "https://www.linkedin.com/company/chef-software"
   github = "http://chef.github.io/"
   youtube = "https://www.youtube.com/user/getchef"
+  meta_image_sq = "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-sq.png"
+  meta_image_rect = "s3://chef-marketing-public/community-img/meta-community-rect.png"
 
 # Sets cache of JSON files to 1h
 [caches]
