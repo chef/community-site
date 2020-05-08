@@ -35,11 +35,11 @@
 
 <!-- Meta-image -->
 {{ if isset .Params "meta_image" }}
-<meta property="og:image" content="{{ .Params.meta_image }}">
-<meta name="twitter:image" content="{{ .Params.meta_image }}">
+<meta property="og:image" content="{{ .Params.meta_image_rect }}">
+<meta name="twitter:image" content="{{ .Params.meta_image_sq }}">
 {{else}}
-<meta property="og:image" content="/img/Chef-Meta.png">
-<meta name="twitter:image" content="https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-sq.png">
+<meta property="og:image" content="{{ .Params.meta_image_rect }}">
+<meta name="twitter:image" content="{{ .Params.meta_image_sq }}">
 {{end}}
 
 <link rel="canonical" href="{{ .Permalink }}">
