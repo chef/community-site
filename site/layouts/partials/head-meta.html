@@ -38,8 +38,8 @@
 <meta property="og:image" content="{{ .Params.meta_image_rect }}">
 <meta name="twitter:image" content="{{ .Params.meta_image_sq }}">
 {{else}}
-<meta property="og:image" content="{{ .Params.meta_image_rect }}">
-<meta name="twitter:image" content="{{ .Params.meta_image_sq }}">
+<meta property="og:image" content="{{ .Site.Params.meta_image_rect }}">
+<meta name="twitter:image" content="{{ .Site.Params.meta_image_sq }}">
 {{end}}
 
 <link rel="canonical" href="{{ .Permalink }}">
