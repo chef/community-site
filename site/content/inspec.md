@@ -193,7 +193,7 @@ contact:
     copy: View pricing
 ---
 <p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
-
+<img src="https://www.chef.io/wp-content/uploads/2020/05/Resources-Deployment-Automation.png" crossorigin="anonymous"/>
 <div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download InSpec</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
