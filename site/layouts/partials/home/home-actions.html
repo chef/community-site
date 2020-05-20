@@ -16,19 +16,21 @@
 					</div>
 				</div>
 				<div class="row mt-2">
+					{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
+					{{ if $events }}
 					<div class="col-sm-12 events-list">
 						<h5>Webinars</h5>
 						<ul>
-              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
               {{ range first 5 $events }}
 								<li>
 									<p><a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a></br/>
 									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} 
 								</li>
 							{{ end }}
-							<a href="#" class="cta" target="_blank">View all webinars »</a>
+							<a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank">View all webinars »</a>
 						</ul>
 					</div>
+					{{ end }}
 				</div>
 			</div>
 		</div>
