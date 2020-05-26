@@ -1,13 +1,13 @@
-<div class="container-fluid">
+<section class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <h2>{{ .Params.resources.header }} <span class="highlight">{{ .Params.resources.headerTwo }}</span></h2>
+      <h2>{{ .Params.resources.header }}</h2>
     </div>
 
     {{ $events := getJSON "https://blog.chef.io/wp-json/wp/v2/posts?categories=235" }}
     {{ range first 3 $events }}
 
-      <div class="col-lg-4 col-sm-12 card-container">
+      <div class="col-lg-6 col-sm-12 card-container">
         <div class="card">
           <a href="{{ .link }}" target="_blank" class="img">
             <img src="{{ .jetpack_featured_media_url }}">
@@ -25,4 +25,4 @@
       <a class="btn btn-primary" href="https://blog.chef.io/category/habitat/" target="_blank">View all posts</a>
     </div>
   </div>
-</div>
+</section>

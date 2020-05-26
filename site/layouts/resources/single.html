@@ -1,0 +1,45 @@
+{{ define "body" }}
+<main id="resources">
+	
+	<section class="hero-actions">
+        
+		<section class="hero">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9">
+						<h2>
+							{{ .Params.subtitle }}
+						</h2>
+						<h1>{{ .Params.title }}</h1>
+						<p>{{ .Content }}</p>
+					</div>
+				</div>
+			</div>
+    </section>
+    
+  </section>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ .Params.rowOne.header }}</h2>
+      </div>
+    
+      {{ range $.Site.Data.resources }}
+        <div class="col-lg-4 col-sm-12 card-container">
+          <div class="card">
+            <a href="{{ .url }}" target="_blank" class="img">
+              <img src="{{ .image }}">
+            </a>
+            <div class="text">
+              <h4>{{ .title | markdownify }}</h4>
+              <a href="{{ .url }}" target="_blank">{{ .cta }}</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+      </div>
+  </section>
+
+</main>
+{{ end }}
