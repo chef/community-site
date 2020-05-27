@@ -19,14 +19,38 @@
     
   </section>
 
-  <section class="container-fluid">
+  <section class="resources">
+    <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <h2>{{ .Params.rowOne.header }}</h2>
       </div>
-    
-      {{ range $.Site.Data.resources }}
-        <div class="col-lg-4 col-sm-12 card-container">
+      {{ range first 3 $.Site.Data.resources }}
+        {{ partial "resource-card" . }}
+      {{ end }}
+      <div class="col-12">
+        <h2>{{ .Params.rowTwo.header }}</h2>
+      </div>
+      {{ range first 3 (after 3 $.Site.Data.resources) }}
+       {{ partial "resource-card" . }}
+      {{ end }}
+      <div class="col-12">
+        <h2>{{ .Params.rowThree.header }}</h2>
+      </div>
+      {{ range first 3 (after 6 $.Site.Data.resources) }}
+       {{ partial "resource-card" . }}
+      {{ end }}
+      <div class="col-12">
+        <h2>{{ .Params.rowFour.header }}</h2>
+      </div>
+      {{ range first 3 (after 9 $.Site.Data.resources) }}
+       {{ partial "resource-card" . }}
+      {{ end }}
+      <div class="col-12">
+        <h2>{{ .Params.rowFive.header }}</h2>
+      </div>
+      {{ range last 4 $.Site.Data.resources }}
+        <div class="col-lg-3 col-sm-12 card-container">
           <div class="card">
             <a href="{{ .url }}" target="_blank" class="img">
               <img src="{{ .image }}">
@@ -39,6 +63,7 @@
         </div>
       {{ end }}
       </div>
+    </div>
   </section>
 
 </main>
