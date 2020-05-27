@@ -1,0 +1,11 @@
+<div class="col-lg-4 col-sm-12 card-container">
+  <div class="card">
+    <a href="{{ .url }}" target="_blank" class="img">
+      <img src="{{ .image }}">
+    </a>
+    <div class="text">
+      <h4>{{ .title | markdownify }}</h4>
+      <a href="{{ .url }}" target="_blank">{{ .cta }}</a>
+    </div>
+  </div>
+</div>

@@ -814,6 +814,17 @@ table {
   }
 }
 
+#resources {
+  .card-container {
+    margin-bottom: 5rem;
+  }
+
+  .resources {
+    padding-top: 0; 
+  }
+}
+
+
 @import "marketo";
 @import "home";
 @import "first-time";
