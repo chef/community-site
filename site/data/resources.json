@@ -27,7 +27,7 @@
     "title": "Windows Server 2008/R2 Application Migration Program",
     "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/windows-server.png",
-    "cta": "Read more"
+    "cta": "Get eBook"
   },
   {
     "title": "Windows Server 2008/R2 Application Migration Program",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Download Chef Habitat for Windows",
-    "url": "",
+    "url": "https://www.habitat.sh/docs/install-habitat/",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
     "cta": "Download now"
   },
@@ -90,8 +90,8 @@
     "cta": "Visit Docs"
   },
   {
-    "title": "Sample SQL Git Depot",
-    "url": "https://www.habitat.sh/docs/best-practices/#running-habitat-windows-containers",
+    "title": "Habitat Plans and Terraform Script Examples for SQL ",
+    "url": "https://github.com/habitat-sh/sql_server_poc",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
     "cta": "Visit Git Repo"
   }

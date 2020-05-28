@@ -14,4 +14,4 @@ rowFour:
 rowFive: 
   header: Docs, Tools, and Training
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Chef Habitat provides a single way to deliver and manage Windows applications.  Automation instructions are defined in Powershell, but packaged with platform-agnostic commands that enable Habitat to export an application to run in multiple environments without refactoring. This enables supporting teams to modernize older applications and take advantage of new platforms. 
