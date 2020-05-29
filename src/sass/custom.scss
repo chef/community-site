@@ -609,6 +609,10 @@ input {
 .resources {
   @extend %section-padding;
 
+  .card img {
+    width: 100%;
+  }
+
   .card {
     padding: 0;
     background-color: $dark-gray;
@@ -628,9 +632,6 @@ input {
       flex-direction: row;
       align-items: stretch;
       justify-content: flex-start;
-      .img {
-        max-width: 33.33%;
-      }
     }  
 
     h4 {
