@@ -822,6 +822,46 @@ table {
   .resources {
     padding-top: 0; 
   }
+
+  .hero {
+    &:before {
+      content: "";
+      display: block;
+      height: 100%; // for ie11
+      background-image: url(/img/resource-hero.svg);
+      background-color: $white;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    @include media-breakpoint-up(xl) {
+      &:before {
+        background-size: 50% !important;
+        background-position: 110% -10% !important;
+      }
+    }
+    @include media-breakpoint-between(lg, xl) {
+      &:before {
+        background-size: 60%;
+        background-position: 120% -30px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      &:before {
+        background-size: 70%;
+        background-position: 200% -30px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      &:before {
+        background-image: none !important;
+      }
+    }
+  }
+  
 }
 
 

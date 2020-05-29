@@ -56,19 +56,19 @@
   {
     "title": "Terraform, Habitat, and Azure DevOps",
     "url": "https://www.youtube.com/watch?v=N7Q9cMl-DuY&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/application-delivery.png",
     "cta": "Watch now"
   },
   {
     "title": "Migrating Windows IIS Applications",
     "url": "https://www.youtube.com/watch?v=kXrVs2uFeeI&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/migrating-windows-iis.png",
     "cta": "Watch now"
   },
   {
     "title": "ChefConf 2019: Lessons from the Field: Chef Habitat at Enterprise Scale",
     "url": "https://www.youtube.com/watch?v=xAlvD7ZcmPE&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/habitat-enterprise.png",
     "cta": "Watch now"
   },
   {
