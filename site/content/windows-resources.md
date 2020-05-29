@@ -1,8 +1,6 @@
 ---
 type: resources
-header: Test
 title: Windows Application Delivery Automation Resources
-subtitle: Resources
 rowOne: 
   header: Basic Concepts
 rowTwo:
