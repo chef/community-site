@@ -876,7 +876,7 @@ table {
     @include media-breakpoint-up(xl) {
       &:before {
         background-size: 55%;
-        background-position: 115% -40%;
+        background-position: 115% -4%;
       }
     }
     @media screen and (min-width: 2000px) {

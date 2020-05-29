@@ -19,21 +19,21 @@
   },
   {
     "title": "Best Practices for Packaging Windows COTS Applications for Automated Deployment with Chef Habitat",
-    "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
+    "url": "https://chef.io",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
     "cta": "Read more"
   },
   {
     "title": "Windows Server 2008/R2 Application Migration Program",
-    "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
+    "url": "https://pages.chef.io/rs/255-VFB-268/images/WindowsServerAppMigration_ebook.pdf",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/windows-server.png",
     "cta": "Get eBook"
   },
   {
-    "title": "Windows Server 2008/R2 Application Migration Program",
-    "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
-    "cta": "Read more"
+    "title": "",
+    "url": "",
+    "image": "",
+    "cta": ""
   },
   {
     "title": "Packaging a .Net Windows Service Application",
