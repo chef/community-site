@@ -774,6 +774,21 @@ img {
   justify-content: start;
 }
 
+.chef-wordmark {
+  width: auto;
+  max-height: 38px;
+
+  @include media-breakpoint-only(sm) {
+    max-height: 30px;
+  }
+
+  &-small {
+    max-height: 28px;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 
 // Tab Styles
 // =============
@@ -814,7 +829,9 @@ table {
   }
 }
 
-#resources {
+#windows-resources {
+  background-color: $light-gray;
+
   .card-container {
     margin-bottom: 5rem;
   }
@@ -829,24 +846,17 @@ table {
       display: block;
       height: 100%; // for ie11
       background-image: url(/img/resource-hero.svg);
-      background-color: $white;
+      background-color: $light-gray;
       background-repeat: no-repeat;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
     }
-  
-    @include media-breakpoint-up(xl) {
+
+    @include media-breakpoint-down(sm) {
       &:before {
-        background-size: 50% !important;
-        background-position: 110% -10% !important;
-      }
-    }
-    @include media-breakpoint-between(lg, xl) {
-      &:before {
-        background-size: 60%;
-        background-position: 120% -30px;
+        background-image: none !important;
       }
     }
     @include media-breakpoint-down(lg) {
@@ -855,11 +865,25 @@ table {
         background-position: 200% -30px;
       }
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-between(lg, xl) {
       &:before {
-        background-image: none !important;
+        background-size: 60%;
+        background-position: 120% -30px;
       }
     }
+    @include media-breakpoint-up(xl) {
+      &:before {
+        background-size: 55%;
+        background-position: 115% -40%;
+      }
+    }
+    @media screen and (min-width: 2000px) {
+      &:before {
+        background-size: 42% !important;
+        background-position: 97% -8% !important;
+      }
+    }
+  
   }
   
 }
