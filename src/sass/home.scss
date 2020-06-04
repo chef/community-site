@@ -1,20 +1,4 @@
 #home {
-
-  #card-connect {
-    padding-bottom: 0 !important;
-  }
-
-  #chefconf-banner {
-    margin-top: 1rem;
-    margin-left: -32px;
-    margin-right: -32px;
-    position: static;
-    @include media-breakpoint-up(lg) {
-      bottom: 0;
-      position: absolute;
-      margin-right: 0;
-    }
-  }
   
   .card {
     .card-icon {
