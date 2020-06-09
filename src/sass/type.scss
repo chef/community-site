@@ -1,4 +1,3 @@
-
 h1,
 h2,
 h3,
@@ -82,6 +81,7 @@ a {
 }
 
 a.cta {
+  color: $chef-secondary;
 
   &:after {
     content: " \BB";
