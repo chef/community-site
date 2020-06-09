@@ -16,19 +16,21 @@
 					</div>
 				</div>
 				<div class="row mt-2">
+					{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
+					{{ if $events }}
 					<div class="col-sm-12 events-list">
 						<h5>Webinars</h5>
 						<ul>
-              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
               {{ range first 5 $events }}
 								<li>
 									<p><a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a></br/>
 									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} 
 								</li>
 							{{ end }}
-							<a href="#" class="cta" target="_blank">View all webinars »</a>
+							<a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank">View all webinars »</a>
 						</ul>
 					</div>
+					{{ end }}
 				</div>
 			</div>
 		</div>
@@ -45,16 +47,25 @@
 				<div class="row">
 					<div class="col-sm-12 events-list">
 						<ul>
-              {{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
+							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
+							
+							{{ if $events }}
+
               {{ range first 5 $events }}
 								<li>
 									<a href="{{ .event_attributes.event_url }}" target="_blank"><h5>{{ .event_name }}</h5></a>
 									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
 								</li>
+							{{ else }}
+
+							<p>There are no upcoming events at the moment.</p>
+
 							{{ end }}
+							
 						</ul>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-12 card-container" data-scroll-speed="4"> 
@@ -66,6 +77,7 @@
 					<div class="col-4 text-right">
 						<img src="{{ .Params.cards.three.icon }}" class="card-icon">
 					</div>
+			
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
@@ -83,11 +95,7 @@
 
 					</div>
 				</div>
-				<div id="chefconf-banner">
-					<a href="https://chefconf.io/" target="_blank">
-						<img src="/img/chefconf-online.png" alt="ChefConf Online" width="100%" />
-					</a>
-				</div>
+
 			</div>
 		</div>
 	</div>

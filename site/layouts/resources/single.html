@@ -1,15 +1,12 @@
 {{ define "body" }}
-<main id="resources">
-	
-	<section class="hero-actions">
-        
+<main id="windows-resources">
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9">
-						<h2>
-							{{ .Params.subtitle }}
-						</h2>
+					<div class="col-md-8 col-xl-6">
+            <div class="img-left">
+              <img src="/img/logos/chef-habitat-dark.svg" alt="Chef Habitat" class="chef-wordmark-small">
+            </div>
 						<h1>{{ .Params.title }}</h1>
 						<p>{{ .Content }}</p>
 					</div>
@@ -17,8 +14,6 @@
 			</div>
     </section>
     
-  </section>
-
   <section class="resources">
     <div class="container-fluid">
     <div class="row">
@@ -31,7 +26,7 @@
       <div class="col-12">
         <h2>{{ .Params.rowTwo.header }}</h2>
       </div>
-      {{ range first 3 (after 3 $.Site.Data.resources) }}
+      {{ range first 2 (after 3 $.Site.Data.resources) }}
        {{ partial "resource-card" . }}
       {{ end }}
       <div class="col-12">
@@ -52,9 +47,7 @@
       {{ range last 4 $.Site.Data.resources }}
         <div class="col-lg-3 col-sm-12 card-container">
           <div class="card">
-            <a href="{{ .url }}" target="_blank" class="img">
-              <img src="{{ .image }}">
-            </a>
+       
             <div class="text">
               <h4>{{ .title | markdownify }}</h4>
               <a href="{{ .url }}" target="_blank">{{ .cta }}</a>
