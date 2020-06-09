@@ -438,6 +438,7 @@ input {
   min-width: 150px;
   margin: 1rem .4rem 1rem 0;
 
+
   &-primary {
     background: $chef-secondary;
     border: 2px solid $chef-secondary;
@@ -615,6 +616,7 @@ input {
     }
 
     p {
+      
       font-size: 0.95em;
     }
     a {

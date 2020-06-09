@@ -118,3 +118,4 @@ contact:
 <a class="btn btn-primary" href="#habitat-tutorials">Get started</a>
 <a class="btn btn-secondary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
 </div>
+<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank">Release notes</a>

@@ -7,7 +7,7 @@
     {{ $events := getJSON "https://blog.chef.io/wp-json/wp/v2/posts?categories=235" }}
     {{ range first 3 $events }}
 
-      <div class="col-lg-6 col-sm-12 card-container">
+      <div class="col-lg-4 col-sm-12 card-container">
         <div class="card">
           <a href="{{ .link }}" target="_blank" class="img">
             <img src="{{ .jetpack_featured_media_url }}">
