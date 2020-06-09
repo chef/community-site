@@ -67,7 +67,8 @@ ol {
   background-color: lighten($chef-primary, 10%);
 }
 
-a {
+
+@mixin link{
   color: $chef-secondary;
 
   &:hover {
@@ -80,8 +81,12 @@ a {
   }
 }
 
+a {
+  @include link;
+}
+
 a.cta {
-  color: $chef-secondary;
+  @include link;
 
   &:after {
     content: " \BB";
