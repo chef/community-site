@@ -53,14 +53,14 @@
 
               {{ range first 5 $events }}
 								<li>
-									<a href="{{ .event_attributes.event_url }}" target="_blank"><h5>{{ .event_name }}</h5></a>
+									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
 									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
 								</li>
+							{{ end }}
+
 							{{ else }}
 
 							<p>There are no upcoming events at the moment.</p>
-
-							{{ end }}
 
 							{{ end }}
 							
