@@ -1,5 +1,23 @@
 #home {
-  
+
+
+	#chefconf-banner {
+	  margin-top: 1rem;
+	  margin-left: -32px;
+	  margin-right: -32px;
+	  position: static;
+	  @include media-breakpoint-up(lg) {
+	    bottom: 15px;
+	    position: absolute;
+      margin-right: 0;
+      
+      img {
+        padding-left:5px;
+        padding-right:5px;
+      }
+	  }
+	} 
+ 
   .card {
     .events-list {
       li {
