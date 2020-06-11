@@ -10,7 +10,7 @@ cards:
     icon: /img/icons/learn.svg
     title: Learn
     body: |-
-      ##### Learn Chef Rally
+      ##### Learn Chef
       Get from zero to DevOps hero with our self-learning platform.
 
       [Get started &raquo;](https://learn.chef.io)
