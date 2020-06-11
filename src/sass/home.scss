@@ -1,8 +1,5 @@
 #home {
-  
-	#card-connect {
-	  padding-bottom: 0 !important;
-	}
+
 
 	#chefconf-banner {
 	  margin-top: 1rem;
@@ -10,9 +7,14 @@
 	  margin-right: -32px;
 	  position: static;
 	  @include media-breakpoint-up(lg) {
-	    bottom: 0;
+	    bottom: 15px;
 	    position: absolute;
-	    margin-right: 0;
+      margin-right: 0;
+      
+      img {
+        padding-left:5px;
+        padding-right:5px;
+      }
 	  }
 	} 
  
