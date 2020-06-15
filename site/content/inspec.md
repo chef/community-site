@@ -139,25 +139,15 @@ tutorials:
   columnOne: 
     header: Self-learning tutorials
     one: 
-      title: Try Chef InSpec
-      link: "https://learn.chef.io/modules/try-inspec/#/"
+      title: Test Expectations with Chef InSpec
+      link: "https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about"
       copy: >-
-        In this tutorial, see how Chef InSpec can help you quickly identify potential compliance and security issues on your infrastructure.
+        Learn how easy it is to automate the testing of your systems with the Chef InSpec Language
     two: 
-      title: Explore Chef InSpec Resources
-      link: "https://learn.chef.io/modules/explore-inspec-resources/#/"
+      title: "Chef Compliance: First Steps with Auditing and Remediation"
+      link: "https://learn.chef.io/courses/course-v1:chef+SECCOM101+Perpetual/about"
       copy: >-
-        Build an Chef InSpec profile that verifies whether an NGINX installation meets your requirements.
-    three: 
-      title: Create an InSpec profile from compliance documentation 
-      link: "https://learn.chef.io/modules/create-profile-from-doc#/"
-      copy: >-
-        See how to create a compliance profile from documentation, using the Center for Internet Security (CIS) benchmarks as an example.
-    four:
-      title: Automating compliance for finance 
-      link: "https://learn.chef.io/modules/hp-compliance/#/" 
-      copy: >-
-        Learn how Hewlett Packard Enterprise (HPE) uses Chef InSpec to ensure compliance and security.
+        Get started with Chef Compliance, a premium offering that simplifies the auditing and remediation process into a unified workflow.    
   columnTwo:
     header: Community tutorials
     one: 

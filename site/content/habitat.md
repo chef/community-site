@@ -67,29 +67,16 @@ usage:
       * Templatize your configuration settings and update them as needed during runtime.
 tutorials:
   header: Get Started with Chef Habitat
-  columnOne: 
-    one: 
-      title: Try Habitat
-      link: "https://learn.chef.io/modules/try-habitat#/"
-      copy: >-
-        Explore the ease of packaging, deploying, and running your applications with Habitat. 
-    two: 
-      title:  Build a web application with Habitat 
-      link: "https://learn.chef.io/modules/hab-build-web-app#/"
-      copy: >-
-        Use scaffolding to quickly build a Ruby web application that creates animated GIFs. 
-      subtext: 
-  columnTwo:
-    one: 
-      title:  Build a legacy application with Habitat
-      link: "https://learn.chef.io/modules/hab-build-a-legacy-app#/"
-      copy: >-
-        Learn the core build phases, plan settings, and lifecycle hooks necessary to package a legacy application.     
-    two: 
-      title:  Reconfigure Habitat services through repackaging and live updates 
-      link: "https://learn.chef.io/modules/hab-custom-config#/"
-      copy: >-
-        Extract and customize the scaffolding's default configuration; then repackage the application. 
+  one: 
+    title: Habitat Tutorial on Learn Chef
+    link: "https://learn.chef.io/"
+    copy: >-
+      Lorem Ipsum
+  two: 
+    title:  Browse the Chef Habitat Documentation
+    link: "https://www.habitat.sh/docs/"
+    copy: >-
+      Lorem Ipsum
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-

@@ -5,65 +5,36 @@
     </div>
     <div class="col-12 col-md-6">
       <a
-        href="{{ .Params.tutorials.columnOne.one.link }}"
+        href="{{ .Params.tutorials.one.link }}"
         class="card-tutorial row align-items-center"
       >
         <div class="col-2 text-center">
           <p class="number">1</p>
         </div>
         <div class="col-10">
-          <h5>{{ .Params.tutorials.columnOne.one.title }}</h5>
+          <h5>{{ .Params.tutorials.one.title }}</h5>
         </div>
         <div class="col-12">
-          <p>{{ .Params.tutorials.columnOne.one.copy | markdownify }}</p>
+          <p>{{ .Params.tutorials.one.copy | markdownify }}</p>
         </div>
       </a>
+    </div>
+    <div class="col-12 col-md-6">
       <a
-        href="{{ .Params.tutorials.columnOne.two.link }}"
+        href="{{ .Params.tutorials.two.link }}"
         class="card-tutorial row align-items-center"
       >
         <div class="col-2 text-center">
           <p class="number">2</p>
         </div>
         <div class="col-10">
-          <h5>{{ .Params.tutorials.columnOne.two.title }}</h5>
+          <h5>{{ .Params.tutorials.two.title }}</h5>
         </div>
         <div class="col-12">
-          <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
+          <p>{{ .Params.tutorials.two.copy | markdownify }}</p>
         </div>
       </a>
     
-    </div>
-    <div class="col-12 col-md-6">
-      <a
-        href="{{ .Params.tutorials.columnTwo.one.link }}"
-        class="card-tutorial row align-items-center"
-      >
-        <div class="col-2 text-center">
-          <p class="number">3</p>
-        </div>
-        <div class="col-10">
-          <h5>{{ .Params.tutorials.columnTwo.one.title }}</h5>
-        </div>
-        <div class="col-12">
-          <p>{{ .Params.tutorials.columnTwo.one.copy | markdownify }}</p>
-        </div>
-      </a>
-      <a
-        href="{{ .Params.tutorials.columnTwo.two.link }}"
-        class="card-tutorial row align-items-center"
-      >
-        <div class="col-2 text-center">
-          <p class="number">4</p>
-        </div>
-        <div class="col-10">
-          <h5>{{ .Params.tutorials.columnTwo.two.title }}</h5>
-        </div>
-        <div class="col-12">
-          <p>{{ .Params.tutorials.columnTwo.two.copy | markdownify }}</p>
-        </div>
-      </a>
-      
     </div>
   </div>
 </div>
