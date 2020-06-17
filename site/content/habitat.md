@@ -68,15 +68,25 @@ usage:
 tutorials:
   header: Get Started with Chef Habitat
   one: 
-    title: Habitat Tutorial on Learn Chef
-    link: "https://learn.chef.io/"
+    title: Package a sample application
+    link: "https://www.habitat.sh/demo/packaging-system/steps/1/"
     copy: >-
-      Lorem Ipsum
+      Package a Node.js application as a Chef Habitat artifact that can run on any platform, then export and run it locally in a Docker container.
   two: 
-    title:  Browse the Chef Habitat Documentation
-    link: "https://www.habitat.sh/docs/"
+    title: Set up automated deployments
+    link: "https://www.habitat.sh/demo/build-system/steps/1/"
     copy: >-
-      Lorem Ipsum
+      Use Chef Habitat Builder to set up automated builds for a Node.js application, then publish the build artifacts as container images on Docker Hub.  
+  three: 
+    title: Auto-update a running application
+    link: "https://www.habitat.sh/demo/process-supervisor/steps/1/"
+    copy: >-
+      See how the Supervsior can auto-update a running Node.js application to a new version by simply building and promoting a new package.
+  four: 
+    title: Habitize a Windows application
+    link: "https://www.habitat.sh/demo/windows/steps/1/"
+    copy: >-
+      Package an ASP.NET application and bind to a SQL Server database.
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
@@ -95,9 +105,6 @@ contact:
   ctaOne: 
     link: https://www.chef.io/products/chef-habitat/
     copy: Learn more
-  ctaTwo:
-    link: https://www.chef.io/pricing/
-    copy: View pricing
 ---
 <p class="lead">Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 

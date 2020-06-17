@@ -178,9 +178,6 @@ contact:
   ctaOne: 
     link: https://www.chef.io/products/chef-inspec/
     copy: Learn more
-  ctaTwo:
-    link: https://www.chef.io/pricing/
-    copy: View pricing
 ---
 <p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
 <div class="center-mobile">

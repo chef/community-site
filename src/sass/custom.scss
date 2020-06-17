@@ -101,6 +101,39 @@ img {
   }
 }
 
+.social {
+
+  a {
+    color: $dark-gray;
+  }
+  
+  .fa-facebook:hover,
+  .fa-facebook:active,
+  .fa-facebook:focus {
+    color: #4267b2;
+  }
+  .fa-github:hover,
+  .fa-github:active, 
+  .fa-github:focus {
+    color: darken(white, 50%);
+  }
+  .fa-twitter:hover,
+  .fa-twitter:active,
+  .fa-twitter:focus {
+    color: #1da1f2;
+  }
+  .fa-linkedin:hover,
+  .fa-linkedin:active,
+  .fa-linkedin:focus {
+    color: #0e76a8;
+  }
+  .fa-youtube:hover,
+  .fa-youtube:active,
+  .fa-youtube:focus {
+    color: #c4302b;
+  }
+}
+
 // ===================
 // Navigation Styling
 // ===================
@@ -367,10 +400,6 @@ img {
       .col {
         display: inline;
       }
-    }
-
-    .fa-github:hover {
-      color: darken(white, 50%);
     }
   }
 
@@ -822,20 +851,6 @@ input {
     h5 {
       margin-bottom: .5rem;
     }
-  }
-}
-
-// Social media sharing icons
-.social {
-  a:hover {
-    text-decoration: none;
-  }
-
-  .fa {
-    &-facebook:hover {
-      color: #4267b2;
-    }
-
   }
 }
 
