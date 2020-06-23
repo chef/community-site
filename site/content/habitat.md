@@ -110,6 +110,8 @@ contact:
 
 <div class="center-mobile">
 <a class="btn btn-primary" href="#habitat-tutorials">Get started</a>
-<a class="btn btn-secondary" href="https://downloads.chef.io/" target="_blank">Download Habitat</a>
+<a class="btn btn-secondary" href="https://bldr.habitat.sh/#/pkgs/core" target="_blank">Habitat Builder</a>
 </div>
-<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank">Release notes</a>
+<iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank">Release notes</a><br/>

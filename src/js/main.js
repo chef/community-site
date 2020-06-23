@@ -103,7 +103,7 @@
 			$(".infra-stroke").css("stroke", "#3c3c3c");					
 			$("#habitat-connector").css("opacity", 1);
 			$("#habitat-bubble").css("transform", "translate(275px)") 
-		} else if (e.currentTarget.hash === "#one") {
+		} else if (e.currentTarget.hash === "#habitat-usage-one") {
 			$(".studio").css("stroke", "#ffa300");
 			$(".artifact").css("stroke", "#666666");
 			$(".supervisor").css("stroke", "#666666");
@@ -112,7 +112,7 @@
 			$("#studio-line").css("stroke-width", "2");
 			$("#deliver").css("opacity", "0");
 			$("#package").css("opacity", "0");
-		} else if (e.currentTarget.hash === "#two") {
+		} else if (e.currentTarget.hash === "#habitat-usage-two") {
 			$(".studio").css("stroke", "#666666");
 			$(".artifact").css("stroke", "#ffa300");
 			$(".supervisor").css("stroke", "#666666");
@@ -121,7 +121,7 @@
 			$("#artifact-line").css("stroke-width", "2");
 			$("#deliver").css("opacity", "0");
 			$("#package").css("opacity", "1");
-		} else if (e.currentTarget.hash === "#three") {
+		} else if (e.currentTarget.hash === "#habitat-usage-three") {
 			$(".studio").css("stroke", "#666666");
 			$(".artifact").css("stroke", "#666666");
 			$(".supervisor").css("stroke", "#ffa300");

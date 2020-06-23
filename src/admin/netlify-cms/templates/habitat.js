@@ -51,19 +51,19 @@ export default class Habitat extends React.Component {
 								</div></h2>
 								<ul className="nav nav-tabs" id="habitat-usage-tabs" role="tablist">
 									<li className="nav-item">
-										<a id="first-nav" className="nav-link active" href="#one" data-toggle="tab">
+										<a id="first-nav" className="nav-link active" href="#habitat-usage-one" data-toggle="tab">
 											{usage.one.header}
 											<span className="fa fa-angle-right" aria-hidden="true"> </span>
 										</a>
 									</li>
 									<li className="nav-item">
-										<a id="second-nav" className="nav-link" href="#two" data-toggle="tab"
+										<a id="second-nav" className="nav-link" href="#habitat-usage-two" data-toggle="tab"
 											>{usage.two.header}
 											<span className="fa fa-angle-right" aria-hidden="true"> </span>
 										</a>
 									</li>
 									<li className="nav-item">
-										<a id="third-nav" className="nav-link" href="#three" data-toggle="tab"
+										<a id="third-nav" className="nav-link" href="#habitat-usage-three" data-toggle="tab"
 											>{usage.three.header}
 											<span className="fa fa-angle-right" aria-hidden="true"> </span>
 										</a>
@@ -71,21 +71,21 @@ export default class Habitat extends React.Component {
 								</ul>
 							</div>
 							<div className="tab-content">
-								<div className="tab-pane fade active show" id="one">
+								<div className="tab-pane fade active show" id="habitat-usage-one">
 									<div className="row">
 										<div className="col-12">
 											<Markdown source={usage.one.copy} escapeHtml={false}/>
 										</div>
 									</div>
 								</div>
-								<div className="tab-pane fade" id="two">
+								<div className="tab-pane fade" id="habitat-usage-two">
 									<div className="row">
 										<div className="col-12">
 										<Markdown source={usage.two.copy} escapeHtml={false}/>
 										</div>
 									</div>
 								</div>
-								<div className="tab-pane fade" id="three">
+								<div className="tab-pane fade" id="habitat-usage-three">
 									<div className="row">
 										<div className="col-12">
 										<Markdown source={usage.three.copy} escapeHtml={false}/>
