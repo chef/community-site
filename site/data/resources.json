@@ -2,31 +2,31 @@
   {
     "title": "Windows Basics for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-on-windows-basics/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Windows Examples for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-on-windows-examples/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Windows Troubleshooting Tips for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Best Practices for Packaging Windows COTS Applications for Automated Deployment with Chef Habitat",
     "url": "https://pages.chef.io/202006-HabitatGuide-COTSAppsforWindows_01LandingPage.html",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
     "cta": "Download guide"
   },
   {
     "title": "Windows Server 2008/R2 Application Migration Program",
     "url": "https://pages.chef.io/rs/255-VFB-268/images/WindowsServerAppMigration_ebook.pdf",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/windows-server.png",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
     "cta": "Get eBook"
   },
   {
@@ -38,37 +38,37 @@
   {
     "title": "Packaging a .Net Windows Service Application",
     "url": "https://blog.chef.io/packaging-a-net-windows-service-application/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Application Packaging Windows vs. Linux with Chef Habitat",
     "url": "https://blog.chef.io/habitat-on-windows/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Running a Full Framework ASP.NET IIS application in Habitat",
     "url": "https://blog.chef.io/running-a-full-framework-asp-net-iis-application-in-habitat/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
     "cta": "Read more"
   },
   {
     "title": "Terraform, Habitat, and Azure DevOps",
     "url": "https://www.youtube.com/watch?v=N7Q9cMl-DuY&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/application-delivery.png",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
     "cta": "Watch now"
   },
   {
     "title": "Migrating Windows IIS Applications",
     "url": "https://www.youtube.com/watch?v=kXrVs2uFeeI&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/migrating-windows-iis.png",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
     "cta": "Watch now"
   },
   {
     "title": "ChefConf 2019: Lessons from the Field: Chef Habitat at Enterprise Scale",
     "url": "https://www.youtube.com/watch?v=xAlvD7ZcmPE&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/habitat-enterprise.png",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
     "cta": "Watch now"
   },
   {
