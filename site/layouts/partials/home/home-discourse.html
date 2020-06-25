@@ -54,13 +54,14 @@
 								{{ range $user := first 5 .posters }}
 									{{ range where $users "id" .user_id }}
 										{{ $avatar := "" }}
+										{{ $username := .username }}
 										{{ if in .avatar_template "user_avatar" }}
 											{{ $avatar = printf "%s%s" "https://sjc3.discourse-cdn.com/business6" .avatar_template }}
 										{{ else }}
 											{{ $avatar = .avatar_template }}
 										{{ end }}
 										{{ $avatar_url := replace $avatar "{size}" "25" }}
-										<img src="{{ $avatar_url }}" class="img-round" />
+										<img src="{{ $avatar_url }}" class="img-round" alt="{{ $username }}" />
 									{{ end }}
 								{{ end }}
 							</td>

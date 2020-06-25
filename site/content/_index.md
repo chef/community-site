@@ -126,6 +126,7 @@ resources:
       [Go to Sous Chefs &raquo;](https://sous-chefs.org)
     img: /img/thumb-sous-chef.png
     link: "https://sous-chefs.org"
+    alt: Sous Chefs
   two:
     body: >-
       #### [Find What You Need in the Supermarket](https://supermarket.chef.io)
@@ -140,6 +141,7 @@ resources:
       [Visit Supermarket &raquo;](https://supermarket.chef.io)
     img: /img/thumb-chef-supermarket.png
     link: "https://supermarket.chef.io"
+    alt: Chef Supermarket
   three:
     body: >-
       #### [Dev-Sec Sets a Security Baseline](https://dev-sec.io)
@@ -153,6 +155,8 @@ resources:
       [Go to dev-sec.io &raquo;](https://dev-sec.io)
     img: /img/thumb-devops-sec.png
     link: "https://dev-sec.io"
+    alt: >-
+      Devops and Security: Server Hardening
 ---
 
 ## Chef Community

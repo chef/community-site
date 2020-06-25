@@ -344,6 +344,10 @@
       a {
         color: inherit;
         font-weight: 500;
+
+        &:hover {
+          color: $chef-primary;
+        }
       }
     }
     .category {
