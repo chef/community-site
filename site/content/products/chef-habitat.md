@@ -109,7 +109,7 @@ contact:
 <p class="lead">Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
 <div class="center-mobile">
-<a class="btn btn-primary" href="#habitat-tutorials">Get started</a>
+<a class="btn btn-primary" href="#learn">Get started</a>
 <a class="btn btn-secondary" href="https://bldr.habitat.sh/#/pkgs/core" target="_blank">Habitat Builder</a>
 </div>
 <iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
