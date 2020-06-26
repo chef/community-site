@@ -1,5 +1,5 @@
 ---
-type: resources
+type: windows-resources
 title: Windows Application Delivery Automation Resources
 rowOne: 
   header: Basic Concepts
