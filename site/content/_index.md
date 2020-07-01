@@ -16,10 +16,10 @@ cards:
       [Get started &raquo;](https://learn.chef.io)
 
       ##### Docs
-      - Chef Infra: [Docs](https://docs.chef.io/)
-      - Chef InSpec: [Docs](https://www.inspec.io/docs/)
-      - Chef Habitat: [Docs](https://www.habitat.sh/docs/)
-      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/)
+      - [Chef Infra](https://docs.chef.io/)
+      - [Chef InSpec](https://www.inspec.io/docs/)
+      - [Chef Habitat](https://www.habitat.sh/docs/)
+      - [Chef Automate](https://automate.chef.io/docs/quickstart/)
   two:
     icon: /img/icons/meet.svg
     title: Meet
