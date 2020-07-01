@@ -15,11 +15,11 @@ cards:
 
       [Get started &raquo;](https://learn.chef.io)
 
-      ##### Docs &amp; Quickstarts
-      - Chef Infra: [Docs](https://docs.chef.io/) | [Quickstart](https://learn.chef.io/modules/try-chef-infra)
-      - Chef InSpec: [Docs](https://www.inspec.io/docs/) | [Quickstart](https://learn.chef.io/modules/try-inspec)
-      - Chef Habitat: [Docs](https://www.habitat.sh/docs/) | [Quickstart](https://learn.chef.io/modules/try-habitat)
-      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/) | [Quickstart](https://learn.chef.io/modules/try-chef-automate)  
+      ##### Docs
+      - Chef Infra: [Docs](https://docs.chef.io/)
+      - Chef InSpec: [Docs](https://www.inspec.io/docs/)
+      - Chef Habitat: [Docs](https://www.habitat.sh/docs/)
+      - Chef Automate: [Docs](https://automate.chef.io/docs/quickstart/)
   two:
     icon: /img/icons/meet.svg
     title: Meet
