@@ -100,8 +100,7 @@ builder:
 resources:
   header: From the Chef Habitat Blog
 contact:
-  header: Wondering how Chef Habitat might work for your team?
-  copy: Chef Software provides enterprise-grade management and support so you can accelerate your business’s move to the cloud and adoption of container technology.
+  header: Accelerate your business’s move to the cloud and adoption of container technology.
   ctaOne: 
     link: https://www.chef.io/products/chef-habitat/
     copy: Learn more
