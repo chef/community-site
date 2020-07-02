@@ -770,7 +770,7 @@ input {
       flex: 1;
       display: flex;
       flex-flow: column nowrap;
-      border-top: 3px solid $chef-primary;
+      // border-top: 3px solid $chef-primary;
       @include media-breakpoint-up(lg) {
         padding: 2rem;
       }
