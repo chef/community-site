@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Chef Community: Learn, Meet, Connect."
+title = "Chef Community"
 assetDir = "../src"
 disableKinds = "taxonomyTerm"
 
