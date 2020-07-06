@@ -1,13 +1,13 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Chef Developers: Learn, Meet, Connect."
+title = "Chef Community: Learn, Meet, Connect."
 assetDir = "../src"
 disableKinds = "taxonomyTerm"
 
 [params]
   author = "Chef Software"
   title = "Chef Community"
-  description = "Community is the foundation of Chef."
+  description = "Community is the foundation of Chef. We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it. Join us, whether online or in person, and let’s build the future of technology together."
   facebook = "https://www.facebook.com/getchefdotcom"
   twitter = "https://twitter.com/chef"
   linkedin = "https://www.linkedin.com/company/chef-software"
@@ -16,12 +16,6 @@ disableKinds = "taxonomyTerm"
   meta_image_sq = "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-sq.png"
   meta_image_rect = "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-rect.png"
 
-# Sets cache of JSON files to 1h
-[caches]
-[caches.getjson]
-dir = ":cacheDir/:project"
-maxAge = "1h"
-
 [[redirects]]
 from = "/products/chef-habitat"
 to = "https://www.habitat.sh/"
@@ -29,7 +23,19 @@ status = 301
 force = true
 
 [[redirects]]
+from = "/products/chef-habitat/"
+to = "https://www.habitat.sh/"
+status = 301
+force = true
+
+[[redirects]]
 from = "/products/chef-inspec"
+to = "https://www.inspec.io/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/products/chef-inspec/"
 to = "https://www.inspec.io/"
 status = 301
 force = true
