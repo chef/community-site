@@ -21,3 +21,15 @@ disableKinds = "taxonomyTerm"
 [caches.getjson]
 dir = ":cacheDir/:project"
 maxAge = "1h"
+
+[[redirects]]
+from = "/products/chef-habitat/"
+to = "https://www.habitat.sh/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/products/chef-inspec/"
+to = "https://www.inspec.io/"
+status = 301
+force = true
