@@ -8,6 +8,8 @@ Clone this repository, and run `yarn` or `npm install` from the new folder to in
 
 Then start the development server with `yarn start` or `npm start`.
 
+GitHub Workflows are defined in the file `main.yml`. Currently scheduled to deploy daily.
+
 ## Layouts
 
 The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
