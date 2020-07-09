@@ -68,25 +68,15 @@ usage:
 tutorials:
   header: Get Started with Chef Habitat
   one: 
-    title: Package a sample application
-    link: "https://www.habitat.sh/demo/packaging-system/steps/1/"
+    title: Deliver Applications with Chef Habitat
+    link: "https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about"
     copy: >-
-      Package a Node.js application as a Chef Habitat artifact that can run on any platform, then export and run it locally in a Docker container.
+      Learn to automate application management with Chef Habitat by bundling build and runtime instructions alongside your application source code.
   two: 
-    title: Set up automated deployments
-    link: "https://www.habitat.sh/demo/build-system/steps/1/"
+    title: Explore the Docs
+    link: "https://www.habitat.sh/docs/"
     copy: >-
-      Use Chef Habitat Builder to set up automated builds for a Node.js application, then publish the build artifacts as container images on Docker Hub.  
-  three: 
-    title: Auto-update a running application
-    link: "https://www.habitat.sh/demo/process-supervisor/steps/1/"
-    copy: >-
-      See how the Supervsior can auto-update a running Node.js application to a new version by simply building and promoting a new package.
-  four: 
-    title: Habitize a Windows application
-    link: "https://www.habitat.sh/demo/windows/steps/1/"
-    copy: >-
-      Package an ASP.NET application and bind to a SQL Server database.
+      Chef Habitat centers application configuration, management, and behavior around the application itself, not the infrastructure that the app runs on.
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-

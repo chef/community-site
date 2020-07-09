@@ -7,6 +7,7 @@
       <a
         href="{{ .Params.tutorials.one.link }}"
         class="card-tutorial row align-items-center"
+        target="_blank" rel="noopener noreferrer"
       >
         <div class="col-2 text-center">
           <p class="number">1</p>
@@ -23,6 +24,7 @@
       <a
         href="{{ .Params.tutorials.two.link }}"
         class="card-tutorial row align-items-center"
+        target="_blank" rel="noopener noreferrer"
       >
         <div class="col-2 text-center">
           <p class="number">2</p>
@@ -35,37 +37,6 @@
         </div>
       </a>
     </div>
-    <div class="col-12 col-md-6">
-      <a
-        href="{{ .Params.tutorials.three.link }}"
-        class="card-tutorial row align-items-center"
-      >
-        <div class="col-2 text-center">
-          <p class="number">3</p>
-        </div>
-        <div class="col-10">
-          <h5>{{ .Params.tutorials.three.title }}</h5>
-        </div>
-        <div class="col-12">
-          <p>{{ .Params.tutorials.three.copy | markdownify }}</p>
-        </div>
-      </a>
+  
     </div>
-    <div class="col-12 col-md-6">
-      <a
-        href="{{ .Params.tutorials.four.link }}"
-        class="card-tutorial row align-items-center"
-      >
-        <div class="col-2 text-center">
-          <p class="number">4</p>
-        </div>
-        <div class="col-10">
-          <h5>{{ .Params.tutorials.four.title }}</h5>
-        </div>
-        <div class="col-12">
-          <p>{{ .Params.tutorials.four.copy | markdownify }}</p>
-        </div>
-      </a>
-    </div>
-  </div>
 </div>
