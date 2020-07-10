@@ -1,6 +1,6 @@
 ---
 title: Compliance as Code
-type: inspec
+type: chef-inspec
 hero: 
   logo: /img/logos/chef-inspec-dark.svg
 getStarted: 

@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-	repo: chef/community-site
-	identity_url: "https://community.chef.io/.netlify/identity"
+  repo: chef/community-site
+  identity_url: "https://community.chef.io/.netlify/identity"
 publish_mode: editorial_workflow
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
@@ -10,13 +10,37 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/content/inspec.md"
-        label: "Inspec"
-        name: "inspec"
+      - file: "site/content/products/chef-inspec.md"
+        label: "Chef InSpec"
+        name: "chef-inspec"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero", name: "hero", widget: object, fields: [
               {label: "Logo", name: "logo", widget: "string"}]}
+          - {label: "Get Started", name: "getStarted", widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {  label: "Section 1",
+                name: "one",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 2",
+                name: "two",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]},
+              {  label: "Section 3",
+                name: "three",
+                widget: object,
+                fields: [
+                  {label: "Header", name: "header", widget: "string"},
+                  {label: "Code", name: "code", widget: "text"},
+                  {label: "Copy", name: "copy", widget: "markdown"}]}]}
           - {label: "Cards", name: "cards", widget: object, fields: [
               {label: "Card 1", name: "one", widget: object, fields: [
                 {label: "Icon", name: "icon", widget: "string"},
@@ -58,30 +82,6 @@ collections: # A list of collections the CMS should be able to edit
                   {label: "Header", name: "header", widget: "string"},
                   {label: "Code", name: "code", widget: "text"},
                   {label: "Body", name: "body", widget: "markdown"}]}]}
-          - {label: "Get Started", name: "getStarted", widget: object,
-            fields: [
-              {label: "Header", name: "header", widget: "string"},
-              {  label: "Section 1",
-                name: "one",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Code", name: "code", widget: "text"},
-                  {label: "Body", name: "body", widget: "markdown"}]},
-              {  label: "Section 2",
-                name: "two",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Code", name: "code", widget: "text"},
-                  {label: "Body", name: "body", widget: "markdown"}]},
-              {  label: "Section 3",
-                name: "three",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Code", name: "code", widget: "text"},
-                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Tutorials",
             name: "tutorials",
             widget: object,
@@ -96,14 +96,6 @@ collections: # A list of collections the CMS should be able to edit
                     { label: "Link", name: "link", widget: "string"},
                     { label: "Copy", name: "copy", widget: "markdown"}]},
                   {label: "Two", name: "two", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]},
-                  {label: "Three", name: "three", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]},          
-                  {label: "Four", name: "four", widget: "object", fields: [
                     { label: "Title", name: "title", widget: "string"},
                     { label: "Link", name: "link", widget: "string"},
                     { label: "Copy", name: "copy", widget: "markdown"}]}]},
@@ -142,9 +134,9 @@ collections: # A list of collections the CMS should be able to edit
               {label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
                 {label: "Link", name: "link", widget: "string"},
                 {label: "Copy", name: "copy", widget: "string"}]}]} 
-      - file: "site/content/habitat.md"
-        label: "Habitat"
-        name: "habitat"
+      - file: "site/content/products/chef-habitat.md"
+        label: "Chef Habitat"
+        name: "chef-habitat"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero",
@@ -152,31 +144,11 @@ collections: # A list of collections the CMS should be able to edit
             widget: object,
             fields: [
               {label: "Logo", name: "logo", widget: "string"}]}
-          - {label: "Get Started", name: "getStarted", widget: object,
-            fields: [
-              {label: "Header", name: "header", widget: "string"},
-              {  label: "Section 1",
-                name: "one",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Body", name: "body", widget: "markdown"}]},
-              {  label: "Section 2",
-                name: "two",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Body", name: "body", widget: "markdown"}]},
-              {  label: "Section 3",
-                name: "three",
-                widget: object,
-                fields: [
-                  {label: "Header", name: "header", widget: "string"},
-                  {label: "Body", name: "body", widget: "markdown"}]}]}
           - {label: "Cards",
             name: "cards",
             widget: object,
             fields: [
+              {label: "Header", name: "header", widget: "string"},
               {  label: "Card 1",
                 name: "one",
                 widget: object,
@@ -233,27 +205,20 @@ collections: # A list of collections the CMS should be able to edit
             widget: object,
             fields: [
               {label: "Header", name: "header", widget: "string"},
-              {  label: "Column 1",
-                name: "columnOne",
-                widget: object,
-                fields: [
-                  {label: "One", name: "one", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]},
-                  {label: "Two", name: "two", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]}]},
-              {  label: "Column 2", name: "columnTwo", widget: object, fields: [
-                  {label: "One", name: "one", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]},
-                  {label: "Two", name: "two", widget: "object", fields: [
-                    { label: "Title", name: "title", widget: "string"},
-                    { label: "Link", name: "link", widget: "string"},
-                    { label: "Copy", name: "copy", widget: "markdown"}]}]}]}    
+              {label: "One", name: "one", widget: "object", fields: [
+                { label: "Title", name: "title", widget: "string"},
+                { label: "Link", name: "link", widget: "string"},
+                { label: "Copy", name: "copy", widget: "markdown"}]},
+              {label: "Two", name: "two", widget: "object", fields: [
+                { label: "Title", name: "title", widget: "string"},
+                { label: "Link", name: "link", widget: "string"},
+                { label: "Copy", name: "copy", widget: "markdown"}]}]}
+          - {label: "Builder", 
+            name: "builder",
+            widget: object,
+            fields: [
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Copy", name: "copy", widget: "string"}]}
           - {label: "Resources",
             name: "resources",
             widget: object,
@@ -264,7 +229,6 @@ collections: # A list of collections the CMS should be able to edit
             widget: object,
             fields: [
               {label: "Header", name: "header", widget: "string"},
-              {label: "Copy", name: "copy", widget: "markdown"},
               {label: "CTA 1", name: "ctaOne", widget: "object", fields: [
                 {label: "Link", name: "link", widget: "string"},
                 {label: "Copy", name: "copy", widget: "string"}]},

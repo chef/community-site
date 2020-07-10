@@ -3,30 +3,31 @@ import Markdown from 'react-markdown';
 
 import { inject } from "./../inject-frontend-js";
 import Hero from "./partials/hero";
-import ThreeCards from "./partials/three-cards";
+import FourCards from "./partials/four-cards";
 
-export default class FirstTime extends React.Component {
+export default class ChefInspec extends React.Component {
 	componentDidMount () {
 		inject();
 	}
 	
 	render() {
-		console.log("PROPS:");
-		console.log(this.props);
 		const {entry} = this.props;
 		const hero = entry.getIn(["data", "body"]);
-		const cards = entry.getIn(["data", "cards"]).toJS();
-		
-		return <main id="first-time">
+		// const cards = entry.getIn(["data", "cards"]).toJS();
+
+
+		return <main id="inspec">
+
 			<section className="hero-actions">
 			
 				<Hero content={hero}/>
 				
 				<section className="actions">
-					<ThreeCards cards={cards}/>
+					{/* <FourCards cards={cards}/> */}
 				</section>
 				
 			</section>
+			
 		</main>;
 	}
 }

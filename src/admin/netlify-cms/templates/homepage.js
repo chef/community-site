@@ -12,9 +12,9 @@ export default class Homepage extends React.Component {
 	}
 
 	render() {
+		console.log("Props:");
+		console.log(this.props);
 		const {entry} = this.props;
-		console.log("XXXXXXX__________________");
-		console.log(entry);
 		const hero = entry.getIn(["data", "body"]);
 		const cards = entry.getIn(["data", "cards"]).toJS();
 		const products = entry.getIn(["data", "products"]).toJS();
