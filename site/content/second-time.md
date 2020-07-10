@@ -1,9 +1,9 @@
 ---
-title: First Time
-type: first-time
+title: SECOND TEST
+type: second-time
 cards:
   one:
-    title: Learn about the community
+    title: TESTING
     body: >-
       What makes our community tick, things we're working on, and how
       we treat each other.
@@ -58,7 +58,7 @@ cards:
       [Help needed
       »](/help-wanted)
 ---
-# First time contributing?
+# SECODN TIME
 
 We’re glad you’re interested in contributing to a Chef project! We’re here to do everything we can to make your first contribution experience a great one.
 
