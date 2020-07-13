@@ -15,27 +15,3 @@ disableKinds = "taxonomyTerm"
   youtube = "https://www.youtube.com/user/getchef"
   meta_image_sq = "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-sq.png"
   meta_image_rect = "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/meta-community-rect.png"
-
-[[redirects]]
-from = "/products/chef-habitat"
-to = "https://www.habitat.sh/"
-status = 301
-force = true
-
-[[redirects]]
-from = "/products/chef-habitat/"
-to = "https://www.habitat.sh/"
-status = 301
-force = true
-
-[[redirects]]
-from = "/products/chef-inspec"
-to = "https://www.inspec.io/"
-status = 301
-force = true
-
-[[redirects]]
-from = "/products/chef-inspec/"
-to = "https://www.inspec.io/"
-status = 301
-force = true
