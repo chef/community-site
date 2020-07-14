@@ -5,6 +5,7 @@
 
 [build]
   command = "yarn build"
+  functions = "netlify-lambda"
   publish = "dist"
 
 [context.deploy-preview]
