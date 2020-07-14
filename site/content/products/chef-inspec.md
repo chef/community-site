@@ -181,7 +181,7 @@ contact:
 ---
 <p class="lead">Turn your compliance, security, and other policy requirements into automated tests.</p>
 <div class="center-mobile">
-<a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank">Download InSpec</a>
-<a class="btn btn-secondary" href="https://docs.chef.io/" target="_blank">View Docs</a>
+<a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank" rel="noopener noreferrer">Download InSpec</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/inspec" target="_blank" rel="noopener noreferrer">View Docs</a>
 </div>
 <iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=inspec&repo=inspec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>

@@ -1,11 +1,11 @@
 <div class="col-lg-4 col-sm-12 card-container">
   <div class="card">
-    <a href="{{ .url }}" target="_blank" class="img">
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="img">
       <img src="{{ .image }}">
     </a>
     <div class="text">
       <h4>{{ .title | markdownify }}</h4>
-      <a href="{{ .url }}" target="_blank">{{ .cta }}</a>
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .cta }}</a>
     </div>
   </div>
 </div>

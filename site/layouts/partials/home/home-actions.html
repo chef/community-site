@@ -23,7 +23,7 @@
 						<ul>
               {{ range first 5 $events }}
 								<li>
-									<p><a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a></br/>
+									<p><a href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a></br/>
 									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} 
 								</li>
 							{{ end }}
@@ -34,7 +34,7 @@
 				</div>
 
 				<div id="chefconf-banner">
-					<a href="https://chefconf.io/" target="_blank">
+					<a href="https://chefconf.io/" target="_blank" rel="noopener noreferrer">
 						<img src="/img/chefconf-online-long-term.png" alt="ChefConf Online" width="100%" />
 					</a>
 				</div>
@@ -59,7 +59,7 @@
 
               {{ range first 5 $events }}
 								<li>
-									<a href="{{ .event_attributes.event_url }}" target="_blank">{{ .event_name }}</a>
+									<a href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a>
 									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
 								</li>
 							{{ end }}

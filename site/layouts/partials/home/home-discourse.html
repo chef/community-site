@@ -46,9 +46,9 @@
 						<tr>
 							<td>
 								<h5>
-									<a href="https://discourse.chef.io/t/{{ .slug }}/{{ .id }}" target="_blank">{{ .title }}</a>
+									<a href="https://discourse.chef.io/t/{{ .slug }}/{{ .id }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
 								</h5>
-								<a href="https://discourse.chef.io/c/{{ $cat.slug }}" target="_blank" class="category"><span {{ $catstyle | safeHTMLAttr}}></span>{{ $cat.name }}</a>
+								<a href="https://discourse.chef.io/c/{{ $cat.slug }}" target="_blank" rel="noopener noreferrer" class="category"><span {{ $catstyle | safeHTMLAttr}}></span>{{ $cat.name }}</a>
 							</td>
 							<td>
 								{{ range $user := first 5 .posters }}

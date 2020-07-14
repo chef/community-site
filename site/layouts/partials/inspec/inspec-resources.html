@@ -8,19 +8,19 @@
     {{ range first 3 $events }}
     <div class="col-lg-4 col-sm-12 card-container">
       <div class="card">
-        <a href="{{ .link }}" target="_blank" class="img">
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="img">
           <img src="{{ .jetpack_featured_media_url }}" />
         </a>
         <div class="text">
           <h4>{{ .title.rendered | markdownify }}</h4>
-          <a href="{{ .link }}" target="_blank">Read more</a>
+          <a href="{{ .link }}" target="_blank" rel="noopener noreferrer">Read more</a>
         </div>
       </div>
     </div>
     {{ end }}
 
     <div class="col-12 text-center mt-4">
-      <a class="btn btn-primary" href="https://blog.chef.io/category/inspec/" target="_blank">View all posts</a>
+      <a class="btn btn-primary" href="https://blog.chef.io/category/inspec/" target="_blank" rel="noopener noreferrer">View all posts</a>
     </div>
   </div>
 </div>
