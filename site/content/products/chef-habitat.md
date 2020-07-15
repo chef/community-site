@@ -101,6 +101,8 @@ contact:
 <a class="btn btn-primary" href="https://www.habitat.sh/docs/" target="_blank" rel="noopener noreferrer">Get started</a>
 <a class="btn btn-secondary" href="https://bldr.habitat.sh/#/pkgs/core" target="_blank" rel="noopener noreferrer">Habitat Builder</a>
 </div>
-<iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-
-<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank" rel="noopener noreferrer">Release notes</a><br/>
+<div class="center-mobile">
+<iframe id="github-star" class="center-mobile" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+</div>
+<p class="center-mobile">
+<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank" rel="noopener noreferrer">Release notes</a></p>

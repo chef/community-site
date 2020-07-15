@@ -49,7 +49,7 @@ cards:
     icon: /img/icons/inspec-3.png
     title: Free To Run Anywhere
     body: >-
-      Chef InSpec is an open-source language that can easily express compliance as code, with the freedom to run anywhere.
+      Chef InSpec can easily express compliance as code, with the freedom to run anywhere.
   four:
     icon: /img/icons/inspec-4.png
     title: Extensible Language
@@ -181,7 +181,8 @@ contact:
 ---
 <p>Turn your compliance, security, and other policy requirements into automated tests.</p>
 <div class="center-mobile">
-<a class="btn btn-primary" href="https://downloads.chef.io/" target="_blank" rel="noopener noreferrer">Download InSpec</a>
+<a class="btn btn-primary" href="https://downloads.chef.io/products/inspec" target="_blank" rel="noopener noreferrer">Download InSpec</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/inspec" target="_blank" rel="noopener noreferrer">View Docs</a>
-</div>
+
 <iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=inspec&repo=inspec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+</div>
