@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 dist/
 site/data/webpack.json
 /npm-debug.log
@@ -6,3 +6,6 @@ yarn-error.log
 .DS_Store
 package-lock.json
 site/resources/_gen
+.netlify/functions
+functions
+.env
