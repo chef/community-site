@@ -85,7 +85,7 @@ export default class Homepage extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className="bg-wave"><div><img src="/img/bg-wave.png" /></div></div>
+					<div className="bg-wave"><div><img draggable="false" src="/img/bg-wave.png" alt=""/></div></div>
 				</section>
 				
 			</section>

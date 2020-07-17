@@ -184,5 +184,5 @@ contact:
 <a class="btn btn-primary" href="https://downloads.chef.io/products/inspec" target="_blank" rel="noopener noreferrer">Download InSpec</a>
 <a class="btn btn-secondary" href="https://docs.chef.io/inspec" target="_blank" rel="noopener noreferrer">View Docs</a>
 
-<iframe id="github-star" src="https://ghbtns.com/github-btn.html?user=inspec&repo=inspec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<iframe title="Github" id="github-star" src="https://ghbtns.com/github-btn.html?user=inspec&repo=inspec&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>
