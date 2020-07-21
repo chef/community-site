@@ -6,7 +6,7 @@
 		<div class="col-lg-4 col-sm-12 card-container">
 				<div class="card">
 					<a href="{{ .Params.resources.one.link }}" class="img">
-						<img src="{{ .Params.resources.one.img }}">
+						<img src="{{ .Params.resources.one.img }}" alt="{{ .Params.resources.one.alt }}" />
 					</a>
 					<div class="text">
 						{{ partial "markdownify" .Params.resources.one.body }} 
@@ -17,7 +17,7 @@
 		<div class="col-lg-4 col-sm-12 card-container">
 			<div class="card">
 				<a href="{{ .Params.resources.two.link }}" class="img">
-					<img src="{{ .Params.resources.two.img }}">
+					<img src="{{ .Params.resources.two.img }}" alt="{{ .Params.resources.two.alt }}" />
 				</a>
 				<div class="text">
 					{{ partial "markdownify" .Params.resources.two.body }} 
@@ -27,7 +27,7 @@
 		<div class="col-lg-4 col-sm-12 card-container">
 			<div class="card">
 				<a href="{{ .Params.resources.three.link }}" class="img">
-					<img src="{{ .Params.resources.three.img }}">
+					<img src="{{ .Params.resources.three.img }}" alt="{{ .Params.resources.three.alt }}" />
 				</a>
 				<div class="text">
 					{{ partial "markdownify" .Params.resources.three.body }} 

@@ -1,8 +1,9 @@
-node_modules/
+node_modules
 dist/
 site/data/webpack.json
 /npm-debug.log
 yarn-error.log
 .DS_Store
 package-lock.json
-site/resources/_gen
+site/resources/
+/site/resources/

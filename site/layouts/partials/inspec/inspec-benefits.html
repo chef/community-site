@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row benefits-main">
+    <div class="col-sm-12">
+      <div class="headers">
+        <h2><div class="img-left">
+          <img
+            src="{{ .Params.benefits.headerImage }}"
+            alt="Chef Inspec"
+            class="chef-wordmark"
+          />
+           <span>{{ .Params.benefits.headerTwo }}</span>
+        </div>
+        </h2>
+        <ul class="nav nav-tabs" id="benefits-tabs" role="tablist" aria-label="InSpec Benefits Tabs">
+          <li class="nav-item" role="tab">
+            <a id="first-nav" class="nav-link active" href="#inspec-benefits-one" data-toggle="tab">
+              {{ .Params.benefits.one.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li> 
+          <li class="nav-item" role="tab">
+            <a id="second-nav" class="nav-link" href="#inspec-benefits-two" data-toggle="tab"
+              >{{ .Params.benefits.two.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item" role="tab">
+            <a id="third-nav" class="nav-link" href="#inspec-benefits-three" data-toggle="tab"
+              >{{ .Params.benefits.three.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane fade active show" id="inspec-benefits-one" role="tabpanel" aria-labelledby="first-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <pre class="light"><code class="language-bash">
+                {{ .Params.benefits.one.code }}
+              </code></pre>
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.one.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="inspec-benefits-two" role="tabpanel"  aria-labelledby="second-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <pre class="light"><code class="language-bash">
+                {{ .Params.benefits.two.code }}
+              </code></pre>
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.two.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="inspec-benefits-three" role="tabpanel"  aria-labelledby="third-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <pre class="light"><code class="language-bash">
+                {{ .Params.benefits.three.code }}
+              </code></pre>
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.benefits.three.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,19 @@
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js"></script>
 
+<!-- Swifttype search -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','TUh2XBpzvdHmmszugtxt','2.0.0');
+</script>
+
 {{ $moveit := resources.Get "js/moveit.js" }}
+{{ $prism := resources.Get "js/prism.js" }}
 {{ $main := resources.Get "js/main.js" }}
-{{ $js := slice $moveit $main | resources.Concat "js/all.js" }}
+{{ $js := slice $moveit $main $prism | resources.Concat "js/all.js" }}
 <script type="text/javascript" src="{{ $js.Permalink }}"></script>
+

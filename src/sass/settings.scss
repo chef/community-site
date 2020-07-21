@@ -1,9 +1,9 @@
 $chef-primary: #FFA300;
-$chef-secondary: #DA1884;
+$chef-secondary: #DA1884; 
 $chef-tertiary: #008080; 
-$dark-gray: #292728;
+$dark-gray: #292728; 
 $mid-gray: #666666;
-$light-gray: #F1F2F2;
+$light-gray: #F1F2F2; 
 $docs-gray: #eeeeee; //Gray used on the Docs site
 $white: #fcfcfc;
 
@@ -73,4 +73,29 @@ $global-font-size: 20px;
 	@if($weight){
 		font-weight: $weight;
 	}
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+		height: $size;
+    width: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+		background: $foreground-color;
+		display: block;
+  }
+
+  &::-webkit-scrollbar-track {
+		background: $background-color;
+		border: 2px solid $foreground-color;
+	}	
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+	}
+
 }

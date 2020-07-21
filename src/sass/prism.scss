@@ -1,0 +1,162 @@
+/* PrismJS 1.20.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+nginx+plsql+ruby+shell-session+sql&plugins=highlight-keywords */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+* File/colors modified for Chef's community site
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: .9rem;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: keep-all;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	white-space: pre-wrap !important;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding-top: 0 !important;
+	margin: .5rem 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
+}
+
+pre.light {
+	background: $light-gray;
+	
+	code, 
+	.token.comment,
+	.token.block-comment,
+	.token.prolog,
+	.token.doctype,
+	.token.cdata 
+	.token.punctuation {
+		color: $mid-gray !important;
+	}
+
+	.token.string,
+	.token.char,
+	.token.attr-value,
+	.token.regex,
+	.token.variable,
+	.token.operator,
+	.token.entity,
+	.token.url, 
+	.token.inserted {
+		color: $chef-tertiary !important;
+	}
+
+	.token.selector,
+	.token.important,
+	.token.atrule,
+	.token.keyword,
+	.token.builtin,
+	.token.function-name  {
+		color: $inspec-color !important;
+	}
+
+	.token.boolean,
+	.token.number,
+	.token.function {
+		color: $chef-secondary !important;
+	}
+
+	.token.property,
+	.token.class-name,
+	.token.constant,
+	.token.symbol {
+		color: $chef-primary !important;
+	}
+
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
+}
+
+.token.punctuation {
+	color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted,
+.token.boolean,
+.token.number,
+.token.function {
+	color: #e2777a;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin,
+.token.function-name	{
+	color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable,
+.token.operator,
+.token.entity,
+.token.url,
+.token.inserted { 
+	color: #7ec699;
+ }
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}

@@ -4,8 +4,22 @@
 @import "settings";
 @import "cookiepro";
 
-// General Layout Styles
-// ========================
+// ===================
+// General Layout Styling
+// ===================
+html, body {
+  font-family: $font-primary;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 
 .container {
   @media (min-width: 1400px) {
@@ -34,8 +48,95 @@
   }
 }
 
-// Main Nav Styles
-// ========================
+.center-mobile {
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+// ===================
+// Image Styling
+// ===================
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-icon { 
+  width: 50px;
+
+  @include media-breakpoint-up(md) {
+    width: 70px;
+  }
+}
+
+.img-round {
+  border-radius: 50%;
+
+  @include media-breakpoint-down(md) {
+    max-width: 50px; //Match the p.number class
+    height: auto;
+  }
+}
+
+.img-left {
+  display: flex;
+  justify-content: start;
+  @include media-breakpoint-only(xs) {
+    display: inline;
+  }
+}
+
+.chef-wordmark {
+  width: auto;
+  max-height: 38px;
+
+  @include media-breakpoint-only(sm) {
+    max-height: 30px;
+  }
+}
+
+.social {
+
+  a {
+    color: $dark-gray;
+  }
+  
+  .fa-facebook:hover,
+  .fa-facebook:active,
+  .fa-facebook:focus {
+    color: #4267b2;
+  }
+  .fa-github:hover,
+  .fa-github:active, 
+  .fa-github:focus {
+    color: darken(white, 50%);
+  }
+  .fa-twitter:hover,
+  .fa-twitter:active,
+  .fa-twitter:focus {
+    color: #1da1f2;
+  }
+  .fa-linkedin:hover,
+  .fa-linkedin:active,
+  .fa-linkedin:focus {
+    color: #0e76a8;
+  }
+  .fa-youtube:hover,
+  .fa-youtube:active,
+  .fa-youtube:focus {
+    color: #c4302b;
+  }
+}
+
+// ===================
+// Navigation Styling
+// ===================
 #main-nav {
   background-color: $white;
   border-bottom: 1px solid $docs-gray;
@@ -55,30 +156,36 @@
   }
 
   .navbar-collapse {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       background: white;
-      margin: 0px -15px -3px;
+      margin: 0px -1rem -3px;
       padding: 15px;
       overflow-y: scroll;
       position: fixed;
       top: 55px;
       width: 100%;
       bottom: 0;
+      transition: 100ms ease-in;
     }
+
+    @include media-breakpoint-only(md) {
+      margin: 0px -35px -3px !important;
+    }
+    
     @include media-breakpoint-up(sm) {
       justify-content: flex-end;
     }
   }
 
   .navbar-nav {
-    margin: 0;
+    margin-top: -3px;
 
     li {
       margin-bottom: 0;
 
       @include media-breakpoint-up(lg) {
-        padding-right: 0.4rem;
-        padding-left: 0.4rem;
+        padding-right: .6rem;
+        padding-left: .6rem;
       }
 
       a {
@@ -87,10 +194,10 @@
         color: $dark-gray;
         transition: color 0.15s ease-in-out;
 
-        @include media-breakpoint-only(md) {
-          font-size: 15px;
-          padding-right: 0.35rem;
-          padding-left: 0.35rem;
+        @include media-breakpoint-only(lg) {
+          font-size: 14px;
+          padding-right: 0.3rem;
+          padding-left: 0.3rem;
         }
 
         &:hover {
@@ -126,93 +233,6 @@
     }
   }
 
-  .search {
-    height: 26px;
-    position: relative;
-    display: block;
-    width: 39px;
-    transition: width 0.75s ease-in-out;
-
-    @include media-breakpoint-down(sm) {
-      margin-bottom: 1rem;
-      height: auto;
-      width: auto;
-    }
-
-    @include media-breakpoint-up(md) {
-      margin-right: 0.4rem;
-
-      &:hover {
-        width: 170px; // update to fit the nav links
-
-        #search-box {
-          background-color: white;
-        }
-		
-		#search-icon {
-			color: $chef-primary;
-		}
-      }
-    }
-	
-	@include media-breakpoint-up(xl) {
-      &:hover {
-        width: 250px; // update to fit the nav links
-      }
-    }
-
-    #search-box {
-      padding: 3px 5px 2px 34px;
-      border: none;
-      background-color: $chef-primary;
-      transition: linear 1s;
-      line-height: 1.5;
-      font-size: 14px;
-      font-weight: normal;
-      color: $dark-gray;
-      height: 26px;
-      display: block;
-      width: 100%;
-
-      &:focus,
-      &:hover {
-        outline: none;
-      }
-
-      ::placeholder {
-        font-size: 0.8em;
-      }
-
-      @include media-breakpoint-down(sm) {
-        background-color: white;
-        border: $mid-gray;
-        border: 1px solid #666;
-        width: 100%;
-        height: 35px;
-      }
-    }
-
-    #search-icon {
-      position: absolute;
-      left: 0;
-      padding: 0 10px;
-      top: 3px;
-      font-size: 14px;
-      width: auto;
-      margin: 0;
-      line-height: 23px;
-
-      &:focus {
-        outline: none;
-        box-shadow: none;
-      }
-
-      @include media-breakpoint-down(sm) {
-        padding: 4px 10px;
-      }
-    }
-  }
-
   .navbar-toggler {
     border: none;
     padding: 0;
@@ -223,11 +243,73 @@
       box-shadow: none;
     }
   }
+
+  .st-ui-type-heading, .st-ui-type-detail {
+    font-size: 17px !important;
+    font-family: $font-primary !important;
+  }
+  
+  .search {
+    height: 26px;
+    position: relative;
+    display: block;
+    transition: width 0.75s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 2.5rem;
+      margin-bottom: 3rem;
+      height: auto;
+      width: auto;
+    }
+
+    input {
+      background-color: $white;
+      border: none;
+      color: $dark-gray;
+      display: block;
+      font-family: $font-primary;
+      font-size: .9rem;
+      float: right;
+      margin-top: -3px;
+      width: 50%;
+      overflow: hidden;
+      -webkit-transition: width .5s ease-in-out;
+      transition: width .5s ease-in-out;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-down(md) {
+        background-color: white;
+        border: 1px solid $light-gray;
+        width: 100%;
+        height: 26px;
+      }
+    }
+
+    input:focus {
+      background: $light-gray;
+      border: 1px solid $chef-primary;
+
+      @include media-breakpoint-up(lg) {
+        width: 300px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        width: 180px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        height: 26px;
+      }
+    }
+  }
+
 }
 
-// Footer Styles
-// ========================
-
+// ===================
+// Footer Styling
+// ===================
 #footer {
   background-color: $dark-gray;
   color: $light-gray;
@@ -264,7 +346,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: $chef-primary;
+      color: $chef-primary !important;
     }
   }
 
@@ -275,10 +357,14 @@
   }
 
   #super-footer {
-    background-color: black;
+    background-color: $chef-primary;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     max-width: 100%;
+
+    p, a {
+      color: $dark-gray;
+    }
   }
 
   .nav-items {
@@ -315,10 +401,6 @@
         display: inline;
       }
     }
-
-    .fa-github:hover {
-      color: darken(white, 50%);
-    }
   }
 
   .footer-form-container {
@@ -353,111 +435,9 @@
   }
 }
 
-// General Typography Styles
-// ========================
-
-body {
-  font-family: $font-primary;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.625;
-  color: $dark-gray;
-}
-
-::selection {
-  background-color: lighten($chef-primary, 10%);
-}
-
-a {
-  color: $chef-secondary;
-
-  &:hover {
-    text-decoration: none;
-    color: $chef-primary;
-  }
-
-  &::selection {
-    color: $light-gray;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include muli();
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-
-  // &:not(:first-child){
-	// 	margin-top: 2.5rem;
-  // }
-}
-
-h1 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  margin-bottom: .8rem;
-  margin-top: 0;
-  @include media-breakpoint-down(md) {
-    font-size: 2.5rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 2.2rem;
-  }
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  @include media-breakpoint-down(md) {
-    font-size: 2rem;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 1.8rem;
-  }
-}
-h5 {
-	font-weight: 700;
-}
-
-h6 {
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-ul,
-ol {
-  &:not(.nav) {
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-// Flexbox styles
-// ========================
-
-.center-mobile {
-  @include media-breakpoint-down(xs) {
-    text-align: center;
-    align-self: center;
-  }
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.v-center {
-  display: flex;
-  align-items: center;
-}
-
-// Form styles
-// ========================
+// ===================
+// Form Styling
+// ===================
 select {
   background-color: #fff;
   border-radius: 0;
@@ -475,17 +455,107 @@ input {
 	border-radius: 0;
 }
 
-// Component Styles
-// =======================
+// ===================
+// Button Styling
+// ===================
+.btn {
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  font-size: 17px;
+  min-width: 150px;
+  margin: 1rem .4rem 1rem 0;
+
+
+  &-primary {
+    background: $chef-secondary;
+    border: 2px solid $chef-secondary;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($chef-secondary, 12%) !important;
+      border: 2px solid darken($chef-secondary, 12%) !important;
+    }
+
+    &-white {
+      background: $white;
+      border: 2px solid $white;
+      color: $chef-secondary;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: darken($white, 12%) !important;
+        border: 2px solid darken($white, 12%) !important;
+        color: $chef-secondary !important;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: transparent;
+    border: 2px solid $chef-secondary;
+    color: $chef-secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $chef-secondary !important;
+      border: 2px solid $chef-secondary !important;
+      color: $white !important;
+    }
+
+    &-white {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white !important;
+        border: 2px solid $white !important;
+        color: $chef-secondary !important;
+      }
+    }
+  }
+}
+
+// Tab Styles
+// =============
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-item {
+    margin-bottom: 0;
+
+    .nav-link {
+      color: $chef-primary;
+      background-color: transparent;
+      border: none;
+      font-weight: 700;
+
+      &.active {
+        color: white;
+        background-color: transparent;
+        border: none;
+      }
+      &:hover {
+        color: $chef-secondary;
+      }
+    }
+  }
+}
+
+// ===================
+// Component Styling
+// ===================
 .hero-actions {
   position: relative;
-
-  // .hero,
-  // .actions {
-  //   background-image: none;
-  //   background-color: transparent;
-  // }
-
+  
   .actions {
     position: relative;
 
@@ -505,7 +575,8 @@ input {
   @extend %section-padding;
   
   @include media-breakpoint-up(lg) {
-    padding: 13vh 0;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
   }
 
   h2 {
@@ -519,11 +590,45 @@ input {
   }
 }
 
-.card-container {
-  &:not(:last-child) {
-    @include media-breakpoint-down(md) {
-      margin-bottom: 1rem;
+.tutorials {
+  @extend %section-padding;
+
+  background-color: $light-gray;
+
+  .card-tutorial {
+    margin: 0 0 20px;
+  }
+
+}
+
+.card-tutorial {
+  background-color: white;
+  padding-top: 1rem;
+  min-height: 180px;
+  color: $dark-gray;
+  transition: 0.25s ease-in-out;
+
+  h5 {
+    margin-bottom: 0.5rem;
+  } 
+
+  &:hover {
+    background-color: $dark-gray !important;
+
+    h5, p {
+      color: white;
     }
+    
+    p.number {
+      border: 1px solid $chef-secondary;
+      color: $chef-secondary;
+    }
+  }
+}
+
+.card-container {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
   }
 
   .card {
@@ -540,6 +645,7 @@ input {
     }
 
     p {
+      
       font-size: 0.95em;
     }
     a {
@@ -558,6 +664,7 @@ input {
       list-style-type: none;
       padding-left: 0;
     }
+    
   }
 }
 
@@ -565,6 +672,9 @@ input {
   position: relative;
 
   .action-cards {
+    h5 {
+      margin: 1.5rem 0;
+    }
     @include media-breakpoint-up(xl){
       padding-bottom: 7rem;
     }
@@ -579,10 +689,12 @@ input {
     bottom: 0;
     height: 38vh;
     width: 100%;
-    // @include media-breakpoint-up(md) {
-    //   height: 20vh;
-    // }
-
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
     //Filling in the empty space below the wave with dark gray
     div {
       border-bottom: 3px solid #292728; // remove line that appears when screen is scaled.
@@ -667,113 +779,80 @@ input {
         margin-top: auto;
       }
     }
-  }
-}
 
-.social {
-  a:hover {
-    text-decoration: none;
-  }
-
-  .fa {
-    &-facebook:hover {
-      color: #4267b2;
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05),0 4px 8px 3px rgba(60, 64, 67, 0.15);
+      transform: translateY(-4px);
     }
 
-    &-twitter:hover {
-      color: #1da1f2;
-    }
-
-    &-linkedin:hover {
-      color: #0073b1;
-    }
-
-    &-github:hover {
-      color: #24292e;
-    }
-
-    &-youtube:hover {
-      color: #ff0000;
-    }
-  }
-}
-
-// Button Styles
-// =======================
-
-.btn {
-  border: none;
-  font-weight: 500;
-  padding: 0.4rem 1rem;
-  border-radius: 2px;
-  font-size: 17px;
-
-  &-primary {
-    background: $chef-primary;
-    border: 2px solid $chef-primary;
-    color: white;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-      border: 2px solid $chef-primary;
-      color: $chef-primary;
-    }
-
-    &-white {
-      background: white;
-      border: 2px solid white;
-      color: $dark-gray;
-      font-weight: 600;
-
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
+    @include media-breakpoint-only(md) {
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      .img {
+        max-width: 33.33%;
       }
+    }  
+
+    @include media-breakpoint-down(sm) {
+      img {
+        width: 100%;
+      }
+    }  
+
+  }
+}
+
+// The contact section at the foot of every page
+.contact {
+  @extend %section-padding;
+  background-color: $chef-tertiary;
+  color: white;
+}
+
+// Dark grey section with tabs
+%section-tabs {
+	background-color: $dark-gray;
+		
+	.headers {
+    padding-bottom: 1rem;
+
+		.fa {
+			transition: linear 0.1s;
+		}
+		ul li a.active {
+			.fa {
+				transform: rotate(90deg)
+			}
+    }
+    
+
+		.nav-tabs .nav-item .nav-link {
+			font-size: 1rem;
+			font-weight: 500;
+			margin: 0 1.5rem 1rem auto;
+
+			@include media-breakpoint-down(sm) {
+				margin: auto;
+			}        
+		}
+
+		.nav-link:first-of-type {
+			padding-left: 0; //overwrites Bootstrap's
+    }
+    
+    .nav-link {
+      padding: 0 1.5rem 0 0;
     }
   }
-
-  &-secondary {
-    background-color: transparent;
-    border: 2px solid $chef-primary;
-    color: $chef-primary;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $chef-primary;
-      border: 2px solid $chef-primary;
-      color: white;
+  
+  .tab-content {
+    h5 {
+      margin-bottom: .5rem;
     }
   }
-
-  //Full width buttons on xs devices
-  @include media-breakpoint-only(xs) {
-    margin: 10px auto;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 95%;
-  }
-}
-
-// Image Styles
-// =============
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-round {
-  border-radius: 50%;
-}
-
-.img-left {
-  display: flex;
-  justify-content: start;
 }
 
 .chef-wordmark {
@@ -790,36 +869,36 @@ img {
     margin-bottom: 1rem;
   }
 }
-
-
 // Tab Styles
 // =============
 .nav-tabs {
   border-bottom: none;
 
-  .nav-item {
-    margin-bottom: 0;
+    &-linkedin:hover {
+      color: #0073b1;
+    }
 
-    .nav-link {
-      color: white;
-      border: none;
-      font-weight: 600;
+    &-github:hover {
+      color: #24292e;
+    }
 
-      &.active,
-      &:hover {
-        color: $chef-primary;
-        background-color: transparent;
-        border: none;
-      }
+    &-youtube:hover {
+      color: #ff0000;
     }
   }
-}
 
-// Table Styles
-// =============
-table {
-	width: 100%;
-}
+pre {
+  font-size: .9rem;
+  white-space: pre-line;
+  word-wrap: break-word;
+  overflow-x: auto;
+  border-radius: 2px;
+  padding-left: 1rem !important;
+  padding-bottom: 1rem !important;
+
+  @include scrollbars(10px, $chef-primary, $white);
+
+}   
 
 // Misc Styles
 // =============
@@ -895,6 +974,9 @@ table {
 
 @import "marketo";
 @import "home";
+@import "chef-inspec";
+@import "chef-habitat";
 @import "first-time";
-@import "search";
+@import "type";
 @import "markdown";
+@import "prism";

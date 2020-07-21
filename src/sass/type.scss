@@ -1,0 +1,112 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include muli();
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2.2rem;
+  }
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h6 {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+ul,
+ol {
+  &:not(.nav) {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+::selection {
+  background-color: lighten($chef-primary, 10%);
+}
+
+
+@mixin link{
+  color: $chef-secondary;
+
+  &:hover {
+    text-decoration: none;
+    color: $chef-primary;
+  }
+
+  &::selection {
+    color: $light-gray;
+  }
+}
+
+a {
+  @include link;
+}
+
+a.cta {
+  @include link;
+
+  &:after {
+    content: " \BB";
+  }
+}
+
+p.number {
+  border: 1px solid $chef-primary;
+  color: $chef-primary;
+  font-size: 2.2rem;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+

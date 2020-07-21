@@ -1,7 +1,5 @@
 {{ define "body" }}
 <main id="windows-resources">
-	
-        
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
@@ -52,7 +50,7 @@
        
             <div class="text">
               <h4>{{ .title | markdownify }}</h4>
-              <a href="{{ .url }}" target="_blank">{{ .cta }}</a>
+              <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .cta }}</a>
             </div>
           </div>
         </div>
