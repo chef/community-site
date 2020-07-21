@@ -61,6 +61,12 @@
 
     .card-tutorial {
       background-color: $light-gray;
+
+      .margin-top-large {
+        @include media-breakpoint-up(md) {
+          margin-top: 1rem;
+        }
+      }
     }
   }
 
@@ -127,6 +133,13 @@
           opacity: 1;
         }
       }
+    }
+  }
+
+  #habitat-tutorial {
+    .row > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
     }
   }
   
