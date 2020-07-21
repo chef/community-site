@@ -169,7 +169,7 @@ tutorials:
       title: Testing Ansible with Chef InSpec
       link: "http://scienceofficersblog.blogspot.com/2016/02/testing-ansible-with-inspec.html"
       author: blindscientist
-      image: "/img/favicons/android-chrome-256x256.png"
+      image: "/img/Human_Icon.svg"
 resources:
   header: From the Chef InSpec Blog
 contact:
