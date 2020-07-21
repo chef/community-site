@@ -77,6 +77,11 @@ tutorials:
     link: "https://www.habitat.sh/docs/"
     copy: >-
       Chef Habitat centers application configuration, management, and behavior around the application itself, not the infrastructure that the app runs on.
+  three: 
+    title: Habitize a Windows application
+    link: "https://www.habitat.sh/demo/windows/steps/1/"
+    copy: >-
+      Package an ASP.NET application and bind to a SQL Server database.
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
