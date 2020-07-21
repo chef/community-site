@@ -13,5 +13,10 @@ disableKinds = "taxonomyTerm"
   linkedin = "https://www.linkedin.com/company/chef-software"
   github = "http://chef.github.io/"
   youtube = "https://www.youtube.com/user/getchef"
+<<<<<<< HEAD
   meta_image_sq = "/img/Community_Meta_Meta Image_800x800.jpg"
   meta_image_rect = "/img/Community_Meta_Meta Image_600x300.jpg"
+=======
+  meta_image_sq = "https://community.chef.io/img/Community_Meta_MetaImage_600x300.jpg"
+  meta_image_rect = "https://community.chef.io/img/Community_Meta_MetaImage_800x800.jpg"
+>>>>>>> 0680c46191a628aa0ea0c1c6adf556192e82f36f
