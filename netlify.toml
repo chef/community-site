@@ -4,12 +4,12 @@
   HUGO_VERSION = "0.55.6"
 
 [build]
-  command = "npm run-script build"
+  command = "npm run build"
   publish = "dist"
   function = "./functions"
 
 [context.deploy-preview]
-  command = "npm run-script build:preview"
+  command = "npm run build:preview"
 
 [[redirects]]
   from = "/brand"
