@@ -1,0 +1,43 @@
+{{ define "body" }}
+<main id="workstation">
+	
+	<section class="hero-actions">
+        
+		<section class="hero">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-9 col-lg-7">
+
+						<h2>
+							<div class="img-left">
+							<img src="{{ .Params.hero.logo }}" alt="Chef Workstation" class="chef-wordmark  " />
+							</div>
+						</h2>
+						<h1>{{ .Params.title }}</h1>
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="actions">
+			{{ partial "three-cards.html" . }}
+		</section>
+
+	</section>
+			
+	<section class="benefits">
+		{{ partial "workstation/workstation-benefits.html" . }}
+	</section>
+
+	<section class="resources">
+		{{ partial "workstation/workstation-resources.html" . }}
+	</section>
+
+	<section class="contact">
+		{{ partial "contact.html" . }}
+	</section>
+
+</main>
+
+{{ end }}
