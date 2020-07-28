@@ -89,6 +89,17 @@
 					<div class="col-sm-12">
 						{{ partial "markdownify" .Params.cards.three.body }}
 
+						<div title="Add to Calendar" class="addeventatc">
+							Add to Calendar
+							<span class="start">08/06/2020 09:00 AM</span>
+							<span class="end">08/06/2020 11:00 AM</span>
+							<span class="timezone">America/Los_Angeles</span>
+								<span class="title">Community Meeting!</span>
+								<span class="description">Description of the event</span>
+								<span class="location">#community-meetings in Slack</span>
+								<span class="recurring">FREQ=WEEKLY;BYDAY=TH;INTERVAL=1</span>
+						</div>
+			
 						<h5>Awesome Contributors</h5>
 						<div class="contributors-list">
 		
@@ -96,10 +107,9 @@
                 <a href="{{ .url }}"><img src="{{ .avatar_url }}&size=50" class="img-round" width="50" alt="{{ .name }}"></a>
               {{ end }}
 						</div>
-		
 						{{ partial "social" . }}
-
 					</div>
+					
 				</div>
 
 				

@@ -31,7 +31,9 @@
     <meta name="theme-color" content="#ffffff">
     
     <script src="//pages.chef.io/js/forms2/js/forms2.min.js"></script>
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
+    <!-- Add to Calendar -->
     {{ block "page-specific-scripts" . }}
     {{ end }}  
 
@@ -43,6 +45,7 @@
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
+
     {{ partial "nav.html" . }}
 
     {{ block "body" . }}

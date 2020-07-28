@@ -29,3 +29,8 @@ All SVG icons stored in `site/static/img/icons` are automatically optimized with
   <use xlink:href="#SVG-ID"></use>
 </svg>
 ```
+
+
+## Libraries
+Add to Calendar documentation:
+https://www.addevent.com/add-to-calendar-button

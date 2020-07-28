@@ -27,6 +27,11 @@ cards:
     icon: /img/icons/connect.svg
     title: Connect
     body: >-
+      ##### Contribute
+
+      [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
+      Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
+
       ##### Interact
 
       [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
@@ -36,11 +41,6 @@ cards:
 
       
       [Community Meeting!](https://community-slack.chef.io/) Thursdays at 9:00AM PT  | #community-meetings in Slack
-
-      ##### Contribute
-
-      [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
-      Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
 products:
   habitat:
     copy: >
