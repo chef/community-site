@@ -1,6 +1,5 @@
 #home {
 
-
 	#chefconf-banner {
 	  margin-top: 1rem;
 	  margin-left: -32px;
@@ -72,6 +71,18 @@
       top: 0;
       left: 0;
       width: 100%;
+    }
+
+    #action-cards {
+      .card-container:nth-of-type(2) {
+        a:hover {
+          color: lighten($dark-gray, 35%);
+        }
+
+        a.cta:hover {
+          color: $chef-primary;
+        }
+      }
     }
 
     @include media-breakpoint-up(xl) {
@@ -331,6 +342,10 @@
 
     a {
       text-decoration: none;
+
+      &:hover {
+        color: $chef-primary !important;
+      }
     }
 
     h5 {
@@ -342,10 +357,6 @@
       a {
         color: inherit;
         font-weight: 500;
-
-        &:hover {
-          color: $chef-primary;
-        }
       }
     }
     .category {

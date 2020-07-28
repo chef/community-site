@@ -60,7 +60,7 @@
               {{ range first 5 $events }}
 								<li>
 									<a href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a>
-									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a href="{{ .event_attributes.event_url }}">See more &raquo;</a></p>
+									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a class="cta" href="{{ .event_attributes.event_url }}">See more</a></p>
 								</li>
 							{{ end }}
 
