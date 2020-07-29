@@ -74,12 +74,14 @@
     }
 
     #action-cards {
-      .card-container:nth-of-type(2) {
-        a:hover {
+      a.event-title {
+        color: $dark-gray;
+        
+        &:hover {
           color: lighten($dark-gray, 35%);
         }
 
-        a.cta:hover {
+        &.cta:hover {
           color: $chef-primary;
         }
       }

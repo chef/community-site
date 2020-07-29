@@ -23,11 +23,11 @@
 						<ul>
               {{ range first 5 $events }}
 								<li>
-									<p><a href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a></br/>
+									<p><a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a></br/>
 									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} 
 								</li>
 							{{ end }}
-							<!-- <a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank">View all webinars »</a> -->
+							<p><a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank" rel=”noopener noreferrer”>View all webinars</a></p>
 						</ul>
 					</div>
 					{{ end }}
@@ -52,6 +52,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12 events-list">
+						{{ .Params.cards.two.body | markdownify }}
 						<ul>
 							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
 							
@@ -59,10 +60,12 @@
 
               {{ range first 5 $events }}
 								<li>
-									<a href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a>
-									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} <br><a class="cta" href="{{ .event_attributes.event_url }}">See more</a></p>
+									<a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a>
+									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }}</p>
 								</li>
 							{{ end }}
+							
+							<p><a href="https://events.chef.io/" class="cta" target="_blank" rel=”noopener noreferrer”>View all events</a></p>
 
 							{{ else }}
 
@@ -89,7 +92,7 @@
 					<div class="col-sm-12">
 						{{ partial "markdownify" .Params.cards.three.body }}
 
-						<div title="Add to Calendar" class="addeventatc">
+						<div title="Add to Calendar" class="addeventatc" id="calendar-button">
 							Add to Calendar
 							<span class="start">08/06/2020 09:00 AM</span>
 							<span class="end">08/06/2020 09:45 AM</span>
