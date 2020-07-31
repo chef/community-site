@@ -2,15 +2,17 @@
 
 #addeventatc1 {
   border: 1px solid $chef-secondary !important;
-  color: $chef-secondary !important;
   box-shadow: none !important;
-  z-index: 1 !important;
-  font-size: 12px;
+  bottom: 1px;
+  color: $chef-secondary !important;
+  font-size: 10px;
   padding: 5px;
+  text-transform: uppercase;
+  z-index: 1 !important;
 
   &:hover {
-    color: $white !important;
     background-color: $chef-secondary !important;
+    color: $white !important;
   }
 
   .addeventatc_icon {
