@@ -7,7 +7,7 @@
 						<h3>{{ .Params.cards.one.title }}</h3>
 					</div>
 					<div class="col-4 text-right">
-						<img src="{{ .Params.cards.one.icon }}" class="card-icon">
+						<img src="{{ .Params.cards.one.icon }}" class="card-icon" alt="">
 					</div>
 				</div>
 				<div class="row">
@@ -47,7 +47,7 @@
 						<h3>{{ .Params.cards.two.title }}</h3>
 					</div>
 					<div class="col-4 text-right">
-						<img src="{{ .Params.cards.two.icon }}" class="card-icon">
+						<img src="{{ .Params.cards.two.icon }}" class="card-icon" alt="">
 					</div>
 				</div>
 				<div class="row">
@@ -84,7 +84,7 @@
 						<h3>{{ .Params.cards.three.title }}</h3>
 					</div>
 					<div class="col-4 text-right">
-						<img src="{{ .Params.cards.three.icon }}" class="card-icon">
+						<img src="{{ .Params.cards.three.icon }}" class="card-icon" alt="">
 					</div>
 			
 				</div>
@@ -92,6 +92,8 @@
 					<div class="col-sm-12">
 						{{ partial "markdownify" .Params.cards.three.body }}
 
+						<a href="https://community-slack.chef.io/" target="_blank">Community Meeting</a>
+						
 						<div title="Add to Calendar" class="addeventatc">
 							Add to Calendar
 							<span class="start">08/06/2020 09:00 AM</span>
@@ -102,7 +104,8 @@
 								<span class="location">#community-meetings in Slack</span>
 								<span class="recurring">FREQ=WEEKLY;BYDAY=TH;INTERVAL=1</span>
 						</div>
-			
+						Thursdays at 9:00AM PT | #community-meetings in Slack
+
 						<h5>Awesome Contributors</h5>
 						<div class="contributors-list">
 		

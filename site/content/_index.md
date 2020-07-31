@@ -1,10 +1,10 @@
 ---
-title: 'Chef Developer Community'
+title: "Chef Developer Community"
 meta_keyword: Chef Community
 meta_description: >-
   Community is the foundation of Chef. We believe that the best way to build
   software is in close collaboration with the people who use it, and the best
-  way to use software is alongside those who build it. 
+  way to use software is alongside those who build it.
 cards:
   one:
     icon: /img/icons/learn.svg
@@ -38,11 +38,9 @@ cards:
 
       [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
 
-      
-      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT  
 
-      
-      [Community Meeting!](https://community-slack.chef.io/) Thursdays at 9:00AM PT  | #community-meetings in Slack
+      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT
+
 products:
   habitat:
     copy: >
@@ -58,9 +56,9 @@ products:
 
 
       Deploy your applications with confidence with Habitat’s built-in support
-      for health checks, rolling updates, dependency management, and more. 
+      for health checks, rolling updates, dependency management, and more.
     header: Application Delivery
-    url: 'https://www.habitat.sh'
+    url: "https://www.habitat.sh"
   header: "Chef helps automate your:"
   infra:
     copy: >
@@ -76,7 +74,7 @@ products:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: 'https://www.chef.sh'
+    url: "https://www.chef.sh"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
@@ -93,7 +91,7 @@ products:
       consistent standards in every managed environment, at every stage of
       development.
     header: Security & Compliance
-    url: 'https://www.inspec.io'
+    url: "https://www.inspec.io"
   automate:
     copy: >
       #### Incorporate Chef’s products into your Application Development
@@ -107,7 +105,7 @@ products:
       application delivery pipeline, supporting your projects throughout the
       entire application lifecycle.
     header: Observability
-    url: 'https://automate.chef.io'
+    url: "https://automate.chef.io"
 community:
   header: We're all in this together
   body: >-
@@ -165,16 +163,10 @@ resources:
 
 # We're better together
 
-
-Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it. 
-     
+Community is the foundation of Chef. We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it.
 
 Our greatest strength is our community. That is why as a community, we are committed to holding ourselves to a higher standard. This is captured in our [Code of Conduct].
 
-
 Join us, whether online or in person, and let’s build the future of technology together.
 
-
-
-
-[Code of Conduct]: /code-of-conduct
+[code of conduct]: /code-of-conduct
