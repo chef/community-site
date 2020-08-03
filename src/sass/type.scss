@@ -70,7 +70,7 @@ ol {
 }
 
 ::selection {
-  background-color: lighten($chef-primary, 10%);
+  color: adjust-color($chef-primary, $lightness: 10%);
 }
 
 @mixin link{

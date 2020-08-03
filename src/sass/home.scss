@@ -78,7 +78,7 @@
         color: $dark-gray;
         
         &:hover {
-          color: lighten($dark-gray, 35%);
+          color: scale-color($dark-gray, $lightness: 30%);
         }
 
         &.cta:hover {
