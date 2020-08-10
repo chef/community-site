@@ -113,3 +113,5 @@ contact:
 <div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/products/workstation" target="_blank" rel="noopener noreferrer">Download Workstation</a>
 <a class="btn btn-secondary" href="https://www.chef.sh/docs/chef-workstation/getting-started/ target="_blank" rel="noopener noreferrer">Get Started</a>
+<br/>
+<iframe title="Github" id="github-star" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef-workstation&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>

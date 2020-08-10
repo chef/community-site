@@ -64,7 +64,7 @@ ol {
 }
 
 ::selection {
-  background-color: lighten($chef-primary, 10%);
+  background-color: adjust-color($chef-primary, $lightness: 10%);
 }
 
 
