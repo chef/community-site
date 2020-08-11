@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="row usage-main">
+    <div class="col-sm-12">
+      <div class="headers">
+        <h2><div class="img-left">
+          <img
+            src="{{ .Params.usage.headerImage }}"
+            alt="Chef Automate"
+            class="chef-wordmark"
+          />
+           <span>{{ .Params.usage.headerTwo }}</span>
+        </div>
+        </h2>
+        <ul class="nav nav-tabs" id="usage-tabs" role="tablist" aria-label="Automate Usage Tabs">
+          <li class="nav-item" role="tab">
+            <a id="first-nav" class="nav-link active" href="#automate-usage-one" data-toggle="tab">
+              {{ .Params.usage.one.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li> 
+          <li class="nav-item" role="tab">
+            <a id="second-nav" class="nav-link" href="#automate-usage-two" data-toggle="tab"
+              >{{ .Params.usage.two.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item" role="tab">
+            <a id="third-nav" class="nav-link" href="#automate-usage-three" data-toggle="tab"
+              >{{ .Params.usage.three.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+          <li class="nav-item" role="tab">
+            <a id="fourth-nav" class="nav-link" href="#automate-usage-four" data-toggle="tab"
+              >{{ .Params.usage.four.header }}
+              <span class="fa fa-angle-right" aria-hidden="true"> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane fade active show" id="automate-usage-one" role="tabpanel" aria-labelledby="first-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <img src="{{ .Params.usage.one.image }}" alt="" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.usage.one.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="automate-usage-two" role="tabpanel"  aria-labelledby="second-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <img src="{{ .Params.usage.two.image }}" alt="" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.usage.two.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="automate-usage-three" role="tabpanel"  aria-labelledby="third-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+              <img src="{{ .Params.usage.three.image }}" alt="" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.usage.three.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="automate-usage-four" role="tabpanel"  aria-labelledby="fourth-nav">
+          <div class="row">
+            <div class="col-12 col-md-6 order-md-2">
+                <img src="{{ .Params.usage.four.image }}" alt="" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1">
+              {{ .Params.usage.four.copy | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
