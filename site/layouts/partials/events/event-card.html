@@ -1,7 +1,8 @@
 <div class="card">
     <div class="row">
         <div class="col-sm-12">
-            <h3>{{ .title }}</h3>
+            <a href={{ .link }}><img src={{ .img }} alt="Promo image for " {{ .title }} /></a>
+            <a href={{ .link }}><h3>{{ .title }}</h3></a>
         </div>
     </div>
     <div class="row">

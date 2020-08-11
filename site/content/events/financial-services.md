@@ -2,45 +2,43 @@
 title: "Industry Engagement Events: Financial Services"
 type: events
 layout: financial-services
-hero: 
-  logo: /img/logos/chef-habitat-dark.svg
+hero-background: /img/Curves_Dark.png
 events:
-  header: Application Definition, Packaging and Delivery Automation
   one:
-    icon: /img/icons/habitat-1.png
-    title: Reusable Content
+    img: /img/events/bank.jpg
+    title: Eastern Event
     presenter: Robin Beck
     datetime: October 1, 2020 - 12.00pm ET
     body: >-
       Hundreds of pre-defined application templates and a robust open source user community.
     link: https://www.chef.io
   two:
-    icon: /img/icons/habitat-1.png
-    title: Second Event
+    img: /img/events/bank.jpg
+    title: Central Event
     presenter: Robin Beck
     datetime: October 6, 2020 - 12.00pm CT
     body: >-
       Hundreds of pre-defined application templates and a robust open source user community.
     link: https://www.chef.io
   three:
-    icon: /img/icons/habitat-1.png
-    title: Reusable Content
+    img: /img/events/bank.jpg
+    title: UK Event
     presenter: Kimball Johnson
     datetime: October 8, 2020 - 12.00pm GMT
     body: >-
       Hundreds of pre-defined application templates and a robust open source user community.
     link: https://www.chef.io
   four:
-    icon: /img/icons/habitat-1.png
-    title: Reusable Content
+    img: /img/events/bank.jpg
+    title: Pacific Event
     presenter: Jody Wolfborn
     datetime: October 13, 2020 - 12.00pm PT
     body: >-
       Hundreds of pre-defined application templates and a robust open source user community.
     link: https://www.chef.io
   five:
-    icon: /img/icons/habitat-1.png
-    title: Reusable Content
+    img: /img/events/bank.jpg
+    title: APAC Event
     presenter: Jody Wolfborn
     datetime: October 15, 2020 - 12.00pm GMT +8
     body: >-
