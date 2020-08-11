@@ -1,0 +1,26 @@
+{{ define "body" }}
+
+	<main id="financial-services-events">		
+		<section class="hero-actions">
+			<section class="hero">
+				{{ partial "hero.html" . }}
+			</section>
+
+			<section class="event-card-row">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6 col-12 card-container">
+							{{ partial "events/event-card.html" (dict "title" .Params.events.one.title "presenter" .Params.events.one.presenter "datetime" .Params.events.one.datetime "body" .Params.events.one.body "link" .Params.events.one.link) }}
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12 card-container">
+							{{ partial "events/event-card.html" (dict "title" .Params.events.two.title "presenter" .Params.events.two.presenter "datetime" .Params.events.two.datetime "body" .Params.events.two.body "link" .Params.events.one.link) }}
+						</div>
+						<div class="col-lg-4 col-sm-6 col-12 card-container">
+							{{ partial "events/event-card.html" (dict "title" .Params.events.three.title "presenter" .Params.events.three.presenter "datetime" .Params.events.three.datetime "body" .Params.events.three.body "link" .Params.events.one.link) }}
+						</div>
+					</div>
+				</div>
+			</section>
+	</main>
+
+{{ end }}

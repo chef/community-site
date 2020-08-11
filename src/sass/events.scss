@@ -1,0 +1,17 @@
+@import 'settings';
+
+#financial-services-events {
+    .card {
+        background-color: $dark-gray;
+        color: $white;
+
+        .event-presenter, .event-dateTime {
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .event-presenter {
+            margin-bottom: 0.2rem;
+        }
+    }
+}
