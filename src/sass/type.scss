@@ -18,6 +18,9 @@ h1 {
   @include media-breakpoint-down(sm) {
     font-size: 2.2rem;
   }
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
 }
 
 h2 {
@@ -31,6 +34,9 @@ h2 {
   @include media-breakpoint-down(sm) {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
+  }
+  @include media-breakpoint-down(xs) {
+    text-align: center;
   }
 }
 
@@ -67,7 +73,6 @@ ol {
   background-color: adjust-color($chef-primary, $lightness: 10%);
 }
 
-
 @mixin link{
   color: $chef-secondary;
 
@@ -93,6 +98,17 @@ a.cta {
   }
 }
 
+a.white {
+  color: $white;
+  text-decoration: underline;
+
+  &:hover, 
+  &:focus, 
+  &:active {
+    color: $chef-primary;
+  }
+}
+
 p.number {
   border: 1px solid $chef-primary;
   color: $chef-primary;
@@ -108,5 +124,3 @@ p.number {
     height: 50px;
   }
 }
-
-

@@ -1,5 +1,4 @@
 {{ define "page-specific-scripts" }}
-
 <!-- Netlify CMS script - added to the head of site's main index page -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
@@ -18,9 +17,9 @@ if (window.netlifyIdentity) {
 
 {{ define "body" }}
 <main id="home">
-    
+
     <section class="hero-actions">
-        
+
         <section class="hero"> 
             {{ partial "hero.html" . }}
         </section>

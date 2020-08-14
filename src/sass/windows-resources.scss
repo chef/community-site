@@ -1,0 +1,58 @@
+
+#windows-resources {
+  background-color: $light-gray;
+
+  .card-container {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .resources {
+    padding-top: 0;
+  }
+
+  .hero {
+    &:before {
+      content: "";
+      height: 100%; // for ie11
+      background-image: url(/img/resource-hero.svg);
+      background-color: $light-gray;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &:before {
+        background-image: none !important;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      &:before {
+        background-size: 70%;
+        background-position: 200% -30px;
+      }
+    }
+    @include media-breakpoint-between(lg, xl) {
+      &:before {
+        background-size: 60%;
+        background-position: 120% -30px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      &:before {
+        background-size: 55%;
+        background-position: 115% -4%;
+      }
+    }
+    @media screen and (min-width: 2000px) {
+      &:before {
+        background-size: 42% !important;
+        background-position: 97% -8% !important;
+      }
+    }
+  }
+}

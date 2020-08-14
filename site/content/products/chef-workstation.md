@@ -1,5 +1,5 @@
 ---
-title: Lorem Ipsum
+title: Chef Workstation
 type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
@@ -9,15 +9,23 @@ cards:
     icon: /img/icons/inspec-1.png
     title: One click gets you everything you need
     body: >-
-      Chef Workstation gives you all the tools you need to get started and includes:
-      Chef Workstation App
-      Chef Infra Client
-      Chef InSpec
-      Chef Command Line Tool
-      Test Kitchen
-      Cookstyle
-      Various Test Kitchen and Knife plugins
-      Upgrade Lab
+      Chef Workstation gives you all the tools you need to get started and includes:  
+
+      - Chef Workstation App  
+
+      - Chef Infra Client  
+
+      - Chef InSpec  
+
+      - Chef Command Line Tool  
+
+      - Test Kitchen  
+
+      - Cookstyle  
+
+      - Various Test Kitchen and Knife plugins  
+
+      - Upgrade Lab  
   two:
     icon: /img/icons/inspec-2.png
     title: Run Ad-Hoc tasks from the CLI
@@ -27,12 +35,15 @@ cards:
     icon: /img/icons/inspec-3.png
     title: Robust testing & development tools
     body: >-
-      Chef Workstation includes everything packaged within the Chef Development Kit. Development tools for testing, dependency resolution, and cookbook generation are all included, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.
+      Chef Workstation includes everything packaged within the Chef Development Kit. Development tools for testing, dependency resolution, and cookbook generation are all included, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
+
+
+      [Learn more](https://www.chef.sh/docs/chef-workstation/getting-started/)
 benefits:
   headerImage: /img/logos/chef-workstation-white.svg
-  headerTwo: can be used for
+  headerTwo: can be used to
   one: 
-    header: Remediation
+    header: Detect & Remediate
     copy: >-
 
       ####  Detect & Remediate Security Issues  
@@ -40,16 +51,21 @@ benefits:
       1. Scan a server to verify network time protocol (ntp) is installed and running  
 
       2. Remediate scan failure by Installing and configuring ntp  
+ 
+      3. Re-scan server for compliance  
 
-      3. Re-scan server for compliance
+ 
+      <a class="btn btn-primary-white" href="https://docs.chef.io/workstation/getting_started/#ad-hoc-remote-execution-with-chef-run" target="_blank" rel="noreferrer noopener">Learn more</a>
   two: 
-    header: Definition
+    header: Define Automation
     copy: >-
 
       #### Define Customized Automation  
 
-      Visit the [Chef Supermarket](https://supermarket.chef.io/) to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization
+      Visit the <a class="white" href="https://supermarket.chef.io/">Chef Supermarket</a> to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization. 
 
+
+      <a class="btn btn-primary-white" href="https://docs.chef.io/cookbooks/" target="_blank" rel="noreferrer noopener">Learn more</a>
     code: |-
 
       $ chef-run 34.222.175.132 \
@@ -61,7 +77,7 @@ benefits:
       / Applying my_cookbook::my_recipe from /Users/nickrycar/Projects/
         / 34.222.175.132 Applying my_cookbook::my_recipe...
   three:
-    header: Management
+    header: Manage Infrastructure
     copy: >-
       #### Effortless Manage Infrastructure   
 
@@ -80,9 +96,9 @@ benefits:
         \ 34.222.175.132 Applying package[ntp]...
         \ 34.223.63.28 Applying package[ntp]...
   four:
-    header: Testing
+    header: Test Locally
     copy: >-
-      #### Test Automation Locally Before you Publish  
+      #### Test Automation Locally Before You Publish  
 
       Chef Workstation includes Cookstyle and Test Kitchen to provide automated testing of your configuration policy. Combine these tools with Chef Automate to provide an auditable history of all change being applied to your environments.  
 
@@ -109,7 +125,7 @@ contact:
     link: https://www.chef.io/products/
     copy: Learn more
 ---
-<p>The quickest way to get started with Chef’s suite of tools</p>
+<p class="lead">The quickest way to get started with Chef’s suite of tools</p>
 <div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/products/workstation" target="_blank" rel="noopener noreferrer">Download Workstation</a>
 <a class="btn btn-secondary" href="https://www.chef.sh/docs/chef-workstation/getting-started/ target="_blank" rel="noopener noreferrer">Get Started</a>

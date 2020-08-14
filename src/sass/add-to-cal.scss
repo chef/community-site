@@ -1,0 +1,21 @@
+@import "settings";
+
+#addeventatc1 {
+  border: 1px solid $chef-secondary !important;
+  box-shadow: none !important;
+  bottom: 1px;
+  color: $chef-secondary !important;
+  font-size: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  z-index: 1 !important;
+
+  &:hover {
+    background-color: $chef-secondary !important;
+    color: $white !important;
+  }
+
+  .addeventatc_icon {
+    visibility: hidden !important;
+  }
+}

@@ -15,3 +15,11 @@ disableKinds = "taxonomyTerm"
   youtube = "https://www.youtube.com/user/getchef"
   meta_image_sq = "https://community.chef.io/img/Community_Meta_MetaImage_600x300.jpg"
   meta_image_rect = "https://community.chef.io/img/Community_Meta_MetaImage_800x800.jpg"
+
+[caches]
+  [caches.getJSON]
+    maxAge = "1h"
+  [caches.assets]
+    maxAge = "1h"
+
+

@@ -1,10 +1,10 @@
 ---
-title: 'Chef Developer Community'
+title: "Chef Developer Community"
 meta_keyword: Chef Community
 meta_description: >-
   Community is the foundation of Chef. We believe that the best way to build
   software is in close collaboration with the people who use it, and the best
-  way to use software is alongside those who build it. 
+  way to use software is alongside those who build it.
 cards:
   one:
     icon: /img/icons/learn.svg
@@ -16,31 +16,31 @@ cards:
       [Get started &raquo;](https://learn.chef.io)
 
       ##### Docs
-      - [Chef Infra](https://docs.chef.io/)
-      - [Chef InSpec](https://www.inspec.io/docs/)
-      - [Chef Habitat](https://www.habitat.sh/docs/)
-      - [Chef Automate](https://automate.chef.io/docs/quickstart/)
+      - [Chef Infra](https://docs.chef.io/chef_overview/) | [Chef InSpec](https://docs.chef.io/inspec/) 
+      - [Chef Habitat](https://www.habitat.sh/docs/) | [Chef Automate](https://automate.chef.io/docs/quickstart/) 
+      - [Chef Desktop](https://docs.chef.io/desktop/) | [Chef Compliance](https://docs.chef.io/compliance/)
+      - [Chef Workstation](https://docs.chef.io/workstation/)
   two:
     icon: /img/icons/meet.svg
     title: Meet
+    body: >-
+      ##### Events
   three:
     icon: /img/icons/connect.svg
     title: Connect
     body: >-
-      ##### Interact
-
-      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
-
-      
-      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT  
-
-      
-      [Community Meeting!](https://community-slack.chef.io/) Thursdays at 9:00AM PT  | #community-meetings in Slack
-
       ##### Contribute
 
       [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
       Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
+
+      ##### Interact
+
+      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
+
+
+      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT
+
 products:
   habitat:
     copy: >
@@ -56,9 +56,9 @@ products:
 
 
       Deploy your applications with confidence with Habitat’s built-in support
-      for health checks, rolling updates, dependency management, and more. 
+      for health checks, rolling updates, dependency management, and more.
     header: Application Delivery
-    url: 'https://www.habitat.sh'
+    url: "https://www.habitat.sh"
   header: "Chef helps automate your:"
   infra:
     copy: >
@@ -74,7 +74,7 @@ products:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: 'https://www.chef.sh'
+    url: "https://www.chef.sh"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
@@ -91,7 +91,7 @@ products:
       consistent standards in every managed environment, at every stage of
       development.
     header: Security & Compliance
-    url: 'https://www.inspec.io'
+    url: "https://www.inspec.io"
   automate:
     copy: >
       #### Incorporate Chef’s products into your Application Development
@@ -105,7 +105,7 @@ products:
       application delivery pipeline, supporting your projects throughout the
       entire application lifecycle.
     header: Observability
-    url: 'https://automate.chef.io'
+    url: "https://automate.chef.io"
 community:
   header: We're all in this together
   body: >-
@@ -163,16 +163,10 @@ resources:
 
 # We're better together
 
-
-Community is the foundation of Chef.  We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it. 
-     
+Community is the foundation of Chef. We believe that the best way to build software is in close collaboration with the people who use it, and the best way to use software is alongside those who build it.
 
 Our greatest strength is our community. That is why as a community, we are committed to holding ourselves to a higher standard. This is captured in our [Code of Conduct].
 
-
 Join us, whether online or in person, and let’s build the future of technology together.
 
-
-
-
-[Code of Conduct]: /code-of-conduct
+[code of conduct]: /code-of-conduct

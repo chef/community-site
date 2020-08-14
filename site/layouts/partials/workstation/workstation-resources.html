@@ -9,7 +9,7 @@
 
     {{ $events := getJSON "https://blog.chef.io/wp-json/wp/v2/posts?categories=3546" }} 
     {{ range first 3 $events }}
-    <div class="col-lg-4 col-sm-12 card-container">
+    <div class="col-lg-4 col-sm-6 col-12 card-container">
       <div class="card">
         <a
           href="{{ .link }}"
