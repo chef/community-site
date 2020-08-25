@@ -1,5 +1,5 @@
 ---
-title: Chef Workstation
+title: The quickest way to get started with Chef’s suite of tools
 type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
@@ -38,7 +38,7 @@ cards:
       Chef Workstation includes everything packaged within the Chef Development Kit. Development tools for testing, dependency resolution, and cookbook generation are all included, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
 
 
-      [Learn more](https://www.chef.sh/docs/chef-workstation/getting-started/)
+      <a class="cta" href="https://www.chef.sh/docs/chef-workstation/getting-started/" target="_blank" rel="noopener noreferrer">Learn more</a>
 benefits:
   headerImage: /img/logos/chef-workstation-white.svg
   headerTwo: can be used to
@@ -119,15 +119,14 @@ benefits:
 resources:
   header: From the Chef Workstation Blog
 contact:
-  header: Wondering how Chef Workstation might work for your team?
-  copy: Text
+  header: Accelerate your business’s move to the cloud and adoption of container technology.
+  copy: 
   ctaOne: 
     link: https://www.chef.io/products/
     copy: Learn more
 ---
-<p class="lead">The quickest way to get started with Chef’s suite of tools</p>
 <div class="center-mobile">
 <a class="btn btn-primary" href="https://downloads.chef.io/products/workstation" target="_blank" rel="noopener noreferrer">Download Workstation</a>
-<a class="btn btn-secondary" href="https://www.chef.sh/docs/chef-workstation/getting-started/ target="_blank" rel="noopener noreferrer">Get Started</a>
+<a class="btn btn-secondary" href="https://www.chef.sh/docs/chef-workstation/getting-started/" target="_blank" rel="noopener noreferrer">Get Started</a>
 <br/>
 <iframe title="Github" id="github-star" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef-workstation&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
