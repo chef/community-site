@@ -38,8 +38,9 @@ cards:
     icon: /img/icons/inspec-3.png
     title: Robust testing & development tools
     body: >-
-      Chef Workstation comes to replace  Chef DK. It includes features such as development tools for testing, dependency resolution, and cookbook generation, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.
-
+      Chef Workstation comes to replace  Chef DK. It includes features such as development tools for testing, dependency resolution, and cookbook generation, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
+ 
+ 
       <a class="cta" href="https://docs.chef.io/workstation/" target="_blank" rel="noopener noreferrer">Learn more</a>
 benefits:
   headerImage: /img/logos/chef-workstation-white.svg
