@@ -1,6 +1,6 @@
 # Hugo template for Netlify CMS with Netlify Identity
 
-This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
+This site was built upon the [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
 
 ## Local Development
 
@@ -9,6 +9,12 @@ Clone this repository, and run `yarn` or `npm install` from the new folder to in
 Then start the development server with `yarn start` or `npm start`.
 
 GitHub Workflows are defined in the file `main.yml`. Currently scheduled to deploy daily.
+
+## Netlify Deployment
+
+A daily-build is triggered on Netlify using GitHub Actions and Netlify build hooks. The config file is available in the main directory.
+
+`.github/workflows/main.yml`
 
 ## Layouts
 
