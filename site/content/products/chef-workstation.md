@@ -38,10 +38,9 @@ cards:
     icon: /img/icons/inspec-3.png
     title: Robust testing & development tools
     body: >-
-      Chef Workstation includes everything packaged within the Chef Development Kit. Development tools for testing, dependency resolution, and cookbook generation are all included, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
+      Chef Workstation comes to replace  Chef DK. It includes features such as development tools for testing, dependency resolution, and cookbook generation, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.
 
-
-      <a class="cta" href="https://docs.chef.io/workstation/getting_started/" target="_blank" rel="noopener noreferrer">Learn more</a>
+      <a class="cta" href="https://docs.chef.io/workstation/" target="_blank" rel="noopener noreferrer">Learn more</a>
 benefits:
   headerImage: /img/logos/chef-workstation-white.svg
   headerTwo: can be used to
@@ -122,15 +121,15 @@ benefits:
 resources:
   header: From the Chef Workstation Blog
 contact:
-  header: Accelerate your business’s move to the cloud and adoption of container technology.
+  header: Free in-depth training and hands-on experiences built by the Chef experts.
   copy: 
   ctaOne: 
-    link: https://www.chef.io/products/
-    copy: Learn more
+    link: https://learn.chef.io/#/infrastructure-automation
+    copy: Learn Chef
 ---
 <div class="center-xs">
 <a class="btn btn-primary" href="https://downloads.chef.io/products/workstation" target="_blank" rel="noopener noreferrer">Download Workstation</a>
-<a class="btn btn-secondary" href="https://docs.chef.io/workstation/getting_started/" target="_blank" rel="noopener noreferrer">Get Started</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/workstation/" target="_blank" rel="noopener noreferrer">Get Started</a>
 <br/>
 <iframe title="Github" id="github-star" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef-workstation&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>
