@@ -6,17 +6,17 @@
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-lg-7">
 						<h1>
 							<div class="img-left">
-							<img src="{{ .Params.hero.logo }}" alt="Chef Workstation" class="chef-wordmark  " />
+							<img src="{{ .Params.hero.logo }}" alt="Chef Workstation" class="chef-wordmark" />
 							</div>
 						</h1>
 						<h2>{{ .Params.title }}</h2>
 						{{ .Content }}
 					</div>
 					<div class="col-md-5">
-						<img src="{{ .Params.hero.image }}" alt="Animation of Workstations demo" />
+						<img class="hero-gif" src="{{ .Params.hero.image }}" alt="Animation of Workstations demo" />
 					</div>
 				</div>
 			</div>

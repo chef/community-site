@@ -46,6 +46,13 @@
         height: 32vh;
       }
     }
+
+    img.hero-gif {
+      border: 1rem solid $dark-gray;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
   }
 
   // WORKSTATION BENEFITS TABS
