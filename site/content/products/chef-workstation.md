@@ -58,6 +58,41 @@ benefits:
 
  
       <a class="btn btn-primary-white" href="https://docs.chef.io/workstation/getting_started/#ad-hoc-remote-execution-with-chef-run" target="_blank" rel="noreferrer noopener">Learn more</a>
+    code: |-
+      
+      $ inspec exec check_ntp.rb -t ssh://centos@34.222.175.132  
+
+      Profile: tests from /Users/tball/check_ntp.rb (tests from .Users.tball.check_ntp.rb)
+      Version: (not specified)
+      Target:  ssh://centos@34.222.175.132:22  
+
+        ×  check ntp: Service ntp (2 failed)
+          ×  Service ntp is expected to be installed
+          expected that `Service ntp` is installed
+          ×  Service ntp is expected to be running
+          expected that `Service ntp` is running  
+
+      Profile Summary: 0 successful controls, 1 control failure, 0 controls skipped
+      Test Summary: 0 successful, 2 failures, 0 skipped  
+
+      $ chef-run ssh://centos@34.222.175.132 start_ntp.rb
+      [✔] Packaging cookbook... done!
+      [✔] Generating local policyfile... exporting... done!
+      [✔] Applying start_ntp from /Users/tball/start_ntp.rb to target.
+      └── [✔] [ubuntu1] Successfully converged start_ntp.  
+
+      $ inspec exec check_ntp.rb -t ssh://centos@34.222.175.132  
+
+      Profile: tests from /Users/tball/check_ntp.rb (tests from .Users.tball.check_ntp.rb)
+      Version: (not specified)
+      Target:  ssh://centos@34.222.175.132:22  
+
+        ✔  check ntp: Service ntp
+          ✔  Service ntp is expected to be installed
+          ✔  Service ntp is expected to be running  
+          
+      Profile Summary: 1 successful control, 0 control failures, 0 controls skipped
+      Test Summary: 2 successful, 0 failures, 0 skipped
   two: 
     header: Define Automation
     copy: >-

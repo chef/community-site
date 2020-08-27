@@ -64,6 +64,11 @@
     .benefits-main {
       @extend %section-tabs;
     }
+
+    pre {
+      border: none !important;
+      max-height: 300px;
+    }
   }
 
 }
