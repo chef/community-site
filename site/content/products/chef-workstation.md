@@ -3,6 +3,7 @@ title: The quickest way to get started with Chef’s suite of tools
 type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
+  image: /img/chef-run.gif
 cards:
   header: Tools and libraries for interacting with Chef’s tools
   one:
@@ -11,21 +12,23 @@ cards:
     body: >-
       Chef Workstation gives you all the tools you need to get started and includes:  
 
-      - Chef Workstation App  
+      • Chef Workstation App  
 
-      - Chef Infra Client  
+      • Chef Infra Client  
 
-      - Chef InSpec  
+      • Chef InSpec  
 
-      - Chef Command Line Tool  
+      • Chef Habitat  
 
-      - Test Kitchen  
+      • Chef Command Line Tool  
 
-      - Cookstyle  
+      • Test Kitchen  
 
-      - Various Test Kitchen and Knife plugins  
+      • Cookstyle  
 
-      - Upgrade Lab  
+      • Various Test Kitchen and Knife plugins  
+
+      • [Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/) 
   two:
     icon: /img/icons/inspec-2.png
     title: Run Ad-Hoc tasks from the CLI
@@ -38,7 +41,7 @@ cards:
       Chef Workstation includes everything packaged within the Chef Development Kit. Development tools for testing, dependency resolution, and cookbook generation are all included, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
 
 
-      <a class="cta" href="https://www.chef.sh/docs/chef-workstation/getting-started/" target="_blank" rel="noopener noreferrer">Learn more</a>
+      <a class="cta" href="https://docs.chef.io/workstation/getting_started/" target="_blank" rel="noopener noreferrer">Learn more</a>
 benefits:
   headerImage: /img/logos/chef-workstation-white.svg
   headerTwo: can be used to
@@ -127,7 +130,7 @@ contact:
 ---
 <div class="center-xs">
 <a class="btn btn-primary" href="https://downloads.chef.io/products/workstation" target="_blank" rel="noopener noreferrer">Download Workstation</a>
-<a class="btn btn-secondary" href="https://www.chef.sh/docs/chef-workstation/getting-started/" target="_blank" rel="noopener noreferrer">Get Started</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/workstation/getting_started/" target="_blank" rel="noopener noreferrer">Get Started</a>
 <br/>
 <iframe title="Github" id="github-star" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef-workstation&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>
