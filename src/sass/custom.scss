@@ -88,10 +88,10 @@ img {
 .chef-wordmark {
   width: auto;
   margin-right: 1rem;
-  max-height: 38px;
+  height: 36px;
 
   @include media-breakpoint-down(sm) {
-    max-height: 30px;
+    height: 30px;
   }
 }
 
