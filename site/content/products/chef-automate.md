@@ -6,22 +6,22 @@ hero:
 cards:
   header: Change How You Automate Everything in the Stack
   one:
-    icon: 
+    icon: /img/icons/automate-1.svg
     title: Real-Time Data Across Environments
     body: >-
       Aggregated, filterable dashboards collect configuration and compliance details for every datacenter, cloud provider, and environment you manage.  
   two:
-    icon: 
+    icon: /img/icons/automate-2.svg
     title: Collaborate Effortlessly Between Teams
     body: >-
       Development, Operations, Security, and Compliance teams are all responsible for delivering software safely and efficiently, so they should share a consistent view of how environments are built and validated.
   three:
-    icon: 
+    icon: /img/icons/automate-3.svg
     title: Powerful Auditing Capabilities
     body: >-
       Create agentless compliance scans directly in the Web UI. Scan traditional servers, VMs, and cloud environments all in one place.
   four:
-    icon: 
+    icon: /img/icons/automate-4.svg
     title: Actionable Insights
     body: >-
       Chef Automate provides actionable insights with enterprise scale and performance across multiple data centers and cloud providers.
