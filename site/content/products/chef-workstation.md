@@ -7,7 +7,7 @@ hero:
 cards:
   header: Tools and libraries for interacting with Chef’s tools
   one:
-    icon: /img/icons/inspec-1.png
+    icon: /img/icons/workstation-1.svg
     title: One click gets you everything you need
     body: >-
       Chef Workstation gives you all the tools you need to get started and includes:  
@@ -30,12 +30,12 @@ cards:
 
       • [Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/) 
   two:
-    icon: /img/icons/inspec-2.png
+    icon: /img/icons/workstation-2.svg
     title: Run Ad-Hoc tasks from the CLI
     body: >-
       Apply dynamic, repeatable configurations to your servers directly over SSH or WinRM via chef-run. This provides a quick way to apply config changes to the systems you manage whether or not they’re being actively managed by Chef Infra, without requiring any pre-installed software.  
   three:
-    icon: /img/icons/inspec-3.png
+    icon: /img/icons/workstation-3.svg
     title: Robust testing & development tools
     body: >-
       Chef Workstation comes to replace  Chef DK. It includes features such as development tools for testing, dependency resolution, and cookbook generation, ensuring that whether you’re consuming existing chef policies, or creating your own, you have everything you need to get up and running quickly.  
@@ -51,9 +51,9 @@ benefits:
 
       ####  Detect & Remediate Security Issues  
 
-      1. Scan a server to verify network time protocol (ntp) is installed and running  
+      1. Scan a server to verify network time protocol (`ntp`) is installed and running  
 
-      2. Remediate scan failure by Installing and configuring ntp  
+      2. Remediate scan failure by Installing and configuring `ntp`
  
       3. Re-scan server for compliance  
 
@@ -100,7 +100,7 @@ benefits:
 
       #### Define Customized Automation  
 
-      Visit the <a class="white" href="https://supermarket.chef.io/">Chef Supermarket</a> to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization. 
+      Visit <a class="white" href="https://supermarket.chef.io/">Chef Supermarket</a> to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization. 
 
 
       <a class="btn btn-primary-white" href="https://docs.chef.io/cookbooks/" target="_blank" rel="noreferrer noopener">Learn more</a>
