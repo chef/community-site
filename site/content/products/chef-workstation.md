@@ -106,20 +106,29 @@ benefits:
       <a class="btn btn-primary-white" href="https://docs.chef.io/cookbooks/" target="_blank" rel="noreferrer noopener">Learn more</a>
     code: |-
 
-      $ chef-run 34.222.175.132 \
-      my_cookbook::my_recipe \
-      --user centos -i ~/.ssh/mykey \
+      $ chef generate cookbook my_custom_policy \
+      --copyright 'Jean Doe' --email jdoe@company.tld
 
-      ✔ Packaging cookbook... done!
-      ✔ Generating local policyfile... exporting... done!
-      / Applying my_cookbook::my_recipe from /Users/nickrycar/Projects/
-        / 34.222.175.132 Applying my_cookbook::my_recipe...
+      Generating cookbook my_custom_policy
+      - Ensuring correct cookbook content
+      - Committing cookbook files to git
+
+      Your cookbook is ready. Type `cd my_custom_policy` to enter it.
+
+      Why not start by writing an InSpec test? Tests for the default recipe are stored at:
+
+      test/integration/default/default_test.rb
+
+      If you'd prefer to dive right in, the default recipe can be found at:
+
+      recipes/default.rb
+
   three:
     header: Manage Infrastructure
     copy: >-
       #### Effortless Manage Infrastructure   
 
-      Quickly configure servers directly over SSH or WinRM. Execute ad-hoc tasks on multiple hosts in parallel to quickly configure groups of servers.
+      Quickly configure servers directly over SSH or WinRM. Execute ad-hoc tasks on multiple hosts in parallel to quickly configure groups of servers.  
 
       <a class="btn btn-primary-white" href="https://docs.chef.io/workstation/getting_started/#recipe-and-multi-node-convergence" target="_blank" rel="noopener noreferrer">Learn More</a>
     code: |-
