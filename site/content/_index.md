@@ -17,7 +17,7 @@ cards:
 
       ##### Docs
       - [Chef Infra](https://docs.chef.io/chef_overview/) | [Chef InSpec](https://docs.chef.io/inspec/) 
-      - [Chef Habitat](https://www.habitat.sh/docs/) | [Chef Automate](https://automate.chef.io/docs/quickstart/) 
+      - [Chef Habitat](https://www.habitat.sh/docs/) | [Chef Automate](https://docs.chef.io/automate/) 
       - [Chef Desktop](https://docs.chef.io/desktop/) | [Chef Compliance](https://docs.chef.io/compliance/)
       - [Chef Workstation](https://docs.chef.io/workstation/)
   two:
@@ -58,7 +58,7 @@ products:
       Deploy your applications with confidence with Habitat’s built-in support
       for health checks, rolling updates, dependency management, and more.
     header: Application Delivery
-    url: "https://www.habitat.sh"
+    url: "https://community.chef.io/products/chef-habitat/"
   header: "Chef helps automate your:"
   infra:
     copy: >
@@ -74,7 +74,7 @@ products:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: "https://www.chef.sh"
+    url: "https://docs.chef.io/chef_overview/"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
@@ -91,7 +91,7 @@ products:
       consistent standards in every managed environment, at every stage of
       development.
     header: Security & Compliance
-    url: "https://www.inspec.io"
+    url: "https://community.chef.io/products/chef-inspec/"
   automate:
     copy: >
       #### Incorporate Chef’s products into your Application Development
@@ -105,7 +105,7 @@ products:
       application delivery pipeline, supporting your projects throughout the
       entire application lifecycle.
     header: Observability
-    url: "https://automate.chef.io"
+    url: "https://community.chef.io/products/chef-automate/"
 community:
   header: We're all in this together
   body: >-
