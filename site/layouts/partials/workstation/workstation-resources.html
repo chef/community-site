@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        {{ .Params.resources.header }}
+        <span class="highlight">{{ .Params.resources.headerTwo }}</span>
+      </h2>
+    </div>
+
+    {{ $events := getJSON "https://blog.chef.io/wp-json/wp/v2/posts?categories=3546" }} 
+    {{ range first 3 $events }}
+    <div class="col-lg-4 col-sm-6 col-12 card-container">
+      <div class="card">
+        <a
+          href="{{ .link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="img"
+        >
+          <img src="{{ .jetpack_featured_media_url }}" alt="" />
+        </a>
+        <div class="text">
+          <h4>{{ .title.rendered | markdownify }}</h4>
+          <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="col-12 text-center mt-4">
+      <a
+        class="btn btn-primary"
+        href="https://blog.chef.io/category/chef-workstation/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View all posts</a
+      >
+    </div>
+  </div>
+</div>

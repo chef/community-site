@@ -88,7 +88,7 @@ img {
 .chef-wordmark {
   width: auto;
   margin-right: 1rem;
-  max-height: 38px;
+  height: 35px;
 
   @include media-breakpoint-down(sm) {
     max-height: 30px;
@@ -597,13 +597,7 @@ input {
   }
 
   h2 {
-    color: $chef-primary;
     margin-bottom: 0.5rem;
-  }
-
-  #chefio {
-    font-size: 0.8em;
-    color: $mid-gray;
   }
 }
 
@@ -894,5 +888,6 @@ pre {
 @import "home";
 @import "chef-inspec";
 @import "chef-habitat";
+@import "chef-workstation";
 @import "first-time";
 @import "windows-resources";
