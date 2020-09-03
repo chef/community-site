@@ -70,7 +70,7 @@ ol {
 }
 
 ::selection {
-  background-color: lighten($chef-primary, 10%);
+  background-color: adjust-color($chef-primary, $lightness: 10%);
 }
 
 @mixin link{
@@ -95,6 +95,17 @@ a.cta {
 
   &:after {
     content: " \BB";
+  }
+}
+
+a.white {
+  color: $white;
+  text-decoration: underline;
+
+  &:hover, 
+  &:focus, 
+  &:active {
+    color: $chef-primary;
   }
 }
 
