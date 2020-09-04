@@ -13,6 +13,50 @@ Date | Time | Presenter(s) | |
 ---|---|---|---
 October 1st, 2020 | 12:00pm PT | Jody Wolfborn | <a href='#'><div class='btn btn-primary'>Register</div></a>
 October 6th, 2020 | 12:00pm CT | Robin Beck | <a href='#'><div class='btn btn-primary'>Register</div></a>
-October 8th, 2020 | 12:00pm GMT | Kimball Johnson | <a href='#'><div class='btn btn-primary'>Register</div></a>
+October 8th, 2020 | 12:00pm BST | Kimball Johnson | <a href='#'><div class='btn btn-primary'>Register</div></a>
 October 13th, 2020 | 12:00pm ET | Robin Beck | <a href='#'><div class='btn btn-primary'>Register</div></a>
 October 15th, 2020 | 12:00pm GMT +10 | Jody Wolfborn | <a href='#'><div class='btn btn-primary'>Register</div></a>
+
+
+<div class='iee-mobile-table'>
+  <div class='iee-mobile-session'>
+      <h3>October 1st, 2020</h3>
+      <p>12:00pm PT</p>
+      <p>Jody Wolfborn</p>
+      <div class='flex-center'>
+      <a href='#'><div class='btn btn-primary'>Register</div></a>
+      </div>
+  </div>
+  <div class='iee-mobile-session'>
+      <h3>October 6th, 2020</h3>
+      <p>12:00pm CT</p>
+      <p>Robin Beck</p>
+      <div class='flex-center'>
+      <a href='#'><div class='btn btn-primary'>Register</div></a>
+      </div>
+  </div>
+  <div class='iee-mobile-session'>
+      <h3>October 8th, 2020</h3>
+      <p>12:00pm BST</p>
+      <p>Kimball Johnson</p>
+      <div class='flex-center'>
+      <a href='#'><div class='btn btn-primary'>Register</div></a>
+      </div>
+  </div>
+  <div class='iee-mobile-session'>
+      <h3>October 13th, 2020</h3>
+      <p>12:00pm ET</p>
+      <p>Robin Beck</p>
+      <div class='flex-center'>
+      <a href='#'><div class='btn btn-primary'>Register</div></a>
+      </div>
+  </div>
+  <div class='iee-mobile-session'>
+      <h3>October 15th, 2020</h3>
+      <p>12:00pm GMT +10</p>
+      <p>Jody Wolfborn</p>
+      <div class='flex-center'>
+      <a href='#'><div class='btn btn-primary'>Register</div></a>
+      </div>
+  </div>
+</div>

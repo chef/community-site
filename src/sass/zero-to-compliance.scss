@@ -1,9 +1,14 @@
 #zero-to-compliance {
     .hero {
-        background-size: cover;
         background-position: center;
-        padding: 90px 0;
+        background-size: cover;
         margin-bottom: 5rem;
+        padding: 90px 0;
+
+        @include media-breakpoint-down(sm) {
+            background-position: right 110%;
+            margin-bottom: 3rem;
+        }
 
         h1,
         p {
@@ -12,16 +17,44 @@
 
         h1 {
             font-size: 2.6em;
+            @include media-breakpoint-down(sm) {
+                font-size: 2.1em;
+            }
         }
 
-        img {
-            max-height: 200px;
+        p {
+            @include media-breakpoint-down(sm) {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        .img-container {
+            @include media-breakpoint-down(sm) {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                max-height: 200px;
+
+                @include media-breakpoint-down(sm) {
+                    max-height: 150px;
+                }
+
+            }
         }
     }
 
     .main-content {
         .iee-intro {
         margin-bottom: 5rem;
+        
+        p {
+            @include media-breakpoint-down(sm) {
+                font-size: 15px;       
+            }
+        }
 
             img {
                 max-height: 175px;
@@ -29,15 +62,22 @@
         }
 
         .iee-table {
-            margin-bottom: 5rem;
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 5rem;
+            }
+            
             table {
-                width: 100%;
                 font-size: 1.2em;
+                width: 100%;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
 
                 th {
                     background-color: $chef-primary;
-                    padding: 0.7rem;
                     border-right: 1px solid $white;
+                    padding: 0.7rem;
                 }
 
                 th:nth-last-child(2) { 
@@ -61,6 +101,37 @@
                     background-color: $light-gray; 
                 } 
             }
+            .iee-mobile-table {
+                width: calc(100% + 30px);
+                margin-left: -15px;
+                margin-right: -15px;
+
+                .iee-mobile-session {
+                    padding-top:1rem;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+
+                    @include media-breakpoint-up(sm) {
+                        display: none;
+                    }
+
+                    h3 {
+                        font-size: 1.6em;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin-bottom: 0.3rem;
+                        text-align: center;
+                    }
+                }
+
+                .iee-mobile-session:nth-child(odd) { 
+                    background-color: $light-gray; 
+                } 
+            }
         }
 
     }
@@ -68,8 +139,8 @@
     .iee-contact {
         background-color: $chef-tertiary;
         color: $white;
-        padding-top: 5rem;
         padding-bottom: 5rem;
+        padding-top: 5rem;
         text-align: center;
 
         h2 {
