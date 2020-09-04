@@ -69,7 +69,7 @@ contact:
 
 <div class="center-xs">
 <a class="btn btn-primary" href="https://docs.chef.io/automate/" target="_blank" rel="noopener noreferrer">Get started</a>
-<a class="btn btn-secondary" href="https://downloads.chef.io/release-notes/automate/" target="_blank" rel="noopener noreferrer">Release notes</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/release_notes_automate/" target="_blank" rel="noopener noreferrer">Release notes</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=chef&repo=automate&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
