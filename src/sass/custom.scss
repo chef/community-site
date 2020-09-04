@@ -69,6 +69,11 @@ main {
   justify-content: center;
 }
 
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
 // ===================
 // Image Styling
 // ===================
@@ -892,3 +897,4 @@ pre {
 @import "chef-workstation";
 @import "first-time";
 @import "windows-resources";
+@import "zero-to-compliance"

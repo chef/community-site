@@ -62,7 +62,7 @@ resources:
 contact:
   header: Accelerate your business’s move to the cloud and adoption of container technology.
   ctaOne: 
-    link: https://www.chef.io/products/automate/
+    link: https://www.chef.io/products/chef-automate/
     copy: Learn more
 ---
 <p>Chef Automate is an enterprise dashboard and analytics tool enabling cross-team collaboration with actionable insights for configuration and compliance and an auditable history of changes to environments.</p>
