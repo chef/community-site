@@ -87,7 +87,7 @@ builder:
   copy: >-
     The Chef Habitat Builder provides a set of enterprise-class functionality that includes package storage, search, and automated API enabled services. Application binaries versioned and stored along with the corresponding Habitat Artifact. Clients have the option of leveraging the SaaS or on-premises version of Builder. 
   ctaOne:
-      copy: Learn more about Builder
+    copy: Learn more about Builder
     link: https://www.habitat.sh/docs/using-builder/
   ctaTwo:
     copy: Log In
