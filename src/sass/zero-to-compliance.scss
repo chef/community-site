@@ -67,7 +67,7 @@
             }
             
             table {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 width: 100%;
 
                 @include media-breakpoint-down(sm) {
@@ -105,15 +105,14 @@
                 width: calc(100% + 30px);
                 margin-left: -15px;
                 margin-right: -15px;
+                @include media-breakpoint-up(sm) {
+                    display: none;
+                }
 
                 .iee-mobile-session {
                     padding-top:1rem;
                     padding-bottom: 1rem;
                     margin-bottom: 1rem;
-
-                    @include media-breakpoint-up(sm) {
-                        display: none;
-                    }
 
                     h3 {
                         font-size: 1.6em;
