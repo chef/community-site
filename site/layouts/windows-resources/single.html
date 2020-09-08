@@ -1,60 +1,72 @@
 {{ define "body" }}
+
 <main id="windows-resources">
-		<section class="hero">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-8 col-xl-6">
-            <div class="img-left">
-              <img src="/img/logos/chef-habitat-dark.svg" alt="Chef Habitat" class="chef-wordmark">
-            </div>
-						<h1>{{ .Params.title }}</h1>
-						<p>{{ .Content }}</p>
-					</div>
-				</div>
-			</div>
-    </section>
-    
+
+  <div class="announcement-banner container-fluid">
+    <div class="row">
+      <div class="col-sm-12 flex-center">
+        <p>Define and Package a Windows ASP.NET web application with Chef Habitat.
+          <a class="cta white" target="_blank" rel="noopener noreferrer"
+            href="https://www.habitat.sh/demo/windows/steps/1/">Get Started</a></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-xl-6">
+          <div class="img-left">
+            <img src="/img/logos/chef-habitat-dark.svg" alt="Chef Habitat" class="chef-wordmark">
+          </div>
+          <h1>{{ .Params.title }}</h1>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="resources">
     <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h2>{{ .Params.rowOne.header }}</h2>
-      </div>
-      {{ range first 3 $.Site.Data.resources }}
+      <div class="row">
+        <div class="col-12">
+          <h2>{{ .Params.rowOne.header }}</h2>
+        </div>
+        {{ range first 3 $.Site.Data.resources }}
         {{ partial "resource-card" . }}
-      {{ end }}
-      <div class="col-12">
-        <h2>{{ .Params.rowTwo.header }}</h2>
-      </div>
-      {{ range first 2 (after 3 $.Site.Data.resources) }}
-       {{ partial "resource-card" . }}
-      {{ end }}
-      <div class="col-12">
-        <h2>{{ .Params.rowThree.header }}</h2>
-      </div>
-      {{ range first 3 (after 6 $.Site.Data.resources) }}
-       {{ partial "resource-card" . }}
-      {{ end }}
-      <div class="col-12">
-        <h2>{{ .Params.rowFour.header }}</h2>
-      </div>
-      {{ range first 3 (after 9 $.Site.Data.resources) }}
-       {{ partial "resource-card" . }}
-      {{ end }}
-      <div class="col-12">
-        <h2>{{ .Params.rowFive.header }}</h2>
-      </div>
-      {{ range last 4 $.Site.Data.resources }}
+        {{ end }}
+        <div class="col-12">
+          <h2>{{ .Params.rowTwo.header }}</h2>
+        </div>
+        {{ range first 2 (after 3 $.Site.Data.resources) }}
+        {{ partial "resource-card" . }}
+        {{ end }}
+        <div class="col-12">
+          <h2>{{ .Params.rowThree.header }}</h2>
+        </div>
+        {{ range first 3 (after 6 $.Site.Data.resources) }}
+        {{ partial "resource-card" . }}
+        {{ end }}
+        <div class="col-12">
+          <h2>{{ .Params.rowFour.header }}</h2>
+        </div>
+        {{ range first 3 (after 9 $.Site.Data.resources) }}
+        {{ partial "resource-card" . }}
+        {{ end }}
+        <div class="col-12">
+          <h2>{{ .Params.rowFive.header }}</h2>
+        </div>
+        {{ range last 4 $.Site.Data.resources }}
         <div class="col-lg-3 col-sm-6 col-12 card-container">
           <div class="card">
-       
+
             <div class="text">
               <h4>{{ .title | markdownify }}</h4>
               <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .cta }}</a>
             </div>
           </div>
         </div>
-      {{ end }}
+        {{ end }}
       </div>
     </div>
   </section>

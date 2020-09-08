@@ -1,15 +1,15 @@
 {{ define "body" }}
 <main id="workstation">
-	
+
 	<section class="hero-actions">
-			
+
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-7">
 						<h1>
 							<div class="img-left">
-							<img src="{{ .Params.hero.logo }}" alt="Chef Workstation" class="chef-wordmark" />
+								<img src="{{ .Params.hero.logo }}" alt="Chef Workstation" class="chef-wordmark" />
 							</div>
 						</h1>
 						<h2>{{ .Params.title }}</h2>
@@ -25,7 +25,7 @@
 			{{ partial "three-cards.html" . }}
 		</section>
 	</section>
-			
+
 	<section class="benefits">
 		{{ partial "workstation/workstation-benefits.html" . }}
 	</section>
