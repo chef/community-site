@@ -886,7 +886,7 @@ pre {
   }
 }
 
-#announcement-banner {
+.announcement-banner {
   background-color: $chef-secondary;
   margin: 0;
   min-width: 100%;
@@ -898,6 +898,10 @@ pre {
     a {
       font-weight: 600;
       margin-left: 0.8rem;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        text-align: center;
+      }
     }
   }
 }

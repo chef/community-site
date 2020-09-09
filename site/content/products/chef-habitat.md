@@ -87,11 +87,11 @@ builder:
   copy: >-
     The Chef Habitat Builder provides a set of enterprise-class functionality that includes package storage, search, and automated API enabled services. Application binaries versioned and stored along with the corresponding Habitat Artifact. Clients have the option of leveraging the SaaS or on-premises version of Builder. 
   ctaOne:
+    copy: Learn more about Builder
     link: https://www.habitat.sh/docs/using-builder/
-    copy: Learn more 
   ctaTwo:
-    copy: Habitat Builder
-    link: https://bldr.habitat.sh/#/pkgs/core
+    copy: Log In
+    link: https://bldr.habitat.sh/#/sign-in
 resources:
   header: From the Chef Habitat Blog
 contact:
@@ -103,8 +103,8 @@ contact:
 <p>Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
 <div class="center-xs">
-<a class="btn btn-primary" href="https://www.habitat.sh/docs/" target="_blank" rel="noopener noreferrer">Get started</a>
-<a class="btn btn-secondary" href="https://bldr.habitat.sh/#/pkgs/core" target="_blank" rel="noopener noreferrer">Habitat Builder</a>
+<a class="btn btn-primary" href="https://community.chef.io/products/chef-habitat/#learn/">Get started</a>
+<a class="btn btn-secondary" href="https://www.habitat.sh/docs/" target="_blank" rel="noopener noreferrer">View Docs</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
