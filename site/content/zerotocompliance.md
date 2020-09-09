@@ -4,7 +4,7 @@ type: zero-to-compliance
 subtitle: Financial Services Lunch and Learns
 background: /img/iee-Headers.png
 hero: /img/iee-pig.svg
-intro: Join us at one of our virtual lunch-and-learns to see how Chef solutions help financial organizations of all sizes stand up and maintain compliant infrastructure from the start of their continuous compliance journey. 
+intro: Join us at one of our virtual lunch and learns to see how Chef solutions help financial organizations of all sizes stand up and maintain compliant infrastructure from the start of their continuous compliance journey. 
 introImage: /img/iee-laptop.svg
 
 ---
