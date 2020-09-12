@@ -4,33 +4,33 @@
 			<h2>{{ .Params.resources.header }}</h2>
 		</div>
 		<div class="col-lg-4 col-sm-6 col-12 card-container">
-				<div class="card">
-					<a href="{{ .Params.resources.one.link }}" class="img">
-						<img src="{{ .Params.resources.one.img }}" alt="{{ .Params.resources.one.alt }}" />
-					</a>
-					<div class="text">
-						{{ partial "markdownify" .Params.resources.one.body }} 
-					</div>
+			<div class="card">
+				<a href="{{ .Params.resources.one.link }}" class="img" target="_blank" rel="noopener noreferrer">
+					<img src="{{ .Params.resources.one.img }}" alt="{{ .Params.resources.one.alt }}" />
+				</a>
+				<div class="text">
+					{{ partial "markdownify" .Params.resources.one.body }}
 				</div>
+			</div>
 			</a>
 		</div>
 		<div class="col-lg-4 col-sm-6 col-12 card-container">
 			<div class="card">
-				<a href="{{ .Params.resources.two.link }}" class="img">
+				<a href="{{ .Params.resources.two.link }}" class="img" target="_blank" rel="noopener noreferrer">
 					<img src="{{ .Params.resources.two.img }}" alt="{{ .Params.resources.two.alt }}" />
 				</a>
 				<div class="text">
-					{{ partial "markdownify" .Params.resources.two.body }} 
+					{{ partial "markdownify" .Params.resources.two.body }}
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-6 col-12 card-container">
 			<div class="card">
-				<a href="{{ .Params.resources.three.link }}" class="img">
+				<a href="{{ .Params.resources.three.link }}" class="img" target="_blank" rel="noopener noreferrer">
 					<img src="{{ .Params.resources.three.img }}" alt="{{ .Params.resources.three.alt }}" />
 				</a>
 				<div class="text">
-					{{ partial "markdownify" .Params.resources.three.body }} 
+					{{ partial "markdownify" .Params.resources.three.body }}
 				</div>
 			</div>
 		</div>
