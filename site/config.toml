@@ -18,6 +18,6 @@ disableKinds = "taxonomyTerm"
 
 [caches]
   [caches.getJSON]
-    maxAge = "1h"
+    maxAge = "12h"
   [caches.assets]
-    maxAge = "1h"
+    maxAge = "12h"
