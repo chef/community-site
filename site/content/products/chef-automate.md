@@ -34,28 +34,28 @@ usage:
       Chef provides solutions for defining, packaging, and delivering applications with a unified automation framework. Chef Automate provides a window into the status and health of every application in your organization.  
 
 
-      <a href="/products/chef-habitat/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Learn more</a>
+      <a href="/products/chef-habitat/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Chef Habitat</a>
     image: /img/automate-application.png
   two:
     header: Continuous Compliance
     copy: >-
       Chef helps companies maintain compliance and prevent security incidents across heterogeneous estates. Chef Automate makes sure consistent audit insights are available across teams and projects.   
 
-      <a href="https://www.chef.io/products/chef-compliance/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Learn more</a>
+      <a href="https://www.chef.io/products/chef-compliance/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Chef Compliance</a>
     image: /img/automate-compliance.png
   three:
     header: Desktop Management
     copy: >-
       Chef makes sure that whether remote or in the office, every laptop and desktop you manage is consistently configured and continuously updated. Chef Automate makes sure you know the status of your entire fleet.  
 
-      <a href="https://www.chef.io/products/chef-desktop/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Learn more</a>
+      <a href="https://www.chef.io/products/chef-desktop/" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Chef Desktop</a>
     image: /img/automate-desktop.jpg
   four:
     header: Infrastructure Automation
     copy: >-
       Configuration management is in Chef's DNA, and Chef Automate gives you access to policy details, historical data, and system profiling information across on-prem and cloud compute environments.  
 
-      <a href="https://www.chef.io/products/chef-infra" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Learn more</a>
+      <a href="https://www.chef.io/products/chef-infra" target="_blank" rel="noreferrer noopener" class="btn btn-primary-white">Chef Infra</a>
     image: /img/automate-infrastructure.png
 resources:
   header: From the Chef Automate Blog
@@ -63,7 +63,7 @@ contact:
   header: Accelerate your business’s move to the cloud and adoption of container technology.
   ctaOne: 
     link: https://www.chef.io/products/chef-automate/
-    copy: Learn more
+    copy: 
 ---
 <p>Chef Automate is an enterprise dashboard and analytics tool enabling cross-team collaboration with actionable insights for configuration and compliance and an auditable history of changes to environments.</p>
 
