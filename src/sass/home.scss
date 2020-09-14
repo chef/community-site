@@ -226,20 +226,11 @@
           }
         }
 
-        ul li #habitat-nav:hover, #habitat-nav.active {
-          color: $habitat-color;
-        }
-
-        ul li #inspec-nav:hover, #inspec-nav.active {
-          color: $inspec-color;
-        }
-
-        ul li #infra-nav:hover, #infra-nav.active {
-          color: $infra-color;
-        }
-
+        ul li #habitat-nav:hover, #habitat-nav.active,
+        ul li #inspec-nav:hover, #inspec-nav.active,
+        ul li #infra-nav:hover, #infra-nav.active,
         ul li #automate-nav:hover, #automate-nav.active {
-          color: $automate-color;
+          color: $white;
         }
 
         @include media-breakpoint-up(lg) {
