@@ -1,9 +1,30 @@
 #home {
+  .announcement-banner {
+    background-color: $chef-secondary;
+
+    p {
+      color: $white;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .cta {
+      color: $white;
+      font-weight: 600;
+      text-decoration: underline;
+      
+      &:hover {
+        color: #292728;
+      }
+    }
+  }
 
 	#chefconf-banner {
-	  margin-top: 1rem;
 	  margin-left: -32px;
 	  margin-right: -32px;
+	  margin-top: 1rem;
 	  position: static;
 	  @include media-breakpoint-up(lg) {
       margin-right: 0;
@@ -47,8 +68,8 @@
 
       @include media-breakpoint-up(lg) {
         .row {
-          margin: 0;
           justify-content: space-between;
+          margin: 0;
         }
 
         .col {
@@ -60,16 +81,16 @@
 
   .hero-actions {
     &:before {
+      background-color: $light-gray;
+      background-image: url(/img/homepage-hero.svg);
+      background-repeat: no-repeat;
       content: "";
       display: block;
       height: 100%; // for ie11
       height: calc(100% - calc(25vh - 100px));
-      background-image: url(/img/homepage-hero.svg);
-      background-color: $light-gray;
-      background-repeat: no-repeat;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
       width: 100%;
     }
 
@@ -89,20 +110,20 @@
 
     @include media-breakpoint-up(xl) {
       &:before {
-        background-size: 50% !important;
         background-position: 110% -10% !important;
+        background-size: 50% !important;
       }
     }
     @include media-breakpoint-between(lg, xl) {
       &:before {
-        background-size: 60%;
         background-position: 120% -30px;
+        background-size: 60%;
       }
     }
     @include media-breakpoint-down(lg) {
       &:before {
-        background-size: 70%;
         background-position: 200% -30px;
+        background-size: 70%;
       }
     }
     @include media-breakpoint-down(sm) {
@@ -133,14 +154,14 @@
       height: 100%;
 
       #prodgrid-img {
+        bottom: 430px;
+        height: auto;
+        margin-bottom: -400px;
+        max-width: none;
         overflow: visible;
         position: relative;
-        bottom: 430px;
-        width: 450px;
-        height: auto;
         right: 35%;
-        max-width: none;
-        margin-bottom: -400px;
+        width: 450px;
 
         @include media-breakpoint-between(md, lg) {
           right: 48%;
@@ -231,8 +252,8 @@
         @extend %section-padding;
 
         @include media-breakpoint-up(lg) {
-          padding-top: 0;
           padding-bottom: 0;
+          padding-top: 0;
         }
 
         .tab-content {
@@ -240,8 +261,8 @@
         }
 
         ul {
-          margin-left: -15px;
           margin-bottom: 1rem;
+          margin-left: -15px;
 
           @include media-breakpoint-up(lg) {
             margin-bottom: 1.5rem;
@@ -327,11 +348,11 @@
   }
 
   .discourse-feed {
-    width: 100%;
     border: none;
     color: #646464;
     font-size: 15px;
     font-weight: 500;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -342,10 +363,10 @@
     }
 
     h5 {
-      margin-bottom: 5px;
       font-size: 17px;
-      line-height: 1;
       font-weight: 500;
+      line-height: 1;
+      margin-bottom: 5px;
 
       a {
         color: inherit;
@@ -353,23 +374,23 @@
       }
     }
     .category {
-      font-size: 13px;
-      display: block;
       color: #646464;
+      display: block;
+      font-size: 13px;
       font-weight: 500;
 
       span {
-        width: 9px;
+        display: inline-block;
         height: 9px;
         margin-right: 5px;
-        display: inline-block;
+        width: 9px;
       }
     }
 
     thead,
     tbody {
-      border: none;
       background: none;
+      border: none;
       color: #646464;
       font-size: 15px;
       font-weight: 500;
