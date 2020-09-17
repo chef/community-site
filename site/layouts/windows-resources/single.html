@@ -38,7 +38,7 @@
         <div class="col-12">
           <h2>{{ .Params.rowTwo.header }}</h2>
         </div>
-        {{ range first 2 (after 3 $.Site.Data.resources) }}
+        {{ range first 3 (after 3 $.Site.Data.resources) }}
         {{ partial "resource-card" . }}
         {{ end }}
         <div class="col-12">
