@@ -15,3 +15,8 @@
   from = "/brand"
   to = "http://marketing-web-communitycomponentlibrary.s3-website-us-west-2.amazonaws.com/"
   status = 301
+
+[[redirects]]
+  from = "/resources"
+  to = "https://5f6b873a44d12e000893edf1--relaxed-tesla-8996d3.netlify.app/:splat"
+  status = 200
