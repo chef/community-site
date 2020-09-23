@@ -66,4 +66,14 @@
       @extend %section-tabs;
     }
   }
+
+  .ecosystem {
+    @extend %section-padding;
+    background-color: $chef-tertiary;
+    color: $light-gray;
+  }
+
+  .get-started {
+    @extend %section-padding;
+  }
 }
