@@ -18,8 +18,6 @@ cards:
 
       • Chef InSpec  
 
-      • Chef Habitat  
-
       • Chef Command Line Tool  
 
       • Test Kitchen  
