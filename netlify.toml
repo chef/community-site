@@ -17,6 +17,6 @@
   status = 301
 
 [[redirects]]
-  from = "/resources"
+  from = "/resources/*"
   to = "https://deploy-preview-13--relaxed-tesla-8996d3.netlify.app/resources/:splat"
   status = 200
