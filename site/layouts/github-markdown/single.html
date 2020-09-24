@@ -1,7 +1,7 @@
 {{ define "body" }}
 <section class="markdown">
     <div class="container">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-8 offset-lg-2 content-col">
             {{ $code := getJSON .Params.link }}
 
             {{ $code.content | base64Decode | markdownify }}
