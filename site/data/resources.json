@@ -21,7 +21,7 @@
     "title": "Best Practices for Packaging Windows COTS Applications for Automated Deployment with Chef Habitat",
     "url": "https://pages.chef.io/202006-HabitatGuide-COTSAppsforWindows_01LandingPage.html",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
-    "cta": "Download guide"
+    "cta": "Get the guide"
   },
   {
     "title": "Windows Server 2008/R2 Application Migration Program",
@@ -30,10 +30,10 @@
     "cta": "Get eBook"
   },
   {
-    "title": "",
-    "url": "",
-    "image": "",
-    "cta": ""
+    "title": " Best Practices for Simplifying and Automating Microsoft SQL Updates",
+    "url": "https://pages.chef.io/202009-HabitatGuide-MSFTSQLUpdates_01LandingPage.html",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
+    "cta": "Get the guide"
   },
   {
     "title": "Packaging a .Net Windows Service Application",
@@ -66,8 +66,8 @@
     "cta": "Watch now"
   },
   {
-    "title": "ChefConf 2019: Lessons from the Field: Chef Habitat at Enterprise Scale",
-    "url": "https://www.youtube.com/watch?v=xAlvD7ZcmPE&feature=youtu.be",
+    "title": "Modernize Applications in Azure with Chef Habitat",
+    "url": "https://pages.chef.io/202005-Webinar-ModernizeApplicationsinAzurewithChefHabitat_01Register.html",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
     "cta": "Watch now"
   },

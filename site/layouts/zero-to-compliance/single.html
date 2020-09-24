@@ -1,0 +1,48 @@
+{{ define "body" }}
+<main id="zero-to-compliance">
+
+	<section class="hero" style="background-image: url('{{ .Params.background }}');">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-9 col-lg-7 offset-lg-1 v-center">
+					<div>
+						<h1>{{ .Params.title }}</h1>
+						<p class='subtitle'>{{ .Params.subtitle }}</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-3 col-lg-4 img-container">
+					<img src="{{ .Params.hero }}" alt="Line art of a piggy bank" class="piggy-bank-svg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-content">
+		<div class="container-fluid">
+			<div class="row iee-intro">
+				<div class="col-sm-12 col-md-3 col-lg-3 offset-lg-1 flex-center d-none d-sm-block">
+					<img src="{{ .Params.introImage }}" alt="Picture of a laptop" class='line art of a laptop'
+						class='laptop-svg' />
+				</div>
+				<div class="col-sm-12 col-md-9 col-lg-7 v-center">
+					<p>{{ .Params.intro }}</p>
+				</div>
+			</div>
+			<div class="row iee-table">
+				<div class="col-sm-12 col-lg-10 offset-lg-1 flex-center">
+					{{ .Content }}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class='iee-contact flex-center v-center'>
+		<div>
+			<h2>Have Questions? We're here to help</h2>
+			<div class='flex-center'><a href='https://www.chef.io/contact-us' target="_blank" rel="noreferrer noopener">
+					<div class="btn btn-primary-white">Contact Us</div>
+				</a></div>
+		</div>
+	</section>
+</main>
+
+{{ end }}

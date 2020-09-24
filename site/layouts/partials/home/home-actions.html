@@ -21,13 +21,15 @@
 					<div class="col-sm-12 events-list">
 						<h5>Webinars</h5>
 						<ul>
-              {{ range first 5 $events }}
-								<li>
-									<p><a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a></br/>
-									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }} 
-								</li>
+							{{ range first 5 $events }}
+							<li>
+								<p><a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank"
+										rel="noopener noreferrer">{{ .event_name }}</a></br />
+									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }}
+							</li>
 							{{ end }}
-							<p><a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank" rel=”noopener noreferrer”>View all webinars</a></p>
+							<p><a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank"
+									rel=”noopener noreferrer”>View all webinars</a></p>
 						</ul>
 					</div>
 					{{ end }}
@@ -55,17 +57,19 @@
 						{{ .Params.cards.two.body | markdownify }}
 						<ul>
 							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
-							
+
 							{{ if $events }}
 
-              {{ range first 5 $events }}
-								<li>
-									<a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank" rel="noopener noreferrer">{{ .event_name }}</a>
-									<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }}</p>
-								</li>
+							{{ range first 5 $events }}
+							<li>
+								<a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank"
+									rel="noopener noreferrer">{{ .event_name }}</a>
+								<p>{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }}</p>
+							</li>
 							{{ end }}
-							
-							<p><a href="https://events.chef.io/" class="cta" target="_blank" rel=”noopener noreferrer”>View all events</a></p>
+
+							<p><a href="https://events.chef.io/" class="cta" target="_blank" rel=”noopener noreferrer”>View all
+									events</a></p>
 
 							{{ else }}
 
@@ -77,7 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 col-sm-6 col-12 card-container" data-scroll-speed="4"> 
+		<div class="col-lg-4 col-sm-6 col-12 card-container" data-scroll-speed="4">
 			<div class="card" id="card-connect">
 				<div class="row card-title">
 					<div class="col-8">
@@ -86,41 +90,47 @@
 					<div class="col-4 text-right">
 						<img src="{{ .Params.cards.three.icon }}" class="card-icon" alt="">
 					</div>
-			
+
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
 						{{ partial "markdownify" .Params.cards.three.body }}
 
-						<a href="https://community-slack.chef.io/" target="_blank">Community Meeting</a>
-						
+						<a href="https://community-slack.chef.io/" target="_blank" rel="noopener noreferrer">Community Meeting</a>
+
 						<div title="Add to Calendar" class="addeventatc">
 							Add to Calendar
 							<span class="start">08/06/2020 09:00 AM</span>
 							<span class="end">08/06/2020 09:45 AM</span>
 							<span class="timezone">America/Los_Angeles</span>
-								<span class="title">Weekly Chef Community Meeting</span>
-								<span class="description">Join us for this text-based community update meeting that takes place in our <a href="https://chefcommunity.slack.com/archives/C1P99AXGV" target="_blank">#community-meetings</a>Slack channel. If you haven't yet joined the Chef Community slack, get started <a href="https://community-slack.chef.io/" target="_blank">here</a>.</span>
-								<span class="location">#community-meetings in Slack</span>
-								<span class="recurring">FREQ=WEEKLY;BYDAY=TH;INTERVAL=1</span>
+							<span class="title">Weekly Chef Community Meeting</span>
+							<span class="description">Join us for this text-based community update meeting that takes place in our <a
+									href="https://chefcommunity.slack.com/archives/C1P99AXGV" target="_blank">#community-meetings</a>Slack
+								channel. If you haven't yet joined the Chef Community slack, <a href="https://community-slack.chef.io/"
+									target="_blank">join here</a>.</span>
+							<span class="location">#community-meetings in Slack</span>
+							<span class="recurring">FREQ=WEEKLY;BYDAY=TH;INTERVAL=1</span>
 						</div>
 						Thursdays at 9:00AM PT | #community-meetings in Slack
 
 						<h5>Awesome Contributors</h5>
 						<div class="contributors-list">
-		
+
 							{{ range $.Site.Data.contributors }}
-                <a href="{{ .url }}"><img src="{{ .avatar_url }}&size=50" class="img-round" width="50" alt="{{ .name }}"></a>
-              {{ end }}
+							<a href="{{ .url }}" target="_blank" rel="noopener noreferrer"><img src="{{ .avatar_url }}&size=50"
+									class="img-round" width="50" alt="{{ .name }}"></a>
+							{{ end }}
 						</div>
 						{{ partial "social" . }}
 					</div>
-					
+
 				</div>
 
-				
+
 			</div>
 		</div>
 	</div>
 </div>
-<div class="bg-wave"><div><img draggable="false" src="/img/bg-wave.png" alt=""></div></div>
+<div class="bg-wave">
+	<div><img draggable="false" src="/img/bg-wave.png" alt=""></div>
+</div>

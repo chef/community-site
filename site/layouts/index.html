@@ -2,34 +2,35 @@
 <!-- Netlify CMS script - added to the head of site's main index page -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-    if (!user) {
-        window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
         });
     }
-    });
-}
 </script>
+
 
 {{ end }}
 
 {{ define "body" }}
 <main id="home">
+    {{ partial "announcement.html" . }}
 
     <section class="hero-actions">
 
-        <section class="hero"> 
+        <section class="hero">
             {{ partial "hero.html" . }}
         </section>
-        
+
         <section class="actions">
             {{ partial "home/home-actions.html" . }}
         </section>
-        
     </section>
-    
+
     <section class="product-grid">
         {{ partial "home/home-products.html" . }}
     </section>
@@ -44,5 +45,3 @@ if (window.netlifyIdentity) {
     </section>
 </main>
 {{ end }}
-
-

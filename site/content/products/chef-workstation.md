@@ -100,7 +100,7 @@ benefits:
 
       #### Define Customized Automation  
 
-      Visit <a class="white" href="https://supermarket.chef.io/">Chef Supermarket</a> to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization. 
+      Visit <a class="white" href="https://supermarket.chef.io/" target="_blank" rel="noopener noreferrer">Chef Supermarket</a> to find a library of partner and community maintained configuration policy, or use Chef's declarative resources to create custom automation for your organization. 
 
 
       <a class="btn btn-primary-white" href="https://docs.chef.io/cookbooks/" target="_blank" rel="noreferrer noopener">Learn more</a>

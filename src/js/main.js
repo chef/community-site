@@ -1,4 +1,6 @@
 (function ($) {
+
+  //Used for Discourse Activity column
   timeago().render(document.querySelectorAll(".relativetime"));
   timeago.cancel();
 
