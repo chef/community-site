@@ -1,8 +1,18 @@
 .markdown{
-    @extend %section-padding;
+	@extend %section-padding;
+	
+	background-color: $light-gray;
+
+	.content-col {
+		background-color: $white;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 
     h1 {
-        color: $chef-secondary;
+		color: $chef-secondary;
+		font-size: 3rem;
     }
     
     td, th {
@@ -19,10 +29,10 @@
 			&:before {
 				content: "";
 				display: block;
-				position: relative;
-				width: 0;
 				height: 60px;
 				margin-top: -55px;
+				position: relative;
+				width: 0;
 			}
 		}
 		
