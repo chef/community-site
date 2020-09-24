@@ -4,54 +4,37 @@
       <h2>{{ .Params.tutorials.columnOne.header }}</h2>
       <a href="{{ .Params.tutorials.columnOne.one.link }}" target="_blank" rel="noreferrer noopener"
         class="card-tutorial row align-items-center">
-        <div class="col-2 text-center">
-          <p class="number">1</p>
+        <div class="col-3 text-center">
+          <img src="{{ .Params.tutorials.columnOne.one.image }}" width="130"
+            alt="{{ .Params.tutorials.columnOne.one.imageAlt }}" />
         </div>
-        <div class="col-10">
+        <div class="col-9">
           <h5>{{ .Params.tutorials.columnOne.one.title }}</h5>
-        </div>
-        <div class="col-12">
           <p>{{ .Params.tutorials.columnOne.one.copy | markdownify }}</p>
         </div>
       </a>
       <a href="{{ .Params.tutorials.columnOne.two.link }}" target="_blank" rel="noreferrer noopener"
         class="card-tutorial row align-items-center">
-        <div class="col-2 text-center">
-          <p class="number">2</p>
+        <div class="col-3 text-center">
+          <img src="{{ .Params.tutorials.columnOne.two.image }}" width="130"
+            alt="{{ .Params.tutorials.columnOne.two.imageAlt }}" />
         </div>
-        <div class="col-10">
+        <div class="col-9">
           <h5>{{ .Params.tutorials.columnOne.two.title }}</h5>
-        </div>
-        <div class="col-12">
           <p>{{ .Params.tutorials.columnOne.two.copy | markdownify }}</p>
         </div>
       </a>
       <a href="{{ .Params.tutorials.columnOne.three.link }}" target="_blank" rel="noreferrer noopener"
         class="card-tutorial row align-items-center">
-        <div class="col-2 text-center">
-          <p class="number">3</p>
+        <div class="col-3 text-center">
+          <img src="{{ .Params.tutorials.columnOne.three.image }}" width="130"
+            alt="{{ .Params.tutorials.columnOne.three.imageAlt }}" />
         </div>
-        <div class="col-10">
+        <div class="col-9">
           <h5>{{ .Params.tutorials.columnOne.three.title }}</h5>
-        </div>
-        <div class="col-12">
           <p>{{ .Params.tutorials.columnOne.three.copy | markdownify }}</p>
         </div>
       </a>
-      <!-- <a
-        href="{{ .Params.tutorials.columnOne.four.link }}"
-        class="card-tutorial row align-items-center"
-      >
-        <div class="col-2 text-center">
-          <p class="number">4</p>
-        </div>
-        <div class="col-10">
-          <h5>{{ .Params.tutorials.columnOne.four.title }}</h5>
-        </div>
-        <div class="col-12">
-          <p>{{ .Params.tutorials.columnOne.four.copy }}</p>
-        </div>
-      </a> -->
     </div>
     <div class="col-12 col-md-6">
       <h2>{{ .Params.tutorials.columnTwo.header}}</h2>

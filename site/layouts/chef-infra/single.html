@@ -6,8 +6,7 @@
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-9 col-lg-7">
-
+					<div class="col-12 col-lg-6 col-xl-7">
 						<h2>
 							<div class="img-left">
 								<img src="{{ .Params.hero.logo }}" alt="Chef Infra" class="chef-wordmark  " />
@@ -15,6 +14,17 @@
 						</h2>
 						<h1>{{ .Params.title }}</h1>
 						{{ .Content }}
+					</div>
+					<div class="col-12 col-lg-6 col-xl-5 text-center">
+						<div class="video-container">
+							<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ham8uu6Z05w"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+						<p>
+							<small><span class="pill">New!</span> See what's new in Chef Infra 16</small></p>
 					</div>
 				</div>
 			</div>

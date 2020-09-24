@@ -76,16 +76,21 @@ tutorials:
       link: "https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about"
       copy: >-
         Learn how to express your infrastructure policies as easily-managed, traceable code.
+      image: "/img/infra/build-spell.png"
+      imageAlt: Build Spell - badge with scroll
     two: 
       title: "Validate Infrastructure Code with Test Kitchen"
       link: "https://learn.chef.io/courses/course-v1:chef+LocalDev101+Perpetual/about"
       copy: >-
         Learn how to use Test Kitchen to test your cookbooks on your local machine before you deploy your cookbooks to your infrastructure. 
+      image:  "/img/infra/realm.png"
+      imageAlt: Realm of possiblities - badge with castle
     three: 
       title: "Transform Your Organization with DevOps"
       link: "https://learn.chef.io/courses/course-v1:chef+DevOpsTransformation+Perpetual/about"
       copy: >-
-        Learn the principles of DevOps and transform your organization into a coded enterprise. 
+        Learn the principles of DevOps and transform your organization into a coded enterprise.
+      image: "/img/infra/crystal.png"
   columnTwo:
     header: Community resources
     one: 
@@ -93,6 +98,7 @@ tutorials:
       link: "https://www.youtube.com/watch?v=4TetOuDGB_s"
       author: Dan-Joe Lopez
       image: "/img/HumanIcon.svg"
+      imageAlt: Transmogrifier Cyrstal - badge of crystals
     two: 
       title: Third Time’s a Charm - Introducing and Evolving a Chef Infra Implementation
       link: "https://www.youtube.com/watch?v=hluE31gRUPc"

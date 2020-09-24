@@ -70,7 +70,7 @@ main {
 }
 
 // ===================
-// Image Styling
+// Image and Video Styling
 // ===================
 img {
   max-width: 100%;
@@ -141,6 +141,22 @@ img {
   .fa-youtube:active,
   .fa-youtube:focus {
     color: #c4302b;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 1rem;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -560,6 +576,7 @@ input {
     }
   }
 }
+
 // ===================
 // Section Styling
 // ===================
@@ -879,6 +896,13 @@ pre {
   @include media-breakpoint-down(md) {
     transform: none !important;
   }
+}
+
+.pill {
+  background-color: $chef-tertiary;
+  border-radius: 20px;
+  color: white;
+  padding: .2rem .8rem;
 }
 
 @import "marketo";
