@@ -1,0 +1,69 @@
+{{ define "body" }}
+<main id="infra">
+
+	<section class="hero-actions">
+
+		<section class="hero">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<h2>
+							<div class="img-left">
+								<img src="{{ .Params.hero.logo }}" alt="Chef Infra" class="chef-wordmark" />
+							</div>
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-7">
+						<h1>{{ .Params.title }}</h1>
+						{{ .Content }}
+					</div>
+					<div class="col-12 col-lg-6 col-xl-5 text-center mt-4">
+						<div class="video-container">
+							<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ham8uu6Z05w"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+
+						</div>
+						<p>
+							<small><span class="pill">New!</span> See what's new in Chef Infra 16</small></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="actions">
+			{{ partial "four-cards.html" . }}
+		</section>
+
+	</section>
+
+	<section class="usage">
+		{{ partial "infra/infra-usage.html" . }}
+	</section>
+
+	<section class="ecosystem">
+		{{ partial "infra/infra-ecosystem.html" . }}
+	</section>
+
+	<section class="get-started">
+		{{ partial "infra/infra-get-started.html" . }}
+	</section>
+
+	<section class="tutorials">
+		{{ partial "infra/infra-tutorials.html" . }}
+	</section>
+
+	<section class="resources">
+		{{ partial "infra/infra-resources.html" . }}
+	</section>
+
+	<section class="contact">
+		{{ partial "contact.html" . }}
+	</section>
+
+</main>
+
+{{ end }}

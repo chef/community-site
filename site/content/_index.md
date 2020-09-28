@@ -74,7 +74,7 @@ products:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: "https://docs.chef.io/chef_overview/"
+    url: "https://community.chef.io/products/chef-infra/"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
