@@ -75,7 +75,7 @@ main {
 }
 
 // ===================
-// Image Styling
+// Image and Video Styling
 // ===================
 img {
   height: auto;
@@ -91,9 +91,9 @@ img {
 }
 
 .chef-wordmark {
-  height: 36px;
-  margin-right: 1rem;
   width: auto;
+  margin-right: 1rem;
+  height: 40px;
 
   @include media-breakpoint-down(sm) {
     height: 30px;
@@ -146,6 +146,22 @@ img {
   .fa-youtube:active,
   .fa-youtube:focus {
     color: #c4302b;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 1rem;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -565,6 +581,7 @@ input {
     }
   }
 }
+
 // ===================
 // Section Styling
 // ===================
@@ -886,6 +903,13 @@ pre {
   }
 }
 
+.pill {
+  background-color: $chef-tertiary;
+  border-radius: 20px;
+  color: white;
+  padding: .2rem .8rem;
+}
+
 .announcement-banner {
   background-color: $chef-secondary;
   margin: 0;
@@ -911,9 +935,10 @@ pre {
 @import "prism";
 @import "add-to-cal";
 @import "home";
-@import "chef-inspec";
-@import "chef-habitat";
 @import "chef-automate";
+@import "chef-habitat";
+@import "chef-infra";
+@import "chef-inspec";
 @import "chef-workstation";
 @import "first-time";
 @import "windows-resources";
