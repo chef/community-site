@@ -198,11 +198,6 @@ img {
     li {
       margin-bottom: 0;
 
-      @include media-breakpoint-up(lg) {
-        padding-left: 0.6rem;
-        padding-right: 0.6rem;
-      }
-
       a {
         color: $light-gray;
         color: $dark-gray;
