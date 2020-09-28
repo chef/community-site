@@ -11,24 +11,10 @@ cards:
     title: One click gets you everything you need
     body: >-
       Chef Workstation gives you all the tools you need to get started and includes:  
+      <ul>
+        <li>Chef Workstation App</li><li>Chef Infra Client</li><li>Chef InSpec</li><li>Chef Command Line Tool</li><li>Test Kitchen</li><li>Cookstyle</li><li>Various Test Kitchen and Knife plugins</li><li>[Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/)</li>
+      </ul>
 
-      • Chef Workstation App  
-
-      • Chef Infra Client  
-
-      • Chef InSpec  
-
-      • Chef Habitat  
-
-      • Chef Command Line Tool  
-
-      • Test Kitchen  
-
-      • Cookstyle  
-
-      • Various Test Kitchen and Knife plugins  
-
-      • [Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/) 
   two:
     icon: /img/icons/workstation-2.svg
     title: Run Ad-Hoc tasks from the CLI
