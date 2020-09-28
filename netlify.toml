@@ -13,7 +13,7 @@
 
 [[redirects]]
   from = "/brand"
-  to = "http://marketing-web-communitycomponentlibrary.s3-website-us-west-2.amazonaws.com/"
+  to = "https://chef-community-components.netlify.app/"
   status = 301
 
 [[redirects]]
