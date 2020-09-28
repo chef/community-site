@@ -18,5 +18,5 @@
 
 [[redirects]]
   from = "/resources/*"
-  to = "https://deploy-preview-13--relaxed-tesla-8996d3.netlify.app/resources/:splat"
+  to = "https://chef-resource-hub.netlify.app/resources/:splat"
   status = 200
