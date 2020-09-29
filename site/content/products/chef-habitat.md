@@ -28,7 +28,8 @@ cards:
 usage:
   headerImage: /img/logos/chef-habitat-white.svg
   one: 
-    header: Studio
+    header: Define
+    image: /img/habitat/step_1.svg
     copy: >-
       The Chef Habitat Studio is a development kit for creating automated build and deployment plans for any application and then testing them in a clean-room environment. 
 
@@ -41,7 +42,8 @@ usage:
 
       * Leverage hundreds of pre-built plans for common dependencies such as .NET, jdk or gcc on the Chef Habitat community on GitHub. 
   two:
-    header: Artifact
+    header: Package
+    image: /img/habitat/step_2.svg
     copy: >-
       Habitat packages the Application Manifest into an immutable artifact called the Habitat Application Artifact (.HART) file. Artifacts can be exported to run in a variety of runtimes with zero refactoring or rewriting.  
 
@@ -53,9 +55,10 @@ usage:
 
       * Easily export to tarball, Docker, or directly to container registries (Azure Container Registry, Amazon Elastic Container Registry, or Docker Hub).
   three:
-    header: Supervisor
+    header: Deliver
+    image: /img/habitat/step_3.svg
     copy: >-
-      The Habitat Supervisor is a light-weight agent that runs on/in a server, virtual machine, or container and manages the application according to the instructions defined in the Habitat Plan. Tasks are defined via pre-set scripts called lifecycle hooks that are included as part of the application definition.  
+      The Habitat Supervisor is a light-weight agent that runs on/in a server, virtual machine, or container and manages the application according to the instructions defined in the Habitat Plan. Tasks are defined via pre-set scripts called lifecycle hooks that are included as part of the application definition.
       
 
       * Deploy and upgrade an application to any environment on-demand  
@@ -66,22 +69,68 @@ usage:
 
       * Templatize your configuration settings and update them as needed during runtime.
 tutorials:
-  header: Get Started with Chef Habitat
+  header: Self-Learning Tutorials and Resources
   one: 
     title: Deliver Applications with Chef Habitat
     link: "https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about"
     copy: >-
       Learn to automate application management with Chef Habitat by bundling build and runtime instructions alongside your application source code.
   two: 
-    title: Explore the Docs
-    link: "https://www.habitat.sh/docs/"
+    title: Windows Resource Center
+    link: "https://community.chef.io/windows-resources/"
     copy: >-
-      Chef Habitat centers application configuration, management, and behavior around the application itself, not the infrastructure that the app runs on.
+      Chef Habitat provides a single way to deliver and manage Windows applications. 
   three: 
-    title: Habitize a Windows application
-    link: "https://www.habitat.sh/demo/windows/steps/1/"
+    title: Automated Application Rollback Insurance for Release Teams
+    link: "https://live-chef-corpsite.pantheonsite.io/wp-content/uploads/2020/09/Automated-Application-Rollback-Insurance-for-Release-Teams_White-Paper.pdf"
     copy: >-
-      Package an ASP.NET application and bind to a SQL Server database.
+      This paper provides an overview of rollback vs. rollforward and how to implement within Chef Habitat. 
+getStarted: 
+  header: Getting started
+  one: 
+    header: Install Chef Habitat 
+    copy: >-
+      Everything you need to get started packaging applications is included with the Chef Habitat Command-Line Interface (CLI).  The Chef Habitat installer CLI is supported on Linux, Mac, and Windows. 
+    code: |-
+
+  two:
+    header: Install Secondary Tools
+    copy: >-
+      In addition to installing Chef Habitat it is suggested you also install your favorite text editor (vim, emacs or nano), Git, and Docker Community Edition.   
+    code: |-
+
+      ~$ sudo yum install -y vim-enhanced git
+      ~$ sudo yum install docker-ce docker-ce-cli containerd.io
+  three:
+    header: Create an Origin Keypair
+    copy: >-
+      Every package that you build with Chef Habitat belongs to an origin and is cryptographically signed with that origin’s private key. As part of the set-up you’ll need to generate or define a set of origin keys.  
+    code: |-
+
+      ~$ export HAB_ORIGIN=’myinitials_tryhab’
+      ~$ hab origin key generate
+      » Generating origin key for myinitials_tryhab
+      ★ Generated origin key pair myinitials_tryhab-20200521200652
+  four:
+    header: Clone and Unpack the Application
+    copy: >-
+      In this case we describe the application at a high level. What does it do, how does it work, and what bits of functionality might be configurable? This is where we basically map a manual runbook to an automation plan. 
+    code:
+  five:
+    header: Define and Package the Application with Habitat  
+    copy: >-
+      The Habitat Manifest is typically added to the root of your application. It is typically structured into three folders: habitat/, hooks/, and a config.toml file used for templating. The contents of the Manifest will vary greatly depending on your application requirements.  
+    code: |-
+
+      Common Habitat Manifest Directory Structure
+        |-- config.toml
+        |-- habitat
+        |   |-- README.md
+        |   |-- config
+        |   |-- default.toml
+        |   |-- hooks
+        |   `-- plan.sh
+        |-- results
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-
