@@ -56,7 +56,7 @@ usage:
       * Easily export to tarball, Docker, or directly to container registries (Azure Container Registry, Amazon Elastic Container Registry, or Docker Hub).
   three:
     header: Deliver
-    image: /img/habitat/step_3.svg
+    img: /img/habitat/step_3.svg
     copy: >-
       The Habitat Supervisor is a light-weight agent that runs on/in a server, virtual machine, or container and manages the application according to the instructions defined in the Habitat Plan. Tasks are defined via pre-set scripts called lifecycle hooks that are included as part of the application definition.
       
@@ -71,20 +71,35 @@ usage:
 tutorials:
   header: Self-Learning Tutorials and Resources
   one: 
-    title: Deliver Applications with Chef Habitat
     link: "https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about"
+    img: /img/habitat/lcr-deliver.png
     copy: >-
-      Learn to automate application management with Chef Habitat by bundling build and runtime instructions alongside your application source code.
+      ####  Deliver Applications with Chef Habitat   
+    
+      Learn to automate application management with Chef Habitat by bundling build and runtime instructions alongside your application source code.   
+
+
+      <a href="https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about" class="cta" target="_blank" rel="noreferrer noopener">Go to course</a>
   two: 
-    title: Windows Resource Center
     link: "https://community.chef.io/windows-resources/"
-    copy: >-
-      Chef Habitat provides a single way to deliver and manage Windows applications. 
+    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg
+    copy: >- 
+      #### Windows Resource Center  
+      
+      Chef Habitat provides a single way to deliver and manage Windows applications. Find ebooks, demos, and other resources to help you get started.
+
+
+      <a href="/windows-resources" class="cta">Windows resources</a>
   three: 
-    title: Automated Application Rollback Insurance for Release Teams
-    link: "https://live-chef-corpsite.pantheonsite.io/wp-content/uploads/2020/09/Automated-Application-Rollback-Insurance-for-Release-Teams_White-Paper.pdf"
+    link: "https://chef.io/wp-content/uploads/2020/09/Automated-Application-Rollback-Insurance-for-Release-Teams_White-Paper.pdf"
+    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg
     copy: >-
+      ####  Automated Application Rollback Insurance for Release Teams 
+
       This paper provides an overview of rollback vs. rollforward and how to implement within Chef Habitat. 
+
+      
+      <a href="https://chef.io/wp-content/uploads/2020/09/Automated-Application-Rollback-Insurance-for-Release-Teams_White-Paper.pdf" class="cta" target="_blank" rel="noreferrer noopener">Download white paper</a>
 getStarted: 
   header: Getting started
   one: 
@@ -115,7 +130,9 @@ getStarted:
     header: Clone and Unpack the Application
     copy: >-
       In this case we describe the application at a high level. What does it do, how does it work, and what bits of functionality might be configurable? This is where we basically map a manual runbook to an automation plan. 
-    code:
+    code: |-
+
+      ~ $ git clone https://github.com/chef-training/java-sample
   five:
     header: Define and Package the Application with Habitat  
     copy: >-

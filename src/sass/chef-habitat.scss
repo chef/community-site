@@ -125,5 +125,10 @@
   .start {
     @extend %section-padding;
   }
+
+  #learn {
+    background-color: $chef-tertiary;
+    color: $white;
+  }
   
 }
