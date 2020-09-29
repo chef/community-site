@@ -100,6 +100,13 @@ img {
   }
 }
 
+.wordmark-title {
+  @include media-breakpoint-down(xs) {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 .img-round {
   border-radius: 50%;
 
