@@ -56,7 +56,7 @@ usage:
       * Easily export to tarball, Docker, or directly to container registries (Azure Container Registry, Amazon Elastic Container Registry, or Docker Hub).
   three:
     header: Deliver
-    img: /img/habitat/step_3.svg
+    image: /img/habitat/step_3.svg
     copy: >-
       The Habitat Supervisor is a light-weight agent that runs on/in a server, virtual machine, or container and manages the application according to the instructions defined in the Habitat Plan. Tasks are defined via pre-set scripts called lifecycle hooks that are included as part of the application definition.
       
@@ -169,7 +169,7 @@ contact:
 <p>Chef Habitat is an open source automation solution for defining, packaging, and delivering applications to almost any environment regardless of operating system or platform.</p>
 
 <div class="center-xs">
-<a class="btn btn-primary" href="#learn">Get started</a>
+<a class="btn btn-primary" href="#start">Get started</a>
 <a class="btn btn-secondary" href="https://www.habitat.sh/docs/" target="_blank" rel="noopener noreferrer">View Docs</a>
 </div>
 <div class="center-xs">
