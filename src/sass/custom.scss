@@ -178,7 +178,7 @@ img {
 #main-nav {
   background-color: $white;
   border-bottom: 1px solid $docs-gray;
-  height: 55px;
+  height: 70px;
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
   position: sticky;
@@ -191,6 +191,10 @@ img {
 
   .navbar-brand {
     flex-shrink: 0;
+
+    img {
+      height: 50px;
+    }
   }
 
   .navbar-collapse {
