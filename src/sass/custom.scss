@@ -389,18 +389,6 @@ img {
     padding-bottom: 2rem;
   }
 
-  #super-footer {
-    background-color: $chef-primary;
-    max-width: 100%;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
-
-    p,
-    a {
-      color: $dark-gray;
-    }
-  }
-
   .nav-items {
     margin-bottom: 2rem;
   }
@@ -426,14 +414,6 @@ img {
   .social {
     @include media-breakpoint-down(sm) {
       margin: 1rem auto;
-    }
-
-    .row {
-      display: block;
-
-      .col {
-        display: inline;
-      }
     }
   }
 
