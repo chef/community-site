@@ -60,16 +60,16 @@
     "cta": "Watch now"
   },
   {
-    "title": "Migrating Windows IIS Applications",
-    "url": "https://www.youtube.com/watch?v=kXrVs2uFeeI&feature=youtu.be",
+    "title": "Codified & Consistent Windows Application Delivery Automation",
+    "url": "https://pages.chef.io/202009-Webinar-CodifiedConsistentWindowsApplicationDeliveryAutomation_01Register.html",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
-    "cta": "Watch now"
+    "cta": "Watch webinar"
   },
   {
     "title": "Modernize Applications in Azure with Chef Habitat",
     "url": "https://pages.chef.io/202005-Webinar-ModernizeApplicationsinAzurewithChefHabitat_01Register.html",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
-    "cta": "Watch now"
+    "cta": "Watch webinar"
   },
   {
     "title": "Download Chef Habitat for Windows",
