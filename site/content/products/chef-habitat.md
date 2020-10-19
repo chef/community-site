@@ -1,5 +1,5 @@
 ---
-title: Application Delivery as Code
+title: Developer Resources 
 type: chef-habitat
 hero: 
   logo: /img/logos/chef-habitat-dark.svg
@@ -176,4 +176,4 @@ contact:
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>
 <p class="center-xs">
-<a class="cta" href="https://discourse.chef.io/c/habitat/12" target="_blank" rel="noopener noreferrer">Release notes</a></p>
+<a class="cta" href="https://forums.habitat.sh/c/announcements/22" target="_blank" rel="noopener noreferrer">Release notes</a></p>
