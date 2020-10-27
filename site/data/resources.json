@@ -2,97 +2,97 @@
   {
     "title": "Windows Basics for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-on-windows-basics/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Windows Examples for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-on-windows-examples/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Windows Troubleshooting Tips for Chef Habitat",
     "url": "https://blog.chef.io/chef-habitat-for-windows-troubleshooting/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Best Practices for Packaging Windows COTS Applications for Automated Deployment with Chef Habitat",
     "url": "https://pages.chef.io/202006-HabitatGuide-COTSAppsforWindows_01LandingPage.html",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Whitepaper.png",
     "cta": "Get the guide"
   },
   {
     "title": "Windows Server 2008/R2 Application Migration Program",
     "url": "https://pages.chef.io/rs/255-VFB-268/images/WindowsServerAppMigration_ebook.pdf",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Whitepaper.png",
     "cta": "Get eBook"
   },
   {
     "title": " Best Practices for Simplifying and Automating Microsoft SQL Updates",
     "url": "https://pages.chef.io/202009-HabitatGuide-MSFTSQLUpdates_01LandingPage.html",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Whitepaper.png",
     "cta": "Get the guide"
   },
   {
     "title": "Packaging a .Net Windows Service Application",
     "url": "https://blog.chef.io/packaging-a-net-windows-service-application/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Application Packaging Windows vs. Linux with Chef Habitat",
     "url": "https://blog.chef.io/habitat-on-windows/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Running a Full Framework ASP.NET IIS application in Habitat",
     "url": "https://blog.chef.io/running-a-full-framework-asp-net-iis-application-in-habitat/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-blog.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Blog.png",
     "cta": "Read more"
   },
   {
     "title": "Terraform, Habitat, and Azure DevOps",
     "url": "https://www.youtube.com/watch?v=N7Q9cMl-DuY&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Webinar.png",
     "cta": "Watch now"
   },
   {
     "title": "Migrating Windows IIS Applications",
     "url": "https://www.youtube.com/watch?v=kXrVs2uFeeI&feature=youtu.be",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Webinar.png",
     "cta": "Watch now"
   },
   {
     "title": "Modernize Applications in Azure with Chef Habitat",
     "url": "https://pages.chef.io/202005-Webinar-ModernizeApplicationsinAzurewithChefHabitat_01Register.html",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-video.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Webinar.png",
     "cta": "Watch now"
   },
   {
     "title": "Download Chef Habitat for Windows",
     "url": "https://www.habitat.sh/docs/install-habitat/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png",
     "cta": "Download now"
   },
   {
     "title": "Sample Windows ASP App Git Depot",
     "url": "https://github.com/habitat-sh/habitat-aspnet-sample/",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png",
     "cta": "Visit Git Repo"
   },
   {
     "title": "Running Chef Habitat Windows Containers",
     "url": "https://www.habitat.sh/docs/best-practices/#running-habitat-windows-containers",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png",
     "cta": "Visit Docs"
   },
   {
     "title": "Habitat Plans and Terraform Script Examples for SQL ",
     "url": "https://github.com/habitat-sh/sql_server_poc",
-    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/blog-habitat.jpg",
+    "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png",
     "cta": "Visit Git Repo"
   }
 ]

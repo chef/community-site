@@ -82,7 +82,7 @@ tutorials:
       <a href="https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about" class="cta" target="_blank" rel="noreferrer noopener">Go to course</a>
   two: 
     link: "https://community.chef.io/windows-resources/"
-    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg
+    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png
     copy: >- 
       #### Windows Resource Center  
       
@@ -92,7 +92,7 @@ tutorials:
       <a href="/windows-resources" class="cta">Windows resources</a>
   three: 
     link: "https://chef.io/wp-content/uploads/2020/09/Automated-Application-Rollback-Insurance-for-Release-Teams_White-Paper.pdf"
-    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/community-img/resources/resource-document.jpg
+    img: https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_Whitepaper.png
     copy: >-
       ####  Automated Application Rollback Insurance for Release Teams 
 
