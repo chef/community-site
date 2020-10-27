@@ -100,6 +100,12 @@
                 tr:nth-child(even) { 
                     background-color: $light-gray; 
                 } 
+
+                .past-event {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
             }
             .iee-mobile-table {
                 width: calc(100% + 30px);
@@ -144,6 +150,15 @@
 
         h2 {
             margin-bottom: 1.5rem;
+        }
+    }
+
+    .past-event {
+        color: #888888;
+        text-align:center;
+
+        h4 {
+            margin-top: 2.5rem;
         }
     }
 }

@@ -11,38 +11,14 @@ introImage: /img/iee-laptop.svg
 
 Date | Time | Presenter(s) | |
 ---|---|---|---
-October 1st, 2020 | 12:00pm PT | Jody Wolfborn | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-West_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
-October 6th, 2020 | 12:00pm CT | Robin Beck | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-Central_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
-October 8th, 2020 | 12:00pm BST | Kimball Johnson | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-EMEA_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
+<div class="past-event">October 1st, 2020</div> | <div class="past-event">12:00pm PT</div> | <div class="past-event">Jody Wolfborn</div> | 
+<div class="past-event">October 8th, 2020</div> | <div class="past-event">12:00pm BST</div> | <div class="past-event">Kimball Johnson</div> | 
 October 13th, 2020 | 12:00pm ET | Robin Beck | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-East_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
 October 15th, 2020 | 11:00am GMT +10 | Jody Wolfborn | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-APAC_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
+October 20th, 2020 | 12:00pm CT | Robin Beck | <a href='https://pages.chef.io/202010-IEEZerotoCompliance-Central_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
 
 
 <div class='iee-mobile-table'>
-  <div class='iee-mobile-session'>
-      <h3>October 1st, 2020</h3>
-      <p>12:00pm PT</p>
-      <p>Jody Wolfborn</p>
-      <div class='flex-center'>
-      <a href='https://pages.chef.io/202010-IEEZerotoCompliance-West_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
-      </div>
-  </div>
-  <div class='iee-mobile-session'>
-      <h3>October 6th, 2020</h3>
-      <p>12:00pm CT</p>
-      <p>Robin Beck</p>
-      <div class='flex-center'>
-      <a href='https://pages.chef.io/202010-IEEZerotoCompliance-Central_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
-      </div>
-  </div>
-  <div class='iee-mobile-session'>
-      <h3>October 8th, 2020</h3>
-      <p>12:00pm BST</p>
-      <p>Kimball Johnson</p>
-      <div class='flex-center'>
-      <a href='https://pages.chef.io/202010-IEEZerotoCompliance-EMEA_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
-      </div>
-  </div>
   <div class='iee-mobile-session'>
       <h3>October 13th, 2020</h3>
       <p>12:00pm ET</p>
@@ -58,5 +34,23 @@ October 15th, 2020 | 11:00am GMT +10 | Jody Wolfborn | <a href='https://pages.ch
       <div class='flex-center'>
       <a href='https://pages.chef.io/202010-IEEZerotoCompliance-APAC_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
       </div>
+  </div>
+  <div class='iee-mobile-session'>
+      <h3>October 20th, 2020</h3>
+      <p>12:00pm CT</p>
+      <p>Robin Beck</p>
+      <div class='flex-center'>
+      <a href='https://pages.chef.io/202010-IEEZerotoCompliance-Central_01Register.html'target="_blank" rel="noreferrer noopener" class='btn btn-primary'>Register</a>
+      </div>
+  </div>
+  <div>
+      <h2>Past Events</h2>
+      <div class='past-event'>
+      <h4>October 1st, 2020</h4>
+      <p>12:00pm PT</p>
+      <p>Jody Wolfborn</p>
+      <h4>October 8th, 2020</h4>
+      <p>12:00pm BST</p>
+      <p>Kimball Johnson</p>
   </div>
 </div>

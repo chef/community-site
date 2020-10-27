@@ -100,6 +100,13 @@ img {
   }
 }
 
+.wordmark-title {
+  @include media-breakpoint-down(xs) {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
 .img-round {
   border-radius: 50%;
 
@@ -171,10 +178,10 @@ img {
 #main-nav {
   background-color: $white;
   border-bottom: 1px solid $docs-gray;
-  height: 55px;
+  height: 70px;
   padding-bottom: 0.2rem;
   padding-top: 0.2rem;
-  position: sticky;
+  // position: sticky;
   top: 0;
   z-index: 10;
 
@@ -184,6 +191,10 @@ img {
 
   .navbar-brand {
     flex-shrink: 0;
+
+    img {
+      height: 50px;
+    }
   }
 
   .navbar-collapse {
@@ -382,18 +393,6 @@ img {
     padding-bottom: 2rem;
   }
 
-  #super-footer {
-    background-color: $chef-primary;
-    max-width: 100%;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
-
-    p,
-    a {
-      color: $dark-gray;
-    }
-  }
-
   .nav-items {
     margin-bottom: 2rem;
   }
@@ -419,14 +418,6 @@ img {
   .social {
     @include media-breakpoint-down(sm) {
       margin: 1rem auto;
-    }
-
-    .row {
-      display: block;
-
-      .col {
-        display: inline;
-      }
     }
   }
 
@@ -916,7 +907,7 @@ pre {
 
     a {
       font-weight: 600;
-      margin-left: 0.8rem;
+      margin-left: 0.3rem;
       @include media-breakpoint-down(sm) {
         display: block;
         text-align: center;
