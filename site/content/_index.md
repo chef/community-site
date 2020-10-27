@@ -120,10 +120,10 @@ resources:
       community’s most-used cookbooks up to date. Join them in the #sous-chefs
       channel on our Community Slack, or in their repos on GitHub to learn more
       about what goes into creating and maintaining cookbooks with thousands of
-      downloads.
+      downloads. 
 
 
-      [Go to Sous Chefs &raquo;](https://sous-chefs.org)
+      <a href="https://sous-chefs.org" class="cta" target="_blank" rel="noreferrer noopener">Go to Sous Chefs</a>
     img: /img/thumb-sous-chef.png
     link: "https://sous-chefs.org"
     alt: Sous Chefs
@@ -138,7 +138,7 @@ resources:
       for others to use.
 
 
-      [Visit Supermarket &raquo;](https://supermarket.chef.io)
+      <a href="https://supermarket.chef.io" class="cta" target="_blank" rel="noreferrer noopener">Visit Supermarket</a>
     img: /img/thumb-chef-supermarket.png
     link: "https://supermarket.chef.io"
     alt: Chef Supermarket
@@ -152,7 +152,7 @@ resources:
       infrastructure and key application platforms.
 
 
-      [Go to dev-sec.io &raquo;](https://dev-sec.io)
+      <a href="https://dev-sec.io" class="cta" target="_blank" rel="noreferrer noopener">Go to dev-sec.io</a>
     img: /img/thumb-devops-sec.png
     link: "https://dev-sec.io"
     alt: >-

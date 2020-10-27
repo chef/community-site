@@ -1,18 +1,12 @@
 <div class="container-fluid">
   <div class="row usage-main">
-    <div class="col-sm-12 col-md-6 flex-center">
-      {{ partial "habitat/habitat-diagram.html" . }}
-    </div>
-    
-    <div class="col-sm-12 col-md-6">
+    <div class="col-12">
       <div class="headers">
-        <h2><div class="img-left">
-          <img
-            src="{{ .Params.usage.headerImage }}"
-            alt="Chef Habitat"
-            class="chef-wordmark"
-          />
-        </div></h2>
+        <h2>
+          <div class="img-left">
+            <img src="{{ .Params.usage.headerImage }}" alt="Chef Habitat" class="chef-wordmark" />
+          </div>
+        </h2>
         <ul class="nav nav-tabs" id="habitat-usage-tabs" role="tablist" aria-label="Habitat Usage Tabs">
           <li class="nav-item" role="tab">
             <a id="first-nav" class="nav-link active" href="#habitat-usage-one" data-toggle="tab">
@@ -21,14 +15,14 @@
             </a>
           </li>
           <li class="nav-item" role="tab">
-            <a id="second-nav" class="nav-link" href="#habitat-usage-two" data-toggle="tab"
-              >{{ .Params.usage.two.header }}
+            <a id="second-nav" class="nav-link" href="#habitat-usage-two"
+              data-toggle="tab">{{ .Params.usage.two.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
           <li class="nav-item" role="tab">
-            <a id="third-nav" class="nav-link" href="#habitat-usage-three" data-toggle="tab"
-              >{{ .Params.usage.three.header }}
+            <a id="third-nav" class="nav-link" href="#habitat-usage-three"
+              data-toggle="tab">{{ .Params.usage.three.header }}
               <span class="fa fa-angle-right" aria-hidden="true"> </span>
             </a>
           </li>
@@ -36,22 +30,31 @@
       </div>
       <div class="tab-content">
         <div class="tab-pane fade active show" id="habitat-usage-one" role="tabpanel" aria-labelledby="first-nav">
-          <div class="row">
-            <div class="col-12">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 order-md-2 text-center">
+              <img src="{{ .Params.usage.one.image }}" alt="" style="max-width: 380px;" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1 mt-4">
               {{ .Params.usage.one.copy | markdownify }}
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="habitat-usage-two" role="tabpanel" aria-labelledby="second-nav">
-          <div class="row">
-            <div class="col-12">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 order-md-2 text-center">
+              <img src="{{ .Params.usage.two.image }}" alt="" style="max-width: 380px;" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1 mt-4">
               {{ .Params.usage.two.copy | markdownify }}
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="habitat-usage-three" role="tabpanel" aria-labelledby="third-nav">
-          <div class="row">
-            <div class="col-12">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6 order-md-2 text-center">
+              <img src="{{ .Params.usage.three.image }}" alt="" style="max-width: 380px;" />
+            </div>
+            <div class="col-12 col-md-6 order-md-1 mt-4">
               {{ .Params.usage.three.copy | markdownify }}
             </div>
           </div>

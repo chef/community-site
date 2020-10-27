@@ -1,8 +1,8 @@
 {{ define "body" }}
 <main id="habitat">
-	
+
 	<section class="hero-actions">
-        
+
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
@@ -10,7 +10,7 @@
 
 						<h2>
 							<div class="img-left">
-							<img src="{{ .Params.hero.logo }}" alt="Chef Habitat" class="chef-wordmark  " />
+								<img src="{{ .Params.hero.logo }}" alt="Chef Habitat" class="chef-wordmark  " />
 							</div>
 						</h2>
 						<h1>{{ .Params.title }}</h1>
@@ -25,13 +25,17 @@
 		</section>
 
 	</section>
-			
+
 	<section class="usage">
-			{{ partial "habitat/habitat-usage.html" . }}
+		{{ partial "habitat/habitat-usage.html" . }}
 	</section>
-	
-	<section class="tutorials" id="learn">
-			{{ partial "habitat/habitat-tutorials.html" . }}
+
+	<section class="resources" id="learn">
+		{{ partial "habitat/habitat-tutorials.html" . }}
+	</section>
+
+	<section class="start" id="start">
+		{{ partial "habitat/habitat-start.html" . }}
 	</section>
 
 	<section class="builder">
@@ -39,12 +43,12 @@
 	</section>
 
 	<section class="resources">
-			{{ partial "habitat/habitat-resources.html" . }}
+		{{ partial "habitat/habitat-resources.html" . }}
 	</section>
 
 	<section class="contact">
 		{{ partial "contact.html" . }}
-</section>
+	</section>
 
 </main>
 

@@ -108,33 +108,6 @@
       $(".infra-stroke").css("stroke", "#3c3c3c");
       $("#habitat-connector").css("opacity", 1);
       $("#habitat-bubble").css("transform", "translate(275px)");
-    } else if (e.currentTarget.hash === "#habitat-usage-one") {
-      $(".studio").css("stroke", "#ffa300");
-      $(".artifact").css("stroke", "#666666");
-      $(".supervisor").css("stroke", "#666666");
-      $("#define").css("opacity", "1");
-      $("#studio-line").css("stroke", "#ffa300");
-      $("#studio-line").css("stroke-width", "2");
-      $("#deliver").css("opacity", "0");
-      $("#package").css("opacity", "0");
-    } else if (e.currentTarget.hash === "#habitat-usage-two") {
-      $(".studio").css("stroke", "#666666");
-      $(".artifact").css("stroke", "#ffa300");
-      $(".supervisor").css("stroke", "#666666");
-      $("#define").css("opacity", "0");
-      $("#artifact-line").css("stroke", "#ffa300");
-      $("#artifact-line").css("stroke-width", "2");
-      $("#deliver").css("opacity", "0");
-      $("#package").css("opacity", "1");
-    } else if (e.currentTarget.hash === "#habitat-usage-three") {
-      $(".studio").css("stroke", "#666666");
-      $(".artifact").css("stroke", "#666666");
-      $(".supervisor").css("stroke", "#ffa300");
-      $("#define").css("opacity", "0");
-      $("#package").css("opacity", "0");
-      $("#deliver").css("opacity", "1");
-      $("#supervisor-line").css("stroke", "#ffa300");
-      $("#supervisor-line").css("stroke-width", "2");
     }
   });
 

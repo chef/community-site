@@ -56,20 +56,6 @@
     background-color: $light-gray;
   }
 
-  .tutorials {
-    background-color: $white;
-
-    .card-tutorial {
-      background-color: $light-gray;
-
-      .margin-top-large {
-        @include media-breakpoint-up(md) {
-          margin-top: 1rem;
-        }
-      }
-    }
-  }
-
   // HABITAT USAGE TABS
   // =======================
   .usage {
@@ -136,12 +122,13 @@
     }
   }
 
-  #habitat-tutorial {
-    .row > [class*='col-'] {
-      display: flex;
-      flex-direction: column;
-    }
+  .start {
+    @extend %section-padding;
+  }
+
+  #learn {
+    background-color: $chef-tertiary;
+    color: $white;
   }
   
- 
 }
