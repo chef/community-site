@@ -1,19 +1,17 @@
 {{ define "body" }}
 <main id="automate">
-	
+
 	<section class="hero-actions">
-        
 		<section class="hero">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-9 col-lg-7">
-
 						<h2>
 							<div class="img-left">
-							<img src="{{ .Params.hero.logo }}" alt="Chef Automate" class="chef-wordmark  " />
+								<img src="{{ .Params.hero.logo }}" alt="Chef Automate" class="chef-wordmark  " />
 							</div>
 						</h2>
-						<h1>{{ .Params.title }}</h1>
+						<h1>{{ .Params.hero.header }}</h1>
 						{{ .Content }}
 					</div>
 				</div>
@@ -31,12 +29,12 @@
 	</section>
 
 	<section class="resources">
-			{{ partial "automate/automate-resources.html" . }}
+		{{ partial "automate/automate-resources.html" . }}
 	</section>
 
 	<section class="contact">
 		{{ partial "contact.html" . }}
-</section>
+	</section>
 
 </main>
 

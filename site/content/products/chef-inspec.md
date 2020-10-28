@@ -1,8 +1,9 @@
 ---
-title: Compliance as Code
+title: Chef InSpec | Compliance as Code
 type: chef-inspec
 hero: 
   logo: /img/logos/chef-inspec-dark.svg
+  header: Compliance as Code
 getStarted: 
   header: Get started in 3 simple steps
   one: 

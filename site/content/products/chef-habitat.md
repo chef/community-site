@@ -1,8 +1,9 @@
 ---
-title: Developer Resources 
+title: Chef Habitat | Developer Resources 
 type: chef-habitat
 hero: 
   logo: /img/logos/chef-habitat-dark.svg
+  header: Developer Resources 
 cards:
   header: Application Definition, Packaging and Delivery Automation
   one:

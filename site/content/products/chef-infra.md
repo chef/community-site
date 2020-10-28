@@ -1,8 +1,9 @@
 ---
-title: Automate infrastructure configuration
+title: Chef Infra | Automate infrastructure configuration
 type: chef-infra
 hero: 
   logo: /img/logos/chef-infra-dark.svg
+  header: Automate infrastructure configuration
 cards:
   header: Configuration Automation 
   one:
