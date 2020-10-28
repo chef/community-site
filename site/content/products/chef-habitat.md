@@ -106,49 +106,63 @@ getStarted:
   one: 
     header: Install Chef Habitat 
     copy: >-
-      Everything you need to get started packaging applications is included with the Chef Habitat Command-Line Interface (CLI).  The Chef Habitat installer CLI is supported on Linux, Mac, and Windows. 
+      Everything you need to get started packaging applications is included with the Chef Habitat Command-Line Interface (CLI).  The Chef Habitat installer CLI is supported on Linux, Mac, and Windows. Read detailed instructions [here](https://www.habitat.sh/docs/install-habitat/).
     code: |-
-
+    
+      ~$ curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
   two:
     header: Install Secondary Tools
     copy: >-
       In addition to installing Chef Habitat it is suggested you also install your favorite text editor (vim, emacs or nano), Git, and Docker Community Edition.   
     code: |-
 
-      ~$ sudo yum install -y vim-enhanced git
-      ~$ sudo yum install docker-ce docker-ce-cli containerd.io
+      ~$ export HAB_ORIGIN=’myorigin’
+      ~$ hab origin key generate
+      » Generating origin key for myorigin
+      ★ Generated origin key pair myorigin-20200521200652
   three:
     header: Create an Origin Keypair
     copy: >-
       Every package that you build with Chef Habitat belongs to an origin and is cryptographically signed with that origin’s private key. As part of the set-up you’ll need to generate or define a set of origin keys.  
     code: |-
 
-      ~$ export HAB_ORIGIN=’myinitials_tryhab’
-      ~$ hab origin key generate
-      » Generating origin key for myinitials_tryhab
-      ★ Generated origin key pair myinitials_tryhab-20200521200652
-  four:
-    header: Clone and Unpack the Application
-    copy: >-
-      In this case we describe the application at a high level. What does it do, how does it work, and what bits of functionality might be configurable? This is where we basically map a manual runbook to an automation plan. 
-    code: |-
-
       ~ $ git clone https://github.com/chef-training/java-sample
-  five:
-    header: Define and Package the Application with Habitat  
-    copy: >-
-      The Habitat Manifest is typically added to the root of your application. It is typically structured into three folders: habitat/, hooks/, and a config.toml file used for templating. The contents of the Manifest will vary greatly depending on your application requirements.  
-    code: |-
+      ~ $ cd java-sample/
+      ~ $ hab plan init
 
       Common Habitat Manifest Directory Structure
-        |-- config.toml
-        |-- habitat
-        |   |-- README.md
-        |   |-- config
-        |   |-- default.toml
-        |   |-- hooks
-        |   `-- plan.sh
-        |-- results
+      |-- config.toml
+      |-- habitat
+      |   |-- README.md
+      |   |-- config
+      |   |-- default.toml
+      |   |-- hooks
+      |   |-- plan.sh
+      |-- results
+  four:
+    header: Package Application with the Habitat Studio
+    copy: >-
+      Chef Habitat reduces the footprint and attack surface area of an application by ensuring only the dependencies needed to run the application are included in any final build. The Habitat Studio is a cleanroom environment used to package and validate application artifacts (.HART files). 
+    code: |-
+
+      ~ $ hab studio enter
+
+      [1][default:/src:0]# build
+
+      [1][default:/src:0]# ls results/
+      |-- results
+      |   |-- last_build.env
+      |   |-- myorigin-java-sample-0.1.0-20200309174347-x86_64-linux.hart
+
+  five:
+    header: Deliver Artifact with the Habitat Supervisor 
+    copy: >-
+      The Habitat Supervisor delivers and manages your application. Realtime configuration updates can be deployed to a Supervisor, which can be connected via a gossip protocol into a dynamic ring to monitor the health of an application. Within the Habitat Studio we can test the Supervisor’s ability to load built .HART files with the hab svc load command.
+    code: |-
+
+      [default:/src:0]# source results/last_build.env
+
+      [default:/src:0]# hab svc load results/$pkg_artifact
 builder:
   header: Chef Habitat Builder for Enterprise Wide Adoption
   copy: >-

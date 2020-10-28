@@ -12,10 +12,11 @@
         </div>
         <div class="col-5">
           <h4>{{ .Params.getStarted.one.header }}</h4>
-          <p>{{ .Params.getStarted.one.copy }}</p>
+          <p>{{ .Params.getStarted.one.copy | markdownify }}</p>
         </div>
         <div class="col-6 text-center">
-          <a href="#" class="btn btn-primary">Install Chef Habitat</a>
+          <pre style="overflow-y:auto" tabindex="0">
+            <code class="language-bash">{{ .Params.getStarted.one.code }}</code>
           </pre>
         </div>
       </div>
