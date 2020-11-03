@@ -106,7 +106,7 @@ getStarted:
   one: 
     header: Install Chef Habitat 
     copy: >-
-      Everything you need to get started packaging applications is included with the Chef Habitat Command-Line Interface (CLI).  The Chef Habitat installer CLI is supported on Linux, Mac, and Windows. Read detailed instructions [here](https://www.habitat.sh/docs/install-habitat/).
+      Everything you need to get started packaging applications is included with the Chef Habitat Command-Line Interface (CLI).  The Chef Habitat installer CLI is supported on Linux, Mac, and Windows. Read detailed instructions [here](https://docs.chef.io/habitat/install_habitat/).
     code: |-
     
       ~$ curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
@@ -169,7 +169,7 @@ builder:
     The Chef Habitat Builder provides a set of enterprise-class functionality that includes package storage, search, and automated API enabled services. Application binaries versioned and stored along with the corresponding Habitat Artifact. Clients have the option of leveraging the SaaS or on-premises version of Builder. 
   ctaOne:
     copy: Learn more about Builder
-    link: https://www.habitat.sh/docs/using-builder/
+    link: https://docs.chef.io/habitat/builder_overview/
   ctaTwo:
     copy: Log In
     link: https://bldr.habitat.sh/#/sign-in
@@ -185,7 +185,7 @@ contact:
 
 <div class="center-xs">
 <a class="btn btn-primary" href="#start">Get started</a>
-<a class="btn btn-secondary" href="https://www.habitat.sh/docs/" target="_blank" rel="noopener noreferrer">View Docs</a>
+<a class="btn btn-secondary" href="https://docs.chef.io/habitat" target="_blank" rel="noopener noreferrer">View Docs</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=habitat-sh&repo=habitat&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>

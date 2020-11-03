@@ -73,7 +73,7 @@
   },
   {
     "title": "Download Chef Habitat for Windows",
-    "url": "https://www.habitat.sh/docs/install-habitat/",
+    "url": "https://docs.chef.io/habitat/install_habitat/",
     "image": "https://chef-marketing-public.s3-us-west-1.amazonaws.com/resource-hub-img/Resources/Resource-Card-Images_WebPage.png",
     "cta": "Download now"
   },
