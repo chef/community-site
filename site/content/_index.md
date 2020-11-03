@@ -38,9 +38,6 @@ cards:
 
       [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
 
-
-      [Chef Live!](https://www.twitch.tv/chefsoftware/) Fridays at 11:00AM PT
-
 products:
   habitat:
     copy: >
