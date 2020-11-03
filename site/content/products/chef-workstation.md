@@ -4,6 +4,7 @@ type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
   image: /img/chef-run.gif
+  header: The quickest way to get started with Chef’s suite 
 cards:
   header: Tools and libraries for interacting with Chef’s tools
   one:
