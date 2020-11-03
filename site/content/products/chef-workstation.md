@@ -1,5 +1,5 @@
 ---
-title: The quickest way to get started with Chef’s suite of tools
+title: Chef Workstation | The quickest way to get started with Chef’s suite of tools
 type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
