@@ -13,8 +13,8 @@ disableKinds = "taxonomyTerm"
   linkedin = "https://www.linkedin.com/company/chef-software"
   github = "http://chef.github.io/"
   youtube = "https://www.youtube.com/user/getchef"
-  meta_image_sq = "https://community.chef.io/img/Community_Meta_MetaImage_600x300.jpg"
-  meta_image_rect = "https://community.chef.io/img/Community_Meta_MetaImage_800x800.jpg"
+  meta_image_sq = "https://community.chef.io/img/Community_Meta-Image-Small-1200x600_2.png"
+  meta_image_rect = "https://community.chef.io/img/Community_Meta-Image-Large-1200x1200.png"
 
 [caches]
   [caches.getJSON]
