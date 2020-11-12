@@ -82,7 +82,7 @@
   .hero-actions {
     &:before {
       background-color: $light-gray;
-      background-image: url(/img/homepage-hero.svg);
+      background-image: url(/img/Hero_Community.svg);
       background-repeat: no-repeat;
       content: "";
       display: block;
@@ -110,7 +110,7 @@
 
     @include media-breakpoint-up(xl) {
       &:before {
-        background-position: 110% -10% !important;
+        background-position: 115% -5% !important;
         background-size: 50% !important;
       }
     }
