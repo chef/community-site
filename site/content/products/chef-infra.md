@@ -127,6 +127,7 @@ contact:
 
 <div class="center-xs">
 <a class="btn btn-primary" href="https://docs.chef.io/chef_overview/" target="_blank" rel="noopener noreferrer">Get started</a>
+<a class="btn btn-secondary" href="https://chef-marketing-public.s3-us-west-1.amazonaws.com/whitepapers/Chef-Infra-16-Product-Guide.pdf" target="_blank" rel="noopener noreferrer">Chef Infra 16 Product Guide</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
