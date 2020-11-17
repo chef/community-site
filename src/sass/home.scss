@@ -95,6 +95,15 @@
     }
 
     #action-cards {
+      a.webinar-title {
+        color: $chef-secondary;
+        font-size: 17px;
+
+        &:hover{
+          color: $chef-primary;
+        }
+      }
+
       a.event-title {
         color: $dark-gray;
         
