@@ -15,31 +15,6 @@
 						{{ partial "markdownify" .Params.cards.one.body }}
 					</div>
 				</div>
-				<div class="row mt-2">
-					{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestwebinars" }}
-					{{ if $events }}
-					<div class="col-sm-12 events-list">
-						<h5>Webinars</h5>
-						<ul>
-							{{ range first 5 $events }}
-							<li>
-								<p><a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank"
-										rel="noopener noreferrer">{{ .event_name }}</a></br />
-									{{ dateFormat "Jan 2, 2006" .start_date }} {{ .location }}
-							</li>
-							{{ end }}
-							<p><a href="https://events.chef.io/events/event-search/category/webinars/" class="cta" target="_blank"
-									rel=”noopener noreferrer”>View all webinars</a></p>
-						</ul>
-					</div>
-					{{ end }}
-				</div>
-
-				<div id="chefconf-banner">
-					<a href="https://community.chef.io/resources/?tag=ChefConf+Online" target="_blank" rel="noopener noreferrer">
-						<img src="/img/chefconf-online-long-term.png" alt="ChefConf Online" width="100%" />
-					</a>
-				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-6 col-12 card-container" data-scroll-speed="4">
@@ -55,11 +30,28 @@
 				<div class="row">
 					<div class="col-sm-12 events-list">
 						{{ .Params.cards.two.body | markdownify }}
-						<ul>
-							{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
+						{{ $webinars := getJSON "https://live-chef-corpsite.pantheonsite.io/wp-json/wp/v2/webinar/" }}
+						{{ if $webinars }}
 
-							{{ if $events }}
+							<h5>Recent Webinars</h5>
+							<ul>	
+								{{ range first 3 $webinars }}
+								<li>
+									<a class="webinar-title" href="{{ .acf.marketo_permalink }}" target="_blank"
+									rel="noopener noreferrer">{{ .title.rendered }}</a>
+								</li>
+								{{ end }}
+							</ul>
+							<p><a href="https://www.chef.io/webinars" class="cta" target="_blank" rel=”noopener noreferrer”>View all webinars</a></p>
 
+						{{ end }}
+
+						{{ $events := getJSON "https://events.chef.io/wp-json/events-feed/latestnonwebinars" }}
+						{{ if $events }}
+							
+							<h5>Events</h5>
+							
+							<ul>
 							{{ range first 5 $events }}
 							<li>
 								<a class="event-title" href="{{ .event_attributes.event_url }}" target="_blank"
@@ -68,15 +60,15 @@
 							</li>
 							{{ end }}
 
-							<p><a href="https://events.chef.io/" class="cta" target="_blank" rel=”noopener noreferrer”>View all
-									events</a></p>
+							<p><a href="https://events.chef.io/" class="cta" target="_blank" rel=”noopener noreferrer”>View all events</a></p>
 
 							{{ else }}
 
-							<p>There are no planned events.</p>
+							</ul>
+						{{ end }}
+						<div class="row mt-2">
 
-							{{ end }}
-						</ul>
+						</div>
 					</div>
 				</div>
 			</div>

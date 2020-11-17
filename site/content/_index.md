@@ -7,6 +7,19 @@ meta_description: >-
   way to use software is alongside those who build it.
 cards:
   one:
+    icon: /img/icons/meet.svg
+    title: Products
+    body: |-
+      ##### Developer Tools
+      - [Chef Infra](/products/chef-infra) | [Docs](https://docs.chef.io/chef_overview/)
+      - [Chef InSpec](/products/chef-inspec) | [Docs](https://docs.chef.io/inspec/)
+      - [Chef Habitat](/products/chef-habitat) | [Docs](https://docs.chef.io/habitat)
+      - [Chef Automate](/products/chef-automate) | [Docs](https://docs.chef.io/chef_overview/)
+      - [Chef Workstation](/products/chef-workstation) | [Docs](https://docs.chef.io/chef_overview/)
+
+      <hr />
+      [See Enterprise Products &raquo;](https://www.chef.io/products/)
+  two:
     icon: /img/icons/learn.svg
     title: Learn
     body: |-
@@ -15,16 +28,6 @@ cards:
 
       [Get started &raquo;](https://learn.chef.io)
 
-      ##### Docs
-      - [Chef Infra](https://docs.chef.io/chef_overview/) | [Chef InSpec](https://docs.chef.io/inspec/) 
-      - [Chef Habitat](https://docs.chef.io/habitat) | [Chef Automate](https://docs.chef.io/automate/) 
-      - [Chef Desktop](https://docs.chef.io/desktop/) | [Chef Compliance](https://docs.chef.io/compliance/)
-      - [Chef Workstation](https://docs.chef.io/workstation/)
-  two:
-    icon: /img/icons/meet.svg
-    title: Meet
-    body: >-
-      ##### Events
   three:
     icon: /img/icons/connect.svg
     title: Connect
@@ -36,7 +39,7 @@ cards:
 
       ##### Interact
 
-      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/) 
+      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/)
 
 products:
   habitat:
