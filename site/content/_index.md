@@ -11,10 +11,10 @@ cards:
     title: Products
     body: |-
       ##### Developer Tools
-      - [Chef Infra](/products/chef-infra) | [Docs](https://docs.chef.io/chef_overview/)
-      - [Chef InSpec](/products/chef-inspec) | [Docs](https://docs.chef.io/inspec/)
-      - [Chef Habitat](/products/chef-habitat) | [Docs](https://docs.chef.io/habitat)
-      - [Chef Automate](/products/chef-automate) | [Docs](https://docs.chef.io/chef_overview/)
+      - [Chef Infra](/products/chef-infra) | [Docs](https://docs.chef.io/chef_overview/) |[Get Started](https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about)
+      - [Chef InSpec](/products/chef-inspec) | [Docs](https://docs.chef.io/inspec/) | [Get Started](https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about) 
+      - [Chef Habitat](/products/chef-habitat) | [Docs](https://docs.chef.io/habitat) | [Get Started](https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about)
+      - [Chef Automate](/products/chef-automate) | [Docs](https://docs.chef.io/chef_overview/) | [Get Started](https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about)
       - [Chef Workstation](/products/chef-workstation) | [Docs](https://docs.chef.io/chef_overview/)
 
       <hr />
