@@ -8,17 +8,16 @@ meta_description: >-
 cards:
   one:
     icon: /img/icons/meet.svg
-    title: Tools
+    title: Dev Tools
     body: |-
-      ##### Developer Tools
-      - [Chef Infra](/tools/chef-infra) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about)
-      - [Chef InSpec](/tools/chef-inspec) | [Docs](https://docs.chef.io/inspec/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about) 
-      - [Chef Habitat](/tools/chef-habitat) | [Docs](https://docs.chef.io/habitat) | [Learn](https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about)
-      - [Chef Automate](/tools/chef-automate) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about)
-      - [Chef Workstation](/tools/chef-workstation) | [Docs](https://docs.chef.io/chef_overview/)
-
+      - [Chef Infra](/tools/chef-infra) | <a href="https://docs.chef.io/chef_overview/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a>
+      - [Chef InSpec](/tools/chef-inspec) | <a href="https://docs.chef.io/inspec/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a>  
+      - [Chef Habitat](/tools/chef-habitat) | <a href="https://docs.chef.io/habitat" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a> 
+      - [Chef Automate](/tools/chef-automate) | <a href="https://docs.chef.io/automate/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a> 
+      - [Chef Workstation](/tools/chef-workstation) | <a href="https://docs.chef.io/workstation/" target="_blank" rel="noreferrer noopener">Docs</a>
+ 
       <hr />
-      [See Enterprise Products &raquo;](https://www.chef.io/products/)
+      <a href="https://www.chef.io/products/" target="_blank" rel="noreferrer noopener">See Enterprise Products &raquo;</a>
   two:
     icon: /img/icons/learn.svg
     title: Learn
@@ -26,7 +25,7 @@ cards:
       ##### Learn Chef
       Get from zero to DevOps hero with our self-learning platform.
 
-      [Get started &raquo;](https://learn.chef.io)
+      <a href="https://learn.chef.io" target="_blank" rel="noreferrer noopener">Get started &raquo;</a> 
 
   three:
     icon: /img/icons/connect.svg
@@ -34,12 +33,12 @@ cards:
     body: >-
       ##### Contribute
 
-      [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | [Feature
-      Requests](https://feedback.chef.io/) | [Community Distributions](https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md)
+      [First Time](/first-time) | [Book of Open Source](/book-of-open-source) | <a href="https://chef-software.ideas.aha.io/" target="_blank" rel="noreferrer noopener">Feature
+      Requests</a> | <a href="https://github.com/chef/chef-oss-practices/blob/master/distributions/distribution-list.md" target="_blank" rel="noreferrer noopener">Community Distributions</a>
 
       ##### Interact
 
-      [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/)
+      <a href="https://discourse.chef.io" target="_blank" rel="noreferrer noopener">Chef Questions</a> | <a href="https://community-slack.chef.io/" target="_blank" rel="noreferrer noopener">Community Slack</a>
       
 tools:
   habitat:
