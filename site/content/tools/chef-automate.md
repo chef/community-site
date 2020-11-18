@@ -1,5 +1,7 @@
 ---
 title: Chef Automate | DevOps Dashboard for Complete Operational Visibility
+aliases:
+  - /tools/chef-automate
 type: chef-automate
 hero: 
   logo: /img/logos/chef-automate-dark.svg
