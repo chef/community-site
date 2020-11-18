@@ -8,14 +8,14 @@ meta_description: >-
 cards:
   one:
     icon: /img/icons/meet.svg
-    title: Products
+    title: Tools
     body: |-
       ##### Developer Tools
-      - [Chef Infra](/products/chef-infra) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about)
-      - [Chef InSpec](/products/chef-inspec) | [Docs](https://docs.chef.io/inspec/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about) 
-      - [Chef Habitat](/products/chef-habitat) | [Docs](https://docs.chef.io/habitat) | [Learn](https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about)
-      - [Chef Automate](/products/chef-automate) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about)
-      - [Chef Workstation](/products/chef-workstation) | [Docs](https://docs.chef.io/chef_overview/)
+      - [Chef Infra](/tools/chef-infra) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about)
+      - [Chef InSpec](/tools/chef-inspec) | [Docs](https://docs.chef.io/inspec/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about) 
+      - [Chef Habitat](/tools/chef-habitat) | [Docs](https://docs.chef.io/habitat) | [Learn](https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about)
+      - [Chef Automate](/tools/chef-automate) | [Docs](https://docs.chef.io/chef_overview/) | [Learn](https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about)
+      - [Chef Workstation](/tools/chef-workstation) | [Docs](https://docs.chef.io/chef_overview/)
 
       <hr />
       [See Enterprise Products &raquo;](https://www.chef.io/products/)
@@ -40,8 +40,8 @@ cards:
       ##### Interact
 
       [Chef Questions](https://discourse.chef.io) | [Community Slack](https://community-slack.chef.io/)
-
-products:
+      
+tools:
   habitat:
     copy: >
       #### Free your applications from underlying infrastructure and make
@@ -58,7 +58,7 @@ products:
       Deploy your applications with confidence with Habitat’s built-in support
       for health checks, rolling updates, dependency management, and more.
     header: Application Delivery
-    url: "https://community.chef.io/products/chef-habitat/"
+    url: "https://community.chef.io/tools/chef-habitat/"
   header: "Chef helps automate your:"
   infra:
     copy: >
@@ -74,7 +74,7 @@ products:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: "https://community.chef.io/products/chef-infra/"
+    url: "https://community.chef.io/tools/chef-infra/"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
@@ -91,7 +91,7 @@ products:
       consistent standards in every managed environment, at every stage of
       development.
     header: Security & Compliance
-    url: "https://community.chef.io/products/chef-inspec/"
+    url: "https://community.chef.io/tools/chef-inspec/"
   automate:
     copy: >
       #### Incorporate Chef’s products into your Application Development
@@ -105,7 +105,7 @@ products:
       application delivery pipeline, supporting your projects throughout the
       entire application lifecycle.
     header: Observability
-    url: "https://community.chef.io/products/chef-automate/"
+    url: "https://community.chef.io/tools/chef-automate/"
 community:
   header: We're all in this together
   body: >-

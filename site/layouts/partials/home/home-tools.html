@@ -5,27 +5,26 @@
 		</div>
 		<div class="col-lg-7 col-sm-12 product-grid-copy">
 			<div class="product-grid-copy-wrapper">
-				<h2>{{ .Params.products.header }}</h2>
+				<h2>{{ .Params.tools.header }}</h2>
 				<ul class="nav nav-tabs" id="product-tabs" role="tablist" aria-label="Chef Product Tabs">
 					<li class="nav-item" role="tab">
-						<a id="habitat-nav" class="nav-link" href="#habitat" data-toggle="tab">{{ .Params.products.habitat.header }}
+						<a id="habitat-nav" class="nav-link" href="#habitat" data-toggle="tab">{{ .Params.tools.habitat.header }}
 							<span class="fa fa-angle-right" aria-hidden="true"> </span>
 						</a>
 					</li>
 					<li class="nav-item" role="tab">
-						<a id="inspec-nav" class="nav-link" href="#inspec" data-toggle="tab">{{ .Params.products.inspec.header }}
+						<a id="inspec-nav" class="nav-link" href="#inspec" data-toggle="tab">{{ .Params.tools.inspec.header }}
 							<span class="fa fa-angle-right" aria-hidden="true"> </span>
 						</a>
 					</li>
 					<li class="nav-item" role="tab">
-						<a id="infra-nav" class="nav-link" href="#infra" data-toggle="tab">{{ .Params.products.infra.header }}
+						<a id="infra-nav" class="nav-link" href="#infra" data-toggle="tab">{{ .Params.tools.infra.header }}
 							<span class="fa fa-angle-right" aria-hidden="true"> </span>
 						</a>
 					</li>
 					<li class="nav-item" role="tab">
-						<a id="automate-nav" class="nav-link" href="#automate"
-							data-toggle="tab">{{ .Params.products.automate.header }} <span class="fa fa-angle-right"
-								aria-hidden="true"> </span></a>
+						<a id="automate-nav" class="nav-link" href="#automate" data-toggle="tab">{{ .Params.tools.automate.header }}
+							<span class="fa fa-angle-right" aria-hidden="true"> </span></a>
 					</li>
 				</ul>
 			</div>
@@ -34,29 +33,29 @@
 					<div class="img-left">
 						<img src="./img/logos/Habitat.svg" alt="Chef Habitat Wordmark" class="chef-wordmark">
 					</div>
-					{{ partial "markdownify" .Params.products.habitat.copy }}
-					<a class="btn btn-primary" href="{{.Params.products.habitat.url}}">Learn More</a>
+					{{ partial "markdownify" .Params.tools.habitat.copy }}
+					<a class="btn btn-primary" href="{{.Params.tools.habitat.url}}">Learn More</a>
 				</div>
 				<div class="tab-pane fade" id="inspec" role="tabpanel" aria-labelledby="inspec-nav">
 					<div class="img-left">
 						<img src="./img/logos/Inspec.svg" alt="Chef Inspec Wordmark" class="chef-wordmark">
 					</div>
-					{{ partial "markdownify" .Params.products.inspec.copy }}
-					<a class="btn btn-primary" href="{{.Params.products.inspec.url}}">Learn More</a>
+					{{ partial "markdownify" .Params.tools.inspec.copy }}
+					<a class="btn btn-primary" href="{{.Params.tools.inspec.url}}">Learn More</a>
 				</div>
 				<div class="tab-pane fade" id="infra" role="tabpanel" aria-labelledby="infra-nav">
 					<div class="img-left">
 						<img src="./img/logos/Infra.svg" alt="Chef Infra Wordmark" class="chef-wordmark">
 					</div>
-					{{ partial "markdownify" .Params.products.infra.copy }}
-					<a class="btn btn-primary" href="{{.Params.products.infra.url}}">Learn More</a>
+					{{ partial "markdownify" .Params.tools.infra.copy }}
+					<a class="btn btn-primary" href="{{.Params.tools.infra.url}}">Learn More</a>
 				</div>
 				<div class="tab-pane fade" id="automate" role="tabpanel" aria-labelledby="automate-nav">
 					<div class="img-left">
 						<img src="./img/logos/Automate.svg" alt="Chef Automate Wordmark" class="chef-wordmark">
 					</div>
-					{{ partial "markdownify" .Params.products.automate.copy }}
-					<a class="btn btn-primary" href="{{.Params.products.automate.url}}">Learn More</a>
+					{{ partial "markdownify" .Params.tools.automate.copy }}
+					<a class="btn btn-primary" href="{{.Params.tools.automate.url}}">Learn More</a>
 				</div>
 			</div>
 		</div>

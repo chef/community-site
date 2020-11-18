@@ -1,5 +1,7 @@
 ---
 title: Chef Infra | Automate infrastructure configuration
+aliases:
+  - /products/chef-infra
 type: chef-infra
 hero: 
   logo: /img/logos/chef-infra-dark.svg

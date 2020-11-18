@@ -10,7 +10,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/content/products/chef-inspec.md"
+      - file: "site/content/tools/chef-inspec.md"
         label: "Chef InSpec"
         name: "chef-inspec"
         fields:
@@ -134,7 +134,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "CTA 2", name: "ctaTwo", widget: "object", fields: [
                 {label: "Link", name: "link", widget: "string"},
                 {label: "Copy", name: "copy", widget: "string"}]}]} 
-      - file: "site/content/products/chef-habitat.md"
+      - file: "site/content/tools/chef-habitat.md"
         label: "Chef Habitat"
         name: "chef-habitat"
         fields:
@@ -269,8 +269,8 @@ collections: # A list of collections the CMS should be able to edit
                   {label: "Title", name: "title", widget: "string"},
                   {label: "Icon", name: "icon", widget: "image"},
                   {label: "Body", name: "body", widget: "markdown"}]}]}
-          - {label: "Products",
-            name: "products",
+          - {label: "Tools",
+            name: "tools",
             widget: object,
             fields: [
               {label: "Header", name: "header", widget: "string"},

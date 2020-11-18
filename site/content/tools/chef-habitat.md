@@ -1,5 +1,7 @@
 ---
 title: Chef Habitat | Developer Resources 
+aliases:
+  - /products/chef-habitat
 type: chef-habitat
 hero: 
   logo: /img/logos/chef-habitat-dark.svg

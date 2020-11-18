@@ -17,10 +17,9 @@ export default class Homepage extends React.Component {
 		const { entry } = this.props;
 		const hero = entry.getIn(["data", "body"]);
 		const cards = entry.getIn(["data", "cards"]).toJS();
-		const products = entry.getIn(["data", "products"]).toJS();
+		const tools = entry.getIn(["data", "tools"]).toJS();
 		const community = entry.getIn(["data", "community"]).toJS();
 		const resources = entry.getIn(["data", "resources"]).toJS();
-		console.log(products);
 
 		return <main id="home">
 
@@ -147,19 +146,19 @@ export default class Homepage extends React.Component {
 						</div>
 						<div className="col-lg-7 col-sm-12 product-grid-copy">
 							<div className="product-grid-copy-wrapper">
-								<h2>{products.header} {products.header2}</h2>
+								<h2>{tools.header} {tools.header2}</h2>
 								<ul className="nav nav-tabs" id="product-tabs" role="tablist">
 									<li className="nav-item">
-										<a id="habitat-nav" className="nav-link" href="#habitat"> {products.habitat.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
+										<a id="habitat-nav" className="nav-link" href="#habitat"> {tools.habitat.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
 									</li>
 									<li className="nav-item">
-										<a id="inspec-nav" className="nav-link" href="#inspec" data-toggle="tab">{products.inspec.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
+										<a id="inspec-nav" className="nav-link" href="#inspec" data-toggle="tab">{tools.inspec.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
 									</li>
 									<li className="nav-item">
-										<a id="infra-nav" className="nav-link" href="#infra" data-toggle="tab">{products.infra.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
+										<a id="infra-nav" className="nav-link" href="#infra" data-toggle="tab">{tools.infra.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
 									</li>
 									<li className="nav-item">
-										<a id="automate-nav" className="nav-link" href="#automate" data-toggle="tab">{products.automate.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
+										<a id="automate-nav" className="nav-link" href="#automate" data-toggle="tab">{tools.automate.header} <span className="fa fa-angle-right" aria-hidden="true"> </span></a>
 									</li>
 								</ul>
 							</div>
@@ -168,29 +167,29 @@ export default class Homepage extends React.Component {
 									<div className="img-left">
 										<img src="./img/logos/Habitat.svg" alt="Chef Habitat Wordmark" className="chef-wordmark" />
 									</div>
-									<Markdown source={products.habitat.copy} escapeHtml={false} />
-									<a className="btn btn-primary" href="{products.habitat.url}">Learn More</a>
+									<Markdown source={tools.habitat.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{tools.habitat.url}">Learn More</a>
 								</div>
 								<div className="tab-pane fade" id="inspec">
 									<div className="img-left">
 										<img src="./img/logos/Inspec.svg" alt="Chef Inspec Wordmark" className="chef-wordmark" />
 									</div>
-									<Markdown source={products.inspec.copy} escapeHtml={false} />
-									<a className="btn btn-primary" href="{products.inspec.url}">Learn More</a>
+									<Markdown source={tools.inspec.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{tools.inspec.url}">Learn More</a>
 								</div>
 								<div className="tab-pane fade" id="infra">
 									<div className="img-left">
 										<img src="./img/logos/Infra.svg" alt="Chef Infra Wordmark" className="chef-wordmark" />
 									</div>
-									<Markdown source={products.infra.copy} escapeHtml={false} />
-									<a className="btn btn-primary" href="{products.infra.url}">Learn More</a>
+									<Markdown source={tools.infra.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{tools.infra.url}">Learn More</a>
 								</div>
 								<div className="tab-pane fade" id="automate">
 									<div className="img-left">
 										<img src="./img/logos/Automate.svg" alt="Chef Automate Wordmark" className="chef-wordmark" />
 									</div>
-									<Markdown source={products.automate.copy} escapeHtml={false} />
-									<a className="btn btn-primary" href="{products.automate.url}">Learn More</a>
+									<Markdown source={tools.automate.copy} escapeHtml={false} />
+									<a className="btn btn-primary" href="{tools.automate.url}">Learn More</a>
 								</div>
 							</div>
 						</div>
