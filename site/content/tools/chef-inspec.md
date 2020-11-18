@@ -1,7 +1,7 @@
 ---
 title: Chef InSpec | Compliance as Code
 aliases:
-  - /tools/chef-inspec
+  - /products/chef-inspec
 type: chef-inspec
 hero: 
   logo: /img/logos/chef-inspec-dark.svg

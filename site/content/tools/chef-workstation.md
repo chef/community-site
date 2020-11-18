@@ -1,7 +1,7 @@
 ---
 title: Chef Workstation | The quickest way to get started with Chef’s suite of tools
 aliases:
-  - /tools/chef-workstation
+  - /products/chef-workstation
 type: chef-workstation
 hero: 
   logo: /img/logos/chef-workstation-dark.svg
