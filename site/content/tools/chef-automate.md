@@ -1,11 +1,11 @@
 ---
-title: Chef Automate | DevOps Dashboard for Complete Operational Visibility
+title: Chef Automate | DevOps Dashboard for Operational Visibility
 aliases:
   - /products/chef-automate
 type: chef-automate
 hero: 
   logo: /img/logos/chef-automate-dark.svg
-  header: DevOps Dashboard for Complete Operational Visibility
+  header: DevOps Dashboard for Operational Visibility
 cards:
   header: Change How You Automate Everything in the Stack
   one:
