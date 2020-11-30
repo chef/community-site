@@ -128,7 +128,7 @@ contact:
 <p>Chef Infra is a powerful automation platform that transforms infrastructure configuration into code. Whether you’re operating in the cloud, on-premises, or in a hybrid environment, Chef Infra automates how infrastructure is configured, deployed, and managed across your network, no matter its size.</p>
 
 <div class="center-xs">
-<a class="btn btn-primary" href="https://docs.chef.io/chef_overview/" target="_blank" rel="noopener noreferrer">Get started</a>
+<a class="btn btn-primary" href="https://docs.chef.io/chef_overview/" target="_blank" rel="noopener noreferrer">View Docs</a>
 <a class="btn btn-secondary" href="https://chef-marketing-public.s3-us-west-1.amazonaws.com/whitepapers/Chef-Infra-16-Product-Guide.pdf" target="_blank" rel="noopener noreferrer">Chef Infra 16 Product Guide</a>
 </div>
 <div class="center-xs">
