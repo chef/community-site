@@ -18,5 +18,5 @@
 
 [[redirects]]
   from = "/resources/*"
-  to = "https://chef-resource-hub.netlify.app/resources/:splat"
+  to = "https://www.chef.io/resources"
   status = 200
