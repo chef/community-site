@@ -19,4 +19,9 @@
 [[redirects]]
   from = "/resources/*"
   to = "https://www.chef.io/resources"
-  status = 200
+  status = 301
+
+  [[redirects]]
+  from = "/resources/"
+  to = "https://www.chef.io/resources"
+  status = 301
