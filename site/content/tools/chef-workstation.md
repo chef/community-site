@@ -1,5 +1,6 @@
 ---
-title: Chef Workstation | The quickest way to get started with Chef’s suite of tools
+title: Chef Workstation Developer Community Resources
+meta_description: Community resources to get started with Chef Workstation. Learn how to apply dynamic, repeatable configurations to your servers directly over SSH or WinRM via chef-run.
 aliases:
   - /products/chef-workstation
 type: chef-workstation

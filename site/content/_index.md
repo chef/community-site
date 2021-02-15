@@ -1,10 +1,7 @@
 ---
-title: "Chef Developer Community"
+title: "Chef Developer Community Resources"
 meta_keyword: Chef Community
-meta_description: >-
-  Community is the foundation of Chef. We believe that the best way to build
-  software is in close collaboration with the people who use it, and the best
-  way to use software is alongside those who build it.
+meta_description: "Community is the foundation of Chef. We believe that the best way to build software is in close collaboration with the people who use it, and alongside those who build it."
 cards:
   one:
     icon: /img/icons/meet.svg

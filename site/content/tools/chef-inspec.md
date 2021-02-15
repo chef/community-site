@@ -1,5 +1,6 @@
 ---
-title: Chef InSpec | Compliance as Code
+title: Chef InSpec Developer Community Resources
+meta_description: Community resources to get started with Chef Inspec. Learn how to turn your compliance, security, and other policy requirements into automated tests.
 aliases:
   - /products/chef-inspec
 type: chef-inspec

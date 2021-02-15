@@ -1,5 +1,6 @@
 ---
-title: Chef Automate | DevOps Dashboard for Complete Operational Visibility
+title: Chef Automate Developer Community Resources
+meta_description: Community resources to get started with Chef Automate. Learn how to use the enterprise dashboard  enabling cross-team collaboration with actionable insights.
 aliases:
   - /products/chef-automate
 type: chef-automate

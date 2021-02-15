@@ -1,5 +1,6 @@
 ---
-title: Chef Habitat | Developer Resources 
+title: Chef Habitat Developer Community Resources
+meta_description: Community resources to get started with Chef Habitat. Learn how to use our open source automation solution for defining, packaging, and delivering applications.
 aliases:
   - /products/chef-habitat
 type: chef-habitat

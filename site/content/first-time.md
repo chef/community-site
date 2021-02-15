@@ -1,5 +1,6 @@
 ---
-title: First Time
+title: "First Time Contributor Resources"
+meta_description: "First Time Contributor Resources. We’re here to do everything we can to make your first contribution experience a great one. Learn more and get started today!"
 type: first-time
 cards:
   one:

@@ -1,5 +1,6 @@
 ---
-title: Chef Infra | Automate infrastructure configuration
+title: Chef Infra Developer Community Resources
+meta_description: Community resources to get started with Chef Infra. Learn how to use our powerful automation platform that transforms infrastructure configuration into code.
 aliases:
   - /products/chef-infra
 type: chef-infra
