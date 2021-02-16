@@ -436,6 +436,10 @@
       margin-right: 4px;
     }
 
+    .avatar-img {
+      max-width:25px;
+    }
+
     @include media-breakpoint-down(sm) {
       th,
       td {
