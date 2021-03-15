@@ -7,7 +7,7 @@ cards:
     icon: /img/icons/meet.svg
     title: Dev Tools
     body: |-
-      - [Chef Infra](/tools/chef-infra) | <a href="https://docs.chef.io/chef_overview/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a>
+      - [Chef Infra](/tools/chef-infra-client) | <a href="https://docs.chef.io/chef_overview/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Infra101+perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a>
       - [Chef InSpec](/tools/chef-inspec) | <a href="https://docs.chef.io/inspec/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Inspec101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a>  
       - [Chef Habitat](/tools/chef-habitat) | <a href="https://docs.chef.io/habitat" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Habitat101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a> 
       - [Chef Automate](/tools/chef-automate) | <a href="https://docs.chef.io/automate/" target="_blank" rel="noreferrer noopener">Docs</a> | <a href="https://learn.chef.io/courses/course-v1:chef+Automate101+Perpetual/about" target="_blank" rel="noreferrer noopener">Learn</a> 
@@ -70,7 +70,7 @@ tools:
       problems over and over again! Automate them and give your team the ability
       to build innovations.
     header: Infrastructure
-    url: "https://community.chef.io/tools/chef-infra/"
+    url: "https://community.chef.io/tools/chef-infra-client/"
   inspec:
     copy: >-
       #### Secure your infrastructure across your entire development lifecycle.
