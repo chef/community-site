@@ -168,7 +168,8 @@ adoption:
   copy: >-
     Chef Automate provides enterprise management and observability capabilities and is  included with every Chef Subscription. Automate offers visual UIs, real-time interactive dashboards, role-based access controls, 3rd party integrations, data APIs, and much more. Automate enables Infrastructure, DevOps, Security, Cloud and Release teams to easily collaborate and get work done, all while maintaining an auditable history of changes to systems environments.  
 
-    In addition, Chef Automate can be used to install Chef Infra Server either for a single-host installation that contains both Chef Infra Server and Chef Automate, or for a standalone Chef Infra Server instance. Chef Automate also provides a graphical management console for the Chef Infra Server. 
+    In addition, Chef Automate can be used to install Chef Infra Server either for a single-host installation that contains both Chef Infra Server and Chef Automate, or for a standalone Chef Infra Server instance. Chef Automate also provides a graphical management console for the Chef Infra Server.
+  image: /img/infra/EnterpriseScaleandSupport.png
 tutorials:
   columnOne: 
     header: Self-learning tutorials
