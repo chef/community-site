@@ -81,7 +81,7 @@ getStarted:
   one: 
     header: Install Chef Workstation
     copy: >-
-      Start working with Chef Infra Client by installing Chef Workstation (formerly ChefDK) on any Windows, Mac or Linux machine where you do your work. Chef Workstation provides chef, knife, Test Kitchen and all the tools you need to start defining configurations as code on local or remote servers, virtual machines and containers. 
+      Start working with Chef Infra Client by <a href="https://docs.chef.io/workstation/install_workstation/">installing Chef Workstation</a> (formerly ChefDK) on any Windows, Mac or Linux machine where you do your work. Chef Workstation provides chef, knife, Test Kitchen and all the tools you need to start defining configurations as code on local or remote servers, virtual machines and containers. 
     code: |-
     
       ~$ chef --version
@@ -165,10 +165,6 @@ getStarted:
           attributes:
 adoption:
   header: Enterprise Scale and Support
-  copy: >-
-    Chef Automate provides enterprise management and observability capabilities and is  included with every Chef Subscription. Automate offers visual UIs, real-time interactive dashboards, role-based access controls, 3rd party integrations, data APIs, and much more. Automate enables Infrastructure, DevOps, Security, Cloud and Release teams to easily collaborate and get work done, all while maintaining an auditable history of changes to systems environments.  
-
-    In addition, Chef Automate can be used to install Chef Infra Server either for a single-host installation that contains both Chef Infra Server and Chef Automate, or for a standalone Chef Infra Server instance. Chef Automate also provides a graphical management console for the Chef Infra Server.
   image: /img/infra/EnterpriseScaleandSupport.png
 tutorials:
   columnOne: 
@@ -227,7 +223,7 @@ contact:
 <p>Chef Infra Client is an open-source infrastructure as code (ICA) tool for reducing manual and repetitive tasks for Windows, Linux, Mac and *nix systems. </p>
 
 <div class="center-xs">
-<a class="btn btn-primary" href="https://docs.chef.io/chef_overview/" target="_blank" rel="noopener noreferrer">Get started</a>
+<a class="btn btn-primary" href="#start">Get started</a>
 <a class="btn btn-secondary" href="https://discourse.chef.io/c/chef-release/9" target="_blank" rel="noopener noreferrer">Release Notes</a>
 </div>
 <div class="center-xs">
