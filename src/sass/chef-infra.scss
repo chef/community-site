@@ -62,10 +62,6 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
-  
-    @include media-breakpoint-down(lg) {
-      margin-top: 2rem;
-    }
 
     .usage-main {
       @extend %section-tabs;
@@ -89,3 +85,4 @@
     @extend %section-padding;
   }
 }
+
