@@ -224,7 +224,7 @@ contact:
 
 <div class="center-xs">
 <a class="btn btn-primary" href="#start">Get started</a>
-<a class="btn btn-secondary" href="https://pages.chef.io/NEW202104-LiveEvent-JoinUsChefInfraClient17Launch_01Register.html" target="_blank" rel="noopener noreferrer">Chef Infra Client 17 Upcoming Launch</a>
+<a class="btn btn-secondary" href="https://discourse.chef.io/c/chef-release/9" target="_blank" rel="noopener noreferrer">Release Notes</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
