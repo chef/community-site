@@ -17,7 +17,7 @@ cards:
     icon: /img/icons/infra-2.svg
     title: CONNECT
     body: >-
-     Join the conversation on the Chef Community <a href="https://community-slack.chef.io/">Slack</a> and <a href="https://discourse.chef.io/" target="_blank">Discourse</a>. 
+     Join the conversation on the Chef Community <a href="https://community-slack.chef.io/" target="_blank">Slack</a> and <a href="https://discourse.chef.io/" target="_blank">Discourse</a>. 
   three:
     icon: /img/icons/infra-3.svg
     title: CONTRIBUTE
@@ -31,7 +31,6 @@ cards:
 intro: 
   header: Chef Infrastructure as Code Software  
   copy: >-
-
       Chef Infra Client is an open-source infrastructure as code tool for automating the creation of configuration policies that are flexible, versionable, testable, and human readable. Systems managed by Chef Infra Client are continuously evaluated against their desired state, ensuring that configuration drift is automatically corrected, and configuration changes are universally applied.
 usage:
   headerImage: /img/logos/chef-infra-white.svg
@@ -94,9 +93,9 @@ getStarted:
       Cookstyle version: 7.5.3
   two:
     header: Create a Project Repo
-    copy: >-
+    body: >-
       Working with Chef Infra Client starts with creating workspaces that provide flexibility to manage a wide variety of configurations, policies, node lists and much more from your workstation. The 
-      chef generate cookbook <cookbook_name> command builds the context for your configuration management projects and creates initial files and folders to keep everything in order.   
+      <code>chef generate cookbook <cookbook_name></code> command builds the context for your configuration management projects and creates initial files and folders to keep everything in order.   
     code: |-
 
       ~$ chef generate cookbook try_chef_infra
