@@ -28,7 +28,7 @@
 
 						</div>
 						<p>
-							<small><span class="pill">New!</span> See what's new in Chef Infra 16</small></p>
+							<small><span class="pill">New!</span> <a href="https://chef-marketing-public.s3-us-west-1.amazonaws.com/whitepapers/Chef-Infra-16-Product-Guide.pdf" target="_blank">See what's new in Chef Infra 16</a></small></p>
 					</div>
 				</div>
 			</div>
@@ -40,16 +40,24 @@
 
 	</section>
 
+	<section class="intro">
+		{{ partial "infra/infra-intro.html" . }}
+	</section>
+
 	<section class="usage">
 		{{ partial "infra/infra-usage.html" . }}
 	</section>
 
-	<section class="ecosystem">
-		{{ partial "infra/infra-ecosystem.html" . }}
+	<section class="start" id="start">
+		{{ partial "infra/infra-start.html" . }}
 	</section>
 
-	<section class="get-started">
-		{{ partial "infra/infra-get-started.html" . }}
+	<section class="adoption">
+		{{ partial "infra/infra-adoption.html" . }}
+	</section>
+
+	<section class="ecosystem">
+		{{ partial "infra/infra-ecosystem.html" . }}
 	</section>
 
 	<section class="tutorials">
@@ -59,11 +67,6 @@
 	<section class="resources">
 		{{ partial "infra/infra-resources.html" . }}
 	</section>
-
-	<section class="contact">
-		{{ partial "contact.html" . }}
-	</section>
-
 </main>
 
 {{ end }}

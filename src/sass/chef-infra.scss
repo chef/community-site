@@ -48,7 +48,12 @@
       }
     }
   }
+  .adoption {
+    @extend %section-padding;
 
+    background-color: $light-gray;
+  }
+  
   // INFRA BENEFITS TABS
   // =======================
   .usage {
@@ -57,10 +62,6 @@
     background-color: $dark-gray;
     color: $light-gray;
     display: flex;
-  
-    @include media-breakpoint-down(lg) {
-      margin-top: 2rem;
-    }
 
     .usage-main {
       @extend %section-tabs;
@@ -73,7 +74,15 @@
     color: $light-gray;
   }
 
-  .get-started {
+  .intro {
+    @extend %section-padding-bottom;
+
+    background-color: $dark-gray;
+    color: $light-gray;
+  }
+
+  .start {
     @extend %section-padding;
   }
 }
+
