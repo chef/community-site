@@ -12,22 +12,22 @@ cards:
     icon: /img/icons/infra-1.svg
     title: LEARN
     body: >-
-      Take advantage of free and flexible <a href="https://learn.chef.io/">online</a> learning resources.  
+      Take advantage of free and flexible <a href="https://learn.chef.io/" target="_blank">online</a> learning resources.  
   two:
     icon: /img/icons/infra-2.svg
     title: CONNECT
     body: >-
-     Join the conversation on the Chef Community <a href="https://community-slack.chef.io/">Slack</a> and <a href="https://discourse.chef.io/">Discourse</a>. 
+     Join the conversation on the Chef Community <a href="https://community-slack.chef.io/">Slack</a> and <a href="https://discourse.chef.io/" target="_blank">Discourse</a>. 
   three:
     icon: /img/icons/infra-3.svg
     title: CONTRIBUTE
     body: >-
-      Read the <a href="https://community.chef.io/first-time/">First Time Contributor guide</a> and start submitting your ideas. 
+      Read the <a href="https://community.chef.io/first-time/" target="_blank">First Time Contributor guide</a> and start submitting your ideas. 
   four:
     icon: /img/icons/infra-4.svg
     title: JOIN US
     body: >-
-      View <a href="https://events.chef.io/">upcoming</a> webinars, meetups, and other user events.
+      View <a href="https://events.chef.io/" target="_blank">upcoming</a> webinars, meetups, and other user events.
 intro: 
   header: Chef Infrastructure as Code Software  
   copy: >-
@@ -95,7 +95,8 @@ getStarted:
   two:
     header: Create a Project Repo
     copy: >-
-      Working with Chef Infra Client starts with creating workspaces that provide flexibility to manage a wide variety of configurations, policies, node lists and much more from your workstation. The chef generate cookbook <cookbook_name> command builds the context for your configuration management projects and creates initial files and folders to keep everything in order.   
+      Working with Chef Infra Client starts with creating workspaces that provide flexibility to manage a wide variety of configurations, policies, node lists and much more from your workstation. The 
+      chef generate cookbook <cookbook_name> command builds the context for your configuration management projects and creates initial files and folders to keep everything in order.   
     code: |-
 
       ~$ chef generate cookbook try_chef_infra
@@ -136,7 +137,7 @@ getStarted:
   four:
     header: Test and Explore
     copy: >-
-      Whether you’re new to Chef Infra Client or a seasoned pro, you can use Test Kitchen to test and run recipes, try publicly available cookbooks and policy configuration from the Chef Supermarket, and even create entire test environments using Vagrant, Docker, GCE, EC2, Azure and other familiar resources. 
+      Whether you’re new to Chef Infra Client or a seasoned pro, you can use Test Kitchen to test and run recipes, try publicly available cookbooks and policy configurations from the Chef Supermarket, and even create entire test environments using Vagrant, Docker, GCE, EC2, Azure and other familiar resources. 
     code: |-
 
       ---
@@ -224,7 +225,7 @@ contact:
 
 <div class="center-xs">
 <a class="btn btn-primary" href="#start">Get started</a>
-<a class="btn btn-secondary" href="https://discourse.chef.io/c/chef-release/9" target="_blank" rel="noopener noreferrer">Release Notes</a>
+<a class="btn btn-secondary" href="https://pages.chef.io/NEW202104-LiveEvent-JoinUsChefInfraClient17Launch_01Register.html" target="_blank" rel="noopener noreferrer">Chef Infra Client 17 Upcoming Launch</a>
 </div>
 <div class="center-xs">
 <iframe title="Github" id="github-star" class="center-xs" src="https://ghbtns.com/github-btn.html?user=chef&repo=chef&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
