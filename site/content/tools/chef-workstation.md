@@ -16,7 +16,7 @@ cards:
     body: >-
       Chef Workstation gives you all the tools you need to get started and includes:  
       <ul>
-        <li>Chef Workstation App</li><li>Chef Infra Client</li><li>Chef InSpec</li><li>Chef Habitat</li><li>Chef Command Line Tool</li><li>Test Kitchen</li><li>Cookstyle</li><li>Various Test Kitchen and Knife plugins</li><li>[Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/)</li>
+        <li>Chef Workstation App</li><li>Chef Infra Client</li><li>Chef InSpec</li><li>Chef Habitat CLI</li><li>Chef Command Line Tool</li><li>Test Kitchen</li><li>Cookstyle</li><li>Various Test Kitchen and Knife plugins</li><li>[Upgrade Lab](https://docs.chef.io/workstation/upgrade_lab/)</li>
       </ul>
 
   two:
