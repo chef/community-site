@@ -1,3 +1,7 @@
+/brand https://chef-community-components.netlify.app/
+/resources https://www.chef.io/resources
+/resources/* https://www.chef.io/resources
+/tools/chef-infra /tools/chef-infra-client 301!
 /resources/posts/at-the-edge-app-configuration-and-deployment-as-code	 https://www.chef.io/resources/at-the-edge-app-configuration-and-deployment-as-code-a-panerabread-cafe-automation-story
 /resources/posts/automating-machine-identity	https://www.chef.io/resources/automating-machine-identity
 /resources/posts/automating-servicenow-workflows-with-chef	https://www.chef.io/resources/automating-servicenow-workflows-with-chef
