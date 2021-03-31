@@ -929,6 +929,10 @@ pre {
   border: 2px solid #da1884;
   color: white;
   padding: 8px 70px;
+
+  &:hover { 
+    color: #da1884;
+  }
 }
 
 @import "marketo";
