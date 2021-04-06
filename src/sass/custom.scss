@@ -387,6 +387,15 @@ img {
     }
   }
 
+  .cta-header {
+    padding-bottom: 2rem !important;
+  }
+
+  .social-share-container { 
+    margin-top: 25px;
+    max-width: 225px;
+  }
+
   #main-footer {
     background-color: $dark-gray;
     max-width: 100%;
@@ -913,6 +922,16 @@ pre {
         text-align: center;
       }
     }
+  }
+}
+
+.contact-us-footer-btn {
+  border: 2px solid #da1884;
+  color: white;
+  padding: 8px 70px;
+
+  &:hover { 
+    color: white !important;
   }
 }
 
