@@ -11,22 +11,7 @@
 [context.deploy-preview]
   command = "npm run build:preview"
 
-[[redirects]]
-  from = "/brand"
-  to = "https://chef-community-components.netlify.app/"
-  status = 301
-
-[[redirects]]
-  from = "/resources/*"
-  to = "https://www.chef.io/resources"
-  status = 301
-
-  [[redirects]]
-  from = "/resources/"
-  to = "https://www.chef.io/resources"
-  status = 301
-
-  [[redirects]]
-  from = "/tools/chef-infra/"
-  to = "https://community.chef.io/tools/chef-infra-client"
-  status = 301
+[[plugins]]
+  package = "@helloample/netlify-plugin-replace"
+  [plugins.inputs]
+    fileTypes = "_redirects"
